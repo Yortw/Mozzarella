@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mozzarella.NetStandard", "Mozzarella.NetStandard\Mozzarella.NetStandard.csproj", "{28718109-DFC3-4053-A0B9-17FC23ABD1B0}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Mozzarella.Shared", "Mozzarella.Shared\Mozzarella.Shared.shproj", "{EEA2B3DE-E26F-43E8-A729-DCC0D4F2F8C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mozzarella.Portable", "Mozzarella.Portable\Mozzarella.Portable.csproj", "{BFEBC717-15F2-4575-8951-A0EF84677A15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mozzarella.Tests", "Mozzarella.Tests\Mozzarella.Tests.csproj", "{24B0DFE2-C075-481C-88F3-5306F5F473F3}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Mozzarella.Shared\Mozzarella.Shared.projitems*{28718109-dfc3-4053-a0b9-17fc23abd1b0}*SharedItemsImports = 4
+		Mozzarella.Shared\Mozzarella.Shared.projitems*{bfebc717-15f2-4575-8951-a0ef84677a15}*SharedItemsImports = 4
+		Mozzarella.Shared\Mozzarella.Shared.projitems*{eea2b3de-e26f-43e8-a729-dcc0d4f2f8c4}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28718109-DFC3-4053-A0B9-17FC23ABD1B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28718109-DFC3-4053-A0B9-17FC23ABD1B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28718109-DFC3-4053-A0B9-17FC23ABD1B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28718109-DFC3-4053-A0B9-17FC23ABD1B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFEBC717-15F2-4575-8951-A0EF84677A15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFEBC717-15F2-4575-8951-A0EF84677A15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFEBC717-15F2-4575-8951-A0EF84677A15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFEBC717-15F2-4575-8951-A0EF84677A15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24B0DFE2-C075-481C-88F3-5306F5F473F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24B0DFE2-C075-481C-88F3-5306F5F473F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24B0DFE2-C075-481C-88F3-5306F5F473F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24B0DFE2-C075-481C-88F3-5306F5F473F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

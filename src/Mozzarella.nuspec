@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>       
+	<id>Mozzarella</id>
+        <version>1.0.0.0</version>
+        <title>Mozzarella</title>
+        <authors>Troy Willmot</authors>
+        <owners>Yortw</owners>
+        <licenseUrl>https://github.com/Yortw/Mozzarella/blob/master/LICENSE.md</licenseUrl>
+        <projectUrl>https://github.com/Yortw/Mozzarella</projectUrl>
+        <iconUrl>https://raw.githubusercontent.com/Yortw/Mozzarella/master/MozzarellaIcon.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>A library for doing stuff with strings in .Net.</description>
+        <copyright>Copyright 2016</copyright>
+        <language>en-AU</language>
+        <tags>portable xamarin ios android windowsphone winrt uwp mobile string upnp netfx40 .net4</tags>
+    </metadata>
+    <files>
+        <file src="Mozzarella.NetStandard\bin\Release\Mozzarella.NetStandard.dll" target="lib\netstandard1.0\Mozzarella.NetStandard.dll" />
+        <file src="Mozzarella.NetStandard\bin\Release\Mozzarella.NetStandard.pdb" target="lib\netstandard1.0\Mozzarella.NetStandard.pdb" />
+        <file src="Mozzarella.NetStandard\bin\Release\Mozzarella.NetStandard.XML" target="lib\netstandard1.0\Mozzarella.NetStandard.XML" />
+        <file src="Mozzarella.Portable\bin\Release\Mozzarella.Portable.dll" target="lib\netstandard1.0\Mozzarella.Portable.dll" />
+        <file src="Mozzarella.Portable\bin\Release\Mozzarella.Portable.pdb" target="lib\netstandard1.0\Mozzarella.Portable.pdb" />
+        <file src="Mozzarella.Portable\bin\Release\Mozzarella.Portable.XML" target="lib\netstandard1.0\Mozzarella.Portable.XML" />
+        <file src="**\*.cs" target="src" />
+    </files>
+</package>
