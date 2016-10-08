@@ -9,8 +9,6 @@ namespace Mozzarella
 	/// </summary>
 	public static class StringExtensions
 	{
-		//TODO: IndexOfFirstDifference
-		//TODO: IsAllDigits
 		//TODO: Like?
 		//TODO: StripSuffix
 		//TODO: AddSuffix
@@ -150,6 +148,27 @@ namespace Mozzarella
 			}
 
 			return value.Length < otherValue.Length ? value.Length : -1;
+		}
+
+		/// <summary>
+		/// Determines whether <paramref name="value"/> contains only numeric digits.
+		/// </summary>
+		/// <param name="value">The string to check the contents of.</param>
+		/// <remarks>
+		/// <para>If <paramref name="value"/> is an empty string the return value is false.</para>
+		/// </remarks>
+		/// <returns><c>true</c> if <paramref name="value"/> contains only numeric digits; otherwise, <c>false</c>.</returns>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="value"/> is null.</exception>
+		public static bool IsAllDigits(this string value)
+		{
+			if (value == null) throw new ArgumentNullException(nameof(value));
+			if (value.Length == 0) return false;
+
+			for (int cnt = 0; cnt < value.Length; cnt++)
+			{
+				if (!Char.IsDigit(value[cnt])) return false;
+			}
+			return true;
 		}
 	}
 }
