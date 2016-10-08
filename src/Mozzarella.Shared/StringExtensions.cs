@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace Mozzarella
 {
@@ -170,5 +171,33 @@ namespace Mozzarella
 			}
 			return true;
 		}
+
+		/// <summary>
+		/// Performs an operation similar to a T-Sql 'like' on a string.
+		/// </summary>
+		/// <param name="value">The string to search.</param>
+		/// <param name="pattern">The partial string to match, including wild cards.</param>
+		/// <param name="caseInsensitive">If true case is ignored when matching strings, if false case sensitivity applies.</param>
+		/// <returns>True if the partial string to match is found in the <paramref name="value" /> string.</returns>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="value"/> or <paramref name="pattern"/> is null.</exception>
+		public static bool Like(this string value, string pattern, bool caseInsensitive)
+		{
+			if (value == null) throw new ArgumentNullException(nameof(value));
+			if (pattern == null) throw new ArgumentNullException(nameof(pattern));
+
+			RegexOptions options = RegexOptions.None;
+			if (caseInsensitive)
+				options = RegexOptions.IgnoreCase;
+
+			var sb = new StringBuilder();
+			sb.Append("\\A");
+			sb.Append(Regex.Escape(pattern));
+			sb.Replace("_", ".");
+			sb.Replace("%", ".*");
+			sb.Append("\\z");
+
+			return new Regex(sb.ToString(), options).IsMatch(value);
+		}
+
 	}
 }
