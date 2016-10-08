@@ -169,6 +169,11 @@ namespace Mozzarella
 		/// <summary>
 		/// Performs an operation similar to a T-Sql 'like' on a string.
 		/// </summary>
+		/// <remarks>
+		/// <para>Use % as a wildcard for any character or characters, and _ as a wild card for any single character.</para>
+		/// <para>This method is 'allocation heavy'. It's fine for use in execution paths that are infrequent/not performance critical, but in other 
+		/// such places a fine tuned manual implementation would be better.</para>
+		/// </remarks>
 		/// <param name="value">The string to search.</param>
 		/// <param name="pattern">The partial string to match, including wild cards.</param>
 		/// <param name="caseInsensitive">If true case is ignored when matching strings, if false case sensitivity applies.</param>
@@ -279,7 +284,7 @@ namespace Mozzarella
 		}
 
 		/// <summary>
-		/// If <paramref name="value"/> does NOT end with <paramref name="suffix"/> then returns a new string with the suffix appeneded, otherwise returns <paramref name="value"/>.
+		/// If <paramref name="value"/> does NOT end with <paramref name="suffix"/> then returns a new string with the suffix appended, otherwise returns <paramref name="value"/>.
 		/// </summary>
 		/// <param name="value">The value to add the suffix from.</param>
 		/// <param name="suffix">The suffix to be added.</param>
