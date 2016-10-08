@@ -50,6 +50,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="AddSuffixTests.cs" />
+    <Compile Include="AddPrefixTests.cs" />
     <Compile Include="ByteArrayExtensionsTests.cs" />
     <Compile Include="CICompareTests.cs" />
     <Compile Include="CIContainsTests.cs" />
@@ -61,6 +63,8 @@
     <Compile Include="IsAllDigitsTests.cs" />
     <Compile Include="LikeTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StripPrefixTests.cs" />
+    <Compile Include="StripSuffixTests.cs" />
     <Compile Include="TruncateTests.cs" />
   </ItemGroup>
   <ItemGroup>

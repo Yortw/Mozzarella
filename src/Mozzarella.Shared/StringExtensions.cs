@@ -10,12 +10,6 @@ namespace Mozzarella
 	/// </summary>
 	public static class StringExtensions
 	{
-		//TODO: Like?
-		//TODO: StripSuffix
-		//TODO: AddSuffix
-		//TODO: Add Prefix
-		//TODO: StripPrefix
-		//TODO: Wrap 
 
 		/// <summary>
 		/// If <paramref name="value"/> is longer than <paramref name="maxLength"/> it is truncated at that character position, otherwise the original string is returned.
@@ -197,6 +191,146 @@ namespace Mozzarella
 			sb.Append("\\z");
 
 			return new Regex(sb.ToString(), options).IsMatch(value);
+		}
+
+		/// <summary>
+		/// If <paramref name="value"/> ends with <paramref name="suffix"/> then returns a new string without the suffix, otherwise returns <paramref name="value"/>.
+		/// </summary>
+		/// <remarks>
+		/// <para>This overload is case sensitive. For a case insensitive version use <see cref="StripSuffix(string, string, bool)"/> with ignoreCase set to true.</para>
+		/// </remarks>
+		/// <param name="value">The value to strip the suffix from.</param>
+		/// <param name="suffix">The suffix to be stripped.</param>
+		/// <exception cref="System.ArgumentNullException">Throw if either <paramref name="value"/> or <paramref name="suffix"/> is null.</exception>
+		/// <returns>Either a new string without the specified suffix, or else the original string.</returns>
+		public static string StripSuffix(this string value, string suffix)
+		{
+			return StripSuffix(value, suffix, false);
+		}
+
+		/// <summary>
+		/// If <paramref name="value" /> ends with <paramref name="suffix" /> then returns a new string without the suffix, otherwise returns <paramref name="value" />.
+		/// </summary>
+		/// <param name="value">The value to strip the suffix from.</param>
+		/// <param name="suffix">The suffix to be stripped.</param>
+		/// <param name="ignoreCase">A boolean indicating whether or not to match the suffix in a case sensitive (true) or insensitive (false) manner.</param>
+		/// <returns>Either a new string without the specified suffix, or else the original string.</returns>
+		/// <exception cref="System.ArgumentNullException">Throw if either <paramref name="value"/> or <paramref name="suffix"/> is null.</exception>
+		/// <remarks>This overload is case sensitive. For a case insensitive version use <see cref="StripSuffix(string, string, bool)" /> with ignoreCase set to true.</remarks>
+		public static string StripSuffix(this string value, string suffix, bool ignoreCase)
+		{
+			if (value == null) throw new ArgumentNullException(nameof(value));
+			if (suffix == null) throw new ArgumentNullException(nameof(suffix));
+
+			if (value.EndsWith(suffix, ignoreCase ? StringComparison.CurrentCultureIgnoreCase : StringComparison.CurrentCulture))
+				return value.Substring(0, value.Length - suffix.Length);
+
+			return value;
+		}
+
+		/// <summary>
+		/// If <paramref name="value"/> ends with <paramref name="prefix"/> then returns a new string without the prefix, otherwise returns <paramref name="value"/>.
+		/// </summary>
+		/// <remarks>
+		/// <para>This overload is case sensitive. For a case insensitive version use <see cref="StripPrefix(string, string, bool)"/> with ignoreCase set to true.</para>
+		/// </remarks>
+		/// <param name="value">The value to strip the prefix from.</param>
+		/// <param name="prefix">The prefix to be stripped.</param>
+		/// <exception cref="System.ArgumentNullException">Throw if either <paramref name="value"/> or <paramref name="prefix"/> is null.</exception>
+		/// <returns>Either a new string without the specified prefix, or else the original string.</returns>
+		public static string StripPrefix(this string value, string prefix)
+		{
+			return StripPrefix(value, prefix, false);
+		}
+
+		/// <summary>
+		/// If <paramref name="value" /> ends with <paramref name="prefix" /> then returns a new string without the prefix, otherwise returns <paramref name="value" />.
+		/// </summary>
+		/// <param name="value">The value to strip the prefix from.</param>
+		/// <param name="prefix">The prefix to be stripped.</param>
+		/// <param name="ignoreCase">A boolean indicating whether or not to match the prefix in a case sensitive (true) or insensitive (false) manner.</param>
+		/// <returns>Either a new string without the specified prefix, or else the original string.</returns>
+		/// <exception cref="System.ArgumentNullException">Throw if either <paramref name="value"/> or <paramref name="prefix"/> is null.</exception>
+		/// <remarks>This overload is case sensitive. For a case insensitive version use <see cref="StripPrefix(string, string, bool)" /> with ignoreCase set to true.</remarks>
+		public static string StripPrefix(this string value, string prefix, bool ignoreCase)
+		{
+			if (value == null) throw new ArgumentNullException(nameof(value));
+			if (prefix == null) throw new ArgumentNullException(nameof(prefix));
+
+			if (value.StartsWith(prefix, ignoreCase ? StringComparison.CurrentCultureIgnoreCase : StringComparison.CurrentCulture))
+				return value.Substring(prefix.Length);
+
+			return value;
+		}
+
+		/// <summary>
+		/// If <paramref name="value"/> does NOT end with <paramref name="suffix"/> then returns a new string with the suffix appended, otherwise returns <paramref name="value"/>.
+		/// </summary>
+		/// <remarks>
+		/// <para>This overload is case sensitive. For a case insensitive version use <see cref="AddSuffix(string, string, bool)"/> with ignoreCase set to true.</para>
+		/// </remarks>
+		/// <param name="value">The value to add the suffix from.</param>
+		/// <param name="suffix">The suffix to be added.</param>
+		/// <exception cref="System.ArgumentNullException">Throw if either <paramref name="value"/> or <paramref name="suffix"/> is null.</exception>
+		/// <returns>Either a new string with the specified suffix, or else the original string.</returns>
+		public static string AddSuffix(this string value, string suffix)
+		{
+			return AddSuffix(value, suffix, false);
+		}
+
+		/// <summary>
+		/// If <paramref name="value"/> does NOT end with <paramref name="suffix"/> then returns a new string with the suffix appeneded, otherwise returns <paramref name="value"/>.
+		/// </summary>
+		/// <param name="value">The value to add the suffix from.</param>
+		/// <param name="suffix">The suffix to be added.</param>
+		/// <param name="ignoreCase">A boolean indicating whether or not to match the suffix in a case sensitive (true) or insensitive (false) manner.</param>
+		/// <returns>Either a new string with the specified suffix, or else the original string.</returns>
+		/// <exception cref="System.ArgumentNullException">Throw if either <paramref name="value"/> or <paramref name="suffix"/> is null.</exception>
+		/// <remarks>This overload is case sensitive. For a case insensitive version use <see cref="AddSuffix(string, string, bool)" /> with ignoreCase set to true.</remarks>
+		public static string AddSuffix(this string value, string suffix, bool ignoreCase)
+		{
+			if (value == null) throw new ArgumentNullException(nameof(value));
+			if (suffix == null) throw new ArgumentNullException(nameof(suffix));
+
+			if (!value.EndsWith(suffix, ignoreCase ? StringComparison.CurrentCultureIgnoreCase : StringComparison.CurrentCulture))
+				return value + suffix;
+
+			return value;
+		}
+
+		/// <summary>
+		/// If <paramref name="value"/> does NOT start with <paramref name="prefix"/> then returns a new string with the prefix, otherwise returns <paramref name="value"/>.
+		/// </summary>
+		/// <remarks>
+		/// <para>This overload is case sensitive. For a case insensitive version use <see cref="AddPrefix(string, string, bool)"/> with ignoreCase set to true.</para>
+		/// </remarks>
+		/// <param name="value">The value to add the prefix to.</param>
+		/// <param name="prefix">The prefix to be added.</param>
+		/// <exception cref="System.ArgumentNullException">Throw if either <paramref name="value"/> or <paramref name="prefix"/> is null.</exception>
+		/// <returns>Either a new string without the specified prefix, or else the original string.</returns>
+		public static string AddPrefix(this string value, string prefix)
+		{
+			return AddPrefix(value, prefix, false);
+		}
+
+		/// <summary>
+		/// If <paramref name="value" /> ends with <paramref name="prefix" /> then returns a new string without the prefix, otherwise returns <paramref name="value" />.
+		/// </summary>
+		/// <param name="value">The value to add the prefix to.</param>
+		/// <param name="prefix">The prefix to be added.</param>
+		/// <param name="ignoreCase">A boolean indicating whether or not to match the prefix in a case sensitive (true) or insensitive (false) manner.</param>
+		/// <returns>Either a new string without the specified prefix, or else the original string.</returns>
+		/// <exception cref="System.ArgumentNullException">Throw if either <paramref name="value"/> or <paramref name="prefix"/> is null.</exception>
+		/// <remarks>This overload is case sensitive. For a case insensitive version use <see cref="AddPrefix(string, string, bool)" /> with ignoreCase set to true.</remarks>
+		public static string AddPrefix(this string value, string prefix, bool ignoreCase)
+		{
+			if (value == null) throw new ArgumentNullException(nameof(value));
+			if (prefix == null) throw new ArgumentNullException(nameof(prefix));
+
+			if (!value.StartsWith(prefix, ignoreCase ? StringComparison.CurrentCultureIgnoreCase : StringComparison.CurrentCulture))
+				return prefix + value;
+
+			return value;
 		}
 
 	}
