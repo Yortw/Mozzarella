@@ -1,5 +1,5 @@
 # Mozzarella
-Because it's stringy, like the cheesse.
+Because it's stringy, like the cheese.
 
 ## What is it ?
 A library for dealing with strings in .Net. Contains extension methods, and useful string related functions.
