@@ -9,8 +9,6 @@ namespace Mozzarella
 	/// </summary>
 	public static class StringExtensions
 	{
-		//TODO: Case insensitive compare
-		//TODO: Case insensitive contains
 		//TODO: Case insensitive replace?
 		//TODO: IndexOfFirstDifference
 		//TODO: IsAllDigits
@@ -41,5 +39,46 @@ namespace Mozzarella
 			return value.Substring(0, maxLength);
 		}
 
+		/// <summary>
+		/// Performs a case *insensitive* comparison of two strings, returning a boolean indicating if they match.
+		/// </summary>
+		/// <remarks>
+		/// <para>This is equivalent to calling <see cref="String.Compare(string, string, StringComparison)"/> with the <see cref="StringComparison.CurrentCultureIgnoreCase"/> value and checking the value is equal to 0.</para>
+		/// </remarks>
+		/// <param name="value">The first value to compare.</param>
+		/// <param name="otherValue">The second value to compare.</param>
+		/// <returns><c>true</c> if the values are the same (ignoring case), <c>false</c> otherwise.</returns>
+		public static bool CIEquals(this string value, string otherValue)
+		{
+			return String.Compare(value, otherValue, StringComparison.CurrentCultureIgnoreCase) == 0;
+		}
+
+		/// <summary>
+		/// Performs a case *insensitive* comparison of two strings, returning an integer indicating if they match, or one is less than/greater than the other.
+		/// </summary>
+		/// <remarks>
+		/// <para>This is equivalent to calling <see cref="String.Compare(string, string, StringComparison)"/> with the <see cref="StringComparison.CurrentCultureIgnoreCase"/> value.</para>
+		/// </remarks>
+		/// <param name="value">The first value to compare.</param>
+		/// <param name="otherValue">The second value to compare.</param>
+		/// <returns>Zero if the values are the same, 1 if <paramref name="value"/> greater than <paramref name="otherValue"/>, else -1.</returns>
+		public static int CICompare(this string value, string otherValue)
+		{
+			return String.Compare(value, otherValue, StringComparison.CurrentCultureIgnoreCase);
+		}
+
+		/// <summary>
+		/// Returns true if <paramref name="value" /> contains the substring specified by <paramref name="searchValue" />, ignoring the case of both strings.
+		/// </summary>
+		/// <param name="value">The value to search in.</param>
+		/// <param name="searchValue">The string to search for.</param>
+		/// <returns><c>true</c> if <paramref name="value" /> contains the substring <paramref name="searchValue" />, <c>false</c> otherwise.</returns>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="value"/> is null.</exception>
+		public static bool CIContains(this string value, string searchValue)
+		{
+			if (value == null) throw new ArgumentNullException(nameof(value));
+
+			return value.IndexOf(searchValue, StringComparison.CurrentCultureIgnoreCase) >= 0;
+		}
 	}
 }
