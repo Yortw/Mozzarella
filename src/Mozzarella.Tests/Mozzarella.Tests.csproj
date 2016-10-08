@@ -57,6 +57,7 @@
     <Compile Include="CIReplaceTests.cs" />
     <Compile Include="EnumerableOfStringExtensionsTests.cs" />
     <Compile Include="ErasableStringTests.cs" />
+    <Compile Include="IndexOfFirstDifferenceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TruncateTests.cs" />
   </ItemGroup>

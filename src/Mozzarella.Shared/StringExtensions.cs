@@ -9,7 +9,6 @@ namespace Mozzarella
 	/// </summary>
 	public static class StringExtensions
 	{
-		//TODO: Case insensitive replace?
 		//TODO: IndexOfFirstDifference
 		//TODO: IsAllDigits
 		//TODO: Like?
@@ -43,14 +42,14 @@ namespace Mozzarella
 		/// Performs a case *insensitive* comparison of two strings, returning a boolean indicating if they match.
 		/// </summary>
 		/// <remarks>
-		/// <para>This is equivalent to calling <see cref="String.Compare(string, string, StringComparison)"/> with the <see cref="StringComparison.CurrentCultureIgnoreCase"/> value and checking the value is equal to 0.</para>
+		/// <para>This is equivalent to calling <see cref="String.Equals(string, string, StringComparison)"/> with the <see cref="StringComparison.CurrentCultureIgnoreCase"/> value.</para>
 		/// </remarks>
 		/// <param name="value">The first value to compare.</param>
 		/// <param name="otherValue">The second value to compare.</param>
 		/// <returns><c>true</c> if the values are the same (ignoring case), <c>false</c> otherwise.</returns>
 		public static bool CIEquals(this string value, string otherValue)
 		{
-			return String.Compare(value, otherValue, StringComparison.CurrentCultureIgnoreCase) == 0;
+			return String.Equals(value, otherValue, StringComparison.CurrentCultureIgnoreCase);
 		}
 
 		/// <summary>
@@ -103,12 +102,14 @@ namespace Mozzarella
 			if (newValueIsEmpty) newValue = newValue ?? String.Empty;
 
 			StringBuilder retVal = null;
+		
+			int initialCapacity = newValue.Length <= searchValue.Length ? value.Length : (value.Length / searchValue.Length) * (newValue.Length - searchValue.Length);
 
 			int index = -1, partLength = 0;
 			int startIndex = 0;
 			while (startIndex < value.Length && (index = value.IndexOf(searchValue, startIndex, StringComparison.CurrentCultureIgnoreCase)) >= 0)
 			{
-				if (retVal == null) retVal = new StringBuilder();
+				if (retVal == null) retVal = new StringBuilder(initialCapacity);
 
 				partLength = index - startIndex;
 				if (partLength > 0)
@@ -124,6 +125,31 @@ namespace Mozzarella
 				retVal.Append(value.Substring(startIndex, value.Length - startIndex));
 
 			return retVal?.ToString() ?? value;
+		}
+
+		/// <summary>
+		/// Returns the original character position of the first difference between two strings. If the strings are identical, returns -1.
+		/// </summary>
+		/// <param name="value">The first value to compare.</param>
+		/// <param name="otherValue">The other value to compare.</param>
+		/// <remarks>
+		/// <para>If <paramref name="otherValue"/> is longer than <paramref name="value"/> but matches up to the end of <paramref name="value"/> then the index returned will be outside the length of <paramref name="value"/>.</para>
+		/// </remarks>
+		/// <returns>A <see cref="System.Int32"/> containing the index of the first non-matching character, otherwise returns -1 if the strings are identical.</returns>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="value"/> or <paramref name="otherValue"/> is null.</exception>
+		public static int IndexOfFirstDifference(this string value, string otherValue)
+		{
+			if (value == null) throw new ArgumentNullException(nameof(value));
+			if (otherValue == null) throw new ArgumentNullException(nameof(otherValue));
+
+			for (int cnt = 0; cnt < value.Length; cnt++)
+			{
+				if (cnt >= otherValue.Length) return cnt;
+				
+				if (value[cnt] != otherValue[cnt]) return cnt;
+			}
+
+			return value.Length < otherValue.Length ? value.Length : -1;
 		}
 	}
 }
