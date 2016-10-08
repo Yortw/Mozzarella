@@ -16,9 +16,9 @@
         <tags>portable xamarin ios android windowsphone winrt uwp mobile string upnp netfx40 .net4</tags>
     </metadata>
     <files>
-        <file src="Mozzarella.NetStandard\bin\Release\Mozzarella.NetStandard10.dll" target="lib\netstandard1.0\Mozzarella.NetStandard10.dll" />
-        <file src="Mozzarella.NetStandard\bin\Release\Mozzarella.NetStandard10.pdb" target="lib\netstandard1.0\Mozzarella.NetStandard10.pdb" />
-        <file src="Mozzarella.NetStandard\bin\Release\Mozzarella.NetStandard10.XML" target="lib\netstandard1.0\Mozzarella.NetStandard10.XML" />
+        <file src="Mozzarella.NetStandard\bin\Release\Mozzarella.NetStandard11.dll" target="lib\netstandard1.1\Mozzarella.NetStandard11.dll" />
+        <file src="Mozzarella.NetStandard\bin\Release\Mozzarella.NetStandard11.pdb" target="lib\netstandard1.1\Mozzarella.NetStandard11.pdb" />
+        <file src="Mozzarella.NetStandard\bin\Release\Mozzarella.NetStandard11.XML" target="lib\netstandard1.1\Mozzarella.NetStandard11.XML" />
         <file src="Mozzarella.Portable\bin\Release\Mozzarella.Portable.dll" target="lib\netstandard1.0\Mozzarella.Portable.dll" />
         <file src="Mozzarella.Portable\bin\Release\Mozzarella.Portable.pdb" target="lib\netstandard1.0\Mozzarella.Portable.pdb" />
         <file src="Mozzarella.Portable\bin\Release\Mozzarella.Portable.XML" target="lib\netstandard1.0\Mozzarella.Portable.XML" />
