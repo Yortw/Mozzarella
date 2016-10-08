@@ -80,5 +80,50 @@ namespace Mozzarella
 
 			return value.IndexOf(searchValue, StringComparison.CurrentCultureIgnoreCase) >= 0;
 		}
+
+		/// <summary>
+		/// Replaces all instances of a substring in a given string with another.
+		/// </summary>
+		/// <param name="value">The value to replace the substring in.</param>
+		/// <param name="searchValue">The substring to be replaced.</param>
+		/// <param name="newValue">The new substring to use.</param>
+		/// <returns>A <see cref="System.String"/> containing the replaced parts.</returns>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="value"/> is null.</exception>
+		public static string CIReplace(this string value, string searchValue, string newValue)
+		{
+			if (value == null) throw new ArgumentNullException(nameof(value));
+			if (String.IsNullOrEmpty(searchValue)) return value;
+			if (value.Length == 0) return value;
+			if (value.Length < (searchValue?.Length ?? 0)) return value;
+			if (value == searchValue) return newValue;
+
+			//Existing string.replace treats null and empty as the same thing,
+			//so keep that behaviour.
+			var newValueIsEmpty = String.IsNullOrEmpty(newValue);
+			if (newValueIsEmpty) newValue = newValue ?? String.Empty;
+
+			StringBuilder retVal = null;
+
+			int index = -1, partLength = 0;
+			int startIndex = 0;
+			while (startIndex < value.Length && (index = value.IndexOf(searchValue, startIndex, StringComparison.CurrentCultureIgnoreCase)) >= 0)
+			{
+				if (retVal == null) retVal = new StringBuilder();
+
+				partLength = index - startIndex;
+				if (partLength > 0)
+					retVal.Append(value.Substring(startIndex, partLength));
+
+				if (!newValueIsEmpty)
+					retVal.Append(newValue);
+
+				startIndex = index + searchValue.Length;
+			}
+
+			if (retVal != null && startIndex < value.Length)
+				retVal.Append(value.Substring(startIndex, value.Length - startIndex));
+
+			return retVal?.ToString() ?? value;
+		}
 	}
 }
