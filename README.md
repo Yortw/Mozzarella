@@ -9,9 +9,9 @@ Currently;
 
 * .Net Framework 4.0
 * Silverlight 5.0
-* NetStandard 1.0
+* NetStandard 1.1
     * .Net Framework 4.5+
-    * Windows Phone Silverlight (8.0+) 
+    * Windows Phone 8.0+ (NOT WP SL though) 
     * Xamarin.iOS 
     * Xamarin.Android
     * WinRT

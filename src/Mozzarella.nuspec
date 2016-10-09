@@ -13,7 +13,7 @@
         <description>A library for doing stuff with strings in .Net.</description>
         <copyright>Copyright 2016</copyright>
         <language>en-AU</language>
-        <tags>portable xamarin ios android windowsphone winrt uwp mobile string upnp netfx40 .net4</tags>
+        <tags>portable xamarin ios android windowsphone winrt uwp mobile string mozzarella upnp netfx40 .net4</tags>
     </metadata>
     <files>
         <file src="Mozzarella.NetStandard\bin\Release\Mozzarella.NetStandard11.dll" target="lib\netstandard1.1\Mozzarella.NetStandard11.dll" />
