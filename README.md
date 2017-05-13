@@ -4,6 +4,8 @@ Because it's stringy, like the cheese.
 ## What is it ?
 A library for dealing with strings in .Net. Contains extension methods, and useful string related functions.
 
+[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/Yortw/Mozzarella/blob/master/LICENSE.md) 
+
 ## Supported Platforms
 Currently;
 
