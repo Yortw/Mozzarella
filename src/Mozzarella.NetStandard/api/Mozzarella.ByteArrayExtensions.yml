@@ -1,0 +1,543 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mozzarella.ByteArrayExtensions
+  commentId: T:Mozzarella.ByteArrayExtensions
+  id: ByteArrayExtensions
+  parent: Mozzarella
+  children:
+  - Mozzarella.ByteArrayExtensions.AsString(System.Byte[])
+  - Mozzarella.ByteArrayExtensions.AsString(System.Byte[],System.Text.Encoding)
+  - Mozzarella.ByteArrayExtensions.ToHexString(System.Byte[])
+  langs:
+  - csharp
+  - vb
+  name: ByteArrayExtensions
+  nameWithType: ByteArrayExtensions
+  fullName: Mozzarella.ByteArrayExtensions
+  type: Class
+  source:
+    id: ByteArrayExtensions
+    path: ''
+    startLine: 205
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nExtensions for byte arrays.\n"
+  example: []
+  syntax:
+    content: public static class ByteArrayExtensions
+    content.vb: Public Module ByteArrayExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Mozzarella.ByteArrayExtensions.AsString(System.Byte[])
+  commentId: M:Mozzarella.ByteArrayExtensions.AsString(System.Byte[])
+  id: AsString(System.Byte[])
+  isExtensionMethod: true
+  parent: Mozzarella.ByteArrayExtensions
+  langs:
+  - csharp
+  - vb
+  name: AsString(Byte[])
+  nameWithType: ByteArrayExtensions.AsString(Byte[])
+  fullName: Mozzarella.ByteArrayExtensions.AsString(System.Byte[])
+  type: Method
+  source:
+    id: AsString
+    path: ''
+    startLine: 215
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns a string created by converting <code data-dev-comment-type=\"paramref\" class=\"paramref\">buffer</code> to UTF8 characters.\n"
+  example: []
+  syntax:
+    content: public static string AsString(this byte[] buffer)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: The byte array to convert.
+    return:
+      type: System.String
+      description: Returns a <xref href="System.String" data-throw-if-not-resolved="false"></xref>.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AsString(buffer As Byte()) As String
+  overload: Mozzarella.ByteArrayExtensions.AsString*
+  nameWithType.vb: ByteArrayExtensions.AsString(Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mozzarella.ByteArrayExtensions.AsString(System.Byte())
+  name.vb: AsString(Byte())
+- uid: Mozzarella.ByteArrayExtensions.AsString(System.Byte[],System.Text.Encoding)
+  commentId: M:Mozzarella.ByteArrayExtensions.AsString(System.Byte[],System.Text.Encoding)
+  id: AsString(System.Byte[],System.Text.Encoding)
+  isExtensionMethod: true
+  parent: Mozzarella.ByteArrayExtensions
+  langs:
+  - csharp
+  - vb
+  name: AsString(Byte[], Encoding)
+  nameWithType: ByteArrayExtensions.AsString(Byte[], Encoding)
+  fullName: Mozzarella.ByteArrayExtensions.AsString(System.Byte[], System.Text.Encoding)
+  type: Method
+  source:
+    id: AsString
+    path: ''
+    startLine: 227
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns a string created by converting <code data-dev-comment-type=\"paramref\" class=\"paramref\">buffer</code> to a string using the specified encoding.\n"
+  example: []
+  syntax:
+    content: public static string AsString(this byte[] buffer, Encoding encoding)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: The byte array to convert.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The text encoding used to convert the buffer to a string.
+    return:
+      type: System.String
+      description: Returns a <xref href="System.String" data-throw-if-not-resolved="false"></xref>.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AsString(buffer As Byte(), encoding As Encoding) As String
+  overload: Mozzarella.ByteArrayExtensions.AsString*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">buffer</code> or <code data-dev-comment-type="paramref" class="paramref">encoding</code> is null.
+  nameWithType.vb: ByteArrayExtensions.AsString(Byte(), Encoding)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mozzarella.ByteArrayExtensions.AsString(System.Byte(), System.Text.Encoding)
+  name.vb: AsString(Byte(), Encoding)
+- uid: Mozzarella.ByteArrayExtensions.ToHexString(System.Byte[])
+  commentId: M:Mozzarella.ByteArrayExtensions.ToHexString(System.Byte[])
+  id: ToHexString(System.Byte[])
+  isExtensionMethod: true
+  parent: Mozzarella.ByteArrayExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToHexString(Byte[])
+  nameWithType: ByteArrayExtensions.ToHexString(Byte[])
+  fullName: Mozzarella.ByteArrayExtensions.ToHexString(System.Byte[])
+  type: Method
+  source:
+    id: ToHexString
+    path: ''
+    startLine: 244
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nConverts a byte array into a string containing it&apos;s hexadecimal representation.\n"
+  example: []
+  syntax:
+    content: public static string ToHexString(this byte[] values)
+    parameters:
+    - id: values
+      type: System.Byte[]
+      description: The bytes to convert.
+    return:
+      type: System.String
+      description: A string containing the hexadecimal representation of the bytes.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToHexString(values As Byte()) As String
+  overload: Mozzarella.ByteArrayExtensions.ToHexString*
+  nameWithType.vb: ByteArrayExtensions.ToHexString(Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mozzarella.ByteArrayExtensions.ToHexString(System.Byte())
+  name.vb: ToHexString(Byte())
+references:
+- uid: Mozzarella
+  commentId: N:Mozzarella
+  isExternal: false
+  name: Mozzarella
+  nameWithType: Mozzarella
+  fullName: Mozzarella
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mozzarella.ByteArrayExtensions.AsString*
+  commentId: Overload:Mozzarella.ByteArrayExtensions.AsString
+  isExternal: false
+  name: AsString
+  nameWithType: ByteArrayExtensions.AsString
+  fullName: Mozzarella.ByteArrayExtensions.AsString
+- uid: System.Byte[]
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.Text.Encoding
+  commentId: T:System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  name: Encoding
+  nameWithType: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: false
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+- uid: Mozzarella.ByteArrayExtensions.ToHexString*
+  commentId: Overload:Mozzarella.ByteArrayExtensions.ToHexString
+  isExternal: false
+  name: ToHexString
+  nameWithType: ByteArrayExtensions.ToHexString
+  fullName: Mozzarella.ByteArrayExtensions.ToHexString

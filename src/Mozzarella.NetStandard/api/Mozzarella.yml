@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mozzarella
+  commentId: N:Mozzarella
+  id: Mozzarella
+  children:
+  - Mozzarella.ByteArrayExtensions
+  - Mozzarella.EnumerableOfStringExtensions
+  - Mozzarella.ErasableString
+  - Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: Mozzarella
+  nameWithType: Mozzarella
+  fullName: Mozzarella
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: Mozzarella.ErasableString
+  commentId: T:Mozzarella.ErasableString
+  isExternal: false
+  name: ErasableString
+  nameWithType: ErasableString
+  fullName: Mozzarella.ErasableString
+- uid: Mozzarella.ByteArrayExtensions
+  commentId: T:Mozzarella.ByteArrayExtensions
+  isExternal: false
+  name: ByteArrayExtensions
+  nameWithType: ByteArrayExtensions
+  fullName: Mozzarella.ByteArrayExtensions
+- uid: Mozzarella.EnumerableOfStringExtensions
+  commentId: T:Mozzarella.EnumerableOfStringExtensions
+  isExternal: false
+  name: EnumerableOfStringExtensions
+  nameWithType: EnumerableOfStringExtensions
+  fullName: Mozzarella.EnumerableOfStringExtensions
+- uid: Mozzarella.StringExtensions
+  commentId: T:Mozzarella.StringExtensions
+  isExternal: false
+  name: StringExtensions
+  nameWithType: StringExtensions
+  fullName: Mozzarella.StringExtensions

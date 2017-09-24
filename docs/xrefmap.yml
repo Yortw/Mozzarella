@@ -1,0 +1,336 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Mozzarella
+  name: Mozzarella
+  href: api/Mozzarella.html
+  commentId: N:Mozzarella
+  fullName: Mozzarella
+  nameWithType: Mozzarella
+- uid: Mozzarella.ByteArrayExtensions
+  name: ByteArrayExtensions
+  href: api/Mozzarella.ByteArrayExtensions.html
+  commentId: T:Mozzarella.ByteArrayExtensions
+  fullName: Mozzarella.ByteArrayExtensions
+  nameWithType: ByteArrayExtensions
+- uid: Mozzarella.ByteArrayExtensions.AsString(System.Byte[])
+  name: AsString(Byte[])
+  href: api/Mozzarella.ByteArrayExtensions.AsString.html#Mozzarella_ByteArrayExtensions_AsString_System_Byte___
+  commentId: M:Mozzarella.ByteArrayExtensions.AsString(System.Byte[])
+  name.vb: AsString(Byte())
+  fullName: Mozzarella.ByteArrayExtensions.AsString(System.Byte[])
+  fullName.vb: Mozzarella.ByteArrayExtensions.AsString(System.Byte())
+  nameWithType: ByteArrayExtensions.AsString(Byte[])
+  nameWithType.vb: ByteArrayExtensions.AsString(Byte())
+- uid: Mozzarella.ByteArrayExtensions.AsString(System.Byte[],System.Text.Encoding)
+  name: AsString(Byte[], Encoding)
+  href: api/Mozzarella.ByteArrayExtensions.AsString.html#Mozzarella_ByteArrayExtensions_AsString_System_Byte___System_Text_Encoding_
+  commentId: M:Mozzarella.ByteArrayExtensions.AsString(System.Byte[],System.Text.Encoding)
+  name.vb: AsString(Byte(), Encoding)
+  fullName: Mozzarella.ByteArrayExtensions.AsString(System.Byte[], System.Text.Encoding)
+  fullName.vb: Mozzarella.ByteArrayExtensions.AsString(System.Byte(), System.Text.Encoding)
+  nameWithType: ByteArrayExtensions.AsString(Byte[], Encoding)
+  nameWithType.vb: ByteArrayExtensions.AsString(Byte(), Encoding)
+- uid: Mozzarella.ByteArrayExtensions.AsString*
+  name: AsString
+  href: api/Mozzarella.ByteArrayExtensions.AsString.html
+  commentId: Overload:Mozzarella.ByteArrayExtensions.AsString
+  fullName: Mozzarella.ByteArrayExtensions.AsString
+  nameWithType: ByteArrayExtensions.AsString
+- uid: Mozzarella.ByteArrayExtensions.ToHexString(System.Byte[])
+  name: ToHexString(Byte[])
+  href: api/Mozzarella.ByteArrayExtensions.ToHexString.html#Mozzarella_ByteArrayExtensions_ToHexString_System_Byte___
+  commentId: M:Mozzarella.ByteArrayExtensions.ToHexString(System.Byte[])
+  name.vb: ToHexString(Byte())
+  fullName: Mozzarella.ByteArrayExtensions.ToHexString(System.Byte[])
+  fullName.vb: Mozzarella.ByteArrayExtensions.ToHexString(System.Byte())
+  nameWithType: ByteArrayExtensions.ToHexString(Byte[])
+  nameWithType.vb: ByteArrayExtensions.ToHexString(Byte())
+- uid: Mozzarella.ByteArrayExtensions.ToHexString*
+  name: ToHexString
+  href: api/Mozzarella.ByteArrayExtensions.ToHexString.html
+  commentId: Overload:Mozzarella.ByteArrayExtensions.ToHexString
+  fullName: Mozzarella.ByteArrayExtensions.ToHexString
+  nameWithType: ByteArrayExtensions.ToHexString
+- uid: Mozzarella.EnumerableOfStringExtensions
+  name: EnumerableOfStringExtensions
+  href: api/Mozzarella.EnumerableOfStringExtensions.html
+  commentId: T:Mozzarella.EnumerableOfStringExtensions
+  fullName: Mozzarella.EnumerableOfStringExtensions
+  nameWithType: EnumerableOfStringExtensions
+- uid: Mozzarella.EnumerableOfStringExtensions.Coalesce(System.Collections.Generic.IEnumerable{System.String})
+  name: Coalesce(IEnumerable<String>)
+  href: api/Mozzarella.EnumerableOfStringExtensions.Coalesce.html#Mozzarella_EnumerableOfStringExtensions_Coalesce_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:Mozzarella.EnumerableOfStringExtensions.Coalesce(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Coalesce(IEnumerable(Of String))
+  fullName: Mozzarella.EnumerableOfStringExtensions.Coalesce(System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: Mozzarella.EnumerableOfStringExtensions.Coalesce(System.Collections.Generic.IEnumerable(Of System.String))
+  nameWithType: EnumerableOfStringExtensions.Coalesce(IEnumerable<String>)
+  nameWithType.vb: EnumerableOfStringExtensions.Coalesce(IEnumerable(Of String))
+- uid: Mozzarella.EnumerableOfStringExtensions.Coalesce(System.String[])
+  name: Coalesce(String[])
+  href: api/Mozzarella.EnumerableOfStringExtensions.Coalesce.html#Mozzarella_EnumerableOfStringExtensions_Coalesce_System_String___
+  commentId: M:Mozzarella.EnumerableOfStringExtensions.Coalesce(System.String[])
+  name.vb: Coalesce(String())
+  fullName: Mozzarella.EnumerableOfStringExtensions.Coalesce(System.String[])
+  fullName.vb: Mozzarella.EnumerableOfStringExtensions.Coalesce(System.String())
+  nameWithType: EnumerableOfStringExtensions.Coalesce(String[])
+  nameWithType.vb: EnumerableOfStringExtensions.Coalesce(String())
+- uid: Mozzarella.EnumerableOfStringExtensions.Coalesce*
+  name: Coalesce
+  href: api/Mozzarella.EnumerableOfStringExtensions.Coalesce.html
+  commentId: Overload:Mozzarella.EnumerableOfStringExtensions.Coalesce
+  fullName: Mozzarella.EnumerableOfStringExtensions.Coalesce
+  nameWithType: EnumerableOfStringExtensions.Coalesce
+- uid: Mozzarella.ErasableString
+  name: ErasableString
+  href: api/Mozzarella.ErasableString.html
+  commentId: T:Mozzarella.ErasableString
+  fullName: Mozzarella.ErasableString
+  nameWithType: ErasableString
+- uid: Mozzarella.ErasableString.#ctor(System.String)
+  name: ErasableString(String)
+  href: api/Mozzarella.ErasableString.-ctor.html#Mozzarella_ErasableString__ctor_System_String_
+  commentId: M:Mozzarella.ErasableString.#ctor(System.String)
+  fullName: Mozzarella.ErasableString.ErasableString(System.String)
+  nameWithType: ErasableString.ErasableString(String)
+- uid: Mozzarella.ErasableString.#ctor*
+  name: ErasableString
+  href: api/Mozzarella.ErasableString.-ctor.html
+  commentId: Overload:Mozzarella.ErasableString.#ctor
+  fullName: Mozzarella.ErasableString.ErasableString
+  nameWithType: ErasableString.ErasableString
+- uid: Mozzarella.ErasableString.Clear
+  name: Clear()
+  href: api/Mozzarella.ErasableString.Clear.html#Mozzarella_ErasableString_Clear
+  commentId: M:Mozzarella.ErasableString.Clear
+  fullName: Mozzarella.ErasableString.Clear()
+  nameWithType: ErasableString.Clear()
+- uid: Mozzarella.ErasableString.Clear*
+  name: Clear
+  href: api/Mozzarella.ErasableString.Clear.html
+  commentId: Overload:Mozzarella.ErasableString.Clear
+  fullName: Mozzarella.ErasableString.Clear
+  nameWithType: ErasableString.Clear
+- uid: Mozzarella.ErasableString.Dispose
+  name: Dispose()
+  href: api/Mozzarella.ErasableString.Dispose.html#Mozzarella_ErasableString_Dispose
+  commentId: M:Mozzarella.ErasableString.Dispose
+  fullName: Mozzarella.ErasableString.Dispose()
+  nameWithType: ErasableString.Dispose()
+- uid: Mozzarella.ErasableString.Dispose*
+  name: Dispose
+  href: api/Mozzarella.ErasableString.Dispose.html
+  commentId: Overload:Mozzarella.ErasableString.Dispose
+  fullName: Mozzarella.ErasableString.Dispose
+  nameWithType: ErasableString.Dispose
+- uid: Mozzarella.ErasableString.IsCleared
+  name: IsCleared
+  href: api/Mozzarella.ErasableString.IsCleared.html#Mozzarella_ErasableString_IsCleared
+  commentId: P:Mozzarella.ErasableString.IsCleared
+  fullName: Mozzarella.ErasableString.IsCleared
+  nameWithType: ErasableString.IsCleared
+- uid: Mozzarella.ErasableString.IsCleared*
+  name: IsCleared
+  href: api/Mozzarella.ErasableString.IsCleared.html
+  commentId: Overload:Mozzarella.ErasableString.IsCleared
+  fullName: Mozzarella.ErasableString.IsCleared
+  nameWithType: ErasableString.IsCleared
+- uid: Mozzarella.ErasableString.IsDisposed
+  name: IsDisposed
+  href: api/Mozzarella.ErasableString.IsDisposed.html#Mozzarella_ErasableString_IsDisposed
+  commentId: P:Mozzarella.ErasableString.IsDisposed
+  fullName: Mozzarella.ErasableString.IsDisposed
+  nameWithType: ErasableString.IsDisposed
+- uid: Mozzarella.ErasableString.IsDisposed*
+  name: IsDisposed
+  href: api/Mozzarella.ErasableString.IsDisposed.html
+  commentId: Overload:Mozzarella.ErasableString.IsDisposed
+  fullName: Mozzarella.ErasableString.IsDisposed
+  nameWithType: ErasableString.IsDisposed
+- uid: Mozzarella.ErasableString.Value
+  name: Value
+  href: api/Mozzarella.ErasableString.Value.html#Mozzarella_ErasableString_Value
+  commentId: P:Mozzarella.ErasableString.Value
+  fullName: Mozzarella.ErasableString.Value
+  nameWithType: ErasableString.Value
+- uid: Mozzarella.ErasableString.Value*
+  name: Value
+  href: api/Mozzarella.ErasableString.Value.html
+  commentId: Overload:Mozzarella.ErasableString.Value
+  fullName: Mozzarella.ErasableString.Value
+  nameWithType: ErasableString.Value
+- uid: Mozzarella.StringExtensions
+  name: StringExtensions
+  href: api/Mozzarella.StringExtensions.html
+  commentId: T:Mozzarella.StringExtensions
+  fullName: Mozzarella.StringExtensions
+  nameWithType: StringExtensions
+- uid: Mozzarella.StringExtensions.AddPrefix(System.String,System.String)
+  name: AddPrefix(String, String)
+  href: api/Mozzarella.StringExtensions.AddPrefix.html#Mozzarella_StringExtensions_AddPrefix_System_String_System_String_
+  commentId: M:Mozzarella.StringExtensions.AddPrefix(System.String,System.String)
+  fullName: Mozzarella.StringExtensions.AddPrefix(System.String, System.String)
+  nameWithType: StringExtensions.AddPrefix(String, String)
+- uid: Mozzarella.StringExtensions.AddPrefix(System.String,System.String,System.Boolean)
+  name: AddPrefix(String, String, Boolean)
+  href: api/Mozzarella.StringExtensions.AddPrefix.html#Mozzarella_StringExtensions_AddPrefix_System_String_System_String_System_Boolean_
+  commentId: M:Mozzarella.StringExtensions.AddPrefix(System.String,System.String,System.Boolean)
+  fullName: Mozzarella.StringExtensions.AddPrefix(System.String, System.String, System.Boolean)
+  nameWithType: StringExtensions.AddPrefix(String, String, Boolean)
+- uid: Mozzarella.StringExtensions.AddPrefix*
+  name: AddPrefix
+  href: api/Mozzarella.StringExtensions.AddPrefix.html
+  commentId: Overload:Mozzarella.StringExtensions.AddPrefix
+  fullName: Mozzarella.StringExtensions.AddPrefix
+  nameWithType: StringExtensions.AddPrefix
+- uid: Mozzarella.StringExtensions.AddSuffix(System.String,System.String)
+  name: AddSuffix(String, String)
+  href: api/Mozzarella.StringExtensions.AddSuffix.html#Mozzarella_StringExtensions_AddSuffix_System_String_System_String_
+  commentId: M:Mozzarella.StringExtensions.AddSuffix(System.String,System.String)
+  fullName: Mozzarella.StringExtensions.AddSuffix(System.String, System.String)
+  nameWithType: StringExtensions.AddSuffix(String, String)
+- uid: Mozzarella.StringExtensions.AddSuffix(System.String,System.String,System.Boolean)
+  name: AddSuffix(String, String, Boolean)
+  href: api/Mozzarella.StringExtensions.AddSuffix.html#Mozzarella_StringExtensions_AddSuffix_System_String_System_String_System_Boolean_
+  commentId: M:Mozzarella.StringExtensions.AddSuffix(System.String,System.String,System.Boolean)
+  fullName: Mozzarella.StringExtensions.AddSuffix(System.String, System.String, System.Boolean)
+  nameWithType: StringExtensions.AddSuffix(String, String, Boolean)
+- uid: Mozzarella.StringExtensions.AddSuffix*
+  name: AddSuffix
+  href: api/Mozzarella.StringExtensions.AddSuffix.html
+  commentId: Overload:Mozzarella.StringExtensions.AddSuffix
+  fullName: Mozzarella.StringExtensions.AddSuffix
+  nameWithType: StringExtensions.AddSuffix
+- uid: Mozzarella.StringExtensions.CICompare(System.String,System.String)
+  name: CICompare(String, String)
+  href: api/Mozzarella.StringExtensions.CICompare.html#Mozzarella_StringExtensions_CICompare_System_String_System_String_
+  commentId: M:Mozzarella.StringExtensions.CICompare(System.String,System.String)
+  fullName: Mozzarella.StringExtensions.CICompare(System.String, System.String)
+  nameWithType: StringExtensions.CICompare(String, String)
+- uid: Mozzarella.StringExtensions.CICompare*
+  name: CICompare
+  href: api/Mozzarella.StringExtensions.CICompare.html
+  commentId: Overload:Mozzarella.StringExtensions.CICompare
+  fullName: Mozzarella.StringExtensions.CICompare
+  nameWithType: StringExtensions.CICompare
+- uid: Mozzarella.StringExtensions.CIContains(System.String,System.String)
+  name: CIContains(String, String)
+  href: api/Mozzarella.StringExtensions.CIContains.html#Mozzarella_StringExtensions_CIContains_System_String_System_String_
+  commentId: M:Mozzarella.StringExtensions.CIContains(System.String,System.String)
+  fullName: Mozzarella.StringExtensions.CIContains(System.String, System.String)
+  nameWithType: StringExtensions.CIContains(String, String)
+- uid: Mozzarella.StringExtensions.CIContains*
+  name: CIContains
+  href: api/Mozzarella.StringExtensions.CIContains.html
+  commentId: Overload:Mozzarella.StringExtensions.CIContains
+  fullName: Mozzarella.StringExtensions.CIContains
+  nameWithType: StringExtensions.CIContains
+- uid: Mozzarella.StringExtensions.CIEquals(System.String,System.String)
+  name: CIEquals(String, String)
+  href: api/Mozzarella.StringExtensions.CIEquals.html#Mozzarella_StringExtensions_CIEquals_System_String_System_String_
+  commentId: M:Mozzarella.StringExtensions.CIEquals(System.String,System.String)
+  fullName: Mozzarella.StringExtensions.CIEquals(System.String, System.String)
+  nameWithType: StringExtensions.CIEquals(String, String)
+- uid: Mozzarella.StringExtensions.CIEquals*
+  name: CIEquals
+  href: api/Mozzarella.StringExtensions.CIEquals.html
+  commentId: Overload:Mozzarella.StringExtensions.CIEquals
+  fullName: Mozzarella.StringExtensions.CIEquals
+  nameWithType: StringExtensions.CIEquals
+- uid: Mozzarella.StringExtensions.CIReplace(System.String,System.String,System.String)
+  name: CIReplace(String, String, String)
+  href: api/Mozzarella.StringExtensions.CIReplace.html#Mozzarella_StringExtensions_CIReplace_System_String_System_String_System_String_
+  commentId: M:Mozzarella.StringExtensions.CIReplace(System.String,System.String,System.String)
+  fullName: Mozzarella.StringExtensions.CIReplace(System.String, System.String, System.String)
+  nameWithType: StringExtensions.CIReplace(String, String, String)
+- uid: Mozzarella.StringExtensions.CIReplace*
+  name: CIReplace
+  href: api/Mozzarella.StringExtensions.CIReplace.html
+  commentId: Overload:Mozzarella.StringExtensions.CIReplace
+  fullName: Mozzarella.StringExtensions.CIReplace
+  nameWithType: StringExtensions.CIReplace
+- uid: Mozzarella.StringExtensions.IndexOfFirstDifference(System.String,System.String)
+  name: IndexOfFirstDifference(String, String)
+  href: api/Mozzarella.StringExtensions.IndexOfFirstDifference.html#Mozzarella_StringExtensions_IndexOfFirstDifference_System_String_System_String_
+  commentId: M:Mozzarella.StringExtensions.IndexOfFirstDifference(System.String,System.String)
+  fullName: Mozzarella.StringExtensions.IndexOfFirstDifference(System.String, System.String)
+  nameWithType: StringExtensions.IndexOfFirstDifference(String, String)
+- uid: Mozzarella.StringExtensions.IndexOfFirstDifference*
+  name: IndexOfFirstDifference
+  href: api/Mozzarella.StringExtensions.IndexOfFirstDifference.html
+  commentId: Overload:Mozzarella.StringExtensions.IndexOfFirstDifference
+  fullName: Mozzarella.StringExtensions.IndexOfFirstDifference
+  nameWithType: StringExtensions.IndexOfFirstDifference
+- uid: Mozzarella.StringExtensions.IsAllDigits(System.String)
+  name: IsAllDigits(String)
+  href: api/Mozzarella.StringExtensions.IsAllDigits.html#Mozzarella_StringExtensions_IsAllDigits_System_String_
+  commentId: M:Mozzarella.StringExtensions.IsAllDigits(System.String)
+  fullName: Mozzarella.StringExtensions.IsAllDigits(System.String)
+  nameWithType: StringExtensions.IsAllDigits(String)
+- uid: Mozzarella.StringExtensions.IsAllDigits*
+  name: IsAllDigits
+  href: api/Mozzarella.StringExtensions.IsAllDigits.html
+  commentId: Overload:Mozzarella.StringExtensions.IsAllDigits
+  fullName: Mozzarella.StringExtensions.IsAllDigits
+  nameWithType: StringExtensions.IsAllDigits
+- uid: Mozzarella.StringExtensions.Like(System.String,System.String,System.Boolean)
+  name: Like(String, String, Boolean)
+  href: api/Mozzarella.StringExtensions.Like.html#Mozzarella_StringExtensions_Like_System_String_System_String_System_Boolean_
+  commentId: M:Mozzarella.StringExtensions.Like(System.String,System.String,System.Boolean)
+  fullName: Mozzarella.StringExtensions.Like(System.String, System.String, System.Boolean)
+  nameWithType: StringExtensions.Like(String, String, Boolean)
+- uid: Mozzarella.StringExtensions.Like*
+  name: Like
+  href: api/Mozzarella.StringExtensions.Like.html
+  commentId: Overload:Mozzarella.StringExtensions.Like
+  fullName: Mozzarella.StringExtensions.Like
+  nameWithType: StringExtensions.Like
+- uid: Mozzarella.StringExtensions.StripPrefix(System.String,System.String)
+  name: StripPrefix(String, String)
+  href: api/Mozzarella.StringExtensions.StripPrefix.html#Mozzarella_StringExtensions_StripPrefix_System_String_System_String_
+  commentId: M:Mozzarella.StringExtensions.StripPrefix(System.String,System.String)
+  fullName: Mozzarella.StringExtensions.StripPrefix(System.String, System.String)
+  nameWithType: StringExtensions.StripPrefix(String, String)
+- uid: Mozzarella.StringExtensions.StripPrefix(System.String,System.String,System.Boolean)
+  name: StripPrefix(String, String, Boolean)
+  href: api/Mozzarella.StringExtensions.StripPrefix.html#Mozzarella_StringExtensions_StripPrefix_System_String_System_String_System_Boolean_
+  commentId: M:Mozzarella.StringExtensions.StripPrefix(System.String,System.String,System.Boolean)
+  fullName: Mozzarella.StringExtensions.StripPrefix(System.String, System.String, System.Boolean)
+  nameWithType: StringExtensions.StripPrefix(String, String, Boolean)
+- uid: Mozzarella.StringExtensions.StripPrefix*
+  name: StripPrefix
+  href: api/Mozzarella.StringExtensions.StripPrefix.html
+  commentId: Overload:Mozzarella.StringExtensions.StripPrefix
+  fullName: Mozzarella.StringExtensions.StripPrefix
+  nameWithType: StringExtensions.StripPrefix
+- uid: Mozzarella.StringExtensions.StripSuffix(System.String,System.String)
+  name: StripSuffix(String, String)
+  href: api/Mozzarella.StringExtensions.StripSuffix.html#Mozzarella_StringExtensions_StripSuffix_System_String_System_String_
+  commentId: M:Mozzarella.StringExtensions.StripSuffix(System.String,System.String)
+  fullName: Mozzarella.StringExtensions.StripSuffix(System.String, System.String)
+  nameWithType: StringExtensions.StripSuffix(String, String)
+- uid: Mozzarella.StringExtensions.StripSuffix(System.String,System.String,System.Boolean)
+  name: StripSuffix(String, String, Boolean)
+  href: api/Mozzarella.StringExtensions.StripSuffix.html#Mozzarella_StringExtensions_StripSuffix_System_String_System_String_System_Boolean_
+  commentId: M:Mozzarella.StringExtensions.StripSuffix(System.String,System.String,System.Boolean)
+  fullName: Mozzarella.StringExtensions.StripSuffix(System.String, System.String, System.Boolean)
+  nameWithType: StringExtensions.StripSuffix(String, String, Boolean)
+- uid: Mozzarella.StringExtensions.StripSuffix*
+  name: StripSuffix
+  href: api/Mozzarella.StringExtensions.StripSuffix.html
+  commentId: Overload:Mozzarella.StringExtensions.StripSuffix
+  fullName: Mozzarella.StringExtensions.StripSuffix
+  nameWithType: StringExtensions.StripSuffix
+- uid: Mozzarella.StringExtensions.Truncate(System.String,System.Int32)
+  name: Truncate(String, Int32)
+  href: api/Mozzarella.StringExtensions.Truncate.html#Mozzarella_StringExtensions_Truncate_System_String_System_Int32_
+  commentId: M:Mozzarella.StringExtensions.Truncate(System.String,System.Int32)
+  fullName: Mozzarella.StringExtensions.Truncate(System.String, System.Int32)
+  nameWithType: StringExtensions.Truncate(String, Int32)
+- uid: Mozzarella.StringExtensions.Truncate*
+  name: Truncate
+  href: api/Mozzarella.StringExtensions.Truncate.html
+  commentId: Overload:Mozzarella.StringExtensions.Truncate
+  fullName: Mozzarella.StringExtensions.Truncate
+  nameWithType: StringExtensions.Truncate

@@ -1,0 +1,648 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mozzarella.ErasableString
+  commentId: T:Mozzarella.ErasableString
+  id: ErasableString
+  parent: Mozzarella
+  children:
+  - Mozzarella.ErasableString.#ctor(System.String)
+  - Mozzarella.ErasableString.Clear
+  - Mozzarella.ErasableString.Dispose
+  - Mozzarella.ErasableString.IsCleared
+  - Mozzarella.ErasableString.IsDisposed
+  - Mozzarella.ErasableString.Value
+  langs:
+  - csharp
+  - vb
+  name: ErasableString
+  nameWithType: ErasableString
+  fullName: Mozzarella.ErasableString
+  type: Class
+  source:
+    id: ErasableString
+    path: ''
+    startLine: 15
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nRepresents a string that is pinned in memory and can be overwritten when finished with, limiting the time where the stored value can be obtained.\n"
+  remarks: "\n<p>In theory this improves (but does not guarantee) security by reducing the amount of time an unencrypted string value is available in memory. No guarantees or promises are made about the security provided by this class.</p>\n<p>Note, failure to explicitly dispose this class will reduce/eliminate it&apos;s effectiveness. <xref href=\"Mozzarella.ErasableString.Dispose\" data-throw-if-not-resolved=\"false\"></xref> should be called as early as possible, but no earlier.</p>\n<p>Available only in projects using the .Net Standard 1.1 or later Mozzarella assembly, NOT supported in the &apos;portable&apos; version.</p>\n"
+  example: []
+  syntax:
+    content: 'public sealed class ErasableString : IDisposable'
+    content.vb: >-
+      Public NotInheritable Class ErasableString
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Mozzarella.ErasableString.#ctor(System.String)
+  commentId: M:Mozzarella.ErasableString.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Mozzarella.ErasableString
+  langs:
+  - csharp
+  - vb
+  name: ErasableString(String)
+  nameWithType: ErasableString.ErasableString(String)
+  fullName: Mozzarella.ErasableString.ErasableString(System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 34
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nFull constructor.\n"
+  example: []
+  syntax:
+    content: public ErasableString(string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: The .Net string to manage, used as the return value for the <xref href="Mozzarella.ErasableString.Value" data-throw-if-not-resolved="false"></xref> property.
+    content.vb: Public Sub New(value As String)
+  overload: Mozzarella.ErasableString.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mozzarella.ErasableString.IsDisposed
+  commentId: P:Mozzarella.ErasableString.IsDisposed
+  id: IsDisposed
+  parent: Mozzarella.ErasableString
+  langs:
+  - csharp
+  - vb
+  name: IsDisposed
+  nameWithType: ErasableString.IsDisposed
+  fullName: Mozzarella.ErasableString.IsDisposed
+  type: Property
+  source:
+    id: IsDisposed
+    path: ''
+    startLine: 47
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns true if the <xref href=\"Mozzarella.ErasableString.Dispose\" data-throw-if-not-resolved=\"false\"></xref> method has been called.\n"
+  example: []
+  syntax:
+    content: public bool IsDisposed { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsDisposed As Boolean
+  overload: Mozzarella.ErasableString.IsDisposed*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Mozzarella.ErasableString.IsCleared
+  commentId: P:Mozzarella.ErasableString.IsCleared
+  id: IsCleared
+  parent: Mozzarella.ErasableString
+  langs:
+  - csharp
+  - vb
+  name: IsCleared
+  nameWithType: ErasableString.IsCleared
+  fullName: Mozzarella.ErasableString.IsCleared
+  type: Property
+  source:
+    id: IsCleared
+    path: ''
+    startLine: 55
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns true if the <xref href=\"Mozzarella.ErasableString.Clear\" data-throw-if-not-resolved=\"false\"></xref> method has been called.\n"
+  example: []
+  syntax:
+    content: public bool IsCleared { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsCleared As Boolean
+  overload: Mozzarella.ErasableString.IsCleared*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Mozzarella.ErasableString.Value
+  commentId: P:Mozzarella.ErasableString.Value
+  id: Value
+  parent: Mozzarella.ErasableString
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: ErasableString.Value
+  fullName: Mozzarella.ErasableString.Value
+  type: Property
+  source:
+    id: Value
+    path: ''
+    startLine: 63
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns the value of the string. This will be a string of character zero, for the length of the original string, if it has been cleared.\n"
+  example: []
+  syntax:
+    content: public string Value { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Value As String
+  overload: Mozzarella.ErasableString.Value*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Mozzarella.ErasableString.Clear
+  commentId: M:Mozzarella.ErasableString.Clear
+  id: Clear
+  parent: Mozzarella.ErasableString
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: ErasableString.Clear()
+  fullName: Mozzarella.ErasableString.Clear()
+  type: Method
+  source:
+    id: Clear
+    path: ''
+    startLine: 80
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nOverwrites the string value contained by this instance with a series of character zero values.\n"
+  example: []
+  syntax:
+    content: >-
+      [SecurityCritical]
+
+      public void Clear()
+    content.vb: >-
+      <SecurityCritical>
+
+      Public Sub Clear
+  overload: Mozzarella.ErasableString.Clear*
+  attributes:
+  - type: System.Security.SecurityCriticalAttribute
+    ctor: System.Security.SecurityCriticalAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mozzarella.ErasableString.Dispose
+  commentId: M:Mozzarella.ErasableString.Dispose
+  id: Dispose
+  parent: Mozzarella.ErasableString
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: ErasableString.Dispose()
+  fullName: Mozzarella.ErasableString.Dispose()
+  type: Method
+  source:
+    id: Dispose
+    path: ''
+    startLine: 120
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nDisposes this instance.\n"
+  remarks: "\n<p>Clears the string if the <xref href=\"Mozzarella.ErasableString.Clear\" data-throw-if-not-resolved=\"false\"></xref> method has not already been called, and unpins the wrapped string in memory.</p>\n"
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: Mozzarella.ErasableString.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mozzarella.ErasableString.Dispose
+  commentId: M:Mozzarella.ErasableString.Dispose
+- uid: Mozzarella
+  commentId: N:Mozzarella
+  isExternal: false
+  name: Mozzarella
+  nameWithType: Mozzarella
+  fullName: Mozzarella
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mozzarella.ErasableString.Value
+  commentId: P:Mozzarella.ErasableString.Value
+- uid: Mozzarella.ErasableString.#ctor*
+  commentId: Overload:Mozzarella.ErasableString.#ctor
+  isExternal: false
+  name: ErasableString
+  nameWithType: ErasableString.ErasableString
+  fullName: Mozzarella.ErasableString.ErasableString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mozzarella.ErasableString.IsDisposed*
+  commentId: Overload:Mozzarella.ErasableString.IsDisposed
+  isExternal: false
+  name: IsDisposed
+  nameWithType: ErasableString.IsDisposed
+  fullName: Mozzarella.ErasableString.IsDisposed
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Mozzarella.ErasableString.Clear
+  commentId: M:Mozzarella.ErasableString.Clear
+- uid: Mozzarella.ErasableString.IsCleared*
+  commentId: Overload:Mozzarella.ErasableString.IsCleared
+  isExternal: false
+  name: IsCleared
+  nameWithType: ErasableString.IsCleared
+  fullName: Mozzarella.ErasableString.IsCleared
+- uid: Mozzarella.ErasableString.Value*
+  commentId: Overload:Mozzarella.ErasableString.Value
+  isExternal: false
+  name: Value
+  nameWithType: ErasableString.Value
+  fullName: Mozzarella.ErasableString.Value
+- uid: Mozzarella.ErasableString.Clear*
+  commentId: Overload:Mozzarella.ErasableString.Clear
+  isExternal: false
+  name: Clear
+  nameWithType: ErasableString.Clear
+  fullName: Mozzarella.ErasableString.Clear
+- uid: Mozzarella.ErasableString.Dispose*
+  commentId: Overload:Mozzarella.ErasableString.Dispose
+  isExternal: false
+  name: Dispose
+  nameWithType: ErasableString.Dispose
+  fullName: Mozzarella.ErasableString.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

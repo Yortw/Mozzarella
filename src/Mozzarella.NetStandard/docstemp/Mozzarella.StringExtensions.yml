@@ -1,0 +1,1260 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mozzarella.StringExtensions
+  commentId: T:Mozzarella.StringExtensions
+  id: StringExtensions
+  parent: Mozzarella
+  children:
+  - Mozzarella.StringExtensions.AddPrefix(System.String,System.String)
+  - Mozzarella.StringExtensions.AddPrefix(System.String,System.String,System.Boolean)
+  - Mozzarella.StringExtensions.AddSuffix(System.String,System.String)
+  - Mozzarella.StringExtensions.AddSuffix(System.String,System.String,System.Boolean)
+  - Mozzarella.StringExtensions.CICompare(System.String,System.String)
+  - Mozzarella.StringExtensions.CIContains(System.String,System.String)
+  - Mozzarella.StringExtensions.CIEquals(System.String,System.String)
+  - Mozzarella.StringExtensions.CIReplace(System.String,System.String,System.String)
+  - Mozzarella.StringExtensions.IndexOfFirstDifference(System.String,System.String)
+  - Mozzarella.StringExtensions.IsAllDigits(System.String)
+  - Mozzarella.StringExtensions.Like(System.String,System.String,System.Boolean)
+  - Mozzarella.StringExtensions.StripPrefix(System.String,System.String)
+  - Mozzarella.StringExtensions.StripPrefix(System.String,System.String,System.Boolean)
+  - Mozzarella.StringExtensions.StripSuffix(System.String,System.String)
+  - Mozzarella.StringExtensions.StripSuffix(System.String,System.String,System.Boolean)
+  - Mozzarella.StringExtensions.Truncate(System.String,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: StringExtensions
+  nameWithType: StringExtensions
+  fullName: Mozzarella.StringExtensions
+  type: Class
+  source:
+    id: StringExtensions
+    path: ''
+    startLine: 309
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nExtension methods for <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static class StringExtensions
+    content.vb: Public Module StringExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Mozzarella.StringExtensions.Truncate(System.String,System.Int32)
+  commentId: M:Mozzarella.StringExtensions.Truncate(System.String,System.Int32)
+  id: Truncate(System.String,System.Int32)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: Truncate(String, Int32)
+  nameWithType: StringExtensions.Truncate(String, Int32)
+  fullName: Mozzarella.StringExtensions.Truncate(System.String, System.Int32)
+  type: Method
+  source:
+    id: Truncate
+    path: ''
+    startLine: 322
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nIf <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> is longer than <code data-dev-comment-type=\"paramref\" class=\"paramref\">maxLength</code> it is truncated at that character position, otherwise the original string is returned.\n"
+  remarks: "\n<p>If value is null, null is returned. If <code data-dev-comment-type=\"paramref\" class=\"paramref\">maxLength</code> is zero, <xref href=\"System.String.Empty\" data-throw-if-not-resolved=\"false\"></xref> is returned.</p>\n"
+  example: []
+  syntax:
+    content: public static string Truncate(this string value, int maxLength)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to truncate.
+    - id: maxLength
+      type: System.Int32
+      description: The the point at which to truncate the string, if it exceeds that length.
+    return:
+      type: System.String
+      description: A <xref href="System.String" data-throw-if-not-resolved="false"></xref> that is no longer than <code data-dev-comment-type="paramref" class="paramref">maxLength</code>.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Truncate(value As String, maxLength As Integer) As String
+  overload: Mozzarella.StringExtensions.Truncate*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">maxLength</code> is less than 0.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.CIEquals(System.String,System.String)
+  commentId: M:Mozzarella.StringExtensions.CIEquals(System.String,System.String)
+  id: CIEquals(System.String,System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: CIEquals(String, String)
+  nameWithType: StringExtensions.CIEquals(String, String)
+  fullName: Mozzarella.StringExtensions.CIEquals(System.String, System.String)
+  type: Method
+  source:
+    id: CIEquals
+    path: ''
+    startLine: 341
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nPerforms a case *insensitive* comparison of two strings, returning a boolean indicating if they match.\n"
+  remarks: "\n<p>This is equivalent to calling <xref href=\"System.String.Equals(System.String%2cSystem.String%2cSystem.StringComparison)\" data-throw-if-not-resolved=\"false\"></xref> with the <xref href=\"System.StringComparison.CurrentCultureIgnoreCase\" data-throw-if-not-resolved=\"false\"></xref> value.</p>\n"
+  example: []
+  syntax:
+    content: public static bool CIEquals(this string value, string otherValue)
+    parameters:
+    - id: value
+      type: System.String
+      description: The first value to compare.
+    - id: otherValue
+      type: System.String
+      description: The second value to compare.
+    return:
+      type: System.Boolean
+      description: <code>true</code> if the values are the same (ignoring case), <code>false</code> otherwise.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function CIEquals(value As String, otherValue As String) As Boolean
+  overload: Mozzarella.StringExtensions.CIEquals*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.CICompare(System.String,System.String)
+  commentId: M:Mozzarella.StringExtensions.CICompare(System.String,System.String)
+  id: CICompare(System.String,System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: CICompare(String, String)
+  nameWithType: StringExtensions.CICompare(String, String)
+  fullName: Mozzarella.StringExtensions.CICompare(System.String, System.String)
+  type: Method
+  source:
+    id: CICompare
+    path: ''
+    startLine: 355
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nPerforms a case *insensitive* comparison of two strings, returning an integer indicating if they match, or one is less than/greater than the other.\n"
+  remarks: "\n<p>This is equivalent to calling <xref href=\"System.String.Compare(System.String%2cSystem.String%2cSystem.StringComparison)\" data-throw-if-not-resolved=\"false\"></xref> with the <xref href=\"System.StringComparison.CurrentCultureIgnoreCase\" data-throw-if-not-resolved=\"false\"></xref> value.</p>\n"
+  example: []
+  syntax:
+    content: public static int CICompare(this string value, string otherValue)
+    parameters:
+    - id: value
+      type: System.String
+      description: The first value to compare.
+    - id: otherValue
+      type: System.String
+      description: The second value to compare.
+    return:
+      type: System.Int32
+      description: Zero if the values are the same, 1 if <code data-dev-comment-type="paramref" class="paramref">value</code> greater than <code data-dev-comment-type="paramref" class="paramref">otherValue</code>, else -1.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function CICompare(value As String, otherValue As String) As Integer
+  overload: Mozzarella.StringExtensions.CICompare*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.CIContains(System.String,System.String)
+  commentId: M:Mozzarella.StringExtensions.CIContains(System.String,System.String)
+  id: CIContains(System.String,System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: CIContains(String, String)
+  nameWithType: StringExtensions.CIContains(String, String)
+  fullName: Mozzarella.StringExtensions.CIContains(System.String, System.String)
+  type: Method
+  source:
+    id: CIContains
+    path: ''
+    startLine: 367
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns true if <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> contains the substring specified by <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code>, ignoring the case of both strings.\n"
+  example: []
+  syntax:
+    content: public static bool CIContains(this string value, string searchValue)
+    parameters:
+    - id: value
+      type: System.String
+      description: The value to search in.
+    - id: searchValue
+      type: System.String
+      description: The string to search for.
+    return:
+      type: System.Boolean
+      description: <code>true</code> if <code data-dev-comment-type="paramref" class="paramref">value</code> contains the substring <code data-dev-comment-type="paramref" class="paramref">searchValue</code>, <code>false</code> otherwise.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function CIContains(value As String, searchValue As String) As Boolean
+  overload: Mozzarella.StringExtensions.CIContains*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">value</code> is null.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.CIReplace(System.String,System.String,System.String)
+  commentId: M:Mozzarella.StringExtensions.CIReplace(System.String,System.String,System.String)
+  id: CIReplace(System.String,System.String,System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: CIReplace(String, String, String)
+  nameWithType: StringExtensions.CIReplace(String, String, String)
+  fullName: Mozzarella.StringExtensions.CIReplace(System.String, System.String, System.String)
+  type: Method
+  source:
+    id: CIReplace
+    path: ''
+    startLine: 382
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReplaces all instances of a substring in a given string with another.\n"
+  example: []
+  syntax:
+    content: public static string CIReplace(this string value, string searchValue, string newValue)
+    parameters:
+    - id: value
+      type: System.String
+      description: The value to replace the substring in.
+    - id: searchValue
+      type: System.String
+      description: The substring to be replaced.
+    - id: newValue
+      type: System.String
+      description: The new substring to use.
+    return:
+      type: System.String
+      description: A <xref href="System.String" data-throw-if-not-resolved="false"></xref> containing the replaced parts.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function CIReplace(value As String, searchValue As String, newValue As String) As String
+  overload: Mozzarella.StringExtensions.CIReplace*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">value</code> is null.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.IndexOfFirstDifference(System.String,System.String)
+  commentId: M:Mozzarella.StringExtensions.IndexOfFirstDifference(System.String,System.String)
+  id: IndexOfFirstDifference(System.String,System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IndexOfFirstDifference(String, String)
+  nameWithType: StringExtensions.IndexOfFirstDifference(String, String)
+  fullName: Mozzarella.StringExtensions.IndexOfFirstDifference(System.String, System.String)
+  type: Method
+  source:
+    id: IndexOfFirstDifference
+    path: ''
+    startLine: 431
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns the original character position of the first difference between two strings. If the strings are identical, returns -1.\n"
+  remarks: "\n<p>If <code data-dev-comment-type=\"paramref\" class=\"paramref\">otherValue</code> is longer than <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> but matches up to the end of <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> then the index returned will be outside the length of <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code>.</p>\n"
+  example: []
+  syntax:
+    content: public static int IndexOfFirstDifference(this string value, string otherValue)
+    parameters:
+    - id: value
+      type: System.String
+      description: The first value to compare.
+    - id: otherValue
+      type: System.String
+      description: The other value to compare.
+    return:
+      type: System.Int32
+      description: A <xref href="System.Int32" data-throw-if-not-resolved="false"></xref> containing the index of the first non-matching character, otherwise returns -1 if the strings are identical.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IndexOfFirstDifference(value As String, otherValue As String) As Integer
+  overload: Mozzarella.StringExtensions.IndexOfFirstDifference*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">value</code> or <code data-dev-comment-type="paramref" class="paramref">otherValue</code> is null.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.IsAllDigits(System.String)
+  commentId: M:Mozzarella.StringExtensions.IsAllDigits(System.String)
+  id: IsAllDigits(System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsAllDigits(String)
+  nameWithType: StringExtensions.IsAllDigits(String)
+  fullName: Mozzarella.StringExtensions.IsAllDigits(System.String)
+  type: Method
+  source:
+    id: IsAllDigits
+    path: ''
+    startLine: 455
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nDetermines whether <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> contains only numeric digits.\n"
+  remarks: "\n<p>If <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> is an empty string the return value is false.</p>\n"
+  example: []
+  syntax:
+    content: public static bool IsAllDigits(this string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to check the contents of.
+    return:
+      type: System.Boolean
+      description: <code>true</code> if <code data-dev-comment-type="paramref" class="paramref">value</code> contains only numeric digits; otherwise, <code>false</code>.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsAllDigits(value As String) As Boolean
+  overload: Mozzarella.StringExtensions.IsAllDigits*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">value</code> is null.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.Like(System.String,System.String,System.Boolean)
+  commentId: M:Mozzarella.StringExtensions.Like(System.String,System.String,System.Boolean)
+  id: Like(System.String,System.String,System.Boolean)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: Like(String, String, Boolean)
+  nameWithType: StringExtensions.Like(String, String, Boolean)
+  fullName: Mozzarella.StringExtensions.Like(System.String, System.String, System.Boolean)
+  type: Method
+  source:
+    id: Like
+    path: ''
+    startLine: 480
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nPerforms an operation similar to a T-Sql &apos;like&apos; on a string.\n"
+  remarks: "\n<p>Use % as a wildcard for any character or characters, and _ as a wild card for any single character.</p>\n<p>This method is &apos;allocation heavy&apos;. It&apos;s fine for use in execution paths that are infrequent/not performance critical, but in other \nsuch places a fine tuned manual implementation would be better.</p>\n"
+  example: []
+  syntax:
+    content: public static bool Like(this string value, string pattern, bool caseInsensitive)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to search.
+    - id: pattern
+      type: System.String
+      description: The partial string to match, including wild cards.
+    - id: caseInsensitive
+      type: System.Boolean
+      description: If true case is ignored when matching strings, if false case sensitivity applies.
+    return:
+      type: System.Boolean
+      description: True if the partial string to match is found in the <code data-dev-comment-type="paramref" class="paramref">value</code> string.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Like(value As String, pattern As String, caseInsensitive As Boolean) As Boolean
+  overload: Mozzarella.StringExtensions.Like*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">value</code> or <code data-dev-comment-type="paramref" class="paramref">pattern</code> is null.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.StripSuffix(System.String,System.String)
+  commentId: M:Mozzarella.StringExtensions.StripSuffix(System.String,System.String)
+  id: StripSuffix(System.String,System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: StripSuffix(String, String)
+  nameWithType: StringExtensions.StripSuffix(String, String)
+  fullName: Mozzarella.StringExtensions.StripSuffix(System.String, System.String)
+  type: Method
+  source:
+    id: StripSuffix
+    path: ''
+    startLine: 509
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nIf <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> ends with <code data-dev-comment-type=\"paramref\" class=\"paramref\">suffix</code> then returns a new string without the suffix, otherwise returns <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code>.\n"
+  remarks: "\n<p>This overload is case sensitive. For a case insensitive version use <xref href=\"Mozzarella.StringExtensions.StripSuffix(System.String%2cSystem.String%2cSystem.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> with ignoreCase set to true.</p>\n"
+  example: []
+  syntax:
+    content: public static string StripSuffix(this string value, string suffix)
+    parameters:
+    - id: value
+      type: System.String
+      description: The value to strip the suffix from.
+    - id: suffix
+      type: System.String
+      description: The suffix to be stripped.
+    return:
+      type: System.String
+      description: Either a new string without the specified suffix, or else the original string.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function StripSuffix(value As String, suffix As String) As String
+  overload: Mozzarella.StringExtensions.StripSuffix*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Throw if either <code data-dev-comment-type="paramref" class="paramref">value</code> or <code data-dev-comment-type="paramref" class="paramref">suffix</code> is null.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.StripSuffix(System.String,System.String,System.Boolean)
+  commentId: M:Mozzarella.StringExtensions.StripSuffix(System.String,System.String,System.Boolean)
+  id: StripSuffix(System.String,System.String,System.Boolean)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: StripSuffix(String, String, Boolean)
+  nameWithType: StringExtensions.StripSuffix(String, String, Boolean)
+  fullName: Mozzarella.StringExtensions.StripSuffix(System.String, System.String, System.Boolean)
+  type: Method
+  source:
+    id: StripSuffix
+    path: ''
+    startLine: 523
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nIf <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> ends with <code data-dev-comment-type=\"paramref\" class=\"paramref\">suffix</code> then returns a new string without the suffix, otherwise returns <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code>.\n"
+  remarks: This overload is case sensitive. For a case insensitive version use <xref href="Mozzarella.StringExtensions.StripSuffix(System.String%2cSystem.String%2cSystem.Boolean)" data-throw-if-not-resolved="false"></xref> with ignoreCase set to true.
+  example: []
+  syntax:
+    content: public static string StripSuffix(this string value, string suffix, bool ignoreCase)
+    parameters:
+    - id: value
+      type: System.String
+      description: The value to strip the suffix from.
+    - id: suffix
+      type: System.String
+      description: The suffix to be stripped.
+    - id: ignoreCase
+      type: System.Boolean
+      description: A boolean indicating whether or not to match the suffix in a case sensitive (true) or insensitive (false) manner.
+    return:
+      type: System.String
+      description: Either a new string without the specified suffix, or else the original string.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function StripSuffix(value As String, suffix As String, ignoreCase As Boolean) As String
+  overload: Mozzarella.StringExtensions.StripSuffix*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Throw if either <code data-dev-comment-type="paramref" class="paramref">value</code> or <code data-dev-comment-type="paramref" class="paramref">suffix</code> is null.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.StripPrefix(System.String,System.String)
+  commentId: M:Mozzarella.StringExtensions.StripPrefix(System.String,System.String)
+  id: StripPrefix(System.String,System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: StripPrefix(String, String)
+  nameWithType: StringExtensions.StripPrefix(String, String)
+  fullName: Mozzarella.StringExtensions.StripPrefix(System.String, System.String)
+  type: Method
+  source:
+    id: StripPrefix
+    path: ''
+    startLine: 544
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nIf <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> ends with <code data-dev-comment-type=\"paramref\" class=\"paramref\">prefix</code> then returns a new string without the prefix, otherwise returns <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code>.\n"
+  remarks: "\n<p>This overload is case sensitive. For a case insensitive version use <xref href=\"Mozzarella.StringExtensions.StripPrefix(System.String%2cSystem.String%2cSystem.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> with ignoreCase set to true.</p>\n"
+  example: []
+  syntax:
+    content: public static string StripPrefix(this string value, string prefix)
+    parameters:
+    - id: value
+      type: System.String
+      description: The value to strip the prefix from.
+    - id: prefix
+      type: System.String
+      description: The prefix to be stripped.
+    return:
+      type: System.String
+      description: Either a new string without the specified prefix, or else the original string.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function StripPrefix(value As String, prefix As String) As String
+  overload: Mozzarella.StringExtensions.StripPrefix*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Throw if either <code data-dev-comment-type="paramref" class="paramref">value</code> or <code data-dev-comment-type="paramref" class="paramref">prefix</code> is null.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.StripPrefix(System.String,System.String,System.Boolean)
+  commentId: M:Mozzarella.StringExtensions.StripPrefix(System.String,System.String,System.Boolean)
+  id: StripPrefix(System.String,System.String,System.Boolean)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: StripPrefix(String, String, Boolean)
+  nameWithType: StringExtensions.StripPrefix(String, String, Boolean)
+  fullName: Mozzarella.StringExtensions.StripPrefix(System.String, System.String, System.Boolean)
+  type: Method
+  source:
+    id: StripPrefix
+    path: ''
+    startLine: 558
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nIf <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> ends with <code data-dev-comment-type=\"paramref\" class=\"paramref\">prefix</code> then returns a new string without the prefix, otherwise returns <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code>.\n"
+  remarks: This overload is case sensitive. For a case insensitive version use <xref href="Mozzarella.StringExtensions.StripPrefix(System.String%2cSystem.String%2cSystem.Boolean)" data-throw-if-not-resolved="false"></xref> with ignoreCase set to true.
+  example: []
+  syntax:
+    content: public static string StripPrefix(this string value, string prefix, bool ignoreCase)
+    parameters:
+    - id: value
+      type: System.String
+      description: The value to strip the prefix from.
+    - id: prefix
+      type: System.String
+      description: The prefix to be stripped.
+    - id: ignoreCase
+      type: System.Boolean
+      description: A boolean indicating whether or not to match the prefix in a case sensitive (true) or insensitive (false) manner.
+    return:
+      type: System.String
+      description: Either a new string without the specified prefix, or else the original string.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function StripPrefix(value As String, prefix As String, ignoreCase As Boolean) As String
+  overload: Mozzarella.StringExtensions.StripPrefix*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Throw if either <code data-dev-comment-type="paramref" class="paramref">value</code> or <code data-dev-comment-type="paramref" class="paramref">prefix</code> is null.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.AddSuffix(System.String,System.String)
+  commentId: M:Mozzarella.StringExtensions.AddSuffix(System.String,System.String)
+  id: AddSuffix(System.String,System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddSuffix(String, String)
+  nameWithType: StringExtensions.AddSuffix(String, String)
+  fullName: Mozzarella.StringExtensions.AddSuffix(System.String, System.String)
+  type: Method
+  source:
+    id: AddSuffix
+    path: ''
+    startLine: 579
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nIf <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> does NOT end with <code data-dev-comment-type=\"paramref\" class=\"paramref\">suffix</code> then returns a new string with the suffix appended, otherwise returns <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code>.\n"
+  remarks: "\n<p>This overload is case sensitive. For a case insensitive version use <xref href=\"Mozzarella.StringExtensions.AddSuffix(System.String%2cSystem.String%2cSystem.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> with ignoreCase set to true.</p>\n"
+  example: []
+  syntax:
+    content: public static string AddSuffix(this string value, string suffix)
+    parameters:
+    - id: value
+      type: System.String
+      description: The value to add the suffix from.
+    - id: suffix
+      type: System.String
+      description: The suffix to be added.
+    return:
+      type: System.String
+      description: Either a new string with the specified suffix, or else the original string.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddSuffix(value As String, suffix As String) As String
+  overload: Mozzarella.StringExtensions.AddSuffix*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Throw if either <code data-dev-comment-type="paramref" class="paramref">value</code> or <code data-dev-comment-type="paramref" class="paramref">suffix</code> is null.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.AddSuffix(System.String,System.String,System.Boolean)
+  commentId: M:Mozzarella.StringExtensions.AddSuffix(System.String,System.String,System.Boolean)
+  id: AddSuffix(System.String,System.String,System.Boolean)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddSuffix(String, String, Boolean)
+  nameWithType: StringExtensions.AddSuffix(String, String, Boolean)
+  fullName: Mozzarella.StringExtensions.AddSuffix(System.String, System.String, System.Boolean)
+  type: Method
+  source:
+    id: AddSuffix
+    path: ''
+    startLine: 593
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nIf <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> does NOT end with <code data-dev-comment-type=\"paramref\" class=\"paramref\">suffix</code> then returns a new string with the suffix appended, otherwise returns <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code>.\n"
+  remarks: This overload is case sensitive. For a case insensitive version use <xref href="Mozzarella.StringExtensions.AddSuffix(System.String%2cSystem.String%2cSystem.Boolean)" data-throw-if-not-resolved="false"></xref> with ignoreCase set to true.
+  example: []
+  syntax:
+    content: public static string AddSuffix(this string value, string suffix, bool ignoreCase)
+    parameters:
+    - id: value
+      type: System.String
+      description: The value to add the suffix from.
+    - id: suffix
+      type: System.String
+      description: The suffix to be added.
+    - id: ignoreCase
+      type: System.Boolean
+      description: A boolean indicating whether or not to match the suffix in a case sensitive (true) or insensitive (false) manner.
+    return:
+      type: System.String
+      description: Either a new string with the specified suffix, or else the original string.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddSuffix(value As String, suffix As String, ignoreCase As Boolean) As String
+  overload: Mozzarella.StringExtensions.AddSuffix*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Throw if either <code data-dev-comment-type="paramref" class="paramref">value</code> or <code data-dev-comment-type="paramref" class="paramref">suffix</code> is null.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.AddPrefix(System.String,System.String)
+  commentId: M:Mozzarella.StringExtensions.AddPrefix(System.String,System.String)
+  id: AddPrefix(System.String,System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddPrefix(String, String)
+  nameWithType: StringExtensions.AddPrefix(String, String)
+  fullName: Mozzarella.StringExtensions.AddPrefix(System.String, System.String)
+  type: Method
+  source:
+    id: AddPrefix
+    path: ''
+    startLine: 614
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nIf <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> does NOT start with <code data-dev-comment-type=\"paramref\" class=\"paramref\">prefix</code> then returns a new string with the prefix, otherwise returns <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code>.\n"
+  remarks: "\n<p>This overload is case sensitive. For a case insensitive version use <xref href=\"Mozzarella.StringExtensions.AddPrefix(System.String%2cSystem.String%2cSystem.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> with ignoreCase set to true.</p>\n"
+  example: []
+  syntax:
+    content: public static string AddPrefix(this string value, string prefix)
+    parameters:
+    - id: value
+      type: System.String
+      description: The value to add the prefix to.
+    - id: prefix
+      type: System.String
+      description: The prefix to be added.
+    return:
+      type: System.String
+      description: Either a new string without the specified prefix, or else the original string.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddPrefix(value As String, prefix As String) As String
+  overload: Mozzarella.StringExtensions.AddPrefix*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Throw if either <code data-dev-comment-type="paramref" class="paramref">value</code> or <code data-dev-comment-type="paramref" class="paramref">prefix</code> is null.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.AddPrefix(System.String,System.String,System.Boolean)
+  commentId: M:Mozzarella.StringExtensions.AddPrefix(System.String,System.String,System.Boolean)
+  id: AddPrefix(System.String,System.String,System.Boolean)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddPrefix(String, String, Boolean)
+  nameWithType: StringExtensions.AddPrefix(String, String, Boolean)
+  fullName: Mozzarella.StringExtensions.AddPrefix(System.String, System.String, System.Boolean)
+  type: Method
+  source:
+    id: AddPrefix
+    path: ''
+    startLine: 628
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nIf <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> ends with <code data-dev-comment-type=\"paramref\" class=\"paramref\">prefix</code> then returns a new string without the prefix, otherwise returns <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code>.\n"
+  remarks: This overload is case sensitive. For a case insensitive version use <xref href="Mozzarella.StringExtensions.AddPrefix(System.String%2cSystem.String%2cSystem.Boolean)" data-throw-if-not-resolved="false"></xref> with ignoreCase set to true.
+  example: []
+  syntax:
+    content: public static string AddPrefix(this string value, string prefix, bool ignoreCase)
+    parameters:
+    - id: value
+      type: System.String
+      description: The value to add the prefix to.
+    - id: prefix
+      type: System.String
+      description: The prefix to be added.
+    - id: ignoreCase
+      type: System.Boolean
+      description: A boolean indicating whether or not to match the prefix in a case sensitive (true) or insensitive (false) manner.
+    return:
+      type: System.String
+      description: Either a new string without the specified prefix, or else the original string.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddPrefix(value As String, prefix As String, ignoreCase As Boolean) As String
+  overload: Mozzarella.StringExtensions.AddPrefix*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Throw if either <code data-dev-comment-type="paramref" class="paramref">value</code> or <code data-dev-comment-type="paramref" class="paramref">prefix</code> is null.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mozzarella
+  commentId: N:Mozzarella
+  isExternal: false
+  name: Mozzarella
+  nameWithType: Mozzarella
+  fullName: Mozzarella
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String.Empty
+  commentId: F:System.String.Empty
+- uid: Mozzarella.StringExtensions.Truncate*
+  commentId: Overload:Mozzarella.StringExtensions.Truncate
+  isExternal: false
+  name: Truncate
+  nameWithType: StringExtensions.Truncate
+  fullName: Mozzarella.StringExtensions.Truncate
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.String.Equals(System.String,System.String,System.StringComparison)
+  commentId: M:System.String.Equals(System.String,System.String,System.StringComparison)
+- uid: System.StringComparison.CurrentCultureIgnoreCase
+  commentId: F:System.StringComparison.CurrentCultureIgnoreCase
+- uid: Mozzarella.StringExtensions.CIEquals*
+  commentId: Overload:Mozzarella.StringExtensions.CIEquals
+  isExternal: false
+  name: CIEquals
+  nameWithType: StringExtensions.CIEquals
+  fullName: Mozzarella.StringExtensions.CIEquals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.String.Compare(System.String,System.String,System.StringComparison)
+  commentId: M:System.String.Compare(System.String,System.String,System.StringComparison)
+- uid: Mozzarella.StringExtensions.CICompare*
+  commentId: Overload:Mozzarella.StringExtensions.CICompare
+  isExternal: false
+  name: CICompare
+  nameWithType: StringExtensions.CICompare
+  fullName: Mozzarella.StringExtensions.CICompare
+- uid: Mozzarella.StringExtensions.CIContains*
+  commentId: Overload:Mozzarella.StringExtensions.CIContains
+  isExternal: false
+  name: CIContains
+  nameWithType: StringExtensions.CIContains
+  fullName: Mozzarella.StringExtensions.CIContains
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: Mozzarella.StringExtensions.CIReplace*
+  commentId: Overload:Mozzarella.StringExtensions.CIReplace
+  isExternal: false
+  name: CIReplace
+  nameWithType: StringExtensions.CIReplace
+  fullName: Mozzarella.StringExtensions.CIReplace
+- uid: Mozzarella.StringExtensions.IndexOfFirstDifference*
+  commentId: Overload:Mozzarella.StringExtensions.IndexOfFirstDifference
+  isExternal: false
+  name: IndexOfFirstDifference
+  nameWithType: StringExtensions.IndexOfFirstDifference
+  fullName: Mozzarella.StringExtensions.IndexOfFirstDifference
+- uid: Mozzarella.StringExtensions.IsAllDigits*
+  commentId: Overload:Mozzarella.StringExtensions.IsAllDigits
+  isExternal: false
+  name: IsAllDigits
+  nameWithType: StringExtensions.IsAllDigits
+  fullName: Mozzarella.StringExtensions.IsAllDigits
+- uid: Mozzarella.StringExtensions.Like*
+  commentId: Overload:Mozzarella.StringExtensions.Like
+  isExternal: false
+  name: Like
+  nameWithType: StringExtensions.Like
+  fullName: Mozzarella.StringExtensions.Like
+- uid: Mozzarella.StringExtensions.StripSuffix(System.String,System.String,System.Boolean)
+  commentId: M:Mozzarella.StringExtensions.StripSuffix(System.String,System.String,System.Boolean)
+- uid: Mozzarella.StringExtensions.StripSuffix*
+  commentId: Overload:Mozzarella.StringExtensions.StripSuffix
+  isExternal: false
+  name: StripSuffix
+  nameWithType: StringExtensions.StripSuffix
+  fullName: Mozzarella.StringExtensions.StripSuffix
+- uid: Mozzarella.StringExtensions.StripPrefix(System.String,System.String,System.Boolean)
+  commentId: M:Mozzarella.StringExtensions.StripPrefix(System.String,System.String,System.Boolean)
+- uid: Mozzarella.StringExtensions.StripPrefix*
+  commentId: Overload:Mozzarella.StringExtensions.StripPrefix
+  isExternal: false
+  name: StripPrefix
+  nameWithType: StringExtensions.StripPrefix
+  fullName: Mozzarella.StringExtensions.StripPrefix
+- uid: Mozzarella.StringExtensions.AddSuffix(System.String,System.String,System.Boolean)
+  commentId: M:Mozzarella.StringExtensions.AddSuffix(System.String,System.String,System.Boolean)
+- uid: Mozzarella.StringExtensions.AddSuffix*
+  commentId: Overload:Mozzarella.StringExtensions.AddSuffix
+  isExternal: false
+  name: AddSuffix
+  nameWithType: StringExtensions.AddSuffix
+  fullName: Mozzarella.StringExtensions.AddSuffix
+- uid: Mozzarella.StringExtensions.AddPrefix(System.String,System.String,System.Boolean)
+  commentId: M:Mozzarella.StringExtensions.AddPrefix(System.String,System.String,System.Boolean)
+- uid: Mozzarella.StringExtensions.AddPrefix*
+  commentId: Overload:Mozzarella.StringExtensions.AddPrefix
+  isExternal: false
+  name: AddPrefix
+  nameWithType: StringExtensions.AddPrefix
+  fullName: Mozzarella.StringExtensions.AddPrefix

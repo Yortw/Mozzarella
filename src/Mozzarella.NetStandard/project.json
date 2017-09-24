@@ -1,8 +1,11 @@
 ﻿{
   "supports": {},
   "dependencies": {
+    "docfx.console": "2.24.0",
+    "memberpage": "2.24.0",
+    "memberpage.plugins": "2.24.0",
     "Microsoft.NETCore.Portable.Compatibility": "1.0.1",
-    "NETStandard.Library": "1.6.0"
+    "NETStandard.Library": "2.0.0"
   },
   "frameworks": {
     "netstandard1.1": {}
