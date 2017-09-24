@@ -164,6 +164,24 @@
                                   <a href="Mozzarella.StringExtensions.Like.html" title="Like" class="">Like</a>
                                 </li>
                                 <li class="">
+                                  <a href="Mozzarella.StringExtensions.OCICompare.html" title="OCICompare" class="">OCICompare</a>
+                                </li>
+                                <li class="">
+                                  <a href="Mozzarella.StringExtensions.OCIContains.html" title="OCIContains" class="">OCIContains</a>
+                                </li>
+                                <li class="">
+                                  <a href="Mozzarella.StringExtensions.OCIEquals.html" title="OCIEquals" class="">OCIEquals</a>
+                                </li>
+                                <li class="">
+                                  <a href="Mozzarella.StringExtensions.OCIReplace.html" title="OCIReplace" class="">OCIReplace</a>
+                                </li>
+                                <li class="">
+                                  <a href="Mozzarella.StringExtensions.OEquals.html" title="OEquals" class="">OEquals</a>
+                                </li>
+                                <li class="">
+                                  <a href="Mozzarella.StringExtensions.Replace.html" title="Replace" class="">Replace</a>
+                                </li>
+                                <li class="">
                                   <a href="Mozzarella.StringExtensions.StripPrefix.html" title="StripPrefix" class="">StripPrefix</a>
                                 </li>
                                 <li class="">
@@ -287,7 +305,7 @@
         <td id="Mozzarella_StringExtensions_CIReplace_System_String_System_String_System_String_" data-uid="Mozzarella.StringExtensions.CIReplace(System.String,System.String,System.String)">
           <a class="xref" href="Mozzarella.StringExtensions.CIReplace.html#Mozzarella_StringExtensions_CIReplace_System_String_System_String_System_String_">CIReplace(String, String, String)</a>
         </td>
-        <td class="markdown level1 summary"><p>Replaces all instances of a substring in a given string with another.</p>
+        <td class="markdown level1 summary"><p>Replaces all instances of a substring in a given string with another using a case insensitve, current culture based comparisoon.</p>
 </td>
       </tr>
       <tr>
@@ -309,6 +327,48 @@
           <a class="xref" href="Mozzarella.StringExtensions.Like.html#Mozzarella_StringExtensions_Like_System_String_System_String_System_Boolean_">Like(String, String, Boolean)</a>
         </td>
         <td class="markdown level1 summary"><p>Performs an operation similar to a T-Sql &apos;like&apos; on a string.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Mozzarella_StringExtensions_OCICompare_System_String_System_String_" data-uid="Mozzarella.StringExtensions.OCICompare(System.String,System.String)">
+          <a class="xref" href="Mozzarella.StringExtensions.OCICompare.html#Mozzarella_StringExtensions_OCICompare_System_String_System_String_">OCICompare(String, String)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Performs a case <em>insensitive</em> ordinal comparison of two strings, returning an integer indicating if they match, or one is less than/greater than the other.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Mozzarella_StringExtensions_OCIContains_System_String_System_String_" data-uid="Mozzarella.StringExtensions.OCIContains(System.String,System.String)">
+          <a class="xref" href="Mozzarella.StringExtensions.OCIContains.html#Mozzarella_StringExtensions_OCIContains_System_String_System_String_">OCIContains(String, String)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns true if <code data-dev-comment-type="paramref" class="paramref">value</code> contains the substring specified by <code data-dev-comment-type="paramref" class="paramref">searchValue</code>, ignoring the case of both strings and using an ordinal comparison.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Mozzarella_StringExtensions_OCIEquals_System_String_System_String_" data-uid="Mozzarella.StringExtensions.OCIEquals(System.String,System.String)">
+          <a class="xref" href="Mozzarella.StringExtensions.OCIEquals.html#Mozzarella_StringExtensions_OCIEquals_System_String_System_String_">OCIEquals(String, String)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Performs an &quot;ordinal&quot; and case <em>insensitive</em> comparison of two strings, returning a boolean indicating if they match. </p>
+</td>
+      </tr>
+      <tr>
+        <td id="Mozzarella_StringExtensions_OCIReplace_System_String_System_String_System_String_" data-uid="Mozzarella.StringExtensions.OCIReplace(System.String,System.String,System.String)">
+          <a class="xref" href="Mozzarella.StringExtensions.OCIReplace.html#Mozzarella_StringExtensions_OCIReplace_System_String_System_String_System_String_">OCIReplace(String, String, String)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Replaces all instances of a substring in a given string with another using an ordinal and case insenstive comparison.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Mozzarella_StringExtensions_OEquals_System_String_System_String_" data-uid="Mozzarella.StringExtensions.OEquals(System.String,System.String)">
+          <a class="xref" href="Mozzarella.StringExtensions.OEquals.html#Mozzarella_StringExtensions_OEquals_System_String_System_String_">OEquals(String, String)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Performs an &quot;ordinal&quot; comparison of two strings, returning a boolean indicating if they match. </p>
+</td>
+      </tr>
+      <tr>
+        <td id="Mozzarella_StringExtensions_Replace_System_String_System_String_System_String_System_StringComparison_" data-uid="Mozzarella.StringExtensions.Replace(System.String,System.String,System.String,System.StringComparison)">
+          <a class="xref" href="Mozzarella.StringExtensions.Replace.html#Mozzarella_StringExtensions_Replace_System_String_System_String_System_String_System_StringComparison_">Replace(String, String, String, StringComparison)</a>
+        </td>
+        <td class="markdown level1 summary"><p>An overload for <span class="xref">System.String.Replace(System.String,System.String)</span> which allows manually specifying the <span class="xref">System.StringComparison</span> to use when locating the <code data-dev-comment-type="paramref" class="paramref">searchValue</code> within <code data-dev-comment-type="paramref" class="paramref">value</code>.</p>
 </td>
       </tr>
       <tr>

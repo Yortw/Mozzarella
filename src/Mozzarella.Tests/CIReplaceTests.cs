@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +18,6 @@ namespace Mozzarella.Tests
 
 			Assert.AreEqual(expected, test.CIReplace("AnD", ","));
 		}
-
 
 		[TestMethod]
 		public void StringExtensions_CIReplace_ReplacesStartOfString()
@@ -99,6 +98,15 @@ namespace Mozzarella.Tests
 			var expected = "lots of stuff";
 
 			Assert.AreEqual(expected, test.CIReplace(test, expected));
+		}
+
+		[TestMethod]
+		public void StringExtensions_CIReplace_ReplacesWhenSubstringCulturallySimilarButOrdinallyDifferent()
+		{
+			var test = "Our house, in the middle of the Straße";
+			var expected = "Our house, in the middle of the street";
+
+			Assert.AreEqual(expected, test.CIReplace("strasse", "street"));
 		}
 
 	}

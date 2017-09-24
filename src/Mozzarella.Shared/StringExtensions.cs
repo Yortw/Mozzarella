@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -32,6 +32,34 @@ namespace Mozzarella
 		}
 
 		/// <summary>
+		/// Performs an "ordinal" and case *insensitive* comparison of two strings, returning a boolean indicating if they match. 
+		/// </summary>
+		/// <remarks>
+		/// <para>This is equivalent to calling <see cref="String.Equals(string, string, StringComparison)"/> with the <see cref="StringComparison.OrdinalIgnoreCase"/> value.</para>
+		/// </remarks>
+		/// <param name="value">The first value to compare.</param>
+		/// <param name="otherValue">The second value to compare.</param>
+		/// <returns><c>true</c> if the values are the same (ignoring case), <c>false</c> otherwise.</returns>
+		public static bool OCIEquals(this string value, string otherValue)
+		{
+			return String.Equals(value, otherValue, StringComparison.OrdinalIgnoreCase);
+		}
+
+		/// <summary>
+		/// Performs an "ordinal" comparison of two strings, returning a boolean indicating if they match. 
+		/// </summary>
+		/// <remarks>
+		/// <para>This is equivalent to calling <see cref="String.Equals(string, string, StringComparison)"/> with the <see cref="StringComparison.Ordinal"/> value.</para>
+		/// </remarks>
+		/// <param name="value">The first value to compare.</param>
+		/// <param name="otherValue">The second value to compare.</param>
+		/// <returns><c>true</c> if the values are the same, <c>false</c> otherwise.</returns>
+		public static bool OEquals(this string value, string otherValue)
+		{
+			return String.Equals(value, otherValue, StringComparison.OrdinalIgnoreCase);
+		}
+
+		/// <summary>
 		/// Performs a case *insensitive* comparison of two strings, returning a boolean indicating if they match.
 		/// </summary>
 		/// <remarks>
@@ -43,6 +71,20 @@ namespace Mozzarella
 		public static bool CIEquals(this string value, string otherValue)
 		{
 			return String.Equals(value, otherValue, StringComparison.CurrentCultureIgnoreCase);
+		}
+
+		/// <summary>
+		/// Performs a case *insensitive* ordinal comparison of two strings, returning an integer indicating if they match, or one is less than/greater than the other.
+		/// </summary>
+		/// <remarks>
+		/// <para>This is equivalent to calling <see cref="String.Compare(string, string, StringComparison)"/> with the <see cref="StringComparison.OrdinalIgnoreCase"/> value.</para>
+		/// </remarks>
+		/// <param name="value">The first value to compare.</param>
+		/// <param name="otherValue">The second value to compare.</param>
+		/// <returns>Zero if the values are the same (ignoring case), 1 if <paramref name="value"/> greater than <paramref name="otherValue"/>, else -1.</returns>
+		public static int OCICompare(this string value, string otherValue)
+		{
+			return String.Compare(value, otherValue, StringComparison.OrdinalIgnoreCase);
 		}
 
 		/// <summary>
@@ -74,14 +116,67 @@ namespace Mozzarella
 		}
 
 		/// <summary>
-		/// Replaces all instances of a substring in a given string with another.
+		/// Returns true if <paramref name="value" /> contains the substring specified by <paramref name="searchValue" />, ignoring the case of both strings and using an ordinal comparison.
+		/// </summary>
+		/// <param name="value">The value to search in.</param>
+		/// <param name="searchValue">The string to search for.</param>
+		/// <returns><c>true</c> if <paramref name="value" /> contains the substring <paramref name="searchValue" />, <c>false</c> otherwise.</returns>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="value"/> is null.</exception>
+		public static bool OCIContains(this string value, string searchValue)
+		{
+			if (value == null) throw new ArgumentNullException(nameof(value));
+
+			return value.IndexOf(searchValue, StringComparison.OrdinalIgnoreCase) >= 0;
+		}
+
+		/// <summary>
+		/// Replaces all instances of a substring in a given string with another using a case insensitve, current culture based comparisoon.
 		/// </summary>
 		/// <param name="value">The value to replace the substring in.</param>
 		/// <param name="searchValue">The substring to be replaced.</param>
 		/// <param name="newValue">The new substring to use.</param>
 		/// <returns>A <see cref="System.String"/> containing the replaced parts.</returns>
 		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="value"/> is null.</exception>
+		/// <seealso cref="OCIReplace(string, string, string)"/>
+		/// <seealso cref="Replace(string, string, string, StringComparison)"/>
+		#if SUPPORTS_AGGRESSIVEINLINING
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+		#endif
 		public static string CIReplace(this string value, string searchValue, string newValue)
+		{
+			return value.Replace(searchValue, newValue, StringComparison.CurrentCultureIgnoreCase);
+		}
+
+		/// <summary>
+		/// Replaces all instances of a substring in a given string with another using an ordinal and case insenstive comparison.
+		/// </summary>
+		/// <param name="value">The value to replace the substring in.</param>
+		/// <param name="searchValue">The substring to be replaced.</param>
+		/// <param name="newValue">The new substring to use.</param>
+		/// <returns>A <see cref="System.String"/> containing the replaced parts.</returns>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="value"/> is null.</exception>
+		/// <seealso cref="CIReplace(string, string, string)"/>
+		/// <seealso cref="Replace(string, string, string, StringComparison)"/>
+#if SUPPORTS_AGGRESSIVEINLINING
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+		#endif
+		public static string OCIReplace(this string value, string searchValue, string newValue)
+		{
+			return value.Replace(searchValue, newValue, StringComparison.OrdinalIgnoreCase);
+		}
+
+		/// <summary>
+		/// An overload for <see cref="System.String.Replace(String, String)"/> which allows manually specifying the <see cref="StringComparison"/> to use when locating the <paramref name="searchValue"/> within <paramref name="value"/>.
+		/// </summary>
+		/// <param name="value">The value to replace the substring in.</param>
+		/// <param name="searchValue">The substring to be replaced.</param>
+		/// <param name="newValue">The new substring to use.</param>
+		/// <param name="stringComparison">A value from the <see cref="System.StringComparison"/> enum specifying how strings should be compared when searching for the <paramref name="searchValue"/>.</param>
+		/// <returns>A <see cref="System.String"/> containing the replaced parts.</returns>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="value"/> is null.</exception>
+		/// <seealso cref="OCIReplace(string, string, string)"/>
+		/// <seealso cref="CIReplace(string, string, string)"/>
+		public static string Replace(this string value, string searchValue, string newValue, StringComparison stringComparison)
 		{
 			if (value == null) throw new ArgumentNullException(nameof(value));
 			if (String.IsNullOrEmpty(searchValue)) return value;
@@ -95,12 +190,12 @@ namespace Mozzarella
 			if (newValueIsEmpty) newValue = newValue ?? String.Empty;
 
 			StringBuilder retVal = null;
-		
+
 			int initialCapacity = newValue.Length <= searchValue.Length ? value.Length : (value.Length / searchValue.Length) * (newValue.Length - searchValue.Length);
 
 			int index = -1, partLength = 0;
 			int startIndex = 0;
-			while (startIndex < value.Length && (index = value.IndexOf(searchValue, startIndex, StringComparison.CurrentCultureIgnoreCase)) >= 0)
+			while (startIndex < value.Length && (index = value.IndexOf(searchValue, startIndex, stringComparison)) >= 0)
 			{
 				if (retVal == null) retVal = new StringBuilder(initialCapacity);
 

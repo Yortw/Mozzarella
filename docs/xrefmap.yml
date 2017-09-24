@@ -286,6 +286,78 @@ references:
   commentId: Overload:Mozzarella.StringExtensions.Like
   fullName: Mozzarella.StringExtensions.Like
   nameWithType: StringExtensions.Like
+- uid: Mozzarella.StringExtensions.OCICompare(System.String,System.String)
+  name: OCICompare(String, String)
+  href: api/Mozzarella.StringExtensions.OCICompare.html#Mozzarella_StringExtensions_OCICompare_System_String_System_String_
+  commentId: M:Mozzarella.StringExtensions.OCICompare(System.String,System.String)
+  fullName: Mozzarella.StringExtensions.OCICompare(System.String, System.String)
+  nameWithType: StringExtensions.OCICompare(String, String)
+- uid: Mozzarella.StringExtensions.OCICompare*
+  name: OCICompare
+  href: api/Mozzarella.StringExtensions.OCICompare.html
+  commentId: Overload:Mozzarella.StringExtensions.OCICompare
+  fullName: Mozzarella.StringExtensions.OCICompare
+  nameWithType: StringExtensions.OCICompare
+- uid: Mozzarella.StringExtensions.OCIContains(System.String,System.String)
+  name: OCIContains(String, String)
+  href: api/Mozzarella.StringExtensions.OCIContains.html#Mozzarella_StringExtensions_OCIContains_System_String_System_String_
+  commentId: M:Mozzarella.StringExtensions.OCIContains(System.String,System.String)
+  fullName: Mozzarella.StringExtensions.OCIContains(System.String, System.String)
+  nameWithType: StringExtensions.OCIContains(String, String)
+- uid: Mozzarella.StringExtensions.OCIContains*
+  name: OCIContains
+  href: api/Mozzarella.StringExtensions.OCIContains.html
+  commentId: Overload:Mozzarella.StringExtensions.OCIContains
+  fullName: Mozzarella.StringExtensions.OCIContains
+  nameWithType: StringExtensions.OCIContains
+- uid: Mozzarella.StringExtensions.OCIEquals(System.String,System.String)
+  name: OCIEquals(String, String)
+  href: api/Mozzarella.StringExtensions.OCIEquals.html#Mozzarella_StringExtensions_OCIEquals_System_String_System_String_
+  commentId: M:Mozzarella.StringExtensions.OCIEquals(System.String,System.String)
+  fullName: Mozzarella.StringExtensions.OCIEquals(System.String, System.String)
+  nameWithType: StringExtensions.OCIEquals(String, String)
+- uid: Mozzarella.StringExtensions.OCIEquals*
+  name: OCIEquals
+  href: api/Mozzarella.StringExtensions.OCIEquals.html
+  commentId: Overload:Mozzarella.StringExtensions.OCIEquals
+  fullName: Mozzarella.StringExtensions.OCIEquals
+  nameWithType: StringExtensions.OCIEquals
+- uid: Mozzarella.StringExtensions.OCIReplace(System.String,System.String,System.String)
+  name: OCIReplace(String, String, String)
+  href: api/Mozzarella.StringExtensions.OCIReplace.html#Mozzarella_StringExtensions_OCIReplace_System_String_System_String_System_String_
+  commentId: M:Mozzarella.StringExtensions.OCIReplace(System.String,System.String,System.String)
+  fullName: Mozzarella.StringExtensions.OCIReplace(System.String, System.String, System.String)
+  nameWithType: StringExtensions.OCIReplace(String, String, String)
+- uid: Mozzarella.StringExtensions.OCIReplace*
+  name: OCIReplace
+  href: api/Mozzarella.StringExtensions.OCIReplace.html
+  commentId: Overload:Mozzarella.StringExtensions.OCIReplace
+  fullName: Mozzarella.StringExtensions.OCIReplace
+  nameWithType: StringExtensions.OCIReplace
+- uid: Mozzarella.StringExtensions.OEquals(System.String,System.String)
+  name: OEquals(String, String)
+  href: api/Mozzarella.StringExtensions.OEquals.html#Mozzarella_StringExtensions_OEquals_System_String_System_String_
+  commentId: M:Mozzarella.StringExtensions.OEquals(System.String,System.String)
+  fullName: Mozzarella.StringExtensions.OEquals(System.String, System.String)
+  nameWithType: StringExtensions.OEquals(String, String)
+- uid: Mozzarella.StringExtensions.OEquals*
+  name: OEquals
+  href: api/Mozzarella.StringExtensions.OEquals.html
+  commentId: Overload:Mozzarella.StringExtensions.OEquals
+  fullName: Mozzarella.StringExtensions.OEquals
+  nameWithType: StringExtensions.OEquals
+- uid: Mozzarella.StringExtensions.Replace(System.String,System.String,System.String,System.StringComparison)
+  name: Replace(String, String, String, StringComparison)
+  href: api/Mozzarella.StringExtensions.Replace.html#Mozzarella_StringExtensions_Replace_System_String_System_String_System_String_System_StringComparison_
+  commentId: M:Mozzarella.StringExtensions.Replace(System.String,System.String,System.String,System.StringComparison)
+  fullName: Mozzarella.StringExtensions.Replace(System.String, System.String, System.String, System.StringComparison)
+  nameWithType: StringExtensions.Replace(String, String, String, StringComparison)
+- uid: Mozzarella.StringExtensions.Replace*
+  name: Replace
+  href: api/Mozzarella.StringExtensions.Replace.html
+  commentId: Overload:Mozzarella.StringExtensions.Replace
+  fullName: Mozzarella.StringExtensions.Replace
+  nameWithType: StringExtensions.Replace
 - uid: Mozzarella.StringExtensions.StripPrefix(System.String,System.String)
   name: StripPrefix(String, String)
   href: api/Mozzarella.StringExtensions.StripPrefix.html#Mozzarella_StringExtensions_StripPrefix_System_String_System_String_

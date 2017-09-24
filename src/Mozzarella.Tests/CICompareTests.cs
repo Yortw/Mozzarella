@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,6 +36,15 @@ namespace Mozzarella.Tests
 			var text2 = "a";
 
 			Assert.AreEqual(1, text1.CICompare(text2));
+		}
+
+		[TestMethod]
+		public void StringExtensions_CICompare_ReturnsEqualForCulturallySimilarMatch()
+		{
+			var text1 = "strasse";
+			var text2 = "Straße";
+
+			Assert.AreEqual(0, text1.CICompare(text2));
 		}
 
 	}

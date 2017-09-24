@@ -53,8 +53,12 @@
     <Compile Include="AddSuffixTests.cs" />
     <Compile Include="AddPrefixTests.cs" />
     <Compile Include="ByteArrayExtensionsTests.cs" />
+    <Compile Include="OCICompareTests.cs" />
     <Compile Include="CICompareTests.cs" />
+    <Compile Include="OCIContainsTests.cs" />
     <Compile Include="CIContainsTests.cs" />
+    <Compile Include="OCIReplaceTests.cs" />
+    <Compile Include="OCIEqualsTests.cs" />
     <Compile Include="CIEqualsTests.cs" />
     <Compile Include="CIReplaceTests.cs" />
     <Compile Include="EnumerableOfStringExtensionsTests.cs" />

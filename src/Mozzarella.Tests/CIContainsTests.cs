@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,6 +31,17 @@ namespace Mozzarella.Tests
 			var text1 = "The quick brown fox jumps over the lazy dog.";
 
 			Assert.IsFalse(text1.CIContains("news"));
+		}
+
+		/// <summary>
+		/// Strings the extensions_ ci compare_ returns match on different case.
+		/// </summary>
+		[TestMethod]
+		public void StringExtensions_CIContains_ReturnsTrueOnCulturallySimilarButOrdinallyDifferentMatch()
+		{
+			var text1 = "Our house, in the middle of the strasse";
+
+			Assert.IsTrue(text1.CIContains("Straße"));
 		}
 
 	}

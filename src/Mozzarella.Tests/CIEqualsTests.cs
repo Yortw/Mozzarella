@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +25,15 @@ namespace Mozzarella.Tests
 		{
 			var text1 = "The quick brown fox jumps over the lazy dog.";
 			var text2 = "The quick brown fox jumps over the lazy dog.";
+
+			Assert.IsTrue(text1.CIEquals(text2));
+		}
+
+		[TestMethod]
+		public void StringExtensions_OCIEquals_ReturnsMatchOnWhenStringsAreCulturallySimilarButOrdinallyDifferent()
+		{
+			var text1 = "Strasse";
+			var text2 = "Straße";
 
 			Assert.IsTrue(text1.CIEquals(text2));
 		}

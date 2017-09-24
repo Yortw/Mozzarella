@@ -16,6 +16,12 @@ items:
   - Mozzarella.StringExtensions.IndexOfFirstDifference(System.String,System.String)
   - Mozzarella.StringExtensions.IsAllDigits(System.String)
   - Mozzarella.StringExtensions.Like(System.String,System.String,System.Boolean)
+  - Mozzarella.StringExtensions.OCICompare(System.String,System.String)
+  - Mozzarella.StringExtensions.OCIContains(System.String,System.String)
+  - Mozzarella.StringExtensions.OCIEquals(System.String,System.String)
+  - Mozzarella.StringExtensions.OCIReplace(System.String,System.String,System.String)
+  - Mozzarella.StringExtensions.OEquals(System.String,System.String)
+  - Mozzarella.StringExtensions.Replace(System.String,System.String,System.String,System.StringComparison)
   - Mozzarella.StringExtensions.StripPrefix(System.String,System.String)
   - Mozzarella.StringExtensions.StripPrefix(System.String,System.String,System.Boolean)
   - Mozzarella.StringExtensions.StripSuffix(System.String,System.String)
@@ -106,6 +112,96 @@ items:
   modifiers.vb:
   - Public
   - Shared
+- uid: Mozzarella.StringExtensions.OCIEquals(System.String,System.String)
+  commentId: M:Mozzarella.StringExtensions.OCIEquals(System.String,System.String)
+  id: OCIEquals(System.String,System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: OCIEquals(String, String)
+  nameWithType: StringExtensions.OCIEquals(String, String)
+  fullName: Mozzarella.StringExtensions.OCIEquals(System.String, System.String)
+  type: Method
+  source:
+    id: OCIEquals
+    path: ''
+    startLine: 341
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nPerforms an &quot;ordinal&quot; and case *insensitive* comparison of two strings, returning a boolean indicating if they match. \n"
+  remarks: "\n<p>This is equivalent to calling <xref href=\"System.String.Equals(System.String%2cSystem.String%2cSystem.StringComparison)\" data-throw-if-not-resolved=\"false\"></xref> with the <xref href=\"System.StringComparison.OrdinalIgnoreCase\" data-throw-if-not-resolved=\"false\"></xref> value.</p>\n"
+  example: []
+  syntax:
+    content: public static bool OCIEquals(this string value, string otherValue)
+    parameters:
+    - id: value
+      type: System.String
+      description: The first value to compare.
+    - id: otherValue
+      type: System.String
+      description: The second value to compare.
+    return:
+      type: System.Boolean
+      description: <code>true</code> if the values are the same (ignoring case), <code>false</code> otherwise.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function OCIEquals(value As String, otherValue As String) As Boolean
+  overload: Mozzarella.StringExtensions.OCIEquals*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.OEquals(System.String,System.String)
+  commentId: M:Mozzarella.StringExtensions.OEquals(System.String,System.String)
+  id: OEquals(System.String,System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: OEquals(String, String)
+  nameWithType: StringExtensions.OEquals(String, String)
+  fullName: Mozzarella.StringExtensions.OEquals(System.String, System.String)
+  type: Method
+  source:
+    id: OEquals
+    path: ''
+    startLine: 355
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nPerforms an &quot;ordinal&quot; comparison of two strings, returning a boolean indicating if they match. \n"
+  remarks: "\n<p>This is equivalent to calling <xref href=\"System.String.Equals(System.String%2cSystem.String%2cSystem.StringComparison)\" data-throw-if-not-resolved=\"false\"></xref> with the <xref href=\"System.StringComparison.Ordinal\" data-throw-if-not-resolved=\"false\"></xref> value.</p>\n"
+  example: []
+  syntax:
+    content: public static bool OEquals(this string value, string otherValue)
+    parameters:
+    - id: value
+      type: System.String
+      description: The first value to compare.
+    - id: otherValue
+      type: System.String
+      description: The second value to compare.
+    return:
+      type: System.Boolean
+      description: <code>true</code> if the values are the same, <code>false</code> otherwise.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function OEquals(value As String, otherValue As String) As Boolean
+  overload: Mozzarella.StringExtensions.OEquals*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
 - uid: Mozzarella.StringExtensions.CIEquals(System.String,System.String)
   commentId: M:Mozzarella.StringExtensions.CIEquals(System.String,System.String)
   id: CIEquals(System.String,System.String)
@@ -121,7 +217,7 @@ items:
   source:
     id: CIEquals
     path: ''
-    startLine: 341
+    startLine: 369
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -151,6 +247,51 @@ items:
   modifiers.vb:
   - Public
   - Shared
+- uid: Mozzarella.StringExtensions.OCICompare(System.String,System.String)
+  commentId: M:Mozzarella.StringExtensions.OCICompare(System.String,System.String)
+  id: OCICompare(System.String,System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: OCICompare(String, String)
+  nameWithType: StringExtensions.OCICompare(String, String)
+  fullName: Mozzarella.StringExtensions.OCICompare(System.String, System.String)
+  type: Method
+  source:
+    id: OCICompare
+    path: ''
+    startLine: 383
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nPerforms a case *insensitive* ordinal comparison of two strings, returning an integer indicating if they match, or one is less than/greater than the other.\n"
+  remarks: "\n<p>This is equivalent to calling <xref href=\"System.String.Compare(System.String%2cSystem.String%2cSystem.StringComparison)\" data-throw-if-not-resolved=\"false\"></xref> with the <xref href=\"System.StringComparison.OrdinalIgnoreCase\" data-throw-if-not-resolved=\"false\"></xref> value.</p>\n"
+  example: []
+  syntax:
+    content: public static int OCICompare(this string value, string otherValue)
+    parameters:
+    - id: value
+      type: System.String
+      description: The first value to compare.
+    - id: otherValue
+      type: System.String
+      description: The second value to compare.
+    return:
+      type: System.Int32
+      description: Zero if the values are the same (ignoring case), 1 if <code data-dev-comment-type="paramref" class="paramref">value</code> greater than <code data-dev-comment-type="paramref" class="paramref">otherValue</code>, else -1.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function OCICompare(value As String, otherValue As String) As Integer
+  overload: Mozzarella.StringExtensions.OCICompare*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
 - uid: Mozzarella.StringExtensions.CICompare(System.String,System.String)
   commentId: M:Mozzarella.StringExtensions.CICompare(System.String,System.String)
   id: CICompare(System.String,System.String)
@@ -166,7 +307,7 @@ items:
   source:
     id: CICompare
     path: ''
-    startLine: 355
+    startLine: 397
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -211,7 +352,7 @@ items:
   source:
     id: CIContains
     path: ''
-    startLine: 367
+    startLine: 409
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -244,6 +385,54 @@ items:
   modifiers.vb:
   - Public
   - Shared
+- uid: Mozzarella.StringExtensions.OCIContains(System.String,System.String)
+  commentId: M:Mozzarella.StringExtensions.OCIContains(System.String,System.String)
+  id: OCIContains(System.String,System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: OCIContains(String, String)
+  nameWithType: StringExtensions.OCIContains(String, String)
+  fullName: Mozzarella.StringExtensions.OCIContains(System.String, System.String)
+  type: Method
+  source:
+    id: OCIContains
+    path: ''
+    startLine: 423
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns true if <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> contains the substring specified by <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code>, ignoring the case of both strings and using an ordinal comparison.\n"
+  example: []
+  syntax:
+    content: public static bool OCIContains(this string value, string searchValue)
+    parameters:
+    - id: value
+      type: System.String
+      description: The value to search in.
+    - id: searchValue
+      type: System.String
+      description: The string to search for.
+    return:
+      type: System.Boolean
+      description: <code>true</code> if <code data-dev-comment-type="paramref" class="paramref">value</code> contains the substring <code data-dev-comment-type="paramref" class="paramref">searchValue</code>, <code>false</code> otherwise.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function OCIContains(value As String, searchValue As String) As Boolean
+  overload: Mozzarella.StringExtensions.OCIContains*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">value</code> is null.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
 - uid: Mozzarella.StringExtensions.CIReplace(System.String,System.String,System.String)
   commentId: M:Mozzarella.StringExtensions.CIReplace(System.String,System.String,System.String)
   id: CIReplace(System.String,System.String,System.String)
@@ -259,11 +448,11 @@ items:
   source:
     id: CIReplace
     path: ''
-    startLine: 382
+    startLine: 443
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
-  summary: "\nReplaces all instances of a substring in a given string with another.\n"
+  summary: "\nReplaces all instances of a substring in a given string with another using a case insensitve, current culture based comparisoon.\n"
   example: []
   syntax:
     content: public static string CIReplace(this string value, string searchValue, string newValue)
@@ -289,6 +478,126 @@ items:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
     description: Thrown if <code data-dev-comment-type="paramref" class="paramref">value</code> is null.
+  seealso:
+  - linkId: Mozzarella.StringExtensions.OCIReplace(System.String,System.String,System.String)
+    commentId: M:Mozzarella.StringExtensions.OCIReplace(System.String,System.String,System.String)
+  - linkId: Mozzarella.StringExtensions.Replace(System.String,System.String,System.String,System.StringComparison)
+    commentId: M:Mozzarella.StringExtensions.Replace(System.String,System.String,System.String,System.StringComparison)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.OCIReplace(System.String,System.String,System.String)
+  commentId: M:Mozzarella.StringExtensions.OCIReplace(System.String,System.String,System.String)
+  id: OCIReplace(System.String,System.String,System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: OCIReplace(String, String, String)
+  nameWithType: StringExtensions.OCIReplace(String, String, String)
+  fullName: Mozzarella.StringExtensions.OCIReplace(System.String, System.String, System.String)
+  type: Method
+  source:
+    id: OCIReplace
+    path: ''
+    startLine: 461
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReplaces all instances of a substring in a given string with another using an ordinal and case insenstive comparison.\n"
+  example: []
+  syntax:
+    content: public static string OCIReplace(this string value, string searchValue, string newValue)
+    parameters:
+    - id: value
+      type: System.String
+      description: The value to replace the substring in.
+    - id: searchValue
+      type: System.String
+      description: The substring to be replaced.
+    - id: newValue
+      type: System.String
+      description: The new substring to use.
+    return:
+      type: System.String
+      description: A <xref href="System.String" data-throw-if-not-resolved="false"></xref> containing the replaced parts.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function OCIReplace(value As String, searchValue As String, newValue As String) As String
+  overload: Mozzarella.StringExtensions.OCIReplace*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">value</code> is null.
+  seealso:
+  - linkId: Mozzarella.StringExtensions.CIReplace(System.String,System.String,System.String)
+    commentId: M:Mozzarella.StringExtensions.CIReplace(System.String,System.String,System.String)
+  - linkId: Mozzarella.StringExtensions.Replace(System.String,System.String,System.String,System.StringComparison)
+    commentId: M:Mozzarella.StringExtensions.Replace(System.String,System.String,System.String,System.StringComparison)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.Replace(System.String,System.String,System.String,System.StringComparison)
+  commentId: M:Mozzarella.StringExtensions.Replace(System.String,System.String,System.String,System.StringComparison)
+  id: Replace(System.String,System.String,System.String,System.StringComparison)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: Replace(String, String, String, StringComparison)
+  nameWithType: StringExtensions.Replace(String, String, String, StringComparison)
+  fullName: Mozzarella.StringExtensions.Replace(System.String, System.String, System.String, System.StringComparison)
+  type: Method
+  source:
+    id: Replace
+    path: ''
+    startLine: 477
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nAn overload for <xref href=\"System.String.Replace(System.String%2cSystem.String)\" data-throw-if-not-resolved=\"false\"></xref> which allows manually specifying the <xref href=\"System.StringComparison\" data-throw-if-not-resolved=\"false\"></xref> to use when locating the <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code> within <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code>.\n"
+  example: []
+  syntax:
+    content: public static string Replace(this string value, string searchValue, string newValue, StringComparison stringComparison)
+    parameters:
+    - id: value
+      type: System.String
+      description: The value to replace the substring in.
+    - id: searchValue
+      type: System.String
+      description: The substring to be replaced.
+    - id: newValue
+      type: System.String
+      description: The new substring to use.
+    - id: stringComparison
+      type: System.StringComparison
+      description: A value from the <xref href="System.StringComparison" data-throw-if-not-resolved="false"></xref> enum specifying how strings should be compared when searching for the <code data-dev-comment-type="paramref" class="paramref">searchValue</code>.
+    return:
+      type: System.String
+      description: A <xref href="System.String" data-throw-if-not-resolved="false"></xref> containing the replaced parts.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Replace(value As String, searchValue As String, newValue As String, stringComparison As StringComparison) As String
+  overload: Mozzarella.StringExtensions.Replace*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">value</code> is null.
+  seealso:
+  - linkId: Mozzarella.StringExtensions.OCIReplace(System.String,System.String,System.String)
+    commentId: M:Mozzarella.StringExtensions.OCIReplace(System.String,System.String,System.String)
+  - linkId: Mozzarella.StringExtensions.CIReplace(System.String,System.String,System.String)
+    commentId: M:Mozzarella.StringExtensions.CIReplace(System.String,System.String,System.String)
   modifiers.csharp:
   - public
   - static
@@ -310,7 +619,7 @@ items:
   source:
     id: IndexOfFirstDifference
     path: ''
-    startLine: 431
+    startLine: 526
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -359,7 +668,7 @@ items:
   source:
     id: IsAllDigits
     path: ''
-    startLine: 455
+    startLine: 550
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -405,7 +714,7 @@ items:
   source:
     id: Like
     path: ''
-    startLine: 480
+    startLine: 575
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -457,7 +766,7 @@ items:
   source:
     id: StripSuffix
     path: ''
-    startLine: 509
+    startLine: 604
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -506,7 +815,7 @@ items:
   source:
     id: StripSuffix
     path: ''
-    startLine: 523
+    startLine: 618
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -558,7 +867,7 @@ items:
   source:
     id: StripPrefix
     path: ''
-    startLine: 544
+    startLine: 639
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -607,7 +916,7 @@ items:
   source:
     id: StripPrefix
     path: ''
-    startLine: 558
+    startLine: 653
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -659,7 +968,7 @@ items:
   source:
     id: AddSuffix
     path: ''
-    startLine: 579
+    startLine: 674
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -708,7 +1017,7 @@ items:
   source:
     id: AddSuffix
     path: ''
-    startLine: 593
+    startLine: 688
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -760,7 +1069,7 @@ items:
   source:
     id: AddPrefix
     path: ''
-    startLine: 614
+    startLine: 709
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -809,7 +1118,7 @@ items:
   source:
     id: AddPrefix
     path: ''
-    startLine: 628
+    startLine: 723
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1171,6 +1480,29 @@ references:
   fullName: System.Int32
 - uid: System.String.Equals(System.String,System.String,System.StringComparison)
   commentId: M:System.String.Equals(System.String,System.String,System.StringComparison)
+- uid: System.StringComparison.OrdinalIgnoreCase
+  commentId: F:System.StringComparison.OrdinalIgnoreCase
+- uid: Mozzarella.StringExtensions.OCIEquals*
+  commentId: Overload:Mozzarella.StringExtensions.OCIEquals
+  isExternal: false
+  name: OCIEquals
+  nameWithType: StringExtensions.OCIEquals
+  fullName: Mozzarella.StringExtensions.OCIEquals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.StringComparison.Ordinal
+  commentId: F:System.StringComparison.Ordinal
+- uid: Mozzarella.StringExtensions.OEquals*
+  commentId: Overload:Mozzarella.StringExtensions.OEquals
+  isExternal: false
+  name: OEquals
+  nameWithType: StringExtensions.OEquals
+  fullName: Mozzarella.StringExtensions.OEquals
 - uid: System.StringComparison.CurrentCultureIgnoreCase
   commentId: F:System.StringComparison.CurrentCultureIgnoreCase
 - uid: Mozzarella.StringExtensions.CIEquals*
@@ -1179,15 +1511,14 @@ references:
   name: CIEquals
   nameWithType: StringExtensions.CIEquals
   fullName: Mozzarella.StringExtensions.CIEquals
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  name: Boolean
-  nameWithType: Boolean
-  fullName: System.Boolean
 - uid: System.String.Compare(System.String,System.String,System.StringComparison)
   commentId: M:System.String.Compare(System.String,System.String,System.StringComparison)
+- uid: Mozzarella.StringExtensions.OCICompare*
+  commentId: Overload:Mozzarella.StringExtensions.OCICompare
+  isExternal: false
+  name: OCICompare
+  nameWithType: StringExtensions.OCICompare
+  fullName: Mozzarella.StringExtensions.OCICompare
 - uid: Mozzarella.StringExtensions.CICompare*
   commentId: Overload:Mozzarella.StringExtensions.CICompare
   isExternal: false
@@ -1202,12 +1533,45 @@ references:
   fullName: Mozzarella.StringExtensions.CIContains
 - uid: System.ArgumentNullException
   commentId: T:System.ArgumentNullException
+- uid: Mozzarella.StringExtensions.OCIContains*
+  commentId: Overload:Mozzarella.StringExtensions.OCIContains
+  isExternal: false
+  name: OCIContains
+  nameWithType: StringExtensions.OCIContains
+  fullName: Mozzarella.StringExtensions.OCIContains
+- uid: Mozzarella.StringExtensions.OCIReplace(System.String,System.String,System.String)
+  commentId: M:Mozzarella.StringExtensions.OCIReplace(System.String,System.String,System.String)
+- uid: Mozzarella.StringExtensions.Replace(System.String,System.String,System.String,System.StringComparison)
+  commentId: M:Mozzarella.StringExtensions.Replace(System.String,System.String,System.String,System.StringComparison)
 - uid: Mozzarella.StringExtensions.CIReplace*
   commentId: Overload:Mozzarella.StringExtensions.CIReplace
   isExternal: false
   name: CIReplace
   nameWithType: StringExtensions.CIReplace
   fullName: Mozzarella.StringExtensions.CIReplace
+- uid: Mozzarella.StringExtensions.CIReplace(System.String,System.String,System.String)
+  commentId: M:Mozzarella.StringExtensions.CIReplace(System.String,System.String,System.String)
+- uid: Mozzarella.StringExtensions.OCIReplace*
+  commentId: Overload:Mozzarella.StringExtensions.OCIReplace
+  isExternal: false
+  name: OCIReplace
+  nameWithType: StringExtensions.OCIReplace
+  fullName: Mozzarella.StringExtensions.OCIReplace
+- uid: System.String.Replace(System.String,System.String)
+  commentId: M:System.String.Replace(System.String,System.String)
+- uid: System.StringComparison
+  commentId: T:System.StringComparison
+  parent: System
+  isExternal: true
+  name: StringComparison
+  nameWithType: StringComparison
+  fullName: System.StringComparison
+- uid: Mozzarella.StringExtensions.Replace*
+  commentId: Overload:Mozzarella.StringExtensions.Replace
+  isExternal: false
+  name: Replace
+  nameWithType: StringExtensions.Replace
+  fullName: Mozzarella.StringExtensions.Replace
 - uid: Mozzarella.StringExtensions.IndexOfFirstDifference*
   commentId: Overload:Mozzarella.StringExtensions.IndexOfFirstDifference
   isExternal: false
