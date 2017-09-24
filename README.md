@@ -33,4 +33,4 @@ Install the Nuget package like this;
 [![NuGet Badge](https://buildstats.info/nuget/mozzarella)](https://www.nuget.org/packages/mozzarella/)
 
 # What's In The Box?
-See the [wiki](https://github.com/Yortw/Mozzarella/wiki) for contents/help.
+See the [API Documentation](https://yortw.github.io/Mozzarella/api/Mozzarella.html) for contents/help.
