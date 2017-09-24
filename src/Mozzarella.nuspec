@@ -2,10 +2,11 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>       
 	<id>Mozzarella</id>
-        <version>1.0.0.0</version>
+        <version>1.0.1</version>
         <title>Mozzarella</title>
         <authors>Troy Willmot</authors>
         <owners>Yortw</owners>
+	<releaseNotes>Now with extensions for ordinal based comparisons.</releaseNotes>
         <licenseUrl>https://github.com/Yortw/Mozzarella/blob/master/LICENSE.md</licenseUrl>
         <projectUrl>https://github.com/Yortw/Mozzarella</projectUrl>
         <iconUrl>https://raw.githubusercontent.com/Yortw/Mozzarella/master/MozzarellaIcon.png</iconUrl>
