@@ -40,6 +40,7 @@ namespace Mozzarella
 		/// <param name="value">The first value to compare.</param>
 		/// <param name="otherValue">The second value to compare.</param>
 		/// <returns><c>true</c> if the values are the same (ignoring case), <c>false</c> otherwise.</returns>
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1709:IdentifiersShouldBeCasedCorrectly", MessageId = "OCI")]
 		public static bool OCIEquals(this string value, string otherValue)
 		{
 			return String.Equals(value, otherValue, StringComparison.OrdinalIgnoreCase);
@@ -82,6 +83,7 @@ namespace Mozzarella
 		/// <param name="value">The first value to compare.</param>
 		/// <param name="otherValue">The second value to compare.</param>
 		/// <returns>Zero if the values are the same (ignoring case), 1 if <paramref name="value"/> greater than <paramref name="otherValue"/>, else -1.</returns>
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1709:IdentifiersShouldBeCasedCorrectly", MessageId = "OCI")]
 		public static int OCICompare(this string value, string otherValue)
 		{
 			return String.Compare(value, otherValue, StringComparison.OrdinalIgnoreCase);
@@ -121,7 +123,8 @@ namespace Mozzarella
 		/// <param name="value">The value to search in.</param>
 		/// <param name="searchValue">The string to search for.</param>
 		/// <returns><c>true</c> if <paramref name="value" /> contains the substring <paramref name="searchValue" />, <c>false</c> otherwise.</returns>
-		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="value"/> is null.</exception>
+		/// <exception cref="ArgumentNullException">Thrown if <paramref name="value"/> is null.</exception>
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1709:IdentifiersShouldBeCasedCorrectly", MessageId = "OCI")]
 		public static bool OCIContains(this string value, string searchValue)
 		{
 			if (value == null) throw new ArgumentNullException(nameof(value));
@@ -153,13 +156,14 @@ namespace Mozzarella
 		/// <param name="value">The value to replace the substring in.</param>
 		/// <param name="searchValue">The substring to be replaced.</param>
 		/// <param name="newValue">The new substring to use.</param>
-		/// <returns>A <see cref="System.String"/> containing the replaced parts.</returns>
-		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="value"/> is null.</exception>
+		/// <returns>A <see cref="String"/> containing the replaced parts.</returns>
+		/// <exception cref="ArgumentNullException">Thrown if <paramref name="value"/> is null.</exception>
 		/// <seealso cref="CIReplace(string, string, string)"/>
 		/// <seealso cref="Replace(string, string, string, StringComparison)"/>
 #if SUPPORTS_AGGRESSIVEINLINING
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-		#endif
+#endif
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1709:IdentifiersShouldBeCasedCorrectly", MessageId = "OCI")]
 		public static string OCIReplace(this string value, string searchValue, string newValue)
 		{
 			return value.Replace(searchValue, newValue, StringComparison.OrdinalIgnoreCase);
