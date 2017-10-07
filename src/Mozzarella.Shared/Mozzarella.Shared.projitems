@@ -13,6 +13,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ByteArrayExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CoalesceOptions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)EnumerableOfStringExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)StringBuilderExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)StringExtensions.cs" />
   </ItemGroup>
 </Project>

@@ -1,0 +1,735 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mozzarella.StringBuilderExtensions
+  commentId: T:Mozzarella.StringBuilderExtensions
+  id: StringBuilderExtensions
+  parent: Mozzarella
+  children:
+  - Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder,System.String,System.Collections.Generic.IEnumerable{System.String})
+  - Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder,System.String,System.Collections.Generic.IList{System.String})
+  - Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder,System.String,System.String[])
+  langs:
+  - csharp
+  - vb
+  name: StringBuilderExtensions
+  nameWithType: StringBuilderExtensions
+  fullName: Mozzarella.StringBuilderExtensions
+  type: Class
+  source:
+    id: StringBuilderExtensions
+    path: ''
+    startLine: 330
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nExtension methods for <xref href=\"System.Text.StringBuilder\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static class StringBuilderExtensions
+    content.vb: Public Module StringBuilderExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder,System.String,System.String[])
+  commentId: M:Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder,System.String,System.String[])
+  id: AppendJoin(System.Text.StringBuilder,System.String,System.String[])
+  isExtensionMethod: true
+  parent: Mozzarella.StringBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AppendJoin(StringBuilder, String, String[])
+  nameWithType: StringBuilderExtensions.AppendJoin(StringBuilder, String, String[])
+  fullName: Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder, System.String, System.String[])
+  type: Method
+  source:
+    id: AppendJoin
+    path: ''
+    startLine: 347
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nAppends all the strings in <code data-dev-comment-type=\"paramref\" class=\"paramref\">parts</code> to <code data-dev-comment-type=\"paramref\" class=\"paramref\">builder</code> placing <code data-dev-comment-type=\"paramref\" class=\"paramref\">separator</code> between each part.\n"
+  remarks: "\n<p>If <code data-dev-comment-type=\"paramref\" class=\"paramref\">parts</code> is null or zero length, nothing is appended (and no exception is thrown).</p>\n<p>If <code data-dev-comment-type=\"paramref\" class=\"paramref\">parts</code> contains only a single item then <code data-dev-comment-type=\"paramref\" class=\"paramref\">separator</code> is not used.</p>\n<p>No <code data-dev-comment-type=\"paramref\" class=\"paramref\">separator</code> is placed as the start even if <code data-dev-comment-type=\"paramref\" class=\"paramref\">builder</code> is not empty.</p>\n<p>If <code data-dev-comment-type=\"paramref\" class=\"paramref\">parts</code> contains any null values an empty string is appended instead.</p>\n"
+  example: []
+  syntax:
+    content: public static StringBuilder AppendJoin(this StringBuilder builder, string separator, params string[] parts)
+    parameters:
+    - id: builder
+      type: System.Text.StringBuilder
+      description: The <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref> to append to.
+    - id: separator
+      type: System.String
+      description: The value to place between each new appended part. If null or empty string, no separator is used.
+    - id: parts
+      type: System.String[]
+      description: An array of strings to be appended.
+    return:
+      type: System.Text.StringBuilder
+      description: A reference to <code data-dev-comment-type="paramref" class="paramref">builder</code>, allowing method calls to be chained.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AppendJoin(builder As StringBuilder, separator As String, ParamArray parts As String()) As StringBuilder
+  overload: Mozzarella.StringBuilderExtensions.AppendJoin*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">builder</code> is null.
+  nameWithType.vb: StringBuilderExtensions.AppendJoin(StringBuilder, String, String())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder, System.String, System.String())
+  name.vb: AppendJoin(StringBuilder, String, String())
+- uid: Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder,System.String,System.Collections.Generic.IList{System.String})
+  commentId: M:Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder,System.String,System.Collections.Generic.IList{System.String})
+  id: AppendJoin(System.Text.StringBuilder,System.String,System.Collections.Generic.IList{System.String})
+  isExtensionMethod: true
+  parent: Mozzarella.StringBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AppendJoin(StringBuilder, String, IList<String>)
+  nameWithType: StringBuilderExtensions.AppendJoin(StringBuilder, String, IList<String>)
+  fullName: Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder, System.String, System.Collections.Generic.IList<System.String>)
+  type: Method
+  source:
+    id: AppendJoin
+    path: ''
+    startLine: 376
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nAppends all the strings in <code data-dev-comment-type=\"paramref\" class=\"paramref\">parts</code> to <code data-dev-comment-type=\"paramref\" class=\"paramref\">builder</code> placing <code data-dev-comment-type=\"paramref\" class=\"paramref\">separator</code> between each part.\n"
+  remarks: "\n<p>If <code data-dev-comment-type=\"paramref\" class=\"paramref\">parts</code> is null or contains no items, nothing is appended (and no exception is thrown).</p>\n<p>If <code data-dev-comment-type=\"paramref\" class=\"paramref\">parts</code> contains only a single item then <code data-dev-comment-type=\"paramref\" class=\"paramref\">separator</code> is not used.</p>\n<p>No <code data-dev-comment-type=\"paramref\" class=\"paramref\">separator</code> is placed as the start even if <code data-dev-comment-type=\"paramref\" class=\"paramref\">builder</code> is not empty.</p>\n<p>If <code data-dev-comment-type=\"paramref\" class=\"paramref\">parts</code> contains any null values an empty string is appended instead.</p>\n"
+  example: []
+  syntax:
+    content: public static StringBuilder AppendJoin(this StringBuilder builder, string separator, IList<string> parts)
+    parameters:
+    - id: builder
+      type: System.Text.StringBuilder
+      description: The <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref> to append to.
+    - id: separator
+      type: System.String
+      description: The value to place between each new appended part. If null or empty string, no separator is used.
+    - id: parts
+      type: System.Collections.Generic.IList{System.String}
+      description: An array of strings to be appended.
+    return:
+      type: System.Text.StringBuilder
+      description: A reference to <code data-dev-comment-type="paramref" class="paramref">builder</code>, allowing method calls to be chained.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AppendJoin(builder As StringBuilder, separator As String, parts As IList(Of String)) As StringBuilder
+  overload: Mozzarella.StringBuilderExtensions.AppendJoin*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">builder</code> is null.
+  nameWithType.vb: StringBuilderExtensions.AppendJoin(StringBuilder, String, IList(Of String))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder, System.String, System.Collections.Generic.IList(Of System.String))
+  name.vb: AppendJoin(StringBuilder, String, IList(Of String))
+- uid: Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder,System.String,System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder,System.String,System.Collections.Generic.IEnumerable{System.String})
+  id: AppendJoin(System.Text.StringBuilder,System.String,System.Collections.Generic.IEnumerable{System.String})
+  isExtensionMethod: true
+  parent: Mozzarella.StringBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AppendJoin(StringBuilder, String, IEnumerable<String>)
+  nameWithType: StringBuilderExtensions.AppendJoin(StringBuilder, String, IEnumerable<String>)
+  fullName: Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder, System.String, System.Collections.Generic.IEnumerable<System.String>)
+  type: Method
+  source:
+    id: AppendJoin
+    path: ''
+    startLine: 405
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nAppends all the strings in <code data-dev-comment-type=\"paramref\" class=\"paramref\">parts</code> to <code data-dev-comment-type=\"paramref\" class=\"paramref\">builder</code> placing <code data-dev-comment-type=\"paramref\" class=\"paramref\">separator</code> between each part.\n"
+  remarks: "\n<p>If <code data-dev-comment-type=\"paramref\" class=\"paramref\">parts</code> is null or contains no items, nothing is appended (and no exception is thrown).</p>\n<p>If <code data-dev-comment-type=\"paramref\" class=\"paramref\">parts</code> contains only a single item then <code data-dev-comment-type=\"paramref\" class=\"paramref\">separator</code> is not used.</p>\n<p>No <code data-dev-comment-type=\"paramref\" class=\"paramref\">separator</code> is placed as the start even if <code data-dev-comment-type=\"paramref\" class=\"paramref\">builder</code> is not empty.</p>\n<p>If <code data-dev-comment-type=\"paramref\" class=\"paramref\">parts</code> contains any null values an empty string is appended instead.</p>\n"
+  example: []
+  syntax:
+    content: public static StringBuilder AppendJoin(this StringBuilder builder, string separator, IEnumerable<string> parts)
+    parameters:
+    - id: builder
+      type: System.Text.StringBuilder
+      description: The <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref> to append to.
+    - id: separator
+      type: System.String
+      description: The value to place between each new appended part. If null or empty string, no separator is used.
+    - id: parts
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: An array of strings to be appended.
+    return:
+      type: System.Text.StringBuilder
+      description: A reference to <code data-dev-comment-type="paramref" class="paramref">builder</code>, allowing method calls to be chained.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AppendJoin(builder As StringBuilder, separator As String, parts As IEnumerable(Of String)) As StringBuilder
+  overload: Mozzarella.StringBuilderExtensions.AppendJoin*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">builder</code> is null.
+  nameWithType.vb: StringBuilderExtensions.AppendJoin(StringBuilder, String, IEnumerable(Of String))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder, System.String, System.Collections.Generic.IEnumerable(Of System.String))
+  name.vb: AppendJoin(StringBuilder, String, IEnumerable(Of String))
+references:
+- uid: System.Text.StringBuilder
+  commentId: T:System.Text.StringBuilder
+  parent: System.Text
+  isExternal: true
+  name: StringBuilder
+  nameWithType: StringBuilder
+  fullName: System.Text.StringBuilder
+- uid: Mozzarella
+  commentId: N:Mozzarella
+  isExternal: false
+  name: Mozzarella
+  nameWithType: Mozzarella
+  fullName: Mozzarella
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: false
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mozzarella.StringBuilderExtensions.AppendJoin*
+  commentId: Overload:Mozzarella.StringBuilderExtensions.AppendJoin
+  isExternal: false
+  name: AppendJoin
+  nameWithType: StringBuilderExtensions.AppendJoin
+  fullName: Mozzarella.StringBuilderExtensions.AppendJoin
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.String[]
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Collections.Generic.IList{System.String}
+  commentId: T:System.Collections.Generic.IList{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<String>
+  nameWithType: IList<String>
+  fullName: System.Collections.Generic.IList<System.String>
+  nameWithType.vb: IList(Of String)
+  fullName.vb: System.Collections.Generic.IList(Of System.String)
+  name.vb: IList(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<String>
+  nameWithType: IEnumerable<String>
+  fullName: System.Collections.Generic.IEnumerable<System.String>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -10,5 +10,7 @@
     name: EnumerableOfStringExtensions
   - uid: Mozzarella.ErasableString
     name: ErasableString
+  - uid: Mozzarella.StringBuilderExtensions
+    name: StringBuilderExtensions
   - uid: Mozzarella.StringExtensions
     name: StringExtensions

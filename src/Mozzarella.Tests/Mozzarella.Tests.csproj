@@ -54,6 +54,7 @@
     <Compile Include="AddPrefixTests.cs" />
     <Compile Include="AfterLastTests.cs" />
     <Compile Include="AfterFirstTests.cs" />
+    <Compile Include="AppendJoinTests.cs" />
     <Compile Include="BeforeFirstTests.cs" />
     <Compile Include="BeforeLastTests.cs" />
     <Compile Include="ByteArrayExtensionsTests.cs" />

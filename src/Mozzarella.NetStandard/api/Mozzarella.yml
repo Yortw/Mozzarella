@@ -8,6 +8,7 @@ items:
   - Mozzarella.CoalesceOptions
   - Mozzarella.EnumerableOfStringExtensions
   - Mozzarella.ErasableString
+  - Mozzarella.StringBuilderExtensions
   - Mozzarella.StringExtensions
   langs:
   - csharp
@@ -44,6 +45,12 @@ references:
   name: EnumerableOfStringExtensions
   nameWithType: EnumerableOfStringExtensions
   fullName: Mozzarella.EnumerableOfStringExtensions
+- uid: Mozzarella.StringBuilderExtensions
+  commentId: T:Mozzarella.StringBuilderExtensions
+  isExternal: false
+  name: StringBuilderExtensions
+  nameWithType: StringBuilderExtensions
+  fullName: Mozzarella.StringBuilderExtensions
 - uid: Mozzarella.StringExtensions
   commentId: T:Mozzarella.StringExtensions
   isExternal: false

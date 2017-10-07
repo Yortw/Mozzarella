@@ -178,6 +178,45 @@ references:
   commentId: Overload:Mozzarella.ErasableString.Value
   fullName: Mozzarella.ErasableString.Value
   nameWithType: ErasableString.Value
+- uid: Mozzarella.StringBuilderExtensions
+  name: StringBuilderExtensions
+  href: api/Mozzarella.StringBuilderExtensions.html
+  commentId: T:Mozzarella.StringBuilderExtensions
+  fullName: Mozzarella.StringBuilderExtensions
+  nameWithType: StringBuilderExtensions
+- uid: Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder,System.String,System.Collections.Generic.IEnumerable{System.String})
+  name: AppendJoin(StringBuilder, String, IEnumerable<String>)
+  href: api/Mozzarella.StringBuilderExtensions.AppendJoin.html#Mozzarella_StringBuilderExtensions_AppendJoin_System_Text_StringBuilder_System_String_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder,System.String,System.Collections.Generic.IEnumerable{System.String})
+  name.vb: AppendJoin(StringBuilder, String, IEnumerable(Of String))
+  fullName: Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder, System.String, System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder, System.String, System.Collections.Generic.IEnumerable(Of System.String))
+  nameWithType: StringBuilderExtensions.AppendJoin(StringBuilder, String, IEnumerable<String>)
+  nameWithType.vb: StringBuilderExtensions.AppendJoin(StringBuilder, String, IEnumerable(Of String))
+- uid: Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder,System.String,System.Collections.Generic.IList{System.String})
+  name: AppendJoin(StringBuilder, String, IList<String>)
+  href: api/Mozzarella.StringBuilderExtensions.AppendJoin.html#Mozzarella_StringBuilderExtensions_AppendJoin_System_Text_StringBuilder_System_String_System_Collections_Generic_IList_System_String__
+  commentId: M:Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder,System.String,System.Collections.Generic.IList{System.String})
+  name.vb: AppendJoin(StringBuilder, String, IList(Of String))
+  fullName: Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder, System.String, System.Collections.Generic.IList<System.String>)
+  fullName.vb: Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder, System.String, System.Collections.Generic.IList(Of System.String))
+  nameWithType: StringBuilderExtensions.AppendJoin(StringBuilder, String, IList<String>)
+  nameWithType.vb: StringBuilderExtensions.AppendJoin(StringBuilder, String, IList(Of String))
+- uid: Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder,System.String,System.String[])
+  name: AppendJoin(StringBuilder, String, String[])
+  href: api/Mozzarella.StringBuilderExtensions.AppendJoin.html#Mozzarella_StringBuilderExtensions_AppendJoin_System_Text_StringBuilder_System_String_System_String___
+  commentId: M:Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder,System.String,System.String[])
+  name.vb: AppendJoin(StringBuilder, String, String())
+  fullName: Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder, System.String, System.String[])
+  fullName.vb: Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder, System.String, System.String())
+  nameWithType: StringBuilderExtensions.AppendJoin(StringBuilder, String, String[])
+  nameWithType.vb: StringBuilderExtensions.AppendJoin(StringBuilder, String, String())
+- uid: Mozzarella.StringBuilderExtensions.AppendJoin*
+  name: AppendJoin
+  href: api/Mozzarella.StringBuilderExtensions.AppendJoin.html
+  commentId: Overload:Mozzarella.StringBuilderExtensions.AppendJoin
+  fullName: Mozzarella.StringBuilderExtensions.AppendJoin
+  nameWithType: StringBuilderExtensions.AppendJoin
 - uid: Mozzarella.StringExtensions
   name: StringExtensions
   href: api/Mozzarella.StringExtensions.html
