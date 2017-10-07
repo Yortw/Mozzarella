@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Method CIContains
+    <title>Method IsNullOrWhitespace
    | Mozzarella </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Method CIContains
+    <meta name="title" content="Method IsNullOrWhitespace
    | Mozzarella ">
     <meta name="generator" content="docfx 2.24.0.0">
     
@@ -157,8 +157,8 @@
                                 <li class="">
                                   <a href="Mozzarella.StringExtensions.CICompare.html" title="CICompare" class="">CICompare</a>
                                 </li>
-                                <li class="active">
-                                  <a href="Mozzarella.StringExtensions.CIContains.html" title="CIContains" class="active">CIContains</a>
+                                <li class="">
+                                  <a href="Mozzarella.StringExtensions.CIContains.html" title="CIContains" class="">CIContains</a>
                                 </li>
                                 <li class="">
                                   <a href="Mozzarella.StringExtensions.CIEquals.html" title="CIEquals" class="">CIEquals</a>
@@ -178,8 +178,8 @@
                                 <li class="">
                                   <a href="Mozzarella.StringExtensions.IsNullOrEmpty.html" title="IsNullOrEmpty" class="">IsNullOrEmpty</a>
                                 </li>
-                                <li class="">
-                                  <a href="Mozzarella.StringExtensions.IsNullOrWhitespace.html" title="IsNullOrWhitespace" class="">IsNullOrWhitespace</a>
+                                <li class="active">
+                                  <a href="Mozzarella.StringExtensions.IsNullOrWhitespace.html" title="IsNullOrWhitespace" class="active">IsNullOrWhitespace</a>
                                 </li>
                                 <li class="">
                                   <a href="Mozzarella.StringExtensions.Like.html" title="Like" class="">Like</a>
@@ -220,23 +220,23 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Mozzarella.StringExtensions.CIContains*">
+            <article class="content wrap" id="_content" data-uid="Mozzarella.StringExtensions.IsNullOrWhitespace*">
 
-<h1 id="Mozzarella_StringExtensions_CIContains_" data-uid="Mozzarella.StringExtensions.CIContains*">Method CIContains
+<h1 id="Mozzarella_StringExtensions_IsNullOrWhitespace_" data-uid="Mozzarella.StringExtensions.IsNullOrWhitespace*">Method IsNullOrWhitespace
 </h1>
 <div class="markdown level0 summary"></div>
 <div class="markdown level0 conceptual"></div>
 
 
 
-<a id="Mozzarella_StringExtensions_CIContains_" data-uid="Mozzarella.StringExtensions.CIContains*"></a>
-<h4 id="Mozzarella_StringExtensions_CIContains_System_String_System_String_" data-uid="Mozzarella.StringExtensions.CIContains(System.String,System.String)">CIContains(String, String)</h4>
-<div class="markdown level1 summary"><p>Returns true if <code data-dev-comment-type="paramref" class="paramref">value</code> contains the substring specified by <code data-dev-comment-type="paramref" class="paramref">searchValue</code>, ignoring the case of both strings.</p>
+<a id="Mozzarella_StringExtensions_IsNullOrWhitespace_" data-uid="Mozzarella.StringExtensions.IsNullOrWhitespace*"></a>
+<h4 id="Mozzarella_StringExtensions_IsNullOrWhitespace_System_String_" data-uid="Mozzarella.StringExtensions.IsNullOrWhitespace(System.String)">IsNullOrWhitespace(String)</h4>
+<div class="markdown level1 summary"><p>Returns true if <code data-dev-comment-type="paramref" class="paramref">value</code> is null, empty string or contains only whitespace characters.</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static bool CIContains(this string value, string searchValue)</code></pre>
+  <pre><code class="lang-csharp hljs">public static bool IsNullOrWhitespace(this string value)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -251,13 +251,7 @@
     <tr>
       <td><span class="xref">System.String</span></td>
       <td><span class="parametername">value</span></td>
-      <td><p>The value to search in.</p>
-</td>
-    </tr>
-    <tr>
-      <td><span class="xref">System.String</span></td>
-      <td><span class="parametername">searchValue</span></td>
-      <td><p>The string to search for.</p>
+      <td><p>The string value to be checked.</p>
 </td>
     </tr>
   </tbody>
@@ -273,27 +267,15 @@
   <tbody>
     <tr>
       <td><span class="xref">System.Boolean</span></td>
-      <td><p><code>true</code> if <code data-dev-comment-type="paramref" class="paramref">value</code> contains the substring <code data-dev-comment-type="paramref" class="paramref">searchValue</code>, <code>false</code> otherwise.</p>
+      <td><p>Returns true if <code data-dev-comment-type="paramref" class="paramref">value</code> is null, empty string or contains only whitespace characters.</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 class="exceptions">Exceptions</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Condition</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><span class="xref">System.ArgumentNullException</span></td>
-      <td><p>Thrown if <code data-dev-comment-type="paramref" class="paramref">value</code> is null.</p>
-</td>
-    </tr>
-  </tbody>
-</table>
+<h5 id="Mozzarella_StringExtensions_IsNullOrWhitespace_System_String__remarks">Remarks</h5>
+<div class="markdown level1 remarks"><p>This is a convenience method that just calls <span class="xref">System.String.IsNullOrWhiteSpace(System.String)</span>.
+</p>
+</div>
 </article>
           </div>
           

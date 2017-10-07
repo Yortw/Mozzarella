@@ -32,6 +32,8 @@
   "Mozzarella.StringExtensions.Coalesce(System.String,System.String[])": "Mozzarella.StringExtensions.yml",
   "Mozzarella.StringExtensions.IndexOfFirstDifference(System.String,System.String)": "Mozzarella.StringExtensions.yml",
   "Mozzarella.StringExtensions.IsAllDigits(System.String)": "Mozzarella.StringExtensions.yml",
+  "Mozzarella.StringExtensions.IsNullOrEmpty(System.String)": "Mozzarella.StringExtensions.yml",
+  "Mozzarella.StringExtensions.IsNullOrWhitespace(System.String)": "Mozzarella.StringExtensions.yml",
   "Mozzarella.StringExtensions.Like(System.String,System.String,System.Boolean)": "Mozzarella.StringExtensions.yml",
   "Mozzarella.StringExtensions.OCICompare(System.String,System.String)": "Mozzarella.StringExtensions.yml",
   "Mozzarella.StringExtensions.OCIContains(System.String,System.String)": "Mozzarella.StringExtensions.yml",

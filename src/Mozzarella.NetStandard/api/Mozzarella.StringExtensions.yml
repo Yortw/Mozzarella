@@ -19,6 +19,8 @@ items:
   - Mozzarella.StringExtensions.Coalesce(System.String,System.String[])
   - Mozzarella.StringExtensions.IndexOfFirstDifference(System.String,System.String)
   - Mozzarella.StringExtensions.IsAllDigits(System.String)
+  - Mozzarella.StringExtensions.IsNullOrEmpty(System.String)
+  - Mozzarella.StringExtensions.IsNullOrWhitespace(System.String)
   - Mozzarella.StringExtensions.Like(System.String,System.String,System.Boolean)
   - Mozzarella.StringExtensions.OCICompare(System.String,System.String)
   - Mozzarella.StringExtensions.OCIContains(System.String,System.String)
@@ -1365,6 +1367,90 @@ items:
   - Shared
   fullName.vb: Mozzarella.StringExtensions.Coalesce(System.String, Mozzarella.CoalesceOptions, System.String())
   name.vb: Coalesce(String, CoalesceOptions, String())
+- uid: Mozzarella.StringExtensions.IsNullOrEmpty(System.String)
+  commentId: M:Mozzarella.StringExtensions.IsNullOrEmpty(System.String)
+  id: IsNullOrEmpty(System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsNullOrEmpty(String)
+  nameWithType: StringExtensions.IsNullOrEmpty(String)
+  fullName: Mozzarella.StringExtensions.IsNullOrEmpty(System.String)
+  type: Method
+  source:
+    id: IsNullOrEmpty
+    path: ''
+    startLine: 857
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns true if <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> is null or empty string.\n"
+  remarks: "\n<p>This is a convenience method that just calls <xref href=\"System.String.IsNullOrEmpty(System.String)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  example: []
+  syntax:
+    content: public static bool IsNullOrEmpty(this string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string value to be checked.
+    return:
+      type: System.Boolean
+      description: Returns true if <code data-dev-comment-type="paramref" class="paramref">value</code> is null or empty string.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsNullOrEmpty(value As String) As Boolean
+  overload: Mozzarella.StringExtensions.IsNullOrEmpty*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.IsNullOrWhitespace(System.String)
+  commentId: M:Mozzarella.StringExtensions.IsNullOrWhitespace(System.String)
+  id: IsNullOrWhitespace(System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsNullOrWhitespace(String)
+  nameWithType: StringExtensions.IsNullOrWhitespace(String)
+  fullName: Mozzarella.StringExtensions.IsNullOrWhitespace(System.String)
+  type: Method
+  source:
+    id: IsNullOrWhitespace
+    path: ''
+    startLine: 874
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns true if <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> is null, empty string or contains only whitespace characters.\n"
+  remarks: "\n<p>This is a convenience method that just calls <xref href=\"System.String.IsNullOrWhiteSpace(System.String)\" data-throw-if-not-resolved=\"false\"></xref>.\n</p>\n"
+  example: []
+  syntax:
+    content: public static bool IsNullOrWhitespace(this string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string value to be checked.
+    return:
+      type: System.Boolean
+      description: Returns true if <code data-dev-comment-type="paramref" class="paramref">value</code> is null, empty string or contains only whitespace characters.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsNullOrWhitespace(value As String) As Boolean
+  overload: Mozzarella.StringExtensions.IsNullOrWhitespace*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
 references:
 - uid: System.String
   commentId: T:System.String
@@ -1876,3 +1962,19 @@ references:
   - name: ()
     nameWithType: ()
     fullName: ()
+- uid: System.String.IsNullOrEmpty(System.String)
+  commentId: M:System.String.IsNullOrEmpty(System.String)
+- uid: Mozzarella.StringExtensions.IsNullOrEmpty*
+  commentId: Overload:Mozzarella.StringExtensions.IsNullOrEmpty
+  isExternal: false
+  name: IsNullOrEmpty
+  nameWithType: StringExtensions.IsNullOrEmpty
+  fullName: Mozzarella.StringExtensions.IsNullOrEmpty
+- uid: System.String.IsNullOrWhiteSpace(System.String)
+  commentId: M:System.String.IsNullOrWhiteSpace(System.String)
+- uid: Mozzarella.StringExtensions.IsNullOrWhitespace*
+  commentId: Overload:Mozzarella.StringExtensions.IsNullOrWhitespace
+  isExternal: false
+  name: IsNullOrWhitespace
+  nameWithType: StringExtensions.IsNullOrWhitespace
+  fullName: Mozzarella.StringExtensions.IsNullOrWhitespace

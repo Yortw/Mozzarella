@@ -523,5 +523,38 @@ namespace Mozzarella
 			return retVal;
 		}
 
+		/// <summary>
+		/// Returns true if <paramref name="value"/> is null or empty string.
+		/// </summary>
+		/// <remarks>
+		/// <para>This is a convenience method that just calls <see cref="String.IsNullOrEmpty(string)"/>.</para>
+		/// </remarks>
+		/// <param name="value">The string value to be checked.</param>
+		/// <returns>Returns true if <paramref name="value"/> is null or empty string.</returns>
+#if SUPPORTS_AGGRESSIVEINLINING
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+#endif
+		public static bool IsNullOrEmpty(this string value)
+		{
+			return String.IsNullOrEmpty(value);
+		}
+
+		/// <summary>
+		/// Returns true if <paramref name="value"/> is null, empty string or contains only whitespace characters.
+		/// </summary>
+		/// <remarks>
+		/// <para>This is a convenience method that just calls <see cref="String.IsNullOrWhiteSpace(string)"/>.
+		/// </para>
+		/// </remarks>
+		/// <param name="value">The string value to be checked.</param>
+		/// <returns>Returns true if <paramref name="value"/> is null, empty string or contains only whitespace characters.</returns>
+#if SUPPORTS_AGGRESSIVEINLINING
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+#endif
+		public static bool IsNullOrWhitespace(this string value)
+		{
+			return String.IsNullOrWhiteSpace(value);
+		}
+
 	}
 }

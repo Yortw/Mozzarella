@@ -328,6 +328,30 @@ references:
   commentId: Overload:Mozzarella.StringExtensions.IsAllDigits
   fullName: Mozzarella.StringExtensions.IsAllDigits
   nameWithType: StringExtensions.IsAllDigits
+- uid: Mozzarella.StringExtensions.IsNullOrEmpty(System.String)
+  name: IsNullOrEmpty(String)
+  href: api/Mozzarella.StringExtensions.IsNullOrEmpty.html#Mozzarella_StringExtensions_IsNullOrEmpty_System_String_
+  commentId: M:Mozzarella.StringExtensions.IsNullOrEmpty(System.String)
+  fullName: Mozzarella.StringExtensions.IsNullOrEmpty(System.String)
+  nameWithType: StringExtensions.IsNullOrEmpty(String)
+- uid: Mozzarella.StringExtensions.IsNullOrEmpty*
+  name: IsNullOrEmpty
+  href: api/Mozzarella.StringExtensions.IsNullOrEmpty.html
+  commentId: Overload:Mozzarella.StringExtensions.IsNullOrEmpty
+  fullName: Mozzarella.StringExtensions.IsNullOrEmpty
+  nameWithType: StringExtensions.IsNullOrEmpty
+- uid: Mozzarella.StringExtensions.IsNullOrWhitespace(System.String)
+  name: IsNullOrWhitespace(String)
+  href: api/Mozzarella.StringExtensions.IsNullOrWhitespace.html#Mozzarella_StringExtensions_IsNullOrWhitespace_System_String_
+  commentId: M:Mozzarella.StringExtensions.IsNullOrWhitespace(System.String)
+  fullName: Mozzarella.StringExtensions.IsNullOrWhitespace(System.String)
+  nameWithType: StringExtensions.IsNullOrWhitespace(String)
+- uid: Mozzarella.StringExtensions.IsNullOrWhitespace*
+  name: IsNullOrWhitespace
+  href: api/Mozzarella.StringExtensions.IsNullOrWhitespace.html
+  commentId: Overload:Mozzarella.StringExtensions.IsNullOrWhitespace
+  fullName: Mozzarella.StringExtensions.IsNullOrWhitespace
+  nameWithType: StringExtensions.IsNullOrWhitespace
 - uid: Mozzarella.StringExtensions.Like(System.String,System.String,System.Boolean)
   name: Like(String, String, Boolean)
   href: api/Mozzarella.StringExtensions.Like.html#Mozzarella_StringExtensions_Like_System_String_System_String_System_Boolean_
