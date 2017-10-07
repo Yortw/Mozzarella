@@ -52,6 +52,10 @@
   <ItemGroup>
     <Compile Include="AddSuffixTests.cs" />
     <Compile Include="AddPrefixTests.cs" />
+    <Compile Include="AfterLastTests.cs" />
+    <Compile Include="AfterFirstTests.cs" />
+    <Compile Include="BeforeFirstTests.cs" />
+    <Compile Include="BeforeLastTests.cs" />
     <Compile Include="ByteArrayExtensionsTests.cs" />
     <Compile Include="CoalesceTests.cs" />
     <Compile Include="ContainsTests.cs" />

@@ -220,6 +220,78 @@ references:
   commentId: Overload:Mozzarella.StringExtensions.AddSuffix
   fullName: Mozzarella.StringExtensions.AddSuffix
   nameWithType: StringExtensions.AddSuffix
+- uid: Mozzarella.StringExtensions.AfterFirst(System.String,System.String)
+  name: AfterFirst(String, String)
+  href: api/Mozzarella.StringExtensions.AfterFirst.html#Mozzarella_StringExtensions_AfterFirst_System_String_System_String_
+  commentId: M:Mozzarella.StringExtensions.AfterFirst(System.String,System.String)
+  fullName: Mozzarella.StringExtensions.AfterFirst(System.String, System.String)
+  nameWithType: StringExtensions.AfterFirst(String, String)
+- uid: Mozzarella.StringExtensions.AfterFirst(System.String,System.String,System.StringComparison)
+  name: AfterFirst(String, String, StringComparison)
+  href: api/Mozzarella.StringExtensions.AfterFirst.html#Mozzarella_StringExtensions_AfterFirst_System_String_System_String_System_StringComparison_
+  commentId: M:Mozzarella.StringExtensions.AfterFirst(System.String,System.String,System.StringComparison)
+  fullName: Mozzarella.StringExtensions.AfterFirst(System.String, System.String, System.StringComparison)
+  nameWithType: StringExtensions.AfterFirst(String, String, StringComparison)
+- uid: Mozzarella.StringExtensions.AfterFirst*
+  name: AfterFirst
+  href: api/Mozzarella.StringExtensions.AfterFirst.html
+  commentId: Overload:Mozzarella.StringExtensions.AfterFirst
+  fullName: Mozzarella.StringExtensions.AfterFirst
+  nameWithType: StringExtensions.AfterFirst
+- uid: Mozzarella.StringExtensions.AfterLast(System.String,System.String)
+  name: AfterLast(String, String)
+  href: api/Mozzarella.StringExtensions.AfterLast.html#Mozzarella_StringExtensions_AfterLast_System_String_System_String_
+  commentId: M:Mozzarella.StringExtensions.AfterLast(System.String,System.String)
+  fullName: Mozzarella.StringExtensions.AfterLast(System.String, System.String)
+  nameWithType: StringExtensions.AfterLast(String, String)
+- uid: Mozzarella.StringExtensions.AfterLast(System.String,System.String,System.StringComparison)
+  name: AfterLast(String, String, StringComparison)
+  href: api/Mozzarella.StringExtensions.AfterLast.html#Mozzarella_StringExtensions_AfterLast_System_String_System_String_System_StringComparison_
+  commentId: M:Mozzarella.StringExtensions.AfterLast(System.String,System.String,System.StringComparison)
+  fullName: Mozzarella.StringExtensions.AfterLast(System.String, System.String, System.StringComparison)
+  nameWithType: StringExtensions.AfterLast(String, String, StringComparison)
+- uid: Mozzarella.StringExtensions.AfterLast*
+  name: AfterLast
+  href: api/Mozzarella.StringExtensions.AfterLast.html
+  commentId: Overload:Mozzarella.StringExtensions.AfterLast
+  fullName: Mozzarella.StringExtensions.AfterLast
+  nameWithType: StringExtensions.AfterLast
+- uid: Mozzarella.StringExtensions.BeforeFirst(System.String,System.String)
+  name: BeforeFirst(String, String)
+  href: api/Mozzarella.StringExtensions.BeforeFirst.html#Mozzarella_StringExtensions_BeforeFirst_System_String_System_String_
+  commentId: M:Mozzarella.StringExtensions.BeforeFirst(System.String,System.String)
+  fullName: Mozzarella.StringExtensions.BeforeFirst(System.String, System.String)
+  nameWithType: StringExtensions.BeforeFirst(String, String)
+- uid: Mozzarella.StringExtensions.BeforeFirst(System.String,System.String,System.StringComparison)
+  name: BeforeFirst(String, String, StringComparison)
+  href: api/Mozzarella.StringExtensions.BeforeFirst.html#Mozzarella_StringExtensions_BeforeFirst_System_String_System_String_System_StringComparison_
+  commentId: M:Mozzarella.StringExtensions.BeforeFirst(System.String,System.String,System.StringComparison)
+  fullName: Mozzarella.StringExtensions.BeforeFirst(System.String, System.String, System.StringComparison)
+  nameWithType: StringExtensions.BeforeFirst(String, String, StringComparison)
+- uid: Mozzarella.StringExtensions.BeforeFirst*
+  name: BeforeFirst
+  href: api/Mozzarella.StringExtensions.BeforeFirst.html
+  commentId: Overload:Mozzarella.StringExtensions.BeforeFirst
+  fullName: Mozzarella.StringExtensions.BeforeFirst
+  nameWithType: StringExtensions.BeforeFirst
+- uid: Mozzarella.StringExtensions.BeforeLast(System.String,System.String)
+  name: BeforeLast(String, String)
+  href: api/Mozzarella.StringExtensions.BeforeLast.html#Mozzarella_StringExtensions_BeforeLast_System_String_System_String_
+  commentId: M:Mozzarella.StringExtensions.BeforeLast(System.String,System.String)
+  fullName: Mozzarella.StringExtensions.BeforeLast(System.String, System.String)
+  nameWithType: StringExtensions.BeforeLast(String, String)
+- uid: Mozzarella.StringExtensions.BeforeLast(System.String,System.String,System.StringComparison)
+  name: BeforeLast(String, String, StringComparison)
+  href: api/Mozzarella.StringExtensions.BeforeLast.html#Mozzarella_StringExtensions_BeforeLast_System_String_System_String_System_StringComparison_
+  commentId: M:Mozzarella.StringExtensions.BeforeLast(System.String,System.String,System.StringComparison)
+  fullName: Mozzarella.StringExtensions.BeforeLast(System.String, System.String, System.StringComparison)
+  nameWithType: StringExtensions.BeforeLast(String, String, StringComparison)
+- uid: Mozzarella.StringExtensions.BeforeLast*
+  name: BeforeLast
+  href: api/Mozzarella.StringExtensions.BeforeLast.html
+  commentId: Overload:Mozzarella.StringExtensions.BeforeLast
+  fullName: Mozzarella.StringExtensions.BeforeLast
+  nameWithType: StringExtensions.BeforeLast
 - uid: Mozzarella.StringExtensions.CICompare(System.String,System.String)
   name: CICompare(String, String)
   href: api/Mozzarella.StringExtensions.CICompare.html#Mozzarella_StringExtensions_CICompare_System_String_System_String_

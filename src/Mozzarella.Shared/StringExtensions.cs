@@ -572,5 +572,162 @@ namespace Mozzarella
 
 			return value.IndexOf(searchValue, comparisonMethod) >= 0;
 		}
+
+		/// <summary>
+		/// Returns the portion of <paramref name="value"/> that occurs before the first instance of <paramref name="searchValue"/>.
+		/// </summary>
+		/// <remarks>
+		/// <para>Returns null if <paramref name="searchValue"/> is null, empty string or if <paramref name="searchValue"/> does not occur within <paramref name="value"/>.</para>
+		/// <para>Matching of <paramref name="searchValue"/> is done using a <see cref="StringComparison.Ordinal"/> comparison.</para>
+		/// </remarks>
+		/// <param name="value">The value to search in.</param>
+		/// <param name="searchValue">The value to search for.</param>
+		/// <returns>Either null, or a new string containing the portion of the string prior to <paramref name="searchValue"/>.</returns>
+#if SUPPORTS_AGGRESSIVEINLINING
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+#endif
+		public static string BeforeFirst(this string value, string searchValue)
+		{
+			return BeforeFirst(value, searchValue, StringComparison.Ordinal);
+		}
+
+		/// <summary>
+		/// Returns the portion of <paramref name="value"/> that occurs before the first instance of <paramref name="searchValue"/>.
+		/// </summary>
+		/// <remarks>
+		/// <para>Returns null if <paramref name="searchValue"/> is null, empty string or if <paramref name="searchValue"/> does not occur within <paramref name="value"/>.</para>
+		/// </remarks>
+		/// <param name="value">The value to search in.</param>
+		/// <param name="searchValue">The value to search for.</param>
+		/// <param name="comparisonMethod">A value from the <see cref="StringComparison"/> enum specfying how <paramref name="searchValue"/> is matched (or not).</param>
+		/// <returns>Either null, or a new string containing the portion of the string prior to <paramref name="searchValue"/>.</returns>
+		public static string BeforeFirst(this string value, string searchValue, StringComparison comparisonMethod)
+		{
+			if (value == null) return null;
+			if (value.Length == 0) return null;
+
+			var index = value.IndexOf(searchValue, comparisonMethod);
+			if (index <= 0) return null;
+
+			return value.Substring(0, index);
+		}
+
+		/// <summary>
+		/// Returns the portion of <paramref name="value"/> that occurs before the last instance of <paramref name="searchValue"/>.
+		/// </summary>
+		/// <remarks>
+		/// <para>Returns null if <paramref name="searchValue"/> is null, empty string or if <paramref name="searchValue"/> does not occur within <paramref name="value"/>.</para>
+		/// <para>Matching of <paramref name="searchValue"/> is done using a <see cref="StringComparison.Ordinal"/> comparison.</para>
+		/// </remarks>
+		/// <param name="value">The value to search in.</param>
+		/// <param name="searchValue">The value to search for.</param>
+		/// <returns>Either null, or a new string containing the portion of the string before the last occurrence of <paramref name="searchValue"/>.</returns>
+#if SUPPORTS_AGGRESSIVEINLINING
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+#endif
+		public static string BeforeLast(this string value, string searchValue)
+		{
+			return BeforeLast(value, searchValue, StringComparison.Ordinal);
+		}
+
+		/// <summary>
+		/// Returns the portion of <paramref name="value"/> that occurs before the last instance of <paramref name="searchValue"/>.
+		/// </summary>
+		/// <remarks>
+		/// <para>Returns null if <paramref name="searchValue"/> is null, empty string or if <paramref name="searchValue"/> does not occur within <paramref name="value"/>.</para>
+		/// <para>Matching of <paramref name="searchValue"/> is done using a <see cref="StringComparison.Ordinal"/> comparison.</para>
+		/// </remarks>
+		/// <param name="value">The value to search in.</param>
+		/// <param name="searchValue">The value to search for.</param>
+		/// <param name="comparisonMethod">A value from the <see cref="StringComparison"/> enum specfying how <paramref name="searchValue"/> is matched (or not).</param>
+		/// <returns>Either null, or a new string containing the portion of the string before the last occurrence of <paramref name="searchValue"/>.</returns>
+		public static string BeforeLast(this string value, string searchValue, StringComparison comparisonMethod)
+		{
+			if (value == null) return null;
+			if (value.Length == 0) return null;
+
+			var index = value.LastIndexOf(searchValue, comparisonMethod);
+			if (index <= 0) return null;
+
+			return value.Substring(0, index);
+		}
+
+		/// <summary>
+		/// Returns the portion of <paramref name="value"/> that occurs after the first occurrence of <paramref name="searchValue"/>.
+		/// </summary>
+		/// <remarks>
+		/// <para>Returns null if <paramref name="searchValue"/> is null, empty string or if <paramref name="searchValue"/> does not occur within <paramref name="value"/>.</para>
+		/// <para>Matching of <paramref name="searchValue"/> is done using a <see cref="StringComparison.Ordinal"/> comparison.</para>
+		/// </remarks>
+		/// <param name="value">The value to search within.</param>
+		/// <param name="searchValue">The value to search for.</param>
+		/// <returns>Either null, or a new string containing the portion of the string after the first occurrence of <paramref name="searchValue"/>.</returns>
+#if SUPPORTS_AGGRESSIVEINLINING
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+#endif
+		public static string AfterFirst(this string value, string searchValue)
+		{
+			return AfterFirst(value, searchValue, StringComparison.Ordinal);
+		}
+
+		/// <summary>
+		/// Returns the portion of <paramref name="value"/> that occurs after the first occurrence of <paramref name="searchValue"/>.
+		/// </summary>
+		/// <remarks>
+		/// <para>Returns null if <paramref name="searchValue"/> is null, empty string or if <paramref name="searchValue"/> does not occur within <paramref name="value"/>.</para>
+		/// </remarks>
+		/// <param name="value">The value to search within.</param>
+		/// <param name="searchValue">The value to search for.</param>
+		/// <param name="comparisonMethod">The <see cref="StringComparison"/> method to use when searching for <paramref name="searchValue"/>.</param>
+		/// <returns>Either null, or a new string containing the portion of the string after the first occurrence of <paramref name="searchValue"/>.</returns>
+		public static string AfterFirst(this string value, string searchValue, StringComparison comparisonMethod)
+		{
+			if (value == null) return null;
+			if (value.Length == 0) return null;
+
+			var index = value.IndexOf(searchValue, comparisonMethod);
+			if (index <= 0 || index + 1 == value.Length) return null;
+
+			return value.Substring(index + 1);
+		}
+
+		/// <summary>
+		/// Returns the portion of <paramref name="value"/> that occurs after the last occurrence of <paramref name="searchValue"/>.
+		/// </summary>
+		/// <remarks>
+		/// <para>Returns null if <paramref name="searchValue"/> is null, empty string, <paramref name="searchValue"/> does not occur within <paramref name="value"/> or it occurs at the very end.</para>
+		/// <para>Matching of <paramref name="searchValue"/> is done using a <see cref="StringComparison.Ordinal"/> comparison.</para>
+		/// </remarks>
+		/// <param name="value">The value to search within.</param>
+		/// <param name="searchValue">The value to search for.</param>
+		/// <returns>Either null, or a new string containing the portion of the string after the last occurrence of <paramref name="searchValue"/>.</returns>
+#if SUPPORTS_AGGRESSIVEINLINING
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+#endif
+		public static string AfterLast(this string value, string searchValue)
+		{
+			return AfterLast(value, searchValue, StringComparison.Ordinal);
+		}
+
+		/// <summary>
+		/// Returns the portion of <paramref name="value"/> that occurs after the last occurrence of <paramref name="searchValue"/>.
+		/// </summary>
+		/// <remarks>
+		/// <para>Returns null if <paramref name="searchValue"/> is null, empty string, <paramref name="searchValue"/> does not occur within <paramref name="value"/> or it occurs at the very end.</para>
+		/// </remarks>
+		/// <param name="value">The value to search within.</param>
+		/// <param name="searchValue">The value to search for.</param>
+		/// <param name="comparisonMethod">The <see cref="StringComparison"/> method to use when searching for <paramref name="searchValue"/>.</param>
+		/// <returns>Either null, or a new string containing the portion of the string after the last occurrence of <paramref name="searchValue"/>.</returns>
+		public static string AfterLast(this string value, string searchValue, StringComparison comparisonMethod)
+		{
+			if (value == null) return null;
+			if (value.Length == 0) return null;
+
+			var index = value.LastIndexOf(searchValue, comparisonMethod);
+			if (index <= 0 || index + 1== value.Length) return null;
+
+			return value.Substring(index + 1);
+		}
 	}
 }

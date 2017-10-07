@@ -9,6 +9,14 @@ items:
   - Mozzarella.StringExtensions.AddPrefix(System.String,System.String,System.Boolean)
   - Mozzarella.StringExtensions.AddSuffix(System.String,System.String)
   - Mozzarella.StringExtensions.AddSuffix(System.String,System.String,System.Boolean)
+  - Mozzarella.StringExtensions.AfterFirst(System.String,System.String)
+  - Mozzarella.StringExtensions.AfterFirst(System.String,System.String,System.StringComparison)
+  - Mozzarella.StringExtensions.AfterLast(System.String,System.String)
+  - Mozzarella.StringExtensions.AfterLast(System.String,System.String,System.StringComparison)
+  - Mozzarella.StringExtensions.BeforeFirst(System.String,System.String)
+  - Mozzarella.StringExtensions.BeforeFirst(System.String,System.String,System.StringComparison)
+  - Mozzarella.StringExtensions.BeforeLast(System.String,System.String)
+  - Mozzarella.StringExtensions.BeforeLast(System.String,System.String,System.StringComparison)
   - Mozzarella.StringExtensions.CICompare(System.String,System.String)
   - Mozzarella.StringExtensions.CIContains(System.String,System.String)
   - Mozzarella.StringExtensions.CIEquals(System.String,System.String)
@@ -1500,6 +1508,378 @@ items:
   modifiers.vb:
   - Public
   - Shared
+- uid: Mozzarella.StringExtensions.BeforeFirst(System.String,System.String)
+  commentId: M:Mozzarella.StringExtensions.BeforeFirst(System.String,System.String)
+  id: BeforeFirst(System.String,System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: BeforeFirst(String, String)
+  nameWithType: StringExtensions.BeforeFirst(String, String)
+  fullName: Mozzarella.StringExtensions.BeforeFirst(System.String, System.String)
+  type: Method
+  source:
+    id: BeforeFirst
+    path: ''
+    startLine: 909
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns the portion of <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> that occurs before the first instance of <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code>.\n"
+  remarks: "\n<p>Returns null if <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code> is null, empty string or if <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code> does not occur within <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code>.</p>\n<p>Matching of <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code> is done using a <xref href=\"System.StringComparison.Ordinal\" data-throw-if-not-resolved=\"false\"></xref> comparison.</p>\n"
+  example: []
+  syntax:
+    content: public static string BeforeFirst(this string value, string searchValue)
+    parameters:
+    - id: value
+      type: System.String
+      description: The value to search in.
+    - id: searchValue
+      type: System.String
+      description: The value to search for.
+    return:
+      type: System.String
+      description: Either null, or a new string containing the portion of the string prior to <code data-dev-comment-type="paramref" class="paramref">searchValue</code>.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function BeforeFirst(value As String, searchValue As String) As String
+  overload: Mozzarella.StringExtensions.BeforeFirst*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.BeforeFirst(System.String,System.String,System.StringComparison)
+  commentId: M:Mozzarella.StringExtensions.BeforeFirst(System.String,System.String,System.StringComparison)
+  id: BeforeFirst(System.String,System.String,System.StringComparison)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: BeforeFirst(String, String, StringComparison)
+  nameWithType: StringExtensions.BeforeFirst(String, String, StringComparison)
+  fullName: Mozzarella.StringExtensions.BeforeFirst(System.String, System.String, System.StringComparison)
+  type: Method
+  source:
+    id: BeforeFirst
+    path: ''
+    startLine: 924
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns the portion of <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> that occurs before the first instance of <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code>.\n"
+  remarks: "\n<p>Returns null if <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code> is null, empty string or if <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code> does not occur within <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code>.</p>\n"
+  example: []
+  syntax:
+    content: public static string BeforeFirst(this string value, string searchValue, StringComparison comparisonMethod)
+    parameters:
+    - id: value
+      type: System.String
+      description: The value to search in.
+    - id: searchValue
+      type: System.String
+      description: The value to search for.
+    - id: comparisonMethod
+      type: System.StringComparison
+      description: A value from the <xref href="System.StringComparison" data-throw-if-not-resolved="false"></xref> enum specfying how <code data-dev-comment-type="paramref" class="paramref">searchValue</code> is matched (or not).
+    return:
+      type: System.String
+      description: Either null, or a new string containing the portion of the string prior to <code data-dev-comment-type="paramref" class="paramref">searchValue</code>.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function BeforeFirst(value As String, searchValue As String, comparisonMethod As StringComparison) As String
+  overload: Mozzarella.StringExtensions.BeforeFirst*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.BeforeLast(System.String,System.String)
+  commentId: M:Mozzarella.StringExtensions.BeforeLast(System.String,System.String)
+  id: BeforeLast(System.String,System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: BeforeLast(String, String)
+  nameWithType: StringExtensions.BeforeLast(String, String)
+  fullName: Mozzarella.StringExtensions.BeforeLast(System.String, System.String)
+  type: Method
+  source:
+    id: BeforeLast
+    path: ''
+    startLine: 948
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns the portion of <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> that occurs before the last instance of <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code>.\n"
+  remarks: "\n<p>Returns null if <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code> is null, empty string or if <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code> does not occur within <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code>.</p>\n<p>Matching of <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code> is done using a <xref href=\"System.StringComparison.Ordinal\" data-throw-if-not-resolved=\"false\"></xref> comparison.</p>\n"
+  example: []
+  syntax:
+    content: public static string BeforeLast(this string value, string searchValue)
+    parameters:
+    - id: value
+      type: System.String
+      description: The value to search in.
+    - id: searchValue
+      type: System.String
+      description: The value to search for.
+    return:
+      type: System.String
+      description: Either null, or a new string containing the portion of the string before the last occurrence of <code data-dev-comment-type="paramref" class="paramref">searchValue</code>.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function BeforeLast(value As String, searchValue As String) As String
+  overload: Mozzarella.StringExtensions.BeforeLast*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.BeforeLast(System.String,System.String,System.StringComparison)
+  commentId: M:Mozzarella.StringExtensions.BeforeLast(System.String,System.String,System.StringComparison)
+  id: BeforeLast(System.String,System.String,System.StringComparison)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: BeforeLast(String, String, StringComparison)
+  nameWithType: StringExtensions.BeforeLast(String, String, StringComparison)
+  fullName: Mozzarella.StringExtensions.BeforeLast(System.String, System.String, System.StringComparison)
+  type: Method
+  source:
+    id: BeforeLast
+    path: ''
+    startLine: 964
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns the portion of <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> that occurs before the last instance of <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code>.\n"
+  remarks: "\n<p>Returns null if <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code> is null, empty string or if <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code> does not occur within <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code>.</p>\n<p>Matching of <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code> is done using a <xref href=\"System.StringComparison.Ordinal\" data-throw-if-not-resolved=\"false\"></xref> comparison.</p>\n"
+  example: []
+  syntax:
+    content: public static string BeforeLast(this string value, string searchValue, StringComparison comparisonMethod)
+    parameters:
+    - id: value
+      type: System.String
+      description: The value to search in.
+    - id: searchValue
+      type: System.String
+      description: The value to search for.
+    - id: comparisonMethod
+      type: System.StringComparison
+      description: A value from the <xref href="System.StringComparison" data-throw-if-not-resolved="false"></xref> enum specfying how <code data-dev-comment-type="paramref" class="paramref">searchValue</code> is matched (or not).
+    return:
+      type: System.String
+      description: Either null, or a new string containing the portion of the string before the last occurrence of <code data-dev-comment-type="paramref" class="paramref">searchValue</code>.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function BeforeLast(value As String, searchValue As String, comparisonMethod As StringComparison) As String
+  overload: Mozzarella.StringExtensions.BeforeLast*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.AfterFirst(System.String,System.String)
+  commentId: M:Mozzarella.StringExtensions.AfterFirst(System.String,System.String)
+  id: AfterFirst(System.String,System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: AfterFirst(String, String)
+  nameWithType: StringExtensions.AfterFirst(String, String)
+  fullName: Mozzarella.StringExtensions.AfterFirst(System.String, System.String)
+  type: Method
+  source:
+    id: AfterFirst
+    path: ''
+    startLine: 988
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns the portion of <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> that occurs after the first occurrence of <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code>.\n"
+  remarks: "\n<p>Returns null if <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code> is null, empty string or if <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code> does not occur within <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code>.</p>\n<p>Matching of <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code> is done using a <xref href=\"System.StringComparison.Ordinal\" data-throw-if-not-resolved=\"false\"></xref> comparison.</p>\n"
+  example: []
+  syntax:
+    content: public static string AfterFirst(this string value, string searchValue)
+    parameters:
+    - id: value
+      type: System.String
+      description: The value to search within.
+    - id: searchValue
+      type: System.String
+      description: The value to search for.
+    return:
+      type: System.String
+      description: Either null, or a new string containing the portion of the string after the first occurrence of <code data-dev-comment-type="paramref" class="paramref">searchValue</code>.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AfterFirst(value As String, searchValue As String) As String
+  overload: Mozzarella.StringExtensions.AfterFirst*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.AfterFirst(System.String,System.String,System.StringComparison)
+  commentId: M:Mozzarella.StringExtensions.AfterFirst(System.String,System.String,System.StringComparison)
+  id: AfterFirst(System.String,System.String,System.StringComparison)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: AfterFirst(String, String, StringComparison)
+  nameWithType: StringExtensions.AfterFirst(String, String, StringComparison)
+  fullName: Mozzarella.StringExtensions.AfterFirst(System.String, System.String, System.StringComparison)
+  type: Method
+  source:
+    id: AfterFirst
+    path: ''
+    startLine: 1003
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns the portion of <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> that occurs after the first occurrence of <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code>.\n"
+  remarks: "\n<p>Returns null if <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code> is null, empty string or if <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code> does not occur within <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code>.</p>\n"
+  example: []
+  syntax:
+    content: public static string AfterFirst(this string value, string searchValue, StringComparison comparisonMethod)
+    parameters:
+    - id: value
+      type: System.String
+      description: The value to search within.
+    - id: searchValue
+      type: System.String
+      description: The value to search for.
+    - id: comparisonMethod
+      type: System.StringComparison
+      description: The <xref href="System.StringComparison" data-throw-if-not-resolved="false"></xref> method to use when searching for <code data-dev-comment-type="paramref" class="paramref">searchValue</code>.
+    return:
+      type: System.String
+      description: Either null, or a new string containing the portion of the string after the first occurrence of <code data-dev-comment-type="paramref" class="paramref">searchValue</code>.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AfterFirst(value As String, searchValue As String, comparisonMethod As StringComparison) As String
+  overload: Mozzarella.StringExtensions.AfterFirst*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.AfterLast(System.String,System.String)
+  commentId: M:Mozzarella.StringExtensions.AfterLast(System.String,System.String)
+  id: AfterLast(System.String,System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: AfterLast(String, String)
+  nameWithType: StringExtensions.AfterLast(String, String)
+  fullName: Mozzarella.StringExtensions.AfterLast(System.String, System.String)
+  type: Method
+  source:
+    id: AfterLast
+    path: ''
+    startLine: 1027
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns the portion of <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> that occurs after the last occurrence of <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code>.\n"
+  remarks: "\n<p>Returns null if <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code> is null, empty string, <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code> does not occur within <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> or it occurs at the very end.</p>\n<p>Matching of <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code> is done using a <xref href=\"System.StringComparison.Ordinal\" data-throw-if-not-resolved=\"false\"></xref> comparison.</p>\n"
+  example: []
+  syntax:
+    content: public static string AfterLast(this string value, string searchValue)
+    parameters:
+    - id: value
+      type: System.String
+      description: The value to search within.
+    - id: searchValue
+      type: System.String
+      description: The value to search for.
+    return:
+      type: System.String
+      description: Either null, or a new string containing the portion of the string after the last occurrence of <code data-dev-comment-type="paramref" class="paramref">searchValue</code>.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AfterLast(value As String, searchValue As String) As String
+  overload: Mozzarella.StringExtensions.AfterLast*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.AfterLast(System.String,System.String,System.StringComparison)
+  commentId: M:Mozzarella.StringExtensions.AfterLast(System.String,System.String,System.StringComparison)
+  id: AfterLast(System.String,System.String,System.StringComparison)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: AfterLast(String, String, StringComparison)
+  nameWithType: StringExtensions.AfterLast(String, String, StringComparison)
+  fullName: Mozzarella.StringExtensions.AfterLast(System.String, System.String, System.StringComparison)
+  type: Method
+  source:
+    id: AfterLast
+    path: ''
+    startLine: 1042
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns the portion of <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> that occurs after the last occurrence of <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code>.\n"
+  remarks: "\n<p>Returns null if <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code> is null, empty string, <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code> does not occur within <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> or it occurs at the very end.</p>\n"
+  example: []
+  syntax:
+    content: public static string AfterLast(this string value, string searchValue, StringComparison comparisonMethod)
+    parameters:
+    - id: value
+      type: System.String
+      description: The value to search within.
+    - id: searchValue
+      type: System.String
+      description: The value to search for.
+    - id: comparisonMethod
+      type: System.StringComparison
+      description: The <xref href="System.StringComparison" data-throw-if-not-resolved="false"></xref> method to use when searching for <code data-dev-comment-type="paramref" class="paramref">searchValue</code>.
+    return:
+      type: System.String
+      description: Either null, or a new string containing the portion of the string after the last occurrence of <code data-dev-comment-type="paramref" class="paramref">searchValue</code>.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AfterLast(value As String, searchValue As String, comparisonMethod As StringComparison) As String
+  overload: Mozzarella.StringExtensions.AfterLast*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
 references:
 - uid: System.String
   commentId: T:System.String
@@ -2033,3 +2413,27 @@ references:
   name: Contains
   nameWithType: StringExtensions.Contains
   fullName: Mozzarella.StringExtensions.Contains
+- uid: Mozzarella.StringExtensions.BeforeFirst*
+  commentId: Overload:Mozzarella.StringExtensions.BeforeFirst
+  isExternal: false
+  name: BeforeFirst
+  nameWithType: StringExtensions.BeforeFirst
+  fullName: Mozzarella.StringExtensions.BeforeFirst
+- uid: Mozzarella.StringExtensions.BeforeLast*
+  commentId: Overload:Mozzarella.StringExtensions.BeforeLast
+  isExternal: false
+  name: BeforeLast
+  nameWithType: StringExtensions.BeforeLast
+  fullName: Mozzarella.StringExtensions.BeforeLast
+- uid: Mozzarella.StringExtensions.AfterFirst*
+  commentId: Overload:Mozzarella.StringExtensions.AfterFirst
+  isExternal: false
+  name: AfterFirst
+  nameWithType: StringExtensions.AfterFirst
+  fullName: Mozzarella.StringExtensions.AfterFirst
+- uid: Mozzarella.StringExtensions.AfterLast*
+  commentId: Overload:Mozzarella.StringExtensions.AfterLast
+  isExternal: false
+  name: AfterLast
+  nameWithType: StringExtensions.AfterLast
+  fullName: Mozzarella.StringExtensions.AfterLast
