@@ -53,6 +53,7 @@
     <Compile Include="AddSuffixTests.cs" />
     <Compile Include="AddPrefixTests.cs" />
     <Compile Include="ByteArrayExtensionsTests.cs" />
+    <Compile Include="CoalesceTests.cs" />
     <Compile Include="OCICompareTests.cs" />
     <Compile Include="CICompareTests.cs" />
     <Compile Include="OCIContainsTests.cs" />

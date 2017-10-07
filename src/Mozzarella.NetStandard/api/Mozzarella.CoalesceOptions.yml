@@ -1,0 +1,120 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mozzarella.CoalesceOptions
+  commentId: T:Mozzarella.CoalesceOptions
+  id: CoalesceOptions
+  parent: Mozzarella
+  children:
+  - Mozzarella.CoalesceOptions.None
+  - Mozzarella.CoalesceOptions.WhitespaceAsEmpty
+  langs:
+  - csharp
+  - vb
+  name: CoalesceOptions
+  nameWithType: CoalesceOptions
+  fullName: Mozzarella.CoalesceOptions
+  type: Enum
+  source:
+    id: CoalesceOptions
+    path: ''
+    startLine: 270
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nOptions for the <xref href=\"Mozzarella.StringExtensions.Coalesce(System.String%2cMozzarella.CoalesceOptions%2cSystem.String)\" data-throw-if-not-resolved=\"false\"></xref> extension method.\n"
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum CoalesceOptions
+    content.vb: >-
+      <Flags>
+
+      Public Enum CoalesceOptions
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Mozzarella.CoalesceOptions.None
+  commentId: F:Mozzarella.CoalesceOptions.None
+  id: None
+  parent: Mozzarella.CoalesceOptions
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: CoalesceOptions.None
+  fullName: Mozzarella.CoalesceOptions.None
+  type: Field
+  source:
+    id: None
+    path: ''
+    startLine: 276
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nNo special options. Null or empty string will be &apos;coalesced&apos;.\n"
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: Mozzarella.CoalesceOptions
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Mozzarella.CoalesceOptions.WhitespaceAsEmpty
+  commentId: F:Mozzarella.CoalesceOptions.WhitespaceAsEmpty
+  id: WhitespaceAsEmpty
+  parent: Mozzarella.CoalesceOptions
+  langs:
+  - csharp
+  - vb
+  name: WhitespaceAsEmpty
+  nameWithType: CoalesceOptions.WhitespaceAsEmpty
+  fullName: Mozzarella.CoalesceOptions.WhitespaceAsEmpty
+  type: Field
+  source:
+    id: WhitespaceAsEmpty
+    path: ''
+    startLine: 280
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nStrings that contain only whitespace will be &apos;coalesced&apos; in addition to those that are null or empty.\n"
+  example: []
+  syntax:
+    content: WhitespaceAsEmpty = 1
+    return:
+      type: Mozzarella.CoalesceOptions
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Mozzarella.StringExtensions.Coalesce(System.String,Mozzarella.CoalesceOptions,System.String)
+  commentId: M:Mozzarella.StringExtensions.Coalesce(System.String,Mozzarella.CoalesceOptions,System.String)
+- uid: Mozzarella
+  commentId: N:Mozzarella
+  isExternal: false
+  name: Mozzarella
+  nameWithType: Mozzarella
+  fullName: Mozzarella
+- uid: Mozzarella.CoalesceOptions
+  commentId: T:Mozzarella.CoalesceOptions
+  parent: Mozzarella
+  isExternal: false
+  name: CoalesceOptions
+  nameWithType: CoalesceOptions
+  fullName: Mozzarella.CoalesceOptions

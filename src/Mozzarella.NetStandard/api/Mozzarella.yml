@@ -5,6 +5,7 @@ items:
   id: Mozzarella
   children:
   - Mozzarella.ByteArrayExtensions
+  - Mozzarella.CoalesceOptions
   - Mozzarella.EnumerableOfStringExtensions
   - Mozzarella.ErasableString
   - Mozzarella.StringExtensions
@@ -30,6 +31,13 @@ references:
   name: ByteArrayExtensions
   nameWithType: ByteArrayExtensions
   fullName: Mozzarella.ByteArrayExtensions
+- uid: Mozzarella.CoalesceOptions
+  commentId: T:Mozzarella.CoalesceOptions
+  parent: Mozzarella
+  isExternal: false
+  name: CoalesceOptions
+  nameWithType: CoalesceOptions
+  fullName: Mozzarella.CoalesceOptions
 - uid: Mozzarella.EnumerableOfStringExtensions
   commentId: T:Mozzarella.EnumerableOfStringExtensions
   isExternal: false
@@ -42,3 +50,9 @@ references:
   name: StringExtensions
   nameWithType: StringExtensions
   fullName: Mozzarella.StringExtensions
+- uid: Mozzarella
+  commentId: N:Mozzarella
+  isExternal: false
+  name: Mozzarella
+  nameWithType: Mozzarella
+  fullName: Mozzarella

@@ -11,6 +11,7 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)AssemblyInfoCommon.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ByteArrayExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CoalesceOptions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)EnumerableOfStringExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)StringExtensions.cs" />
   </ItemGroup>

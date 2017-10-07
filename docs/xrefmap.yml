@@ -52,6 +52,24 @@ references:
   commentId: Overload:Mozzarella.ByteArrayExtensions.ToHexString
   fullName: Mozzarella.ByteArrayExtensions.ToHexString
   nameWithType: ByteArrayExtensions.ToHexString
+- uid: Mozzarella.CoalesceOptions
+  name: CoalesceOptions
+  href: api/Mozzarella.CoalesceOptions.html
+  commentId: T:Mozzarella.CoalesceOptions
+  fullName: Mozzarella.CoalesceOptions
+  nameWithType: CoalesceOptions
+- uid: Mozzarella.CoalesceOptions.None
+  name: None
+  href: api/Mozzarella.CoalesceOptions.None.html#Mozzarella_CoalesceOptions_None
+  commentId: F:Mozzarella.CoalesceOptions.None
+  fullName: Mozzarella.CoalesceOptions.None
+  nameWithType: CoalesceOptions.None
+- uid: Mozzarella.CoalesceOptions.WhitespaceAsEmpty
+  name: WhitespaceAsEmpty
+  href: api/Mozzarella.CoalesceOptions.WhitespaceAsEmpty.html#Mozzarella_CoalesceOptions_WhitespaceAsEmpty
+  commentId: F:Mozzarella.CoalesceOptions.WhitespaceAsEmpty
+  fullName: Mozzarella.CoalesceOptions.WhitespaceAsEmpty
+  nameWithType: CoalesceOptions.WhitespaceAsEmpty
 - uid: Mozzarella.EnumerableOfStringExtensions
   name: EnumerableOfStringExtensions
   href: api/Mozzarella.EnumerableOfStringExtensions.html
@@ -250,6 +268,42 @@ references:
   commentId: Overload:Mozzarella.StringExtensions.CIReplace
   fullName: Mozzarella.StringExtensions.CIReplace
   nameWithType: StringExtensions.CIReplace
+- uid: Mozzarella.StringExtensions.Coalesce(System.String,Mozzarella.CoalesceOptions,System.String)
+  name: Coalesce(String, CoalesceOptions, String)
+  href: api/Mozzarella.StringExtensions.Coalesce.html#Mozzarella_StringExtensions_Coalesce_System_String_Mozzarella_CoalesceOptions_System_String_
+  commentId: M:Mozzarella.StringExtensions.Coalesce(System.String,Mozzarella.CoalesceOptions,System.String)
+  fullName: Mozzarella.StringExtensions.Coalesce(System.String, Mozzarella.CoalesceOptions, System.String)
+  nameWithType: StringExtensions.Coalesce(String, CoalesceOptions, String)
+- uid: Mozzarella.StringExtensions.Coalesce(System.String,Mozzarella.CoalesceOptions,System.String[])
+  name: Coalesce(String, CoalesceOptions, String[])
+  href: api/Mozzarella.StringExtensions.Coalesce.html#Mozzarella_StringExtensions_Coalesce_System_String_Mozzarella_CoalesceOptions_System_String___
+  commentId: M:Mozzarella.StringExtensions.Coalesce(System.String,Mozzarella.CoalesceOptions,System.String[])
+  name.vb: Coalesce(String, CoalesceOptions, String())
+  fullName: Mozzarella.StringExtensions.Coalesce(System.String, Mozzarella.CoalesceOptions, System.String[])
+  fullName.vb: Mozzarella.StringExtensions.Coalesce(System.String, Mozzarella.CoalesceOptions, System.String())
+  nameWithType: StringExtensions.Coalesce(String, CoalesceOptions, String[])
+  nameWithType.vb: StringExtensions.Coalesce(String, CoalesceOptions, String())
+- uid: Mozzarella.StringExtensions.Coalesce(System.String,System.String)
+  name: Coalesce(String, String)
+  href: api/Mozzarella.StringExtensions.Coalesce.html#Mozzarella_StringExtensions_Coalesce_System_String_System_String_
+  commentId: M:Mozzarella.StringExtensions.Coalesce(System.String,System.String)
+  fullName: Mozzarella.StringExtensions.Coalesce(System.String, System.String)
+  nameWithType: StringExtensions.Coalesce(String, String)
+- uid: Mozzarella.StringExtensions.Coalesce(System.String,System.String[])
+  name: Coalesce(String, String[])
+  href: api/Mozzarella.StringExtensions.Coalesce.html#Mozzarella_StringExtensions_Coalesce_System_String_System_String___
+  commentId: M:Mozzarella.StringExtensions.Coalesce(System.String,System.String[])
+  name.vb: Coalesce(String, String())
+  fullName: Mozzarella.StringExtensions.Coalesce(System.String, System.String[])
+  fullName.vb: Mozzarella.StringExtensions.Coalesce(System.String, System.String())
+  nameWithType: StringExtensions.Coalesce(String, String[])
+  nameWithType.vb: StringExtensions.Coalesce(String, String())
+- uid: Mozzarella.StringExtensions.Coalesce*
+  name: Coalesce
+  href: api/Mozzarella.StringExtensions.Coalesce.html
+  commentId: Overload:Mozzarella.StringExtensions.Coalesce
+  fullName: Mozzarella.StringExtensions.Coalesce
+  nameWithType: StringExtensions.Coalesce
 - uid: Mozzarella.StringExtensions.IndexOfFirstDifference(System.String,System.String)
   name: IndexOfFirstDifference(String, String)
   href: api/Mozzarella.StringExtensions.IndexOfFirstDifference.html#Mozzarella_StringExtensions_IndexOfFirstDifference_System_String_System_String_

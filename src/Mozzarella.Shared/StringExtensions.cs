@@ -437,5 +437,91 @@ namespace Mozzarella
 			return value;
 		}
 
+		/// <summary>
+		/// Returns <paramref name="otherValue"/> if <paramref name="value"/> is null, empty or contains only whitespace characters, otherwise returns <paramref name="value"/>.
+		/// </summary>
+		/// <param name="value">The first value to return if it is not considered empty.</param>
+		/// <param name="otherValue">The second value to return if the first is considered empty.</param>
+		/// <returns>Either <paramref name="value"/> or <paramref name="otherValue"/> depending on which is empty.</returns>
+		/// <seealso cref="Coalesce(string, CoalesceOptions, string)"/>
+		/// <seealso cref="Coalesce(string, string[])"/>
+#if SUPPORTS_AGGRESSIVEINLINING
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+#endif
+		public static string Coalesce(this string value, string otherValue)
+		{
+			return Coalesce(value, CoalesceOptions.WhitespaceAsEmpty, otherValue);
+		}
+
+		/// <summary>
+		/// Returns <paramref name="otherValue"/> if <paramref name="value"/> is considered empty, otherwise returns <paramref name="value"/>.
+		/// </summary>
+		/// <remarks>
+		/// <para>Whether or not a value is considered empty can be controlled (partially) via the <paramref name="options"/> argument.</para>
+		/// </remarks>
+		/// <param name="value">The first value to return if it is not considered empty.</param>
+		/// <param name="options">A set of flags from the <see cref="CoalesceOptions"/> controlling how the method behaves.</param>
+		/// <param name="otherValue">The second value to return if the first is considered empty.</param>
+		/// <returns>Either <paramref name="value"/> or <paramref name="otherValue"/> depending on which is empty.</returns>
+		public static string Coalesce(this string value, CoalesceOptions options, string otherValue)
+		{
+			if ((options & CoalesceOptions.WhitespaceAsEmpty) == CoalesceOptions.WhitespaceAsEmpty)
+				return String.IsNullOrWhiteSpace(value) ? otherValue : value;
+
+			return String.IsNullOrEmpty(value) ? otherValue : value;
+		}
+
+		/// <summary>
+		/// Returns <paramref name="value"/> if it is not empty, otherwise returns the first non-empty, non-null, non-whitespace string from <paramref name="otherValues"/>.
+		/// </summary>
+		/// <remarks>
+		/// <para>If <paramref name="otherValues"/> is null, then <paramref name="value"/> is returned.</para>
+		/// </remarks>
+		/// <param name="value">The first value to return if it is not considered empty.</param>
+		/// <param name="otherValues">An array of values, in preferred order, the first non-empty, non-null, non-whitespace value to be returned.</param>
+		/// <returns>Either <paramref name="value"/> or the first non-empty/null/whitespace value from <paramref name="otherValues"/>.</returns>
+		/// <seealso cref="Coalesce(string, CoalesceOptions, string[])"/>
+		/// <seealso cref="Coalesce(string, CoalesceOptions, string)"/>
+#if SUPPORTS_AGGRESSIVEINLINING
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+#endif
+		public static string Coalesce(this string value, params string[] otherValues)
+		{
+			return Coalesce(value, CoalesceOptions.WhitespaceAsEmpty, otherValues);
+		}
+
+		/// <summary>
+		/// Returns <paramref name="value"/> if it is not empty, otherwise returns the first non-empty, non-null, non-whitespace string from <paramref name="otherValues"/>.
+		/// </summary>
+		/// <remarks>
+		/// <para>If <paramref name="otherValues"/> is null, then <paramref name="value"/> is returned.</para>
+		/// </remarks>
+		/// <param name="value">The first value to return if it is not considered empty.</param>
+		/// <param name="options">A set of flags from the <see cref="CoalesceOptions"/> controlling how the method behaves.</param>
+		/// <param name="otherValues">An array of values, in preferred order, the first non-empty, non-null, non-whitespace value to be returned.</param>
+		/// <returns>Either <paramref name="value"/> or the first non-empty/null/whitespace value from <paramref name="otherValues"/>.</returns>
+		/// <seealso cref="Coalesce(string, CoalesceOptions, string)"/>
+		/// <seealso cref="Coalesce(string, string[])"/>
+		public static string Coalesce(this string value, CoalesceOptions options, params string[] otherValues)
+		{
+			if (otherValues == null) return value;
+
+			var whitespaceAsEmpty = (options & CoalesceOptions.WhitespaceAsEmpty) == CoalesceOptions.WhitespaceAsEmpty;
+
+			var retVal = value;
+			for (int cnt = 0; cnt < otherValues.Length; cnt++)
+			{
+				retVal = Coalesce(retVal, options, otherValues[cnt]);
+
+				if (whitespaceAsEmpty)
+				{
+					if (!String.IsNullOrWhiteSpace(retVal)) return retVal;
+				}
+				else if (!String.IsNullOrEmpty(retVal)) return retVal;
+			}
+
+			return retVal;
+		}
+
 	}
 }

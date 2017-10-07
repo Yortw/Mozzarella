@@ -13,6 +13,10 @@ items:
   - Mozzarella.StringExtensions.CIContains(System.String,System.String)
   - Mozzarella.StringExtensions.CIEquals(System.String,System.String)
   - Mozzarella.StringExtensions.CIReplace(System.String,System.String,System.String)
+  - Mozzarella.StringExtensions.Coalesce(System.String,Mozzarella.CoalesceOptions,System.String)
+  - Mozzarella.StringExtensions.Coalesce(System.String,Mozzarella.CoalesceOptions,System.String[])
+  - Mozzarella.StringExtensions.Coalesce(System.String,System.String)
+  - Mozzarella.StringExtensions.Coalesce(System.String,System.String[])
   - Mozzarella.StringExtensions.IndexOfFirstDifference(System.String,System.String)
   - Mozzarella.StringExtensions.IsAllDigits(System.String)
   - Mozzarella.StringExtensions.Like(System.String,System.String,System.Boolean)
@@ -37,7 +41,7 @@ items:
   source:
     id: StringExtensions
     path: ''
-    startLine: 309
+    startLine: 331
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -78,7 +82,7 @@ items:
   source:
     id: Truncate
     path: ''
-    startLine: 322
+    startLine: 344
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -127,7 +131,7 @@ items:
   source:
     id: OCIEquals
     path: ''
-    startLine: 341
+    startLine: 363
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -172,7 +176,7 @@ items:
   source:
     id: OEquals
     path: ''
-    startLine: 356
+    startLine: 378
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -217,7 +221,7 @@ items:
   source:
     id: CIEquals
     path: ''
-    startLine: 370
+    startLine: 392
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -262,7 +266,7 @@ items:
   source:
     id: OCICompare
     path: ''
-    startLine: 384
+    startLine: 406
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -307,7 +311,7 @@ items:
   source:
     id: CICompare
     path: ''
-    startLine: 399
+    startLine: 421
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -352,7 +356,7 @@ items:
   source:
     id: CIContains
     path: ''
-    startLine: 411
+    startLine: 433
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -400,7 +404,7 @@ items:
   source:
     id: OCIContains
     path: ''
-    startLine: 425
+    startLine: 447
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -448,7 +452,7 @@ items:
   source:
     id: CIReplace
     path: ''
-    startLine: 446
+    startLine: 468
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -504,7 +508,7 @@ items:
   source:
     id: OCIReplace
     path: ''
-    startLine: 464
+    startLine: 486
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -560,7 +564,7 @@ items:
   source:
     id: Replace
     path: ''
-    startLine: 481
+    startLine: 503
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -619,7 +623,7 @@ items:
   source:
     id: IndexOfFirstDifference
     path: ''
-    startLine: 530
+    startLine: 552
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -668,7 +672,7 @@ items:
   source:
     id: IsAllDigits
     path: ''
-    startLine: 554
+    startLine: 576
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -714,7 +718,7 @@ items:
   source:
     id: Like
     path: ''
-    startLine: 579
+    startLine: 601
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -766,7 +770,7 @@ items:
   source:
     id: StripSuffix
     path: ''
-    startLine: 608
+    startLine: 630
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -815,7 +819,7 @@ items:
   source:
     id: StripSuffix
     path: ''
-    startLine: 622
+    startLine: 644
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -867,7 +871,7 @@ items:
   source:
     id: StripPrefix
     path: ''
-    startLine: 643
+    startLine: 665
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -916,7 +920,7 @@ items:
   source:
     id: StripPrefix
     path: ''
-    startLine: 657
+    startLine: 679
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -968,7 +972,7 @@ items:
   source:
     id: AddSuffix
     path: ''
-    startLine: 678
+    startLine: 700
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1017,7 +1021,7 @@ items:
   source:
     id: AddSuffix
     path: ''
-    startLine: 692
+    startLine: 714
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1069,7 +1073,7 @@ items:
   source:
     id: AddPrefix
     path: ''
-    startLine: 713
+    startLine: 735
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1118,7 +1122,7 @@ items:
   source:
     id: AddPrefix
     path: ''
-    startLine: 727
+    startLine: 749
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1155,6 +1159,212 @@ items:
   modifiers.vb:
   - Public
   - Shared
+- uid: Mozzarella.StringExtensions.Coalesce(System.String,System.String)
+  commentId: M:Mozzarella.StringExtensions.Coalesce(System.String,System.String)
+  id: Coalesce(System.String,System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: Coalesce(String, String)
+  nameWithType: StringExtensions.Coalesce(String, String)
+  fullName: Mozzarella.StringExtensions.Coalesce(System.String, System.String)
+  type: Method
+  source:
+    id: Coalesce
+    path: ''
+    startLine: 771
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns <code data-dev-comment-type=\"paramref\" class=\"paramref\">otherValue</code> if <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> is null, empty or contains only whitespace characters, otherwise returns <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code>.\n"
+  example: []
+  syntax:
+    content: public static string Coalesce(this string value, string otherValue)
+    parameters:
+    - id: value
+      type: System.String
+      description: The first value to return if it is not considered empty.
+    - id: otherValue
+      type: System.String
+      description: The second value to return if the first is considered empty.
+    return:
+      type: System.String
+      description: Either <code data-dev-comment-type="paramref" class="paramref">value</code> or <code data-dev-comment-type="paramref" class="paramref">otherValue</code> depending on which is empty.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Coalesce(value As String, otherValue As String) As String
+  overload: Mozzarella.StringExtensions.Coalesce*
+  seealso:
+  - linkId: Mozzarella.StringExtensions.Coalesce(System.String,Mozzarella.CoalesceOptions,System.String)
+    commentId: M:Mozzarella.StringExtensions.Coalesce(System.String,Mozzarella.CoalesceOptions,System.String)
+  - linkId: Mozzarella.StringExtensions.Coalesce(System.String,System.String[])
+    commentId: M:Mozzarella.StringExtensions.Coalesce(System.String,System.String[])
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.Coalesce(System.String,Mozzarella.CoalesceOptions,System.String)
+  commentId: M:Mozzarella.StringExtensions.Coalesce(System.String,Mozzarella.CoalesceOptions,System.String)
+  id: Coalesce(System.String,Mozzarella.CoalesceOptions,System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: Coalesce(String, CoalesceOptions, String)
+  nameWithType: StringExtensions.Coalesce(String, CoalesceOptions, String)
+  fullName: Mozzarella.StringExtensions.Coalesce(System.String, Mozzarella.CoalesceOptions, System.String)
+  type: Method
+  source:
+    id: Coalesce
+    path: ''
+    startLine: 786
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns <code data-dev-comment-type=\"paramref\" class=\"paramref\">otherValue</code> if <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> is considered empty, otherwise returns <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code>.\n"
+  remarks: "\n<p>Whether or not a value is considered empty can be controlled (partially) via the <code data-dev-comment-type=\"paramref\" class=\"paramref\">options</code> argument.</p>\n"
+  example: []
+  syntax:
+    content: public static string Coalesce(this string value, CoalesceOptions options, string otherValue)
+    parameters:
+    - id: value
+      type: System.String
+      description: The first value to return if it is not considered empty.
+    - id: options
+      type: Mozzarella.CoalesceOptions
+      description: A set of flags from the <xref href="Mozzarella.CoalesceOptions" data-throw-if-not-resolved="false"></xref> controlling how the method behaves.
+    - id: otherValue
+      type: System.String
+      description: The second value to return if the first is considered empty.
+    return:
+      type: System.String
+      description: Either <code data-dev-comment-type="paramref" class="paramref">value</code> or <code data-dev-comment-type="paramref" class="paramref">otherValue</code> depending on which is empty.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Coalesce(value As String, options As CoalesceOptions, otherValue As String) As String
+  overload: Mozzarella.StringExtensions.Coalesce*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.Coalesce(System.String,System.String[])
+  commentId: M:Mozzarella.StringExtensions.Coalesce(System.String,System.String[])
+  id: Coalesce(System.String,System.String[])
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: Coalesce(String, String[])
+  nameWithType: StringExtensions.Coalesce(String, String[])
+  fullName: Mozzarella.StringExtensions.Coalesce(System.String, System.String[])
+  type: Method
+  source:
+    id: Coalesce
+    path: ''
+    startLine: 808
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> if it is not empty, otherwise returns the first non-empty, non-null, non-whitespace string from <code data-dev-comment-type=\"paramref\" class=\"paramref\">otherValues</code>.\n"
+  remarks: "\n<p>If <code data-dev-comment-type=\"paramref\" class=\"paramref\">otherValues</code> is null, then <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> is returned.</p>\n"
+  example: []
+  syntax:
+    content: public static string Coalesce(this string value, params string[] otherValues)
+    parameters:
+    - id: value
+      type: System.String
+      description: The first value to return if it is not considered empty.
+    - id: otherValues
+      type: System.String[]
+      description: An array of values, in preferred order, the first non-empty, non-null, non-whitespace value to be returned.
+    return:
+      type: System.String
+      description: Either <code data-dev-comment-type="paramref" class="paramref">value</code> or the first non-empty/null/whitespace value from <code data-dev-comment-type="paramref" class="paramref">otherValues</code>.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Coalesce(value As String, ParamArray otherValues As String()) As String
+  overload: Mozzarella.StringExtensions.Coalesce*
+  seealso:
+  - linkId: Mozzarella.StringExtensions.Coalesce(System.String,Mozzarella.CoalesceOptions,System.String[])
+    commentId: M:Mozzarella.StringExtensions.Coalesce(System.String,Mozzarella.CoalesceOptions,System.String[])
+  - linkId: Mozzarella.StringExtensions.Coalesce(System.String,Mozzarella.CoalesceOptions,System.String)
+    commentId: M:Mozzarella.StringExtensions.Coalesce(System.String,Mozzarella.CoalesceOptions,System.String)
+  nameWithType.vb: StringExtensions.Coalesce(String, String())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mozzarella.StringExtensions.Coalesce(System.String, System.String())
+  name.vb: Coalesce(String, String())
+- uid: Mozzarella.StringExtensions.Coalesce(System.String,Mozzarella.CoalesceOptions,System.String[])
+  commentId: M:Mozzarella.StringExtensions.Coalesce(System.String,Mozzarella.CoalesceOptions,System.String[])
+  id: Coalesce(System.String,Mozzarella.CoalesceOptions,System.String[])
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: Coalesce(String, CoalesceOptions, String[])
+  nameWithType: StringExtensions.Coalesce(String, CoalesceOptions, String[])
+  fullName: Mozzarella.StringExtensions.Coalesce(System.String, Mozzarella.CoalesceOptions, System.String[])
+  type: Method
+  source:
+    id: Coalesce
+    path: ''
+    startLine: 825
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> if it is not empty, otherwise returns the first non-empty, non-null, non-whitespace string from <code data-dev-comment-type=\"paramref\" class=\"paramref\">otherValues</code>.\n"
+  remarks: "\n<p>If <code data-dev-comment-type=\"paramref\" class=\"paramref\">otherValues</code> is null, then <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> is returned.</p>\n"
+  example: []
+  syntax:
+    content: public static string Coalesce(this string value, CoalesceOptions options, params string[] otherValues)
+    parameters:
+    - id: value
+      type: System.String
+      description: The first value to return if it is not considered empty.
+    - id: options
+      type: Mozzarella.CoalesceOptions
+      description: A set of flags from the <xref href="Mozzarella.CoalesceOptions" data-throw-if-not-resolved="false"></xref> controlling how the method behaves.
+    - id: otherValues
+      type: System.String[]
+      description: An array of values, in preferred order, the first non-empty, non-null, non-whitespace value to be returned.
+    return:
+      type: System.String
+      description: Either <code data-dev-comment-type="paramref" class="paramref">value</code> or the first non-empty/null/whitespace value from <code data-dev-comment-type="paramref" class="paramref">otherValues</code>.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Coalesce(value As String, options As CoalesceOptions, ParamArray otherValues As String()) As String
+  overload: Mozzarella.StringExtensions.Coalesce*
+  seealso:
+  - linkId: Mozzarella.StringExtensions.Coalesce(System.String,Mozzarella.CoalesceOptions,System.String)
+    commentId: M:Mozzarella.StringExtensions.Coalesce(System.String,Mozzarella.CoalesceOptions,System.String)
+  - linkId: Mozzarella.StringExtensions.Coalesce(System.String,System.String[])
+    commentId: M:Mozzarella.StringExtensions.Coalesce(System.String,System.String[])
+  nameWithType.vb: StringExtensions.Coalesce(String, CoalesceOptions, String())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mozzarella.StringExtensions.Coalesce(System.String, Mozzarella.CoalesceOptions, System.String())
+  name.vb: Coalesce(String, CoalesceOptions, String())
 references:
 - uid: System.String
   commentId: T:System.String
@@ -1622,3 +1832,47 @@ references:
   name: AddPrefix
   nameWithType: StringExtensions.AddPrefix
   fullName: Mozzarella.StringExtensions.AddPrefix
+- uid: Mozzarella.StringExtensions.Coalesce(System.String,Mozzarella.CoalesceOptions,System.String)
+  commentId: M:Mozzarella.StringExtensions.Coalesce(System.String,Mozzarella.CoalesceOptions,System.String)
+- uid: Mozzarella.StringExtensions.Coalesce(System.String,System.String[])
+  commentId: M:Mozzarella.StringExtensions.Coalesce(System.String,System.String[])
+- uid: Mozzarella.StringExtensions.Coalesce*
+  commentId: Overload:Mozzarella.StringExtensions.Coalesce
+  isExternal: false
+  name: Coalesce
+  nameWithType: StringExtensions.Coalesce
+  fullName: Mozzarella.StringExtensions.Coalesce
+- uid: Mozzarella.CoalesceOptions
+  commentId: T:Mozzarella.CoalesceOptions
+  parent: Mozzarella
+  isExternal: false
+  name: CoalesceOptions
+  nameWithType: CoalesceOptions
+  fullName: Mozzarella.CoalesceOptions
+- uid: Mozzarella.StringExtensions.Coalesce(System.String,Mozzarella.CoalesceOptions,System.String[])
+  commentId: M:Mozzarella.StringExtensions.Coalesce(System.String,Mozzarella.CoalesceOptions,System.String[])
+- uid: System.String[]
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

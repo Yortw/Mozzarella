@@ -4,6 +4,8 @@
   items:
   - uid: Mozzarella.ByteArrayExtensions
     name: ByteArrayExtensions
+  - uid: Mozzarella.CoalesceOptions
+    name: CoalesceOptions
   - uid: Mozzarella.EnumerableOfStringExtensions
     name: EnumerableOfStringExtensions
   - uid: Mozzarella.ErasableString
