@@ -17,6 +17,6 @@ namespace Mozzarella
 		/// <summary>
 		/// Strings that contain only whitespace will be 'coalesced' in addition to those that are null or empty.
 		/// </summary>
-		WhitespaceAsEmpty
+		WhiteSpaceAsEmpty
 	}
 }

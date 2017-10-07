@@ -450,7 +450,7 @@ namespace Mozzarella
 #endif
 		public static string Coalesce(this string value, string otherValue)
 		{
-			return Coalesce(value, CoalesceOptions.WhitespaceAsEmpty, otherValue);
+			return Coalesce(value, CoalesceOptions.WhiteSpaceAsEmpty, otherValue);
 		}
 
 		/// <summary>
@@ -465,7 +465,7 @@ namespace Mozzarella
 		/// <returns>Either <paramref name="value"/> or <paramref name="otherValue"/> depending on which is empty.</returns>
 		public static string Coalesce(this string value, CoalesceOptions options, string otherValue)
 		{
-			if ((options & CoalesceOptions.WhitespaceAsEmpty) == CoalesceOptions.WhitespaceAsEmpty)
+			if ((options & CoalesceOptions.WhiteSpaceAsEmpty) == CoalesceOptions.WhiteSpaceAsEmpty)
 				return String.IsNullOrWhiteSpace(value) ? otherValue : value;
 
 			return String.IsNullOrEmpty(value) ? otherValue : value;
@@ -487,7 +487,7 @@ namespace Mozzarella
 #endif
 		public static string Coalesce(this string value, params string[] otherValues)
 		{
-			return Coalesce(value, CoalesceOptions.WhitespaceAsEmpty, otherValues);
+			return Coalesce(value, CoalesceOptions.WhiteSpaceAsEmpty, otherValues);
 		}
 
 		/// <summary>
@@ -506,7 +506,7 @@ namespace Mozzarella
 		{
 			if (otherValues == null) return value;
 
-			var whitespaceAsEmpty = (options & CoalesceOptions.WhitespaceAsEmpty) == CoalesceOptions.WhitespaceAsEmpty;
+			var whitespaceAsEmpty = (options & CoalesceOptions.WhiteSpaceAsEmpty) == CoalesceOptions.WhiteSpaceAsEmpty;
 
 			var retVal = value;
 			for (int cnt = 0; cnt < otherValues.Length; cnt++)
@@ -551,10 +551,26 @@ namespace Mozzarella
 #if SUPPORTS_AGGRESSIVEINLINING
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
 #endif
-		public static bool IsNullOrWhitespace(this string value)
+		public static bool IsNullOrWhiteSpace(this string value)
 		{
 			return String.IsNullOrWhiteSpace(value);
 		}
 
+		/// <summary>
+		/// Returns true if <paramref name="value"/> contains the substring <paramref name="searchValue"/> as matched according to <paramref name="comparisonMethod"/>.
+		/// </summary>
+		/// <remarks>
+		/// <para>If <paramref name="value"/> is null returns false.</para>
+		/// </remarks>
+		/// <param name="value">The value to search in.</param>
+		/// <param name="searchValue">The value to search for.</param>
+		/// <param name="comparisonMethod">A <see cref="StringComparison"/> value specifying rules for matching <paramref name="searchValue"/> within <paramref name="value"/>.</param>
+		/// <returns>True if <paramref name="value"/> contains <paramref name="searchValue"/>, otherwise false.</returns>
+		public static bool Contains(this string value, string searchValue, StringComparison comparisonMethod)
+		{
+			if (value == null) return false;
+
+			return value.IndexOf(searchValue, comparisonMethod) >= 0;
+		}
 	}
 }

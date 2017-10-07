@@ -24,7 +24,7 @@ namespace Mozzarella.Tests
 		public void Coalesce_DualString_WhitespaceOption_TreatsWhitespaceAsEmpty()
 		{
 			var expected = "Test";
-			var actual = "   \r\n\t ".Coalesce(CoalesceOptions.WhitespaceAsEmpty, expected);
+			var actual = "   \r\n\t ".Coalesce(CoalesceOptions.WhiteSpaceAsEmpty, expected);
 
 			Assert.AreEqual(expected, actual);
 		}
@@ -88,7 +88,7 @@ namespace Mozzarella.Tests
 			var unexpected1 = String.Empty;
 			var unexpected2 = " ";
 			var expected = "Test";
-			var actual = "   \r\n\t ".Coalesce(CoalesceOptions.WhitespaceAsEmpty, unexpected1, unexpected2, expected);
+			var actual = "   \r\n\t ".Coalesce(CoalesceOptions.WhiteSpaceAsEmpty, unexpected1, unexpected2, expected);
 
 			Assert.AreEqual(expected, actual);
 		}

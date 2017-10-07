@@ -64,12 +64,12 @@ references:
   commentId: F:Mozzarella.CoalesceOptions.None
   fullName: Mozzarella.CoalesceOptions.None
   nameWithType: CoalesceOptions.None
-- uid: Mozzarella.CoalesceOptions.WhitespaceAsEmpty
-  name: WhitespaceAsEmpty
-  href: api/Mozzarella.CoalesceOptions.WhitespaceAsEmpty.html#Mozzarella_CoalesceOptions_WhitespaceAsEmpty
-  commentId: F:Mozzarella.CoalesceOptions.WhitespaceAsEmpty
-  fullName: Mozzarella.CoalesceOptions.WhitespaceAsEmpty
-  nameWithType: CoalesceOptions.WhitespaceAsEmpty
+- uid: Mozzarella.CoalesceOptions.WhiteSpaceAsEmpty
+  name: WhiteSpaceAsEmpty
+  href: api/Mozzarella.CoalesceOptions.WhiteSpaceAsEmpty.html#Mozzarella_CoalesceOptions_WhiteSpaceAsEmpty
+  commentId: F:Mozzarella.CoalesceOptions.WhiteSpaceAsEmpty
+  fullName: Mozzarella.CoalesceOptions.WhiteSpaceAsEmpty
+  nameWithType: CoalesceOptions.WhiteSpaceAsEmpty
 - uid: Mozzarella.EnumerableOfStringExtensions
   name: EnumerableOfStringExtensions
   href: api/Mozzarella.EnumerableOfStringExtensions.html
@@ -304,6 +304,18 @@ references:
   commentId: Overload:Mozzarella.StringExtensions.Coalesce
   fullName: Mozzarella.StringExtensions.Coalesce
   nameWithType: StringExtensions.Coalesce
+- uid: Mozzarella.StringExtensions.Contains(System.String,System.String,System.StringComparison)
+  name: Contains(String, String, StringComparison)
+  href: api/Mozzarella.StringExtensions.Contains.html#Mozzarella_StringExtensions_Contains_System_String_System_String_System_StringComparison_
+  commentId: M:Mozzarella.StringExtensions.Contains(System.String,System.String,System.StringComparison)
+  fullName: Mozzarella.StringExtensions.Contains(System.String, System.String, System.StringComparison)
+  nameWithType: StringExtensions.Contains(String, String, StringComparison)
+- uid: Mozzarella.StringExtensions.Contains*
+  name: Contains
+  href: api/Mozzarella.StringExtensions.Contains.html
+  commentId: Overload:Mozzarella.StringExtensions.Contains
+  fullName: Mozzarella.StringExtensions.Contains
+  nameWithType: StringExtensions.Contains
 - uid: Mozzarella.StringExtensions.IndexOfFirstDifference(System.String,System.String)
   name: IndexOfFirstDifference(String, String)
   href: api/Mozzarella.StringExtensions.IndexOfFirstDifference.html#Mozzarella_StringExtensions_IndexOfFirstDifference_System_String_System_String_
@@ -340,18 +352,18 @@ references:
   commentId: Overload:Mozzarella.StringExtensions.IsNullOrEmpty
   fullName: Mozzarella.StringExtensions.IsNullOrEmpty
   nameWithType: StringExtensions.IsNullOrEmpty
-- uid: Mozzarella.StringExtensions.IsNullOrWhitespace(System.String)
-  name: IsNullOrWhitespace(String)
-  href: api/Mozzarella.StringExtensions.IsNullOrWhitespace.html#Mozzarella_StringExtensions_IsNullOrWhitespace_System_String_
-  commentId: M:Mozzarella.StringExtensions.IsNullOrWhitespace(System.String)
-  fullName: Mozzarella.StringExtensions.IsNullOrWhitespace(System.String)
-  nameWithType: StringExtensions.IsNullOrWhitespace(String)
-- uid: Mozzarella.StringExtensions.IsNullOrWhitespace*
-  name: IsNullOrWhitespace
-  href: api/Mozzarella.StringExtensions.IsNullOrWhitespace.html
-  commentId: Overload:Mozzarella.StringExtensions.IsNullOrWhitespace
-  fullName: Mozzarella.StringExtensions.IsNullOrWhitespace
-  nameWithType: StringExtensions.IsNullOrWhitespace
+- uid: Mozzarella.StringExtensions.IsNullOrWhiteSpace(System.String)
+  name: IsNullOrWhiteSpace(String)
+  href: api/Mozzarella.StringExtensions.IsNullOrWhiteSpace.html#Mozzarella_StringExtensions_IsNullOrWhiteSpace_System_String_
+  commentId: M:Mozzarella.StringExtensions.IsNullOrWhiteSpace(System.String)
+  fullName: Mozzarella.StringExtensions.IsNullOrWhiteSpace(System.String)
+  nameWithType: StringExtensions.IsNullOrWhiteSpace(String)
+- uid: Mozzarella.StringExtensions.IsNullOrWhiteSpace*
+  name: IsNullOrWhiteSpace
+  href: api/Mozzarella.StringExtensions.IsNullOrWhiteSpace.html
+  commentId: Overload:Mozzarella.StringExtensions.IsNullOrWhiteSpace
+  fullName: Mozzarella.StringExtensions.IsNullOrWhiteSpace
+  nameWithType: StringExtensions.IsNullOrWhiteSpace
 - uid: Mozzarella.StringExtensions.Like(System.String,System.String,System.Boolean)
   name: Like(String, String, Boolean)
   href: api/Mozzarella.StringExtensions.Like.html#Mozzarella_StringExtensions_Like_System_String_System_String_System_Boolean_

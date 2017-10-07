@@ -17,10 +17,11 @@ items:
   - Mozzarella.StringExtensions.Coalesce(System.String,Mozzarella.CoalesceOptions,System.String[])
   - Mozzarella.StringExtensions.Coalesce(System.String,System.String)
   - Mozzarella.StringExtensions.Coalesce(System.String,System.String[])
+  - Mozzarella.StringExtensions.Contains(System.String,System.String,System.StringComparison)
   - Mozzarella.StringExtensions.IndexOfFirstDifference(System.String,System.String)
   - Mozzarella.StringExtensions.IsAllDigits(System.String)
   - Mozzarella.StringExtensions.IsNullOrEmpty(System.String)
-  - Mozzarella.StringExtensions.IsNullOrWhitespace(System.String)
+  - Mozzarella.StringExtensions.IsNullOrWhiteSpace(System.String)
   - Mozzarella.StringExtensions.Like(System.String,System.String,System.Boolean)
   - Mozzarella.StringExtensions.OCICompare(System.String,System.String)
   - Mozzarella.StringExtensions.OCIContains(System.String,System.String)
@@ -1409,20 +1410,20 @@ items:
   modifiers.vb:
   - Public
   - Shared
-- uid: Mozzarella.StringExtensions.IsNullOrWhitespace(System.String)
-  commentId: M:Mozzarella.StringExtensions.IsNullOrWhitespace(System.String)
-  id: IsNullOrWhitespace(System.String)
+- uid: Mozzarella.StringExtensions.IsNullOrWhiteSpace(System.String)
+  commentId: M:Mozzarella.StringExtensions.IsNullOrWhiteSpace(System.String)
+  id: IsNullOrWhiteSpace(System.String)
   isExtensionMethod: true
   parent: Mozzarella.StringExtensions
   langs:
   - csharp
   - vb
-  name: IsNullOrWhitespace(String)
-  nameWithType: StringExtensions.IsNullOrWhitespace(String)
-  fullName: Mozzarella.StringExtensions.IsNullOrWhitespace(System.String)
+  name: IsNullOrWhiteSpace(String)
+  nameWithType: StringExtensions.IsNullOrWhiteSpace(String)
+  fullName: Mozzarella.StringExtensions.IsNullOrWhiteSpace(System.String)
   type: Method
   source:
-    id: IsNullOrWhitespace
+    id: IsNullOrWhiteSpace
     path: ''
     startLine: 874
   assemblies:
@@ -1432,7 +1433,7 @@ items:
   remarks: "\n<p>This is a convenience method that just calls <xref href=\"System.String.IsNullOrWhiteSpace(System.String)\" data-throw-if-not-resolved=\"false\"></xref>.\n</p>\n"
   example: []
   syntax:
-    content: public static bool IsNullOrWhitespace(this string value)
+    content: public static bool IsNullOrWhiteSpace(this string value)
     parameters:
     - id: value
       type: System.String
@@ -1443,8 +1444,56 @@ items:
     content.vb: >-
       <ExtensionAttribute>
 
-      Public Shared Function IsNullOrWhitespace(value As String) As Boolean
-  overload: Mozzarella.StringExtensions.IsNullOrWhitespace*
+      Public Shared Function IsNullOrWhiteSpace(value As String) As Boolean
+  overload: Mozzarella.StringExtensions.IsNullOrWhiteSpace*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.Contains(System.String,System.String,System.StringComparison)
+  commentId: M:Mozzarella.StringExtensions.Contains(System.String,System.String,System.StringComparison)
+  id: Contains(System.String,System.String,System.StringComparison)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: Contains(String, String, StringComparison)
+  nameWithType: StringExtensions.Contains(String, String, StringComparison)
+  fullName: Mozzarella.StringExtensions.Contains(System.String, System.String, System.StringComparison)
+  type: Method
+  source:
+    id: Contains
+    path: ''
+    startLine: 889
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns true if <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> contains the substring <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code> as matched according to <code data-dev-comment-type=\"paramref\" class=\"paramref\">comparisonMethod</code>.\n"
+  remarks: "\n<p>If <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> is null returns false.</p>\n"
+  example: []
+  syntax:
+    content: public static bool Contains(this string value, string searchValue, StringComparison comparisonMethod)
+    parameters:
+    - id: value
+      type: System.String
+      description: The value to search in.
+    - id: searchValue
+      type: System.String
+      description: The value to search for.
+    - id: comparisonMethod
+      type: System.StringComparison
+      description: A <xref href="System.StringComparison" data-throw-if-not-resolved="false"></xref> value specifying rules for matching <code data-dev-comment-type="paramref" class="paramref">searchValue</code> within <code data-dev-comment-type="paramref" class="paramref">value</code>.
+    return:
+      type: System.Boolean
+      description: True if <code data-dev-comment-type="paramref" class="paramref">value</code> contains <code data-dev-comment-type="paramref" class="paramref">searchValue</code>, otherwise false.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Contains(value As String, searchValue As String, comparisonMethod As StringComparison) As Boolean
+  overload: Mozzarella.StringExtensions.Contains*
   modifiers.csharp:
   - public
   - static
@@ -1972,9 +2021,15 @@ references:
   fullName: Mozzarella.StringExtensions.IsNullOrEmpty
 - uid: System.String.IsNullOrWhiteSpace(System.String)
   commentId: M:System.String.IsNullOrWhiteSpace(System.String)
-- uid: Mozzarella.StringExtensions.IsNullOrWhitespace*
-  commentId: Overload:Mozzarella.StringExtensions.IsNullOrWhitespace
+- uid: Mozzarella.StringExtensions.IsNullOrWhiteSpace*
+  commentId: Overload:Mozzarella.StringExtensions.IsNullOrWhiteSpace
   isExternal: false
-  name: IsNullOrWhitespace
-  nameWithType: StringExtensions.IsNullOrWhitespace
-  fullName: Mozzarella.StringExtensions.IsNullOrWhitespace
+  name: IsNullOrWhiteSpace
+  nameWithType: StringExtensions.IsNullOrWhiteSpace
+  fullName: Mozzarella.StringExtensions.IsNullOrWhiteSpace
+- uid: Mozzarella.StringExtensions.Contains*
+  commentId: Overload:Mozzarella.StringExtensions.Contains
+  isExternal: false
+  name: Contains
+  nameWithType: StringExtensions.Contains
+  fullName: Mozzarella.StringExtensions.Contains
