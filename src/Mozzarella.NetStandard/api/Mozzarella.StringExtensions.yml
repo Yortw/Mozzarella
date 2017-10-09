@@ -30,6 +30,7 @@ items:
   - Mozzarella.StringExtensions.IsAllDigits(System.String)
   - Mozzarella.StringExtensions.IsNullOrEmpty(System.String)
   - Mozzarella.StringExtensions.IsNullOrWhiteSpace(System.String)
+  - Mozzarella.StringExtensions.IsOnlyDigits(System.String)
   - Mozzarella.StringExtensions.Like(System.String,System.String,System.Boolean)
   - Mozzarella.StringExtensions.OCICompare(System.String,System.String)
   - Mozzarella.StringExtensions.OCIContains(System.String,System.String)
@@ -37,6 +38,7 @@ items:
   - Mozzarella.StringExtensions.OCIReplace(System.String,System.String,System.String)
   - Mozzarella.StringExtensions.OEquals(System.String,System.String)
   - Mozzarella.StringExtensions.Replace(System.String,System.String,System.String,System.StringComparison)
+  - Mozzarella.StringExtensions.StripNonDigits(System.String)
   - Mozzarella.StringExtensions.StripPrefix(System.String,System.String)
   - Mozzarella.StringExtensions.StripPrefix(System.String,System.String,System.Boolean)
   - Mozzarella.StringExtensions.StripSuffix(System.String,System.String)
@@ -52,7 +54,7 @@ items:
   source:
     id: StringExtensions
     path: ''
-    startLine: 769
+    startLine: 775
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -93,7 +95,7 @@ items:
   source:
     id: Truncate
     path: ''
-    startLine: 782
+    startLine: 788
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -142,7 +144,7 @@ items:
   source:
     id: OCIEquals
     path: ''
-    startLine: 801
+    startLine: 807
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -187,7 +189,7 @@ items:
   source:
     id: OEquals
     path: ''
-    startLine: 816
+    startLine: 822
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -232,7 +234,7 @@ items:
   source:
     id: CIEquals
     path: ''
-    startLine: 830
+    startLine: 836
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -277,7 +279,7 @@ items:
   source:
     id: OCICompare
     path: ''
-    startLine: 844
+    startLine: 850
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -322,7 +324,7 @@ items:
   source:
     id: CICompare
     path: ''
-    startLine: 859
+    startLine: 865
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -367,7 +369,7 @@ items:
   source:
     id: CIContains
     path: ''
-    startLine: 871
+    startLine: 877
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -415,7 +417,7 @@ items:
   source:
     id: OCIContains
     path: ''
-    startLine: 885
+    startLine: 891
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -463,7 +465,7 @@ items:
   source:
     id: CIReplace
     path: ''
-    startLine: 906
+    startLine: 912
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -519,7 +521,7 @@ items:
   source:
     id: OCIReplace
     path: ''
-    startLine: 924
+    startLine: 930
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -575,7 +577,7 @@ items:
   source:
     id: Replace
     path: ''
-    startLine: 941
+    startLine: 947
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -634,7 +636,7 @@ items:
   source:
     id: IndexOfFirstDifference
     path: ''
-    startLine: 990
+    startLine: 996
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -683,7 +685,7 @@ items:
   source:
     id: IsAllDigits
     path: ''
-    startLine: 1014
+    startLine: 1020
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -729,7 +731,7 @@ items:
   source:
     id: Like
     path: ''
-    startLine: 1039
+    startLine: 1045
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -781,7 +783,7 @@ items:
   source:
     id: StripSuffix
     path: ''
-    startLine: 1068
+    startLine: 1074
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -830,7 +832,7 @@ items:
   source:
     id: StripSuffix
     path: ''
-    startLine: 1082
+    startLine: 1088
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -882,7 +884,7 @@ items:
   source:
     id: StripPrefix
     path: ''
-    startLine: 1103
+    startLine: 1109
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -931,7 +933,7 @@ items:
   source:
     id: StripPrefix
     path: ''
-    startLine: 1117
+    startLine: 1123
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -983,7 +985,7 @@ items:
   source:
     id: AddSuffix
     path: ''
-    startLine: 1138
+    startLine: 1144
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1032,7 +1034,7 @@ items:
   source:
     id: AddSuffix
     path: ''
-    startLine: 1152
+    startLine: 1158
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1084,7 +1086,7 @@ items:
   source:
     id: AddPrefix
     path: ''
-    startLine: 1173
+    startLine: 1179
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1133,7 +1135,7 @@ items:
   source:
     id: AddPrefix
     path: ''
-    startLine: 1187
+    startLine: 1193
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1185,7 +1187,7 @@ items:
   source:
     id: Coalesce
     path: ''
-    startLine: 1209
+    startLine: 1215
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1234,7 +1236,7 @@ items:
   source:
     id: Coalesce
     path: ''
-    startLine: 1224
+    startLine: 1230
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1282,7 +1284,7 @@ items:
   source:
     id: Coalesce
     path: ''
-    startLine: 1246
+    startLine: 1252
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1335,7 +1337,7 @@ items:
   source:
     id: Coalesce
     path: ''
-    startLine: 1263
+    startLine: 1269
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1391,7 +1393,7 @@ items:
   source:
     id: IsNullOrEmpty
     path: ''
-    startLine: 1295
+    startLine: 1301
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1433,7 +1435,7 @@ items:
   source:
     id: IsNullOrWhiteSpace
     path: ''
-    startLine: 1312
+    startLine: 1318
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1475,7 +1477,7 @@ items:
   source:
     id: Contains
     path: ''
-    startLine: 1327
+    startLine: 1333
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1523,7 +1525,7 @@ items:
   source:
     id: BeforeFirst
     path: ''
-    startLine: 1347
+    startLine: 1353
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1568,7 +1570,7 @@ items:
   source:
     id: BeforeFirst
     path: ''
-    startLine: 1362
+    startLine: 1368
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1616,7 +1618,7 @@ items:
   source:
     id: BeforeLast
     path: ''
-    startLine: 1386
+    startLine: 1392
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1661,7 +1663,7 @@ items:
   source:
     id: BeforeLast
     path: ''
-    startLine: 1402
+    startLine: 1408
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1709,7 +1711,7 @@ items:
   source:
     id: AfterFirst
     path: ''
-    startLine: 1426
+    startLine: 1432
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1754,7 +1756,7 @@ items:
   source:
     id: AfterFirst
     path: ''
-    startLine: 1441
+    startLine: 1447
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1802,7 +1804,7 @@ items:
   source:
     id: AfterLast
     path: ''
-    startLine: 1465
+    startLine: 1471
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1847,7 +1849,7 @@ items:
   source:
     id: AfterLast
     path: ''
-    startLine: 1480
+    startLine: 1486
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1874,6 +1876,104 @@ items:
 
       Public Shared Function AfterLast(value As String, searchValue As String, comparisonMethod As StringComparison) As String
   overload: Mozzarella.StringExtensions.AfterLast*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.IsOnlyDigits(System.String)
+  commentId: M:Mozzarella.StringExtensions.IsOnlyDigits(System.String)
+  id: IsOnlyDigits(System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsOnlyDigits(String)
+  nameWithType: StringExtensions.IsOnlyDigits(String)
+  fullName: Mozzarella.StringExtensions.IsOnlyDigits(System.String)
+  type: Method
+  source:
+    id: IsOnlyDigits
+    path: ''
+    startLine: 1507
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns true if <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> contains only characters representing numeric digits.\n"
+  remarks: "\n<p>A character is a digit if <xref href=\"System.Char.IsDigit(System.Char)\" data-throw-if-not-resolved=\"false\"></xref> returns true.</p>\n"
+  example: []
+  syntax:
+    content: public static bool IsOnlyDigits(this string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to check.
+    return:
+      type: System.Boolean
+      description: Returns true if <code data-dev-comment-type="paramref" class="paramref">value</code> contains only characters representing numeric digits, otherwise false.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsOnlyDigits(value As String) As Boolean
+  overload: Mozzarella.StringExtensions.IsOnlyDigits*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">value</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">value</code> is an empty string.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.StripNonDigits(System.String)
+  commentId: M:Mozzarella.StringExtensions.StripNonDigits(System.String)
+  id: StripNonDigits(System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: StripNonDigits(String)
+  nameWithType: StringExtensions.StripNonDigits(String)
+  fullName: Mozzarella.StringExtensions.StripNonDigits(System.String)
+  type: Method
+  source:
+    id: StripNonDigits
+    path: ''
+    startLine: 1530
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nRemoves all non-digit characters from a string and returns the result.\n"
+  remarks: "\n<p>If value contains only digits then this method returns <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> and minimises allocations.</p>\n"
+  example: []
+  syntax:
+    content: public static string StripNonDigits(this string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to strip values from.
+    return:
+      type: System.String
+      description: A string containing only the numeric characters of <code data-dev-comment-type="paramref" class="paramref">value</code>.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function StripNonDigits(value As String) As String
+  overload: Mozzarella.StringExtensions.StripNonDigits*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">value</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">value</code> is an empty string.
   modifiers.csharp:
   - public
   - static
@@ -2437,3 +2537,19 @@ references:
   name: AfterLast
   nameWithType: StringExtensions.AfterLast
   fullName: Mozzarella.StringExtensions.AfterLast
+- uid: System.Char.IsDigit(System.Char)
+  commentId: M:System.Char.IsDigit(System.Char)
+- uid: Mozzarella.StringExtensions.IsOnlyDigits*
+  commentId: Overload:Mozzarella.StringExtensions.IsOnlyDigits
+  isExternal: false
+  name: IsOnlyDigits
+  nameWithType: StringExtensions.IsOnlyDigits
+  fullName: Mozzarella.StringExtensions.IsOnlyDigits
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+- uid: Mozzarella.StringExtensions.StripNonDigits*
+  commentId: Overload:Mozzarella.StringExtensions.StripNonDigits
+  isExternal: false
+  name: StripNonDigits
+  nameWithType: StringExtensions.StripNonDigits
+  fullName: Mozzarella.StringExtensions.StripNonDigits

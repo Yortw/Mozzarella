@@ -210,6 +210,8 @@ namespace Mozzarella
 			return builder;
 		}
 
+		#region AppendIf Overloads
+
 		/// <summary>
 		/// Appends <paramref name="value"/> only if <paramref name="condition"/> is true, otherwise does nothing.
 		/// </summary>
@@ -246,5 +248,9 @@ namespace Mozzarella
 
 			return builder;
 		}
+
+		#endregion
+
+
 	}
 }

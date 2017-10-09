@@ -556,6 +556,18 @@ references:
   commentId: Overload:Mozzarella.StringExtensions.IsNullOrWhiteSpace
   fullName: Mozzarella.StringExtensions.IsNullOrWhiteSpace
   nameWithType: StringExtensions.IsNullOrWhiteSpace
+- uid: Mozzarella.StringExtensions.IsOnlyDigits(System.String)
+  name: IsOnlyDigits(String)
+  href: api/Mozzarella.StringExtensions.IsOnlyDigits.html#Mozzarella_StringExtensions_IsOnlyDigits_System_String_
+  commentId: M:Mozzarella.StringExtensions.IsOnlyDigits(System.String)
+  fullName: Mozzarella.StringExtensions.IsOnlyDigits(System.String)
+  nameWithType: StringExtensions.IsOnlyDigits(String)
+- uid: Mozzarella.StringExtensions.IsOnlyDigits*
+  name: IsOnlyDigits
+  href: api/Mozzarella.StringExtensions.IsOnlyDigits.html
+  commentId: Overload:Mozzarella.StringExtensions.IsOnlyDigits
+  fullName: Mozzarella.StringExtensions.IsOnlyDigits
+  nameWithType: StringExtensions.IsOnlyDigits
 - uid: Mozzarella.StringExtensions.Like(System.String,System.String,System.Boolean)
   name: Like(String, String, Boolean)
   href: api/Mozzarella.StringExtensions.Like.html#Mozzarella_StringExtensions_Like_System_String_System_String_System_Boolean_
@@ -640,6 +652,18 @@ references:
   commentId: Overload:Mozzarella.StringExtensions.Replace
   fullName: Mozzarella.StringExtensions.Replace
   nameWithType: StringExtensions.Replace
+- uid: Mozzarella.StringExtensions.StripNonDigits(System.String)
+  name: StripNonDigits(String)
+  href: api/Mozzarella.StringExtensions.StripNonDigits.html#Mozzarella_StringExtensions_StripNonDigits_System_String_
+  commentId: M:Mozzarella.StringExtensions.StripNonDigits(System.String)
+  fullName: Mozzarella.StringExtensions.StripNonDigits(System.String)
+  nameWithType: StringExtensions.StripNonDigits(String)
+- uid: Mozzarella.StringExtensions.StripNonDigits*
+  name: StripNonDigits
+  href: api/Mozzarella.StringExtensions.StripNonDigits.html
+  commentId: Overload:Mozzarella.StringExtensions.StripNonDigits
+  fullName: Mozzarella.StringExtensions.StripNonDigits
+  nameWithType: StringExtensions.StripNonDigits
 - uid: Mozzarella.StringExtensions.StripPrefix(System.String,System.String)
   name: StripPrefix(String, String)
   href: api/Mozzarella.StringExtensions.StripPrefix.html#Mozzarella_StringExtensions_StripPrefix_System_String_System_String_

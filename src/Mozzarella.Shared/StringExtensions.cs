@@ -729,5 +729,65 @@ namespace Mozzarella
 
 			return value.Substring(index + 1);
 		}
+
+		/// <summary>
+		/// Returns true if <paramref name="value"/> contains only characters representing numeric digits.
+		/// </summary>
+		/// <remarks>
+		/// <para>A character is a digit if <see cref="Char.IsDigit(char)"/> returns true.</para>
+		/// </remarks>
+		/// <param name="value">The string to check.</param>
+		/// <returns>Returns true if <paramref name="value"/> contains only characters representing numeric digits, otherwise false.</returns>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="value"/> is null.</exception>
+		/// <exception cref="System.ArgumentException">Thrown if <paramref name="value"/> is an empty string.</exception>
+		public static bool IsOnlyDigits(this string value)
+		{
+			if (value == null) throw new ArgumentNullException(nameof(value));
+			if (value.Length == 0) throw new ArgumentException(ErrorMessages.ArgumentCannotBeEmptyString, nameof(value));
+
+			for (int cnt = 0; cnt < value.Length; cnt++)
+			{
+				if (!Char.IsDigit(value[cnt])) return false;
+			}
+
+			return true;
+		}
+
+		/// <summary>
+		/// Removes all non-digit characters from a string and returns the result.
+		/// </summary>
+		/// <remarks>
+		/// <para>If value contains only digits then this method returns <paramref name="value"/> and minimises allocations.</para>
+		/// </remarks>
+		/// <param name="value">The string to strip values from.</param>
+		/// <returns>A string containing only the numeric characters of <paramref name="value"/>.</returns>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="value"/> is null.</exception>
+		/// <exception cref="System.ArgumentException">Thrown if <paramref name="value"/> is an empty string.</exception>
+		public static string StripNonDigits(this string value)
+		{
+			if (value == null) throw new ArgumentNullException(nameof(value));
+			if (value.Length == 0) throw new ArgumentException(ErrorMessages.ArgumentCannotBeEmptyString, nameof(value));
+
+			StringBuilder sb = null;
+
+			for (int cnt = 0; cnt < value.Length; cnt++)
+			{
+				if (!Char.IsDigit(value[cnt]))
+				{
+					if (sb == null)
+					{
+						sb = new StringBuilder(value.Length);
+						if (cnt > 0)
+						{
+							sb.Append(value.Substring(0, cnt));
+						}
+					}
+				}
+				else if (sb != null)
+					sb.Append(value[cnt]);
+			}
+
+			return sb?.ToString() ?? value;
+		}
 	}
 }
