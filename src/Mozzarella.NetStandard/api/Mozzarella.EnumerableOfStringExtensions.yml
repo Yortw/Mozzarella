@@ -6,7 +6,9 @@ items:
   parent: Mozzarella
   children:
   - Mozzarella.EnumerableOfStringExtensions.Coalesce(System.Collections.Generic.IEnumerable{System.String})
+  - Mozzarella.EnumerableOfStringExtensions.Coalesce(System.Collections.Generic.IEnumerable{System.String},Mozzarella.CoalesceOptions)
   - Mozzarella.EnumerableOfStringExtensions.Coalesce(System.String[])
+  - Mozzarella.EnumerableOfStringExtensions.Coalesce(System.String[],Mozzarella.CoalesceOptions)
   langs:
   - csharp
   - vb
@@ -17,7 +19,7 @@ items:
   source:
     id: EnumerableOfStringExtensions
     path: ''
-    startLine: 292
+    startLine: 439
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -58,11 +60,12 @@ items:
   source:
     id: Coalesce
     path: ''
-    startLine: 299
+    startLine: 452
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
-  summary: "\nReturns the first non-null, non-empty string from those provided. If there is no non-null, non-empty string in <code data-dev-comment-type=\"paramref\" class=\"paramref\">values</code> then null is returned.\n"
+  summary: "\nReturns the first non-null, non-empty and non-whitespace string from those provided. If there is no non-null, non-empty string containing at least one non-whitespace character in <code data-dev-comment-type=\"paramref\" class=\"paramref\">values</code> then null is returned.\n"
+  remarks: "\n<p>This overload treats strings containing only whitespace characters as being empty.</p>\n"
   example: []
   syntax:
     content: public static string Coalesce(this string[] values)
@@ -87,6 +90,53 @@ items:
   - Shared
   fullName.vb: Mozzarella.EnumerableOfStringExtensions.Coalesce(System.String())
   name.vb: Coalesce(String())
+- uid: Mozzarella.EnumerableOfStringExtensions.Coalesce(System.String[],Mozzarella.CoalesceOptions)
+  commentId: M:Mozzarella.EnumerableOfStringExtensions.Coalesce(System.String[],Mozzarella.CoalesceOptions)
+  id: Coalesce(System.String[],Mozzarella.CoalesceOptions)
+  isExtensionMethod: true
+  parent: Mozzarella.EnumerableOfStringExtensions
+  langs:
+  - csharp
+  - vb
+  name: Coalesce(String[], CoalesceOptions)
+  nameWithType: EnumerableOfStringExtensions.Coalesce(String[], CoalesceOptions)
+  fullName: Mozzarella.EnumerableOfStringExtensions.Coalesce(System.String[], Mozzarella.CoalesceOptions)
+  type: Method
+  source:
+    id: Coalesce
+    path: ''
+    startLine: 463
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns the first non-null, non-empty string from those provided. If there is no non-null, non-empty string in <code data-dev-comment-type=\"paramref\" class=\"paramref\">values</code> then null is returned.\n"
+  example: []
+  syntax:
+    content: public static string Coalesce(this string[] values, CoalesceOptions options)
+    parameters:
+    - id: values
+      type: System.String[]
+      description: A set of strings to coalesce.
+    - id: options
+      type: Mozzarella.CoalesceOptions
+      description: A value from the <xref href="Mozzarella.CoalesceOptions" data-throw-if-not-resolved="false"></xref> enum specifying options for deciding when to coalesce a value.
+    return:
+      type: System.String
+      description: Returns a <xref href="System.String" data-throw-if-not-resolved="false"></xref> if a non blank value is found, otherwise returns null.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Coalesce(values As String(), options As CoalesceOptions) As String
+  overload: Mozzarella.EnumerableOfStringExtensions.Coalesce*
+  nameWithType.vb: EnumerableOfStringExtensions.Coalesce(String(), CoalesceOptions)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mozzarella.EnumerableOfStringExtensions.Coalesce(System.String(), Mozzarella.CoalesceOptions)
+  name.vb: Coalesce(String(), CoalesceOptions)
 - uid: Mozzarella.EnumerableOfStringExtensions.Coalesce(System.Collections.Generic.IEnumerable{System.String})
   commentId: M:Mozzarella.EnumerableOfStringExtensions.Coalesce(System.Collections.Generic.IEnumerable{System.String})
   id: Coalesce(System.Collections.Generic.IEnumerable{System.String})
@@ -102,11 +152,12 @@ items:
   source:
     id: Coalesce
     path: ''
-    startLine: 309
+    startLine: 479
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
-  summary: "\nReturns the first non-null, non-empty string from those provided. If there is no non-null, non-empty string in <code data-dev-comment-type=\"paramref\" class=\"paramref\">values</code> then null is returned.\n"
+  summary: "\nReturns the first non-null, non-empty string from those provided. If there is no non-null, non-empty string containing at least one non-whitespace character in <code data-dev-comment-type=\"paramref\" class=\"paramref\">values</code> then null is returned.\n"
+  remarks: "\n<p>This overload treats strings containing only whitespace characters as being empty.</p>\n"
   example: []
   syntax:
     content: public static string Coalesce(this IEnumerable<string> values)
@@ -131,6 +182,53 @@ items:
   - Shared
   fullName.vb: Mozzarella.EnumerableOfStringExtensions.Coalesce(System.Collections.Generic.IEnumerable(Of System.String))
   name.vb: Coalesce(IEnumerable(Of String))
+- uid: Mozzarella.EnumerableOfStringExtensions.Coalesce(System.Collections.Generic.IEnumerable{System.String},Mozzarella.CoalesceOptions)
+  commentId: M:Mozzarella.EnumerableOfStringExtensions.Coalesce(System.Collections.Generic.IEnumerable{System.String},Mozzarella.CoalesceOptions)
+  id: Coalesce(System.Collections.Generic.IEnumerable{System.String},Mozzarella.CoalesceOptions)
+  isExtensionMethod: true
+  parent: Mozzarella.EnumerableOfStringExtensions
+  langs:
+  - csharp
+  - vb
+  name: Coalesce(IEnumerable<String>, CoalesceOptions)
+  nameWithType: EnumerableOfStringExtensions.Coalesce(IEnumerable<String>, CoalesceOptions)
+  fullName: Mozzarella.EnumerableOfStringExtensions.Coalesce(System.Collections.Generic.IEnumerable<System.String>, Mozzarella.CoalesceOptions)
+  type: Method
+  source:
+    id: Coalesce
+    path: ''
+    startLine: 490
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns the first non-null, non-empty string from those provided. If there is no non-null, non-empty string in <code data-dev-comment-type=\"paramref\" class=\"paramref\">values</code> then null is returned.\n"
+  example: []
+  syntax:
+    content: public static string Coalesce(this IEnumerable<string> values, CoalesceOptions options)
+    parameters:
+    - id: values
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: A set of strings to coalesce.
+    - id: options
+      type: Mozzarella.CoalesceOptions
+      description: A value from the <xref href="Mozzarella.CoalesceOptions" data-throw-if-not-resolved="false"></xref> enum specifying options for deciding when to coalesce a value.
+    return:
+      type: System.String
+      description: Returns a <xref href="System.String" data-throw-if-not-resolved="false"></xref> if a non blank value is found, otherwise returns null.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Coalesce(values As IEnumerable(Of String), options As CoalesceOptions) As String
+  overload: Mozzarella.EnumerableOfStringExtensions.Coalesce*
+  nameWithType.vb: EnumerableOfStringExtensions.Coalesce(IEnumerable(Of String), CoalesceOptions)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mozzarella.EnumerableOfStringExtensions.Coalesce(System.Collections.Generic.IEnumerable(Of System.String), Mozzarella.CoalesceOptions)
+  name.vb: Coalesce(IEnumerable(Of String), CoalesceOptions)
 references:
 - uid: System.Collections.Generic.IEnumerable`1
   commentId: T:System.Collections.Generic.IEnumerable`1
@@ -507,6 +605,13 @@ references:
   - name: ()
     nameWithType: ()
     fullName: ()
+- uid: Mozzarella.CoalesceOptions
+  commentId: T:Mozzarella.CoalesceOptions
+  parent: Mozzarella
+  isExternal: false
+  name: CoalesceOptions
+  nameWithType: CoalesceOptions
+  fullName: Mozzarella.CoalesceOptions
 - uid: System.Collections.Generic.IEnumerable{System.String}
   commentId: T:System.Collections.Generic.IEnumerable{System.String}
   parent: System.Collections.Generic

@@ -8,6 +8,9 @@ items:
   - Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder,System.String,System.Collections.Generic.IEnumerable{System.String})
   - Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder,System.String,System.Collections.Generic.IList{System.String})
   - Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder,System.String,System.String[])
+  - Mozzarella.StringBuilderExtensions.Contains(System.Text.StringBuilder,System.String)
+  - Mozzarella.StringBuilderExtensions.IndexOf(System.Text.StringBuilder,System.String)
+  - Mozzarella.StringBuilderExtensions.IndexOf(System.Text.StringBuilder,System.String,System.Int32)
   langs:
   - csharp
   - vb
@@ -18,7 +21,7 @@ items:
   source:
     id: StringBuilderExtensions
     path: ''
-    startLine: 330
+    startLine: 518
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -59,7 +62,7 @@ items:
   source:
     id: AppendJoin
     path: ''
-    startLine: 347
+    startLine: 537
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -114,7 +117,7 @@ items:
   source:
     id: AppendJoin
     path: ''
-    startLine: 376
+    startLine: 566
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -169,7 +172,7 @@ items:
   source:
     id: AppendJoin
     path: ''
-    startLine: 405
+    startLine: 595
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -209,6 +212,166 @@ items:
   - Shared
   fullName.vb: Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder, System.String, System.Collections.Generic.IEnumerable(Of System.String))
   name.vb: AppendJoin(StringBuilder, String, IEnumerable(Of String))
+- uid: Mozzarella.StringBuilderExtensions.IndexOf(System.Text.StringBuilder,System.String)
+  commentId: M:Mozzarella.StringBuilderExtensions.IndexOf(System.Text.StringBuilder,System.String)
+  id: IndexOf(System.Text.StringBuilder,System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: IndexOf(StringBuilder, String)
+  nameWithType: StringBuilderExtensions.IndexOf(StringBuilder, String)
+  fullName: Mozzarella.StringBuilderExtensions.IndexOf(System.Text.StringBuilder, System.String)
+  type: Method
+  source:
+    id: IndexOf
+    path: ''
+    startLine: 633
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns the ordinal position of the start of <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code> within <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code>.\n"
+  example: []
+  syntax:
+    content: public static int IndexOf(this StringBuilder builder, string searchValue)
+    parameters:
+    - id: builder
+      type: System.Text.StringBuilder
+      description: The string builder to search the contents of.
+    - id: searchValue
+      type: System.String
+      description: The string to search for.
+    return:
+      type: System.Int32
+      description: Returns -1 if <code data-dev-comment-type="paramref" class="paramref">searchValue</code> does not exist within <code data-dev-comment-type="paramref" class="paramref">builder</code>, otherwise returns the ordinal position at which <code data-dev-comment-type="paramref" class="paramref">searchValue</code> starts.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IndexOf(builder As StringBuilder, searchValue As String) As Integer
+  overload: Mozzarella.StringBuilderExtensions.IndexOf*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">builder</code> or <code data-dev-comment-type="paramref" class="paramref">searchValue</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">searchValue</code> is an empty string.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringBuilderExtensions.IndexOf(System.Text.StringBuilder,System.String,System.Int32)
+  commentId: M:Mozzarella.StringBuilderExtensions.IndexOf(System.Text.StringBuilder,System.String,System.Int32)
+  id: IndexOf(System.Text.StringBuilder,System.String,System.Int32)
+  isExtensionMethod: true
+  parent: Mozzarella.StringBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: IndexOf(StringBuilder, String, Int32)
+  nameWithType: StringBuilderExtensions.IndexOf(StringBuilder, String, Int32)
+  fullName: Mozzarella.StringBuilderExtensions.IndexOf(System.Text.StringBuilder, System.String, System.Int32)
+  type: Method
+  source:
+    id: IndexOf
+    path: ''
+    startLine: 651
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns the ordinal position of the start of <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code> within <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code>.\n"
+  remarks: "\n<p>This method uses ordinal comparisions when searching for <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code>.</p>\n"
+  example: []
+  syntax:
+    content: public static int IndexOf(this StringBuilder builder, string searchValue, int startIndex)
+    parameters:
+    - id: builder
+      type: System.Text.StringBuilder
+      description: The string builder to search the contents of.
+    - id: searchValue
+      type: System.String
+      description: The string to search for.
+    - id: startIndex
+      type: System.Int32
+      description: The first character position at which to start the search.
+    return:
+      type: System.Int32
+      description: Returns -1 if <code data-dev-comment-type="paramref" class="paramref">searchValue</code> does not exist within <code data-dev-comment-type="paramref" class="paramref">builder</code>, otherwise returns the ordinal position at which <code data-dev-comment-type="paramref" class="paramref">searchValue</code> starts.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IndexOf(builder As StringBuilder, searchValue As String, startIndex As Integer) As Integer
+  overload: Mozzarella.StringBuilderExtensions.IndexOf*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">startIndex</code> is less than 0 or greater than the length of the string builder.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">builder</code> or <code data-dev-comment-type="paramref" class="paramref">searchValue</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">searchValue</code> is an empty string.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringBuilderExtensions.Contains(System.Text.StringBuilder,System.String)
+  commentId: M:Mozzarella.StringBuilderExtensions.Contains(System.Text.StringBuilder,System.String)
+  id: Contains(System.Text.StringBuilder,System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: Contains(StringBuilder, String)
+  nameWithType: StringBuilderExtensions.Contains(StringBuilder, String)
+  fullName: Mozzarella.StringBuilderExtensions.Contains(System.Text.StringBuilder, System.String)
+  type: Method
+  source:
+    id: Contains
+    path: ''
+    startLine: 697
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns true if <code data-dev-comment-type=\"paramref\" class=\"paramref\">builder</code> contains <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code>.\n"
+  example: []
+  syntax:
+    content: public static bool Contains(this StringBuilder builder, string searchValue)
+    parameters:
+    - id: builder
+      type: System.Text.StringBuilder
+      description: The <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref> to search within.
+    - id: searchValue
+      type: System.String
+      description: The <code data-dev-comment-type="paramref" class="paramref">searchValue</code> to search for.
+    return:
+      type: System.Boolean
+      description: True if <code data-dev-comment-type="paramref" class="paramref">searchValue</code> contains <code data-dev-comment-type="paramref" class="paramref">searchValue</code> otherwise false.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Contains(builder As StringBuilder, searchValue As String) As Boolean
+  overload: Mozzarella.StringBuilderExtensions.Contains*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">builder</code> or <code data-dev-comment-type="paramref" class="paramref">searchValue</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">searchValue</code> is an empty string.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
 references:
 - uid: System.Text.StringBuilder
   commentId: T:System.Text.StringBuilder
@@ -733,3 +896,33 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Mozzarella.StringBuilderExtensions.IndexOf*
+  commentId: Overload:Mozzarella.StringBuilderExtensions.IndexOf
+  isExternal: false
+  name: IndexOf
+  nameWithType: StringBuilderExtensions.IndexOf
+  fullName: Mozzarella.StringBuilderExtensions.IndexOf
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+- uid: Mozzarella.StringBuilderExtensions.Contains*
+  commentId: Overload:Mozzarella.StringBuilderExtensions.Contains
+  isExternal: false
+  name: Contains
+  nameWithType: StringBuilderExtensions.Contains
+  fullName: Mozzarella.StringBuilderExtensions.Contains
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

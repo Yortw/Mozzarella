@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mozzarella.Tests
+  commentId: N:Mozzarella.Tests
+  id: Mozzarella.Tests
+  children:
+  - Mozzarella.Tests.StringBuilderContains
+  - Mozzarella.Tests.StringBuilderIndexOf
+  langs:
+  - csharp
+  - vb
+  name: Mozzarella.Tests
+  nameWithType: Mozzarella.Tests
+  fullName: Mozzarella.Tests
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: Mozzarella.Tests.StringBuilderContains
+  commentId: T:Mozzarella.Tests.StringBuilderContains
+  isExternal: false
+  name: StringBuilderContains
+  nameWithType: StringBuilderContains
+  fullName: Mozzarella.Tests.StringBuilderContains
+- uid: Mozzarella.Tests.StringBuilderIndexOf
+  commentId: T:Mozzarella.Tests.StringBuilderIndexOf
+  isExternal: false
+  name: StringBuilderIndexOf
+  nameWithType: StringBuilderIndexOf
+  fullName: Mozzarella.Tests.StringBuilderIndexOf

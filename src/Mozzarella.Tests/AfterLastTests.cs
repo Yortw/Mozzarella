@@ -51,7 +51,7 @@ namespace Mozzarella.Tests
 		[TestMethod]
 		public void AfterLast_ReturnsNullWhenSearchValueNotFound()
 		{
-			string s = "The Eagles-BestOf";
+			var s = "The Eagles-BestOf";
 			Assert.AreEqual(null, s.AfterLast(":"));
 		}
 

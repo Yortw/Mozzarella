@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +17,7 @@ namespace Mozzarella.Tests
 		[TestMethod]
 		public void EnumerableOfString_Coalesce_CoalescesArray()
 		{
-			var values = new string[] { null, String.Empty, "Test1", "Test2" };
+			var values = new string[] { null, String.Empty, "  ", "Test1", "Test2" };
 
 			Assert.AreEqual("Test1", values.Coalesce());
 		}
@@ -28,6 +28,7 @@ namespace Mozzarella.Tests
 			var values = new List<string>();
 			values.Add(null);
 			values.Add(String.Empty);
+			values.Add("  ");
 			values.Add("Test1");
 			values.Add("Test2");
 
@@ -45,7 +46,7 @@ namespace Mozzarella.Tests
 		[TestMethod]
 		public void EnumerableOfString_Coalesce_ReturnsNullWhenOnlyBlankValues()
 		{
-			IEnumerable<string> values = new string[] { String.Empty, null, null, String.Empty };
+			IEnumerable<string> values = new string[] { String.Empty, null, null, String.Empty, "  " };
 
 			Assert.AreEqual(null, values.Coalesce());
 		}
@@ -64,6 +65,22 @@ namespace Mozzarella.Tests
 			IEnumerable<string> values = new string[] { null, "Test1" };
 
 			Assert.AreEqual("Test1", values.Coalesce());
+		}
+
+		[TestMethod]
+		public void EnumerableOfString_Coalesce_CoalescesWhitespaceByDefault()
+		{
+			IEnumerable<string> values = new string[] { null, "  ", "Test1" };
+
+			Assert.AreEqual("Test1", values.Coalesce());
+		}
+
+		[TestMethod]
+		public void EnumerableOfString_Coalesce_UsesCoalesceOptionsForWhitespaceHandling()
+		{
+			var values = new string[] { null, String.Empty, "  ", "Test1", "Test2" };
+
+			Assert.AreEqual("  ", values.Coalesce(CoalesceOptions.None));
 		}
 
 		#endregion

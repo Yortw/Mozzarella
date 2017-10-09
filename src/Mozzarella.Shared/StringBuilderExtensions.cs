@@ -10,6 +10,8 @@ namespace Mozzarella
 	public static class StringBuilderExtensions
 	{
 
+		#region AppendJoin Overloads
+
 		/// <summary>
 		/// Appends all the strings in <paramref name="parts"/> to <paramref name="builder"/> placing <paramref name="separator"/> between each part.
 		/// </summary>
@@ -108,5 +110,85 @@ namespace Mozzarella
 			return builder;
 		}
 
+		#endregion
+
+		#region IndexOf Overloads
+
+		/// <summary>
+		/// Returns the ordinal position of the start of <paramref name="searchValue"/> within <paramref name="searchValue"/>.
+		/// </summary>
+		/// <param name="builder">The string builder to search the contents of.</param>
+		/// <param name="searchValue">The string to search for.</param>
+		/// <returns>Returns -1 if <paramref name="searchValue"/> does not exist within <paramref name="builder"/>, otherwise returns the ordinal position at which <paramref name="searchValue"/> starts.</returns>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="builder"/> or <paramref name="searchValue"/> is null.</exception>
+		/// <exception cref="System.ArgumentException">Thrown if <paramref name="searchValue"/> is an empty string.</exception>
+		public static int IndexOf(this StringBuilder builder, string searchValue)
+		{
+			return IndexOf(builder, searchValue, 0);
+		}
+
+		/// <summary>
+		/// Returns the ordinal position of the start of <paramref name="searchValue"/> within <paramref name="searchValue"/>.
+		/// </summary>
+		/// <remarks>
+		/// <para>This method uses ordinal comparisions when searching for <paramref name="searchValue"/>.</para>
+		/// </remarks>
+		/// <param name="builder">The string builder to search the contents of.</param>
+		/// <param name="searchValue">The string to search for.</param>
+		/// <param name="startIndex">The first character position at which to start the search.</param>
+		/// <returns>Returns -1 if <paramref name="searchValue"/> does not exist within <paramref name="builder"/>, otherwise returns the ordinal position at which <paramref name="searchValue"/> starts.</returns>
+		/// <exception cref="System.ArgumentOutOfRangeException">Thrown if <paramref name="startIndex"/> is less than 0 or greater than the length of the string builder.</exception>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="builder"/> or <paramref name="searchValue"/> is null.</exception>
+		/// <exception cref="System.ArgumentException">Thrown if <paramref name="searchValue"/> is an empty string.</exception>
+		public static int IndexOf(this StringBuilder builder, string searchValue, int startIndex)
+		{
+			if (builder == null) throw new ArgumentNullException(nameof(builder));
+			if (searchValue == null) throw new ArgumentNullException(nameof(searchValue));
+			if (searchValue.Length == 0) throw new ArgumentException(ErrorMessages.ArgumentCannotBeEmptyString, nameof(searchValue));
+			if (startIndex < 0) throw new ArgumentOutOfRangeException(nameof(startIndex));
+			if (startIndex > builder.Length) throw new ArgumentOutOfRangeException(nameof(startIndex));
+
+			if (builder.Length == 0) return -1;
+			if (searchValue.Length > builder.Length) return -1;
+
+			var retVal = -1;
+
+			var maxSearchIndex = (builder.Length - searchValue.Length) + 1;
+			for (var cnt = startIndex; cnt < maxSearchIndex; cnt++)
+			{
+				var matched = true;
+				for (var i = 0; i < searchValue.Length; i++)
+				{
+					if (builder[cnt + i] != searchValue[i])
+					{
+						matched = false;
+						break;
+					}
+				}
+
+				if (matched)
+				{
+					retVal = cnt;
+					break;
+				}
+			}
+
+			return retVal;
+		}
+
+		#endregion
+
+		/// <summary>
+		/// Returns true if <paramref name="builder"/> contains <paramref name="searchValue"/>.
+		/// </summary>
+		/// <param name="builder">The <see cref="System.Text.StringBuilder"/> to search within.</param>
+		/// <param name="searchValue">The <paramref name="searchValue"/> to search for.</param>
+		/// <returns>True if <paramref name="searchValue"/> contains <paramref name="searchValue"/> otherwise false.</returns>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="builder"/> or <paramref name="searchValue"/> is null.</exception>
+		/// <exception cref="System.ArgumentException">Thrown if <paramref name="searchValue"/> is an empty string.</exception>
+		public static bool Contains(this StringBuilder builder, string searchValue)
+		{
+			return IndexOf(builder, searchValue) >= 0;
+		}
 	}
 }

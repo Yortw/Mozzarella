@@ -14,3 +14,10 @@
     name: StringBuilderExtensions
   - uid: Mozzarella.StringExtensions
     name: StringExtensions
+- uid: Mozzarella.Tests
+  name: Mozzarella.Tests
+  items:
+  - uid: Mozzarella.Tests.StringBuilderContains
+    name: StringBuilderContains
+  - uid: Mozzarella.Tests.StringBuilderIndexOf
+    name: StringBuilderIndexOf

@@ -1,0 +1,669 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mozzarella.Tests.StringBuilderIndexOf
+  commentId: T:Mozzarella.Tests.StringBuilderIndexOf
+  id: StringBuilderIndexOf
+  parent: Mozzarella.Tests
+  children:
+  - Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString
+  - Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtBeginning
+  - Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtEnd
+  - Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_ExactMatch
+  - Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString
+  - Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString_ExactMatch
+  - Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtBeginning
+  - Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtEnd
+  - Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ObeysStartIndex
+  - Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ThrowsOnNullBuilder
+  langs:
+  - csharp
+  - vb
+  name: StringBuilderIndexOf
+  nameWithType: StringBuilderIndexOf
+  fullName: Mozzarella.Tests.StringBuilderIndexOf
+  type: Class
+  source:
+    id: StringBuilderIndexOf
+    path: ''
+    startLine: 1476
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella.Tests
+  syntax:
+    content: public class StringBuilderIndexOf
+    content.vb: Public Class StringBuilderIndexOf
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString
+  commentId: M:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString
+  id: StringBuilder_IndexOf_FindsSingleCharString
+  parent: Mozzarella.Tests.StringBuilderIndexOf
+  langs:
+  - csharp
+  - vb
+  name: StringBuilder_IndexOf_FindsSingleCharString()
+  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString()
+  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString()
+  type: Method
+  source:
+    id: StringBuilder_IndexOf_FindsSingleCharString
+    path: ''
+    startLine: 1480
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella.Tests
+  syntax:
+    content: public void StringBuilder_IndexOf_FindsSingleCharString()
+    content.vb: Public Sub StringBuilder_IndexOf_FindsSingleCharString
+  overload: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtBeginning
+  commentId: M:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtBeginning
+  id: StringBuilder_IndexOf_FindsSingleCharStringAtBeginning
+  parent: Mozzarella.Tests.StringBuilderIndexOf
+  langs:
+  - csharp
+  - vb
+  name: StringBuilder_IndexOf_FindsSingleCharStringAtBeginning()
+  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtBeginning()
+  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtBeginning()
+  type: Method
+  source:
+    id: StringBuilder_IndexOf_FindsSingleCharStringAtBeginning
+    path: ''
+    startLine: 1490
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella.Tests
+  syntax:
+    content: public void StringBuilder_IndexOf_FindsSingleCharStringAtBeginning()
+    content.vb: Public Sub StringBuilder_IndexOf_FindsSingleCharStringAtBeginning
+  overload: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtBeginning*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtEnd
+  commentId: M:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtEnd
+  id: StringBuilder_IndexOf_FindsSingleCharStringAtEnd
+  parent: Mozzarella.Tests.StringBuilderIndexOf
+  langs:
+  - csharp
+  - vb
+  name: StringBuilder_IndexOf_FindsSingleCharStringAtEnd()
+  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtEnd()
+  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtEnd()
+  type: Method
+  source:
+    id: StringBuilder_IndexOf_FindsSingleCharStringAtEnd
+    path: ''
+    startLine: 1500
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella.Tests
+  syntax:
+    content: public void StringBuilder_IndexOf_FindsSingleCharStringAtEnd()
+    content.vb: Public Sub StringBuilder_IndexOf_FindsSingleCharStringAtEnd
+  overload: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtEnd*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString_ExactMatch
+  commentId: M:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString_ExactMatch
+  id: StringBuilder_IndexOf_FindsSingleCharString_ExactMatch
+  parent: Mozzarella.Tests.StringBuilderIndexOf
+  langs:
+  - csharp
+  - vb
+  name: StringBuilder_IndexOf_FindsSingleCharString_ExactMatch()
+  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString_ExactMatch()
+  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString_ExactMatch()
+  type: Method
+  source:
+    id: StringBuilder_IndexOf_FindsSingleCharString_ExactMatch
+    path: ''
+    startLine: 1510
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella.Tests
+  syntax:
+    content: public void StringBuilder_IndexOf_FindsSingleCharString_ExactMatch()
+    content.vb: Public Sub StringBuilder_IndexOf_FindsSingleCharString_ExactMatch
+  overload: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString_ExactMatch*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString
+  commentId: M:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString
+  id: StringBuilder_IndexOf_FindsMultiCharString
+  parent: Mozzarella.Tests.StringBuilderIndexOf
+  langs:
+  - csharp
+  - vb
+  name: StringBuilder_IndexOf_FindsMultiCharString()
+  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString()
+  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString()
+  type: Method
+  source:
+    id: StringBuilder_IndexOf_FindsMultiCharString
+    path: ''
+    startLine: 1520
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella.Tests
+  syntax:
+    content: public void StringBuilder_IndexOf_FindsMultiCharString()
+    content.vb: Public Sub StringBuilder_IndexOf_FindsMultiCharString
+  overload: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtBeginning
+  commentId: M:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtBeginning
+  id: StringBuilder_IndexOf_FindsMultiCharString_AtBeginning
+  parent: Mozzarella.Tests.StringBuilderIndexOf
+  langs:
+  - csharp
+  - vb
+  name: StringBuilder_IndexOf_FindsMultiCharString_AtBeginning()
+  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtBeginning()
+  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtBeginning()
+  type: Method
+  source:
+    id: StringBuilder_IndexOf_FindsMultiCharString_AtBeginning
+    path: ''
+    startLine: 1530
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella.Tests
+  syntax:
+    content: public void StringBuilder_IndexOf_FindsMultiCharString_AtBeginning()
+    content.vb: Public Sub StringBuilder_IndexOf_FindsMultiCharString_AtBeginning
+  overload: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtBeginning*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtEnd
+  commentId: M:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtEnd
+  id: StringBuilder_IndexOf_FindsMultiCharString_AtEnd
+  parent: Mozzarella.Tests.StringBuilderIndexOf
+  langs:
+  - csharp
+  - vb
+  name: StringBuilder_IndexOf_FindsMultiCharString_AtEnd()
+  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtEnd()
+  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtEnd()
+  type: Method
+  source:
+    id: StringBuilder_IndexOf_FindsMultiCharString_AtEnd
+    path: ''
+    startLine: 1540
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella.Tests
+  syntax:
+    content: public void StringBuilder_IndexOf_FindsMultiCharString_AtEnd()
+    content.vb: Public Sub StringBuilder_IndexOf_FindsMultiCharString_AtEnd
+  overload: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtEnd*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_ExactMatch
+  commentId: M:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_ExactMatch
+  id: StringBuilder_IndexOf_FindsMultiCharString_ExactMatch
+  parent: Mozzarella.Tests.StringBuilderIndexOf
+  langs:
+  - csharp
+  - vb
+  name: StringBuilder_IndexOf_FindsMultiCharString_ExactMatch()
+  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_ExactMatch()
+  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_ExactMatch()
+  type: Method
+  source:
+    id: StringBuilder_IndexOf_FindsMultiCharString_ExactMatch
+    path: ''
+    startLine: 1550
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella.Tests
+  syntax:
+    content: public void StringBuilder_IndexOf_FindsMultiCharString_ExactMatch()
+    content.vb: Public Sub StringBuilder_IndexOf_FindsMultiCharString_ExactMatch
+  overload: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_ExactMatch*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ObeysStartIndex
+  commentId: M:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ObeysStartIndex
+  id: StringBuilder_IndexOf_ObeysStartIndex
+  parent: Mozzarella.Tests.StringBuilderIndexOf
+  langs:
+  - csharp
+  - vb
+  name: StringBuilder_IndexOf_ObeysStartIndex()
+  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_ObeysStartIndex()
+  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ObeysStartIndex()
+  type: Method
+  source:
+    id: StringBuilder_IndexOf_ObeysStartIndex
+    path: ''
+    startLine: 1560
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella.Tests
+  syntax:
+    content: public void StringBuilder_IndexOf_ObeysStartIndex()
+    content.vb: Public Sub StringBuilder_IndexOf_ObeysStartIndex
+  overload: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ObeysStartIndex*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ThrowsOnNullBuilder
+  commentId: M:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ThrowsOnNullBuilder
+  id: StringBuilder_IndexOf_ThrowsOnNullBuilder
+  parent: Mozzarella.Tests.StringBuilderIndexOf
+  langs:
+  - csharp
+  - vb
+  name: StringBuilder_IndexOf_ThrowsOnNullBuilder()
+  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_ThrowsOnNullBuilder()
+  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ThrowsOnNullBuilder()
+  type: Method
+  source:
+    id: StringBuilder_IndexOf_ThrowsOnNullBuilder
+    path: ''
+    startLine: 1573
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella.Tests
+  syntax:
+    content: public void StringBuilder_IndexOf_ThrowsOnNullBuilder()
+    content.vb: Public Sub StringBuilder_IndexOf_ThrowsOnNullBuilder
+  overload: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ThrowsOnNullBuilder*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mozzarella.Tests
+  commentId: N:Mozzarella.Tests
+  isExternal: false
+  name: Mozzarella.Tests
+  nameWithType: Mozzarella.Tests
+  fullName: Mozzarella.Tests
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString*
+  commentId: Overload:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString
+  isExternal: false
+  name: StringBuilder_IndexOf_FindsSingleCharString
+  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString
+  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString
+- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtBeginning*
+  commentId: Overload:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtBeginning
+  isExternal: false
+  name: StringBuilder_IndexOf_FindsSingleCharStringAtBeginning
+  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtBeginning
+  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtBeginning
+- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtEnd*
+  commentId: Overload:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtEnd
+  isExternal: false
+  name: StringBuilder_IndexOf_FindsSingleCharStringAtEnd
+  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtEnd
+  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtEnd
+- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString_ExactMatch*
+  commentId: Overload:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString_ExactMatch
+  isExternal: false
+  name: StringBuilder_IndexOf_FindsSingleCharString_ExactMatch
+  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString_ExactMatch
+  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString_ExactMatch
+- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString*
+  commentId: Overload:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString
+  isExternal: false
+  name: StringBuilder_IndexOf_FindsMultiCharString
+  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString
+  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString
+- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtBeginning*
+  commentId: Overload:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtBeginning
+  isExternal: false
+  name: StringBuilder_IndexOf_FindsMultiCharString_AtBeginning
+  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtBeginning
+  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtBeginning
+- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtEnd*
+  commentId: Overload:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtEnd
+  isExternal: false
+  name: StringBuilder_IndexOf_FindsMultiCharString_AtEnd
+  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtEnd
+  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtEnd
+- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_ExactMatch*
+  commentId: Overload:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_ExactMatch
+  isExternal: false
+  name: StringBuilder_IndexOf_FindsMultiCharString_ExactMatch
+  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_ExactMatch
+  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_ExactMatch
+- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ObeysStartIndex*
+  commentId: Overload:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ObeysStartIndex
+  isExternal: false
+  name: StringBuilder_IndexOf_ObeysStartIndex
+  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_ObeysStartIndex
+  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ObeysStartIndex
+- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ThrowsOnNullBuilder*
+  commentId: Overload:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ThrowsOnNullBuilder
+  isExternal: false
+  name: StringBuilder_IndexOf_ThrowsOnNullBuilder
+  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_ThrowsOnNullBuilder
+  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ThrowsOnNullBuilder

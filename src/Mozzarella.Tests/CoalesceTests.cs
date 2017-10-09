@@ -53,7 +53,7 @@ namespace Mozzarella.Tests
 		public void Coalesce_DualString_TreatsEmptyStringAsEmpty()
 		{
 			var expected = "Test";
-			string source = String.Empty;
+			var source = String.Empty;
 			var actual = source.Coalesce(expected);
 
 			Assert.AreEqual(expected, actual);
@@ -63,7 +63,7 @@ namespace Mozzarella.Tests
 		public void Coalesce_DualString_ReturnsOtherValueWhenBothEmpty()
 		{
 			string source = null;
-			string expected = String.Empty;
+			var expected = String.Empty;
 			var actual = source.Coalesce(expected);
 
 			Assert.IsTrue(Object.ReferenceEquals(expected, actual));
@@ -122,7 +122,7 @@ namespace Mozzarella.Tests
 			var unexpected1 = String.Empty;
 			var unexpected2 = " ";
 			var expected = "Test";
-			string source = String.Empty;
+			var source = String.Empty;
 			var actual = source.Coalesce(unexpected1, unexpected2, expected);
 
 			Assert.AreEqual(expected, actual);
@@ -134,7 +134,7 @@ namespace Mozzarella.Tests
 			var unexpected1 = String.Empty;
 			var unexpected2 = " ";
 			string source = null;
-			string expected = String.Empty;
+			var expected = String.Empty;
 			var actual = source.Coalesce(unexpected1, unexpected2, expected);
 
 			Assert.IsTrue(Object.ReferenceEquals(expected, actual));
@@ -143,7 +143,7 @@ namespace Mozzarella.Tests
 		[TestMethod]
 		public void Coalesce_Params_ReturnsValueWhenOtherValuesNull()
 		{
-			string source = String.Empty;
+			var source = String.Empty;
 			var actual = source.Coalesce((string[])null);
 
 			Assert.IsTrue(Object.ReferenceEquals(source, actual));

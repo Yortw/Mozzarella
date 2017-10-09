@@ -9,10 +9,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Mozzarella.ByteArrayExtensions.html",
-          "hash": "RjutnnMWLLFvQTV6AfbHfA=="
+          "hash": "GkUchARf9QaUValOhqJlZw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -21,10 +21,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Mozzarella.ByteArrayExtensions.AsString.html",
-          "hash": "ygzXHKU5iJDYXRGwRdJWdg=="
+          "hash": "swsc25U59agA8VBetFI5nw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -33,34 +33,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Mozzarella.ByteArrayExtensions.ToHexString.html",
-          "hash": "1a518l+chhgn8hqxwoESkQ=="
+          "hash": "z6dtwzqEDzWtBFD05I9R+w=="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.CoalesceOptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Mozzarella.CoalesceOptions.None.html",
-          "hash": "qGXOdyrgCikiN2S++ZDIMA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.CoalesceOptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Mozzarella.CoalesceOptions.WhiteSpaceAsEmpty.html",
-          "hash": "cq+oW0Ixu9Jr9tgNb+hBcw=="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -69,10 +45,34 @@
       "output": {
         ".html": {
           "relative_path": "api/Mozzarella.CoalesceOptions.html",
-          "hash": "zJGHH9Psqivp1Ux6ppxzVA=="
+          "hash": "br4XRjK3s727b2/zRiEOKA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.CoalesceOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.CoalesceOptions.None.html",
+          "hash": "drxB425JDVm2RuXH8p3SCg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.CoalesceOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.CoalesceOptions.WhiteSpaceAsEmpty.html",
+          "hash": "Zzej86SJaPwfMIiIuG50Pg=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -81,10 +81,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Mozzarella.EnumerableOfStringExtensions.html",
-          "hash": "UXSxzBKxO+dIgyPqeBzMog=="
+          "hash": "4oAmYVKwhfUYu2PTRLP5qA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -93,46 +93,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Mozzarella.EnumerableOfStringExtensions.Coalesce.html",
-          "hash": "x2Ajy4wPonenmk9eJYQCvA=="
+          "hash": "I56IMfP8Jp8e/Ly+IIQn9Q=="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.ErasableString.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Mozzarella.ErasableString.html",
-          "hash": "QJSLqLw4BMIWd3gPJ80l6w=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.ErasableString.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Mozzarella.ErasableString.-ctor.html",
-          "hash": "bHDQDDTDX/ZLxIh9nP7/9w=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.ErasableString.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Mozzarella.ErasableString.IsDisposed.html",
-          "hash": "hXaGRWaQjLt0baZFsUk1wA=="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -141,10 +105,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Mozzarella.ErasableString.IsCleared.html",
-          "hash": "xMQ2kjq+l8f/ap0xadsF6g=="
+          "hash": "Po5A4maEJoJw3WMB9uDzGQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -153,10 +117,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Mozzarella.ErasableString.Value.html",
-          "hash": "/xqZtrH0gRAbQ66zd+AjiQ=="
+          "hash": "ronIQHiaEi0h4FpsbL47Eg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -165,10 +129,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Mozzarella.ErasableString.Clear.html",
-          "hash": "x/ZUXPlP0o+0JOKANUXuog=="
+          "hash": "QSy+SB0lXsLZHKJj9oW9HQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -177,19 +141,43 @@
       "output": {
         ".html": {
           "relative_path": "api/Mozzarella.ErasableString.Dispose.html",
-          "hash": "4O3/s1AY57HAWe7qtV/CUw=="
+          "hash": "1HrPW2pHbJKXj2HZP5NMDA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.StringBuilderExtensions.yml",
+      "source_relative_path": "api/Mozzarella.ErasableString.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Mozzarella.StringBuilderExtensions.html",
-          "hash": "qajrpTwvWR3QXMTbxp7PZQ=="
+          "relative_path": "api/Mozzarella.ErasableString.html",
+          "hash": "i0WjnYcJkTCUpplu19iSIg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.ErasableString.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.ErasableString.-ctor.html",
+          "hash": "+ZWAJyonstPOpF1i7td3oA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.ErasableString.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.ErasableString.IsDisposed.html",
+          "hash": "2MH8nrb5Eyom7RtOR8uIVQ=="
         }
       },
       "is_incremental": false,
@@ -201,7 +189,355 @@
       "output": {
         ".html": {
           "relative_path": "api/Mozzarella.StringBuilderExtensions.AppendJoin.html",
-          "hash": "4+DBAJDoEnlj5E5AbXPt7Q=="
+          "hash": "uaaeAkrebngkicr1QSvELg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.StringBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.StringBuilderExtensions.IndexOf.html",
+          "hash": "xX1K9LRo6+5YgURE77hNDQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.StringBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.StringBuilderExtensions.Contains.html",
+          "hash": "XfyDHwvT3+yhjes+X/HeTA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.StringBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.StringBuilderExtensions.html",
+          "hash": "wUucQc4Kf0SFNHwNB1+vdw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.StringExtensions.Contains.html",
+          "hash": "lzWlvp5rXp3gOKBQunm/8Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.StringExtensions.StripSuffix.html",
+          "hash": "9TBgBWOkv9PvYPOxD6kuww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.StringExtensions.StripPrefix.html",
+          "hash": "iwSGdx6TnVN3Q3ovA0VD1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.StringExtensions.AddSuffix.html",
+          "hash": "MToh04elI9pfnD2PL6uKag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.StringExtensions.AddPrefix.html",
+          "hash": "2zCkrRdiTg13qva7nmwcMQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.StringExtensions.Coalesce.html",
+          "hash": "i7fCBc8C6SfTOp3acyMnBw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.StringExtensions.IsNullOrEmpty.html",
+          "hash": "kb2n+LnvlPRaHGQZOuWFnw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.StringExtensions.IsNullOrWhiteSpace.html",
+          "hash": "h6m9796xiu+XFTB2QXhBbA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.StringExtensions.CIContains.html",
+          "hash": "KuAsEYl/Ntiz8r5KosSQrQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.StringExtensions.OCIContains.html",
+          "hash": "HUvcocTD8rBrNrQxNxboQg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.StringExtensions.CIReplace.html",
+          "hash": "Zo5xQyI4pgzwp3gzrLegqA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.StringExtensions.OCIReplace.html",
+          "hash": "cSteTywD/iee0jg/PLo/vw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.StringExtensions.Replace.html",
+          "hash": "aCJVnQDV22bOiODOIRvYpw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.StringExtensions.IndexOfFirstDifference.html",
+          "hash": "/v2K9kRZRuvegyduLxq9LA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.StringExtensions.IsAllDigits.html",
+          "hash": "SWxr73WWHUP/omkFPeIV+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.StringExtensions.Like.html",
+          "hash": "MnKBYO7oK79CprkgMgu7jA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.StringExtensions.Truncate.html",
+          "hash": "s+EyfDUtrVqoNa2mDiacWQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.StringExtensions.OCIEquals.html",
+          "hash": "6Pe/bxP5fIqZeCNpWbw5Ug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.StringExtensions.OEquals.html",
+          "hash": "7tWdziKv9cWKFBrcZtsiOg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.StringExtensions.CIEquals.html",
+          "hash": "5CiWcQ6OHKD+MDsaPxnIDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.StringExtensions.OCICompare.html",
+          "hash": "oVwRFcY/CxIoy1FN18mM8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.StringExtensions.CICompare.html",
+          "hash": "F0fcyAIdOj0pyrd1oO6dCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.StringExtensions.BeforeFirst.html",
+          "hash": "0HH/xBq8VjZZezqnlORCLQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.StringExtensions.BeforeLast.html",
+          "hash": "FZYatQkTkVdQJzUQ7q+g/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.StringExtensions.AfterFirst.html",
+          "hash": "mnW0QOyQXdsvQ7DP0ddniA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mozzarella.StringExtensions.AfterLast.html",
+          "hash": "+Q2oar07OZu/aCp4FjSzWw=="
         }
       },
       "is_incremental": false,
@@ -213,322 +549,190 @@
       "output": {
         ".html": {
           "relative_path": "api/Mozzarella.StringExtensions.html",
-          "hash": "qptbEj8JZRmrdoRX8nEyfw=="
+          "hash": "0/fFZWSF38ZxR0+0bToO6w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "source_relative_path": "api/Mozzarella.Tests.StringBuilderContains.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Mozzarella.StringExtensions.CIEquals.html",
-          "hash": "4Adi2sLAkwds0witWjiM9g=="
+          "relative_path": "api/Mozzarella.Tests.StringBuilderContains.StringBuilder_Contains_FindsMatch.html",
+          "hash": "vEnDdd+WCXLoVJChASQiVw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "source_relative_path": "api/Mozzarella.Tests.StringBuilderContains.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Mozzarella.StringExtensions.OCICompare.html",
-          "hash": "Pu7/IpFJI+VafXccyeHz3w=="
+          "relative_path": "api/Mozzarella.Tests.StringBuilderContains.StringBuilder_Contains_ReturnsNegativeOneForNoMatch.html",
+          "hash": "oTEmY8oFH0qVV8x9/S+yOA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "source_relative_path": "api/Mozzarella.Tests.StringBuilderContains.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Mozzarella.StringExtensions.CICompare.html",
-          "hash": "99sjmXf+Uz9vhBcjpSkLCQ=="
+          "relative_path": "api/Mozzarella.Tests.StringBuilderContains.html",
+          "hash": "9fngnq1bJqUJPPJfIQCy3A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "source_relative_path": "api/Mozzarella.Tests.StringBuilderIndexOf.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Mozzarella.StringExtensions.CIContains.html",
-          "hash": "5pT2HDdj1vYMzBWZA/ccuw=="
+          "relative_path": "api/Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtEnd.html",
+          "hash": "lvzwM9Z8qNAJyXWdOq0N8A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "source_relative_path": "api/Mozzarella.Tests.StringBuilderIndexOf.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Mozzarella.StringExtensions.OCIContains.html",
-          "hash": "5cbgeZCQ/gRa9jWF6EP6rA=="
+          "relative_path": "api/Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString_ExactMatch.html",
+          "hash": "Rk0AVXv2G1+gt0akLWCtlA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "source_relative_path": "api/Mozzarella.Tests.StringBuilderIndexOf.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Mozzarella.StringExtensions.CIReplace.html",
-          "hash": "GC84r0pUU88sAewHf9skbA=="
+          "relative_path": "api/Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString.html",
+          "hash": "hMG2ysN/HYl4RpD+Zk1DUg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "source_relative_path": "api/Mozzarella.Tests.StringBuilderIndexOf.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Mozzarella.StringExtensions.OCIReplace.html",
-          "hash": "BBRvwM5nzopXG+H28LvhSw=="
+          "relative_path": "api/Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtBeginning.html",
+          "hash": "SX2kgutpgf1Aj9yMxWT9tw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "source_relative_path": "api/Mozzarella.Tests.StringBuilderIndexOf.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Mozzarella.StringExtensions.Replace.html",
-          "hash": "NyZTs81kRLLC/2ORMJ295Q=="
+          "relative_path": "api/Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtEnd.html",
+          "hash": "TS5+0OohQ8UbTTd/bjoMvg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "source_relative_path": "api/Mozzarella.Tests.StringBuilderIndexOf.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Mozzarella.StringExtensions.IndexOfFirstDifference.html",
-          "hash": "BRpT4eTVb2cSYQ9jaKn2Xw=="
+          "relative_path": "api/Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_ExactMatch.html",
+          "hash": "so4OFZ6ZFFl+DsTGcDgVmw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "source_relative_path": "api/Mozzarella.Tests.StringBuilderIndexOf.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Mozzarella.StringExtensions.IsAllDigits.html",
-          "hash": "88ddEDylqDcUvSZlVem+pA=="
+          "relative_path": "api/Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ObeysStartIndex.html",
+          "hash": "YChPjumugkaAjaypMxmjjw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "source_relative_path": "api/Mozzarella.Tests.StringBuilderIndexOf.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Mozzarella.StringExtensions.Like.html",
-          "hash": "tFBj3Nxmh47n6nNLB3fDaw=="
+          "relative_path": "api/Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ThrowsOnNullBuilder.html",
+          "hash": "yP6dk07DV+IcZ1H3qhvcxQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "source_relative_path": "api/Mozzarella.Tests.StringBuilderIndexOf.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Mozzarella.StringExtensions.StripSuffix.html",
-          "hash": "wVhb99530912/4nz33BRjQ=="
+          "relative_path": "api/Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString.html",
+          "hash": "rBhp6pq3HFF0MqAYGeK5OQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "source_relative_path": "api/Mozzarella.Tests.StringBuilderIndexOf.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Mozzarella.StringExtensions.Contains.html",
-          "hash": "IDv59QEpP6bsHC8rboDCig=="
+          "relative_path": "api/Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtBeginning.html",
+          "hash": "fLkjki/zHKES3zVpZVtWjQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "source_relative_path": "api/Mozzarella.Tests.StringBuilderIndexOf.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Mozzarella.StringExtensions.BeforeFirst.html",
-          "hash": "fg/WwFVM/Cc+6uvtLbEQOg=="
+          "relative_path": "api/Mozzarella.Tests.StringBuilderIndexOf.html",
+          "hash": "SWHuKkQHHp1jwoFnpjpYoA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
+      "source_relative_path": "api/Mozzarella.Tests.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Mozzarella.StringExtensions.BeforeLast.html",
-          "hash": "V9BF9TQTFNkv1F1LktfBFA=="
+          "relative_path": "api/Mozzarella.Tests.html",
+          "hash": "9wYvCMhq40qYGPuow5/ugg=="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Mozzarella.StringExtensions.AfterFirst.html",
-          "hash": "qjFl9yYgfRkmijAMLVTAoQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Mozzarella.StringExtensions.AfterLast.html",
-          "hash": "rIINpoGU0Pu5lJePJUNJ2Q=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Mozzarella.StringExtensions.Truncate.html",
-          "hash": "1wYVji9C+xoE6zei8sngYQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Mozzarella.StringExtensions.OCIEquals.html",
-          "hash": "y3t7D+O67WQry3YNsIZnPg=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Mozzarella.StringExtensions.OEquals.html",
-          "hash": "KsPIeDN3up/5BNIr6fLPyQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Mozzarella.StringExtensions.StripPrefix.html",
-          "hash": "CcmPMFSNwwLKLxKoLhPQEA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Mozzarella.StringExtensions.AddSuffix.html",
-          "hash": "6JcYminBd7MakhOFrmq1xA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Mozzarella.StringExtensions.AddPrefix.html",
-          "hash": "ovUQO63RLWAdgqGE13M8/w=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Mozzarella.StringExtensions.Coalesce.html",
-          "hash": "wuzuS1XXwEyZK70dJKpBAw=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Mozzarella.StringExtensions.IsNullOrEmpty.html",
-          "hash": "L5LtouQEw8tfqfYNGHxGzA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Mozzarella.StringExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Mozzarella.StringExtensions.IsNullOrWhiteSpace.html",
-          "hash": "/cVJ4drZhk9biBYd+N80Wg=="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -537,7 +741,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Mozzarella.html",
-          "hash": "episj/aRYPFXjz2v4KmL9w=="
+          "hash": "lN1jmmfkburkFghZmugymw=="
         }
       },
       "is_incremental": false,
@@ -600,21 +804,21 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "RestApiDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         },

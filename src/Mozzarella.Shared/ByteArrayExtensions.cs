@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -49,7 +49,7 @@ namespace Mozzarella
 		public static string ToHexString(this byte[] values)
 		{
 			if (values == null) throw new ArgumentNullException(nameof(values));
-			if (values.Length == 0) throw new ArgumentException(nameof(values) + " cannot be zero length.", nameof(values));
+			if (values.Length == 0) throw new ArgumentException(ErrorMessages.ArgumentCannotBeEmptyString, nameof(values));
 
 			StringBuilder sb = new StringBuilder(values.Length * 2);
 			foreach (byte x in values)
