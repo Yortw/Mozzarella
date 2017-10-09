@@ -14,6 +14,12 @@ items:
   - Mozzarella.StringBuilderExtensions.Contains(System.Text.StringBuilder,System.String)
   - Mozzarella.StringBuilderExtensions.IndexOf(System.Text.StringBuilder,System.String)
   - Mozzarella.StringBuilderExtensions.IndexOf(System.Text.StringBuilder,System.String,System.Int32)
+  - Mozzarella.StringBuilderExtensions.Trim(System.Text.StringBuilder)
+  - Mozzarella.StringBuilderExtensions.Trim(System.Text.StringBuilder,System.Char[])
+  - Mozzarella.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder)
+  - Mozzarella.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder,System.Char[])
+  - Mozzarella.StringBuilderExtensions.TrimStart(System.Text.StringBuilder)
+  - Mozzarella.StringBuilderExtensions.TrimStart(System.Text.StringBuilder,System.Char[])
   langs:
   - csharp
   - vb
@@ -24,7 +30,7 @@ items:
   source:
     id: StringBuilderExtensions
     path: ''
-    startLine: 518
+    startLine: 519
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -65,7 +71,7 @@ items:
   source:
     id: AppendJoin
     path: ''
-    startLine: 537
+    startLine: 538
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -120,7 +126,7 @@ items:
   source:
     id: AppendJoin
     path: ''
-    startLine: 566
+    startLine: 567
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -175,7 +181,7 @@ items:
   source:
     id: AppendJoin
     path: ''
-    startLine: 595
+    startLine: 596
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -230,7 +236,7 @@ items:
   source:
     id: IndexOf
     path: ''
-    startLine: 633
+    startLine: 634
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -281,7 +287,7 @@ items:
   source:
     id: IndexOf
     path: ''
-    startLine: 651
+    startLine: 652
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -339,7 +345,7 @@ items:
   source:
     id: Contains
     path: ''
-    startLine: 697
+    startLine: 698
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -390,7 +396,7 @@ items:
   source:
     id: Append
     path: ''
-    startLine: 709
+    startLine: 710
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -437,7 +443,7 @@ items:
   source:
     id: AppendIf
     path: ''
-    startLine: 731
+    startLine: 732
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -488,7 +494,7 @@ items:
   source:
     id: AppendIf
     path: ''
-    startLine: 749
+    startLine: 750
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -527,6 +533,294 @@ items:
   - Shared
   fullName.vb: Mozzarella.StringBuilderExtensions.AppendIf(System.Text.StringBuilder, System.Boolean, System.Func(Of System.String))
   name.vb: AppendIf(StringBuilder, Boolean, Func(Of String))
+- uid: Mozzarella.StringBuilderExtensions.Trim(System.Text.StringBuilder)
+  commentId: M:Mozzarella.StringBuilderExtensions.Trim(System.Text.StringBuilder)
+  id: Trim(System.Text.StringBuilder)
+  isExtensionMethod: true
+  parent: Mozzarella.StringBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: Trim(StringBuilder)
+  nameWithType: StringBuilderExtensions.Trim(StringBuilder)
+  fullName: Mozzarella.StringBuilderExtensions.Trim(System.Text.StringBuilder)
+  type: Method
+  source:
+    id: Trim
+    path: ''
+    startLine: 769
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nRemoves all leading and trailing whitespace from <code data-dev-comment-type=\"paramref\" class=\"paramref\">builder</code>.\n"
+  example: []
+  syntax:
+    content: public static StringBuilder Trim(this StringBuilder builder)
+    parameters:
+    - id: builder
+      type: System.Text.StringBuilder
+      description: The <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref> to remove leading and trailing whitespace from.
+    return:
+      type: System.Text.StringBuilder
+      description: A reference to <code data-dev-comment-type="paramref" class="paramref">builder</code>.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Trim(builder As StringBuilder) As StringBuilder
+  overload: Mozzarella.StringBuilderExtensions.Trim*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">builder</code> is null.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringBuilderExtensions.TrimStart(System.Text.StringBuilder)
+  commentId: M:Mozzarella.StringBuilderExtensions.TrimStart(System.Text.StringBuilder)
+  id: TrimStart(System.Text.StringBuilder)
+  isExtensionMethod: true
+  parent: Mozzarella.StringBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: TrimStart(StringBuilder)
+  nameWithType: StringBuilderExtensions.TrimStart(StringBuilder)
+  fullName: Mozzarella.StringBuilderExtensions.TrimStart(System.Text.StringBuilder)
+  type: Method
+  source:
+    id: TrimStart
+    path: ''
+    startLine: 783
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nRemoves all leading whitespace from <code data-dev-comment-type=\"paramref\" class=\"paramref\">builder</code>.\n"
+  example: []
+  syntax:
+    content: public static StringBuilder TrimStart(this StringBuilder builder)
+    parameters:
+    - id: builder
+      type: System.Text.StringBuilder
+      description: The <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref> to remove leading whitespace from.
+    return:
+      type: System.Text.StringBuilder
+      description: A reference to <code data-dev-comment-type="paramref" class="paramref">builder</code>.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function TrimStart(builder As StringBuilder) As StringBuilder
+  overload: Mozzarella.StringBuilderExtensions.TrimStart*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">builder</code> is null.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder)
+  commentId: M:Mozzarella.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder)
+  id: TrimEnd(System.Text.StringBuilder)
+  isExtensionMethod: true
+  parent: Mozzarella.StringBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: TrimEnd(StringBuilder)
+  nameWithType: StringBuilderExtensions.TrimEnd(StringBuilder)
+  fullName: Mozzarella.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder)
+  type: Method
+  source:
+    id: TrimEnd
+    path: ''
+    startLine: 810
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nRemoves all trailing whitespace from <code data-dev-comment-type=\"paramref\" class=\"paramref\">builder</code>.\n"
+  example: []
+  syntax:
+    content: public static StringBuilder TrimEnd(this StringBuilder builder)
+    parameters:
+    - id: builder
+      type: System.Text.StringBuilder
+      description: The <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref> to remove trailing whitespace from.
+    return:
+      type: System.Text.StringBuilder
+      description: A reference to <code data-dev-comment-type="paramref" class="paramref">builder</code>.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function TrimEnd(builder As StringBuilder) As StringBuilder
+  overload: Mozzarella.StringBuilderExtensions.TrimEnd*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">builder</code> is null.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringBuilderExtensions.Trim(System.Text.StringBuilder,System.Char[])
+  commentId: M:Mozzarella.StringBuilderExtensions.Trim(System.Text.StringBuilder,System.Char[])
+  id: Trim(System.Text.StringBuilder,System.Char[])
+  isExtensionMethod: true
+  parent: Mozzarella.StringBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: Trim(StringBuilder, Char[])
+  nameWithType: StringBuilderExtensions.Trim(StringBuilder, Char[])
+  fullName: Mozzarella.StringBuilderExtensions.Trim(System.Text.StringBuilder, System.Char[])
+  type: Method
+  source:
+    id: Trim
+    path: ''
+    startLine: 838
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nRemoves all leading and trailing characters in <code data-dev-comment-type=\"paramref\" class=\"paramref\">builder</code> that exist within <code data-dev-comment-type=\"paramref\" class=\"paramref\">trimChars</code>.\n"
+  example: []
+  syntax:
+    content: public static StringBuilder Trim(this StringBuilder builder, params char[] trimChars)
+    parameters:
+    - id: builder
+      type: System.Text.StringBuilder
+      description: The <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref> to remove leading and trailing characters from.
+    - id: trimChars
+      type: System.Char[]
+      description: An array of <xref href="System.Char" data-throw-if-not-resolved="false"></xref> representing the characters to be removed.
+    return:
+      type: System.Text.StringBuilder
+      description: A reference to <code data-dev-comment-type="paramref" class="paramref">builder</code>.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Trim(builder As StringBuilder, ParamArray trimChars As Char()) As StringBuilder
+  overload: Mozzarella.StringBuilderExtensions.Trim*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">builder</code> or <code data-dev-comment-type="paramref" class="paramref">trimChars</code> is null.
+  nameWithType.vb: StringBuilderExtensions.Trim(StringBuilder, Char())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mozzarella.StringBuilderExtensions.Trim(System.Text.StringBuilder, System.Char())
+  name.vb: Trim(StringBuilder, Char())
+- uid: Mozzarella.StringBuilderExtensions.TrimStart(System.Text.StringBuilder,System.Char[])
+  commentId: M:Mozzarella.StringBuilderExtensions.TrimStart(System.Text.StringBuilder,System.Char[])
+  id: TrimStart(System.Text.StringBuilder,System.Char[])
+  isExtensionMethod: true
+  parent: Mozzarella.StringBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: TrimStart(StringBuilder, Char[])
+  nameWithType: StringBuilderExtensions.TrimStart(StringBuilder, Char[])
+  fullName: Mozzarella.StringBuilderExtensions.TrimStart(System.Text.StringBuilder, System.Char[])
+  type: Method
+  source:
+    id: TrimStart
+    path: ''
+    startLine: 854
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nRemoves all leading characters in <code data-dev-comment-type=\"paramref\" class=\"paramref\">builder</code> that exist within <code data-dev-comment-type=\"paramref\" class=\"paramref\">trimChars</code>.\n"
+  example: []
+  syntax:
+    content: public static StringBuilder TrimStart(this StringBuilder builder, params char[] trimChars)
+    parameters:
+    - id: builder
+      type: System.Text.StringBuilder
+      description: The <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref> to remove leading characters from.
+    - id: trimChars
+      type: System.Char[]
+      description: An array of <xref href="System.Char" data-throw-if-not-resolved="false"></xref> representing the characters to be removed.
+    return:
+      type: System.Text.StringBuilder
+      description: A reference to <code data-dev-comment-type="paramref" class="paramref">builder</code>.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function TrimStart(builder As StringBuilder, ParamArray trimChars As Char()) As StringBuilder
+  overload: Mozzarella.StringBuilderExtensions.TrimStart*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">builder</code> or <code data-dev-comment-type="paramref" class="paramref">trimChars</code> is null.
+  nameWithType.vb: StringBuilderExtensions.TrimStart(StringBuilder, Char())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mozzarella.StringBuilderExtensions.TrimStart(System.Text.StringBuilder, System.Char())
+  name.vb: TrimStart(StringBuilder, Char())
+- uid: Mozzarella.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder,System.Char[])
+  commentId: M:Mozzarella.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder,System.Char[])
+  id: TrimEnd(System.Text.StringBuilder,System.Char[])
+  isExtensionMethod: true
+  parent: Mozzarella.StringBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: TrimEnd(StringBuilder, Char[])
+  nameWithType: StringBuilderExtensions.TrimEnd(StringBuilder, Char[])
+  fullName: Mozzarella.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder, System.Char[])
+  type: Method
+  source:
+    id: TrimEnd
+    path: ''
+    startLine: 884
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nRemoves all trailing characters in <code data-dev-comment-type=\"paramref\" class=\"paramref\">builder</code> that exist within <code data-dev-comment-type=\"paramref\" class=\"paramref\">trimChars</code>.\n"
+  example: []
+  syntax:
+    content: public static StringBuilder TrimEnd(this StringBuilder builder, params char[] trimChars)
+    parameters:
+    - id: builder
+      type: System.Text.StringBuilder
+      description: The <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref> to remove trailing characters from.
+    - id: trimChars
+      type: System.Char[]
+      description: An array of <xref href="System.Char" data-throw-if-not-resolved="false"></xref> representing the characters to be removed.
+    return:
+      type: System.Text.StringBuilder
+      description: A reference to <code data-dev-comment-type="paramref" class="paramref">builder</code>.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function TrimEnd(builder As StringBuilder, ParamArray trimChars As Char()) As StringBuilder
+  overload: Mozzarella.StringBuilderExtensions.TrimEnd*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">builder</code> or <code data-dev-comment-type="paramref" class="paramref">trimChars</code> is null.
+  nameWithType.vb: StringBuilderExtensions.TrimEnd(StringBuilder, Char())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mozzarella.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder, System.Char())
+  name.vb: TrimEnd(StringBuilder, Char())
 references:
 - uid: System.Text.StringBuilder
   commentId: T:System.Text.StringBuilder
@@ -1176,3 +1470,48 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Mozzarella.StringBuilderExtensions.Trim*
+  commentId: Overload:Mozzarella.StringBuilderExtensions.Trim
+  isExternal: false
+  name: Trim
+  nameWithType: StringBuilderExtensions.Trim
+  fullName: Mozzarella.StringBuilderExtensions.Trim
+- uid: Mozzarella.StringBuilderExtensions.TrimStart*
+  commentId: Overload:Mozzarella.StringBuilderExtensions.TrimStart
+  isExternal: false
+  name: TrimStart
+  nameWithType: StringBuilderExtensions.TrimStart
+  fullName: Mozzarella.StringBuilderExtensions.TrimStart
+- uid: Mozzarella.StringBuilderExtensions.TrimEnd*
+  commentId: Overload:Mozzarella.StringBuilderExtensions.TrimEnd
+  isExternal: false
+  name: TrimEnd
+  nameWithType: StringBuilderExtensions.TrimEnd
+  fullName: Mozzarella.StringBuilderExtensions.TrimEnd
+- uid: System.Char
+  commentId: T:System.Char
+- uid: System.Char[]
+  name: Char[]
+  nameWithType: Char[]
+  fullName: System.Char[]
+  nameWithType.vb: Char()
+  fullName.vb: System.Char()
+  name.vb: Char()
+  spec.csharp:
+  - uid: System.Char
+    name: Char
+    nameWithType: Char
+    fullName: System.Char
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Char
+    name: Char
+    nameWithType: Char
+    fullName: System.Char
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

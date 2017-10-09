@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
 namespace Mozzarella
 {
@@ -251,6 +252,149 @@ namespace Mozzarella
 
 		#endregion
 
+		/// <summary>
+		/// Removes all leading and trailing whitespace from <paramref name="builder"/>.
+		/// </summary>
+		/// <param name="builder">The <see cref="System.Text.StringBuilder"/> to remove leading and trailing whitespace from.</param>
+		/// <returns>A reference to <paramref name="builder"/>.</returns>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="builder"/> is null.</exception>
+		public static StringBuilder Trim(this StringBuilder builder)
+		{
+			TrimStart(builder);
+			TrimEnd(builder);
+
+			return builder;
+		}
+
+		/// <summary>
+		/// Removes all leading whitespace from <paramref name="builder"/>.
+		/// </summary>
+		/// <param name="builder">The <see cref="System.Text.StringBuilder"/> to remove leading whitespace from.</param>
+		/// <returns>A reference to <paramref name="builder"/>.</returns>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="builder"/> is null.</exception>
+		public static StringBuilder TrimStart(this StringBuilder builder)
+		{
+			if (builder == null) throw new ArgumentNullException(nameof(builder));
+			if (builder.Length == 0) return builder;
+
+			int whitespaceChars = 0;
+			for (int cnt = 0; cnt < builder.Length; cnt++)
+			{
+				if (!Char.IsWhiteSpace(builder[cnt]))
+				{
+					whitespaceChars = cnt;
+					break;
+				}
+			}
+
+			if (whitespaceChars > 0)
+				builder.Remove(0, whitespaceChars);
+
+			return builder;
+		}
+
+		/// <summary>
+		/// Removes all trailing whitespace from <paramref name="builder"/>.
+		/// </summary>
+		/// <param name="builder">The <see cref="System.Text.StringBuilder"/> to remove trailing whitespace from.</param>
+		/// <returns>A reference to <paramref name="builder"/>.</returns>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="builder"/> is null.</exception>
+		public static StringBuilder TrimEnd(this StringBuilder builder)
+		{
+			if (builder == null) throw new ArgumentNullException(nameof(builder));
+			if (builder.Length == 0) return builder;
+
+			int whitespaceChars = 0;
+			for (int cnt = builder.Length - 1; cnt >= 0; cnt--)
+			{
+				if (!Char.IsWhiteSpace(builder[cnt]))
+				{
+					whitespaceChars = builder.Length - (cnt + 1);
+					break;
+				}
+			}
+
+			if (whitespaceChars > 0)
+				builder.Remove(builder.Length - whitespaceChars, whitespaceChars);
+
+			return builder;
+		}
+
+		/// <summary>
+		/// Removes all leading and trailing characters in <paramref name="builder"/> that exist within <paramref name="trimChars"/>.
+		/// </summary>
+		/// <param name="builder">The <see cref="StringBuilder"/> to remove leading and trailing characters from.</param>
+		/// <param name="trimChars">An array of <see cref="Char"/> representing the characters to be removed.</param>
+		/// <returns>A reference to <paramref name="builder"/>.</returns>
+		/// <exception cref="ArgumentNullException">Thrown if <paramref name="builder"/> or <paramref name="trimChars"/> is null.</exception>
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1720:IdentifiersShouldNotContainTypeNames", MessageId = "chars", Justification ="Argument name matches the one used by framework for equivalent string method.")]
+		public static StringBuilder Trim(this StringBuilder builder, params char[] trimChars)
+		{
+			TrimStart(builder, trimChars);
+			TrimEnd(builder, trimChars);
+
+			return builder;
+		}
+
+		/// <summary>
+		/// Removes all leading characters in <paramref name="builder"/> that exist within <paramref name="trimChars"/>.
+		/// </summary>
+		/// <param name="builder">The <see cref="StringBuilder"/> to remove leading characters from.</param>
+		/// <param name="trimChars">An array of <see cref="Char"/> representing the characters to be removed.</param>
+		/// <returns>A reference to <paramref name="builder"/>.</returns>
+		/// <exception cref="ArgumentNullException">Thrown if <paramref name="builder"/> or <paramref name="trimChars"/> is null.</exception>
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1720:IdentifiersShouldNotContainTypeNames", MessageId = "chars", Justification = "Argument name matches the one used by framework for equivalent string method.")]
+		public static StringBuilder TrimStart(this StringBuilder builder, params char[] trimChars)
+		{
+			if (builder == null) throw new ArgumentNullException(nameof(builder));
+			if (builder.Length == 0) return builder;
+			if (trimChars == null) throw new ArgumentNullException(nameof(trimChars));
+
+			int charCountToRemove = 0;
+			for (int cnt = 0; cnt < builder.Length; cnt++)
+			{
+				if (!trimChars.Contains(builder[cnt]))
+				{
+					charCountToRemove = cnt;
+					break;
+				}
+			}
+
+			if (charCountToRemove > 0)
+				builder.Remove(0, charCountToRemove);
+
+			return builder;
+		}
+
+		/// <summary>
+		/// Removes all trailing characters in <paramref name="builder"/> that exist within <paramref name="trimChars"/>.
+		/// </summary>
+		/// <param name="builder">The <see cref="StringBuilder"/> to remove trailing characters from.</param>
+		/// <param name="trimChars">An array of <see cref="Char"/> representing the characters to be removed.</param>
+		/// <returns>A reference to <paramref name="builder"/>.</returns>
+		/// <exception cref="ArgumentNullException">Thrown if <paramref name="builder"/> or <paramref name="trimChars"/> is null.</exception>
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1720:IdentifiersShouldNotContainTypeNames", MessageId = "chars", Justification = "Argument name matches the one used by framework for equivalent string method.")]
+		public static StringBuilder TrimEnd(this StringBuilder builder, params char[] trimChars)
+		{
+			if (builder == null) throw new ArgumentNullException(nameof(builder));
+			if (builder.Length == 0) return builder;
+			if (trimChars == null) throw new ArgumentNullException(nameof(trimChars));
+
+			int charCountToRemove = 0;
+			for (int cnt = builder.Length - 1; cnt >= 0; cnt--)
+			{
+				if (!trimChars.Contains(builder[cnt]))
+				{
+					charCountToRemove = builder.Length - (cnt + 1);
+					break;
+				}
+			}
+
+			if (charCountToRemove > 0)
+				builder.Remove(builder.Length - charCountToRemove, charCountToRemove);
+
+			return builder;
+		}
 
 	}
 }

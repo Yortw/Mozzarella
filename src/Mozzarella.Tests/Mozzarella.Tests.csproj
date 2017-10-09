@@ -78,6 +78,7 @@
     <Compile Include="StringBuilderAppendTests.cs" />
     <Compile Include="StringBuilderContainsTests.cs" />
     <Compile Include="StringBuilderIndexOfTests.cs" />
+    <Compile Include="StringBuilderTrimTests.cs" />
     <Compile Include="StripPrefixTests.cs" />
     <Compile Include="StripSuffixTests.cs" />
     <Compile Include="TruncateTests.cs" />

@@ -298,6 +298,69 @@ references:
   commentId: Overload:Mozzarella.StringBuilderExtensions.IndexOf
   fullName: Mozzarella.StringBuilderExtensions.IndexOf
   nameWithType: StringBuilderExtensions.IndexOf
+- uid: Mozzarella.StringBuilderExtensions.Trim(System.Text.StringBuilder)
+  name: Trim(StringBuilder)
+  href: api/Mozzarella.StringBuilderExtensions.Trim.html#Mozzarella_StringBuilderExtensions_Trim_System_Text_StringBuilder_
+  commentId: M:Mozzarella.StringBuilderExtensions.Trim(System.Text.StringBuilder)
+  fullName: Mozzarella.StringBuilderExtensions.Trim(System.Text.StringBuilder)
+  nameWithType: StringBuilderExtensions.Trim(StringBuilder)
+- uid: Mozzarella.StringBuilderExtensions.Trim(System.Text.StringBuilder,System.Char[])
+  name: Trim(StringBuilder, Char[])
+  href: api/Mozzarella.StringBuilderExtensions.Trim.html#Mozzarella_StringBuilderExtensions_Trim_System_Text_StringBuilder_System_Char___
+  commentId: M:Mozzarella.StringBuilderExtensions.Trim(System.Text.StringBuilder,System.Char[])
+  name.vb: Trim(StringBuilder, Char())
+  fullName: Mozzarella.StringBuilderExtensions.Trim(System.Text.StringBuilder, System.Char[])
+  fullName.vb: Mozzarella.StringBuilderExtensions.Trim(System.Text.StringBuilder, System.Char())
+  nameWithType: StringBuilderExtensions.Trim(StringBuilder, Char[])
+  nameWithType.vb: StringBuilderExtensions.Trim(StringBuilder, Char())
+- uid: Mozzarella.StringBuilderExtensions.Trim*
+  name: Trim
+  href: api/Mozzarella.StringBuilderExtensions.Trim.html
+  commentId: Overload:Mozzarella.StringBuilderExtensions.Trim
+  fullName: Mozzarella.StringBuilderExtensions.Trim
+  nameWithType: StringBuilderExtensions.Trim
+- uid: Mozzarella.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder)
+  name: TrimEnd(StringBuilder)
+  href: api/Mozzarella.StringBuilderExtensions.TrimEnd.html#Mozzarella_StringBuilderExtensions_TrimEnd_System_Text_StringBuilder_
+  commentId: M:Mozzarella.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder)
+  fullName: Mozzarella.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder)
+  nameWithType: StringBuilderExtensions.TrimEnd(StringBuilder)
+- uid: Mozzarella.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder,System.Char[])
+  name: TrimEnd(StringBuilder, Char[])
+  href: api/Mozzarella.StringBuilderExtensions.TrimEnd.html#Mozzarella_StringBuilderExtensions_TrimEnd_System_Text_StringBuilder_System_Char___
+  commentId: M:Mozzarella.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder,System.Char[])
+  name.vb: TrimEnd(StringBuilder, Char())
+  fullName: Mozzarella.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder, System.Char[])
+  fullName.vb: Mozzarella.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder, System.Char())
+  nameWithType: StringBuilderExtensions.TrimEnd(StringBuilder, Char[])
+  nameWithType.vb: StringBuilderExtensions.TrimEnd(StringBuilder, Char())
+- uid: Mozzarella.StringBuilderExtensions.TrimEnd*
+  name: TrimEnd
+  href: api/Mozzarella.StringBuilderExtensions.TrimEnd.html
+  commentId: Overload:Mozzarella.StringBuilderExtensions.TrimEnd
+  fullName: Mozzarella.StringBuilderExtensions.TrimEnd
+  nameWithType: StringBuilderExtensions.TrimEnd
+- uid: Mozzarella.StringBuilderExtensions.TrimStart(System.Text.StringBuilder)
+  name: TrimStart(StringBuilder)
+  href: api/Mozzarella.StringBuilderExtensions.TrimStart.html#Mozzarella_StringBuilderExtensions_TrimStart_System_Text_StringBuilder_
+  commentId: M:Mozzarella.StringBuilderExtensions.TrimStart(System.Text.StringBuilder)
+  fullName: Mozzarella.StringBuilderExtensions.TrimStart(System.Text.StringBuilder)
+  nameWithType: StringBuilderExtensions.TrimStart(StringBuilder)
+- uid: Mozzarella.StringBuilderExtensions.TrimStart(System.Text.StringBuilder,System.Char[])
+  name: TrimStart(StringBuilder, Char[])
+  href: api/Mozzarella.StringBuilderExtensions.TrimStart.html#Mozzarella_StringBuilderExtensions_TrimStart_System_Text_StringBuilder_System_Char___
+  commentId: M:Mozzarella.StringBuilderExtensions.TrimStart(System.Text.StringBuilder,System.Char[])
+  name.vb: TrimStart(StringBuilder, Char())
+  fullName: Mozzarella.StringBuilderExtensions.TrimStart(System.Text.StringBuilder, System.Char[])
+  fullName.vb: Mozzarella.StringBuilderExtensions.TrimStart(System.Text.StringBuilder, System.Char())
+  nameWithType: StringBuilderExtensions.TrimStart(StringBuilder, Char[])
+  nameWithType.vb: StringBuilderExtensions.TrimStart(StringBuilder, Char())
+- uid: Mozzarella.StringBuilderExtensions.TrimStart*
+  name: TrimStart
+  href: api/Mozzarella.StringBuilderExtensions.TrimStart.html
+  commentId: Overload:Mozzarella.StringBuilderExtensions.TrimStart
+  fullName: Mozzarella.StringBuilderExtensions.TrimStart
+  nameWithType: StringBuilderExtensions.TrimStart
 - uid: Mozzarella.StringExtensions
   name: StringExtensions
   href: api/Mozzarella.StringExtensions.html
