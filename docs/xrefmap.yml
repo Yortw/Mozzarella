@@ -202,6 +202,39 @@ references:
   commentId: T:Mozzarella.StringBuilderExtensions
   fullName: Mozzarella.StringBuilderExtensions
   nameWithType: StringBuilderExtensions
+- uid: Mozzarella.StringBuilderExtensions.Append(System.Text.StringBuilder,System.String,System.String)
+  name: Append(StringBuilder, String, String)
+  href: api/Mozzarella.StringBuilderExtensions.Append.html#Mozzarella_StringBuilderExtensions_Append_System_Text_StringBuilder_System_String_System_String_
+  commentId: M:Mozzarella.StringBuilderExtensions.Append(System.Text.StringBuilder,System.String,System.String)
+  fullName: Mozzarella.StringBuilderExtensions.Append(System.Text.StringBuilder, System.String, System.String)
+  nameWithType: StringBuilderExtensions.Append(StringBuilder, String, String)
+- uid: Mozzarella.StringBuilderExtensions.Append*
+  name: Append
+  href: api/Mozzarella.StringBuilderExtensions.Append.html
+  commentId: Overload:Mozzarella.StringBuilderExtensions.Append
+  fullName: Mozzarella.StringBuilderExtensions.Append
+  nameWithType: StringBuilderExtensions.Append
+- uid: Mozzarella.StringBuilderExtensions.AppendIf(System.Text.StringBuilder,System.Boolean,System.Func{System.String})
+  name: AppendIf(StringBuilder, Boolean, Func<String>)
+  href: api/Mozzarella.StringBuilderExtensions.AppendIf.html#Mozzarella_StringBuilderExtensions_AppendIf_System_Text_StringBuilder_System_Boolean_System_Func_System_String__
+  commentId: M:Mozzarella.StringBuilderExtensions.AppendIf(System.Text.StringBuilder,System.Boolean,System.Func{System.String})
+  name.vb: AppendIf(StringBuilder, Boolean, Func(Of String))
+  fullName: Mozzarella.StringBuilderExtensions.AppendIf(System.Text.StringBuilder, System.Boolean, System.Func<System.String>)
+  fullName.vb: Mozzarella.StringBuilderExtensions.AppendIf(System.Text.StringBuilder, System.Boolean, System.Func(Of System.String))
+  nameWithType: StringBuilderExtensions.AppendIf(StringBuilder, Boolean, Func<String>)
+  nameWithType.vb: StringBuilderExtensions.AppendIf(StringBuilder, Boolean, Func(Of String))
+- uid: Mozzarella.StringBuilderExtensions.AppendIf(System.Text.StringBuilder,System.Boolean,System.String)
+  name: AppendIf(StringBuilder, Boolean, String)
+  href: api/Mozzarella.StringBuilderExtensions.AppendIf.html#Mozzarella_StringBuilderExtensions_AppendIf_System_Text_StringBuilder_System_Boolean_System_String_
+  commentId: M:Mozzarella.StringBuilderExtensions.AppendIf(System.Text.StringBuilder,System.Boolean,System.String)
+  fullName: Mozzarella.StringBuilderExtensions.AppendIf(System.Text.StringBuilder, System.Boolean, System.String)
+  nameWithType: StringBuilderExtensions.AppendIf(StringBuilder, Boolean, String)
+- uid: Mozzarella.StringBuilderExtensions.AppendIf*
+  name: AppendIf
+  href: api/Mozzarella.StringBuilderExtensions.AppendIf.html
+  commentId: Overload:Mozzarella.StringBuilderExtensions.AppendIf
+  fullName: Mozzarella.StringBuilderExtensions.AppendIf
+  nameWithType: StringBuilderExtensions.AppendIf
 - uid: Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder,System.String,System.Collections.Generic.IEnumerable{System.String})
   name: AppendJoin(StringBuilder, String, IEnumerable<String>)
   href: api/Mozzarella.StringBuilderExtensions.AppendJoin.html#Mozzarella_StringBuilderExtensions_AppendJoin_System_Text_StringBuilder_System_String_System_Collections_Generic_IEnumerable_System_String__
@@ -655,165 +688,3 @@ references:
   commentId: Overload:Mozzarella.StringExtensions.Truncate
   fullName: Mozzarella.StringExtensions.Truncate
   nameWithType: StringExtensions.Truncate
-- uid: Mozzarella.Tests
-  name: Mozzarella.Tests
-  href: api/Mozzarella.Tests.html
-  commentId: N:Mozzarella.Tests
-  fullName: Mozzarella.Tests
-  nameWithType: Mozzarella.Tests
-- uid: Mozzarella.Tests.StringBuilderContains
-  name: StringBuilderContains
-  href: api/Mozzarella.Tests.StringBuilderContains.html
-  commentId: T:Mozzarella.Tests.StringBuilderContains
-  fullName: Mozzarella.Tests.StringBuilderContains
-  nameWithType: StringBuilderContains
-- uid: Mozzarella.Tests.StringBuilderContains.StringBuilder_Contains_FindsMatch
-  name: StringBuilder_Contains_FindsMatch()
-  href: api/Mozzarella.Tests.StringBuilderContains.StringBuilder_Contains_FindsMatch.html#Mozzarella_Tests_StringBuilderContains_StringBuilder_Contains_FindsMatch
-  commentId: M:Mozzarella.Tests.StringBuilderContains.StringBuilder_Contains_FindsMatch
-  fullName: Mozzarella.Tests.StringBuilderContains.StringBuilder_Contains_FindsMatch()
-  nameWithType: StringBuilderContains.StringBuilder_Contains_FindsMatch()
-- uid: Mozzarella.Tests.StringBuilderContains.StringBuilder_Contains_FindsMatch*
-  name: StringBuilder_Contains_FindsMatch
-  href: api/Mozzarella.Tests.StringBuilderContains.StringBuilder_Contains_FindsMatch.html
-  commentId: Overload:Mozzarella.Tests.StringBuilderContains.StringBuilder_Contains_FindsMatch
-  fullName: Mozzarella.Tests.StringBuilderContains.StringBuilder_Contains_FindsMatch
-  nameWithType: StringBuilderContains.StringBuilder_Contains_FindsMatch
-- uid: Mozzarella.Tests.StringBuilderContains.StringBuilder_Contains_ReturnsNegativeOneForNoMatch
-  name: StringBuilder_Contains_ReturnsNegativeOneForNoMatch()
-  href: api/Mozzarella.Tests.StringBuilderContains.StringBuilder_Contains_ReturnsNegativeOneForNoMatch.html#Mozzarella_Tests_StringBuilderContains_StringBuilder_Contains_ReturnsNegativeOneForNoMatch
-  commentId: M:Mozzarella.Tests.StringBuilderContains.StringBuilder_Contains_ReturnsNegativeOneForNoMatch
-  fullName: Mozzarella.Tests.StringBuilderContains.StringBuilder_Contains_ReturnsNegativeOneForNoMatch()
-  nameWithType: StringBuilderContains.StringBuilder_Contains_ReturnsNegativeOneForNoMatch()
-- uid: Mozzarella.Tests.StringBuilderContains.StringBuilder_Contains_ReturnsNegativeOneForNoMatch*
-  name: StringBuilder_Contains_ReturnsNegativeOneForNoMatch
-  href: api/Mozzarella.Tests.StringBuilderContains.StringBuilder_Contains_ReturnsNegativeOneForNoMatch.html
-  commentId: Overload:Mozzarella.Tests.StringBuilderContains.StringBuilder_Contains_ReturnsNegativeOneForNoMatch
-  fullName: Mozzarella.Tests.StringBuilderContains.StringBuilder_Contains_ReturnsNegativeOneForNoMatch
-  nameWithType: StringBuilderContains.StringBuilder_Contains_ReturnsNegativeOneForNoMatch
-- uid: Mozzarella.Tests.StringBuilderIndexOf
-  name: StringBuilderIndexOf
-  href: api/Mozzarella.Tests.StringBuilderIndexOf.html
-  commentId: T:Mozzarella.Tests.StringBuilderIndexOf
-  fullName: Mozzarella.Tests.StringBuilderIndexOf
-  nameWithType: StringBuilderIndexOf
-- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString
-  name: StringBuilder_IndexOf_FindsMultiCharString()
-  href: api/Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString.html#Mozzarella_Tests_StringBuilderIndexOf_StringBuilder_IndexOf_FindsMultiCharString
-  commentId: M:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString
-  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString()
-  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString()
-- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString*
-  name: StringBuilder_IndexOf_FindsMultiCharString
-  href: api/Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString.html
-  commentId: Overload:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString
-  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString
-  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString
-- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtBeginning
-  name: StringBuilder_IndexOf_FindsMultiCharString_AtBeginning()
-  href: api/Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtBeginning.html#Mozzarella_Tests_StringBuilderIndexOf_StringBuilder_IndexOf_FindsMultiCharString_AtBeginning
-  commentId: M:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtBeginning
-  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtBeginning()
-  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtBeginning()
-- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtBeginning*
-  name: StringBuilder_IndexOf_FindsMultiCharString_AtBeginning
-  href: api/Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtBeginning.html
-  commentId: Overload:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtBeginning
-  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtBeginning
-  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtBeginning
-- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtEnd
-  name: StringBuilder_IndexOf_FindsMultiCharString_AtEnd()
-  href: api/Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtEnd.html#Mozzarella_Tests_StringBuilderIndexOf_StringBuilder_IndexOf_FindsMultiCharString_AtEnd
-  commentId: M:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtEnd
-  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtEnd()
-  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtEnd()
-- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtEnd*
-  name: StringBuilder_IndexOf_FindsMultiCharString_AtEnd
-  href: api/Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtEnd.html
-  commentId: Overload:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtEnd
-  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtEnd
-  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_AtEnd
-- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_ExactMatch
-  name: StringBuilder_IndexOf_FindsMultiCharString_ExactMatch()
-  href: api/Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_ExactMatch.html#Mozzarella_Tests_StringBuilderIndexOf_StringBuilder_IndexOf_FindsMultiCharString_ExactMatch
-  commentId: M:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_ExactMatch
-  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_ExactMatch()
-  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_ExactMatch()
-- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_ExactMatch*
-  name: StringBuilder_IndexOf_FindsMultiCharString_ExactMatch
-  href: api/Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_ExactMatch.html
-  commentId: Overload:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_ExactMatch
-  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_ExactMatch
-  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsMultiCharString_ExactMatch
-- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString
-  name: StringBuilder_IndexOf_FindsSingleCharString()
-  href: api/Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString.html#Mozzarella_Tests_StringBuilderIndexOf_StringBuilder_IndexOf_FindsSingleCharString
-  commentId: M:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString
-  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString()
-  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString()
-- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString*
-  name: StringBuilder_IndexOf_FindsSingleCharString
-  href: api/Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString.html
-  commentId: Overload:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString
-  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString
-  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString
-- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString_ExactMatch
-  name: StringBuilder_IndexOf_FindsSingleCharString_ExactMatch()
-  href: api/Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString_ExactMatch.html#Mozzarella_Tests_StringBuilderIndexOf_StringBuilder_IndexOf_FindsSingleCharString_ExactMatch
-  commentId: M:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString_ExactMatch
-  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString_ExactMatch()
-  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString_ExactMatch()
-- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString_ExactMatch*
-  name: StringBuilder_IndexOf_FindsSingleCharString_ExactMatch
-  href: api/Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString_ExactMatch.html
-  commentId: Overload:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString_ExactMatch
-  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString_ExactMatch
-  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharString_ExactMatch
-- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtBeginning
-  name: StringBuilder_IndexOf_FindsSingleCharStringAtBeginning()
-  href: api/Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtBeginning.html#Mozzarella_Tests_StringBuilderIndexOf_StringBuilder_IndexOf_FindsSingleCharStringAtBeginning
-  commentId: M:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtBeginning
-  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtBeginning()
-  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtBeginning()
-- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtBeginning*
-  name: StringBuilder_IndexOf_FindsSingleCharStringAtBeginning
-  href: api/Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtBeginning.html
-  commentId: Overload:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtBeginning
-  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtBeginning
-  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtBeginning
-- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtEnd
-  name: StringBuilder_IndexOf_FindsSingleCharStringAtEnd()
-  href: api/Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtEnd.html#Mozzarella_Tests_StringBuilderIndexOf_StringBuilder_IndexOf_FindsSingleCharStringAtEnd
-  commentId: M:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtEnd
-  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtEnd()
-  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtEnd()
-- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtEnd*
-  name: StringBuilder_IndexOf_FindsSingleCharStringAtEnd
-  href: api/Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtEnd.html
-  commentId: Overload:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtEnd
-  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtEnd
-  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_FindsSingleCharStringAtEnd
-- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ObeysStartIndex
-  name: StringBuilder_IndexOf_ObeysStartIndex()
-  href: api/Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ObeysStartIndex.html#Mozzarella_Tests_StringBuilderIndexOf_StringBuilder_IndexOf_ObeysStartIndex
-  commentId: M:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ObeysStartIndex
-  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ObeysStartIndex()
-  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_ObeysStartIndex()
-- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ObeysStartIndex*
-  name: StringBuilder_IndexOf_ObeysStartIndex
-  href: api/Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ObeysStartIndex.html
-  commentId: Overload:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ObeysStartIndex
-  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ObeysStartIndex
-  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_ObeysStartIndex
-- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ThrowsOnNullBuilder
-  name: StringBuilder_IndexOf_ThrowsOnNullBuilder()
-  href: api/Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ThrowsOnNullBuilder.html#Mozzarella_Tests_StringBuilderIndexOf_StringBuilder_IndexOf_ThrowsOnNullBuilder
-  commentId: M:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ThrowsOnNullBuilder
-  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ThrowsOnNullBuilder()
-  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_ThrowsOnNullBuilder()
-- uid: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ThrowsOnNullBuilder*
-  name: StringBuilder_IndexOf_ThrowsOnNullBuilder
-  href: api/Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ThrowsOnNullBuilder.html
-  commentId: Overload:Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ThrowsOnNullBuilder
-  fullName: Mozzarella.Tests.StringBuilderIndexOf.StringBuilder_IndexOf_ThrowsOnNullBuilder
-  nameWithType: StringBuilderIndexOf.StringBuilder_IndexOf_ThrowsOnNullBuilder

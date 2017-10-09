@@ -74,8 +74,9 @@
     <Compile Include="IsAllDigitsTests.cs" />
     <Compile Include="LikeTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StringBuilderContains.cs" />
-    <Compile Include="StringBuilderIndexOf.cs" />
+    <Compile Include="StringBuilderAppendTests.cs" />
+    <Compile Include="StringBuilderContainsTests.cs" />
+    <Compile Include="StringBuilderIndexOfTests.cs" />
     <Compile Include="StripPrefixTests.cs" />
     <Compile Include="StripSuffixTests.cs" />
     <Compile Include="TruncateTests.cs" />

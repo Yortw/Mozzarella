@@ -190,5 +190,61 @@ namespace Mozzarella
 		{
 			return IndexOf(builder, searchValue) >= 0;
 		}
+
+		/// <summary>
+		/// If <paramref name="builder"/> is not empty, appends <paramref name="separator"/> then <paramref name="value"/>. If <paramref name="builder"/> is empty, appends only <paramref name="value"/>.
+		/// </summary>
+		/// <param name="builder">The <see cref="System.Text.StringBuilder"/> to append to.</param>
+		/// <param name="separator">The separator to append if <paramref name="builder"/> is not empty.</param>
+		/// <param name="value">The value to append.</param>
+		/// <returns></returns>
+		public static StringBuilder Append(this StringBuilder builder, string separator, string value)
+		{
+			if (builder == null) throw new ArgumentNullException(nameof(builder));
+
+			if (builder.Length > 0)
+				builder.Append(separator);
+
+			builder.Append(value);
+
+			return builder;
+		}
+
+		/// <summary>
+		/// Appends <paramref name="value"/> only if <paramref name="condition"/> is true, otherwise does nothing.
+		/// </summary>
+		/// <param name="builder">The <see cref="System.Text.StringBuilder"/> to append to.</param>
+		/// <param name="condition">A boolean indicating whether or not to actually append <paramref name="value"/>.</param>
+		/// <param name="value">The value to append.</param>
+		/// <returns>A reference to <paramref name="builder"/>.</returns>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="builder"/> is null.</exception>
+		public static StringBuilder AppendIf(this StringBuilder builder, bool condition, string value)
+		{
+			if (builder == null) throw new ArgumentNullException(nameof(builder));
+
+			if (condition)
+				builder.Append(value);
+
+			return builder;
+		}
+
+		/// <summary>
+		/// Appends the result of <paramref name="valueFactory"/> only if <paramref name="condition"/> is true, otherwise does nothing.
+		/// </summary>
+		/// <param name="builder">The <see cref="System.Text.StringBuilder"/> to append to.</param>
+		/// <param name="condition">A boolean indicating whether or not to actually append the value of <paramref name="valueFactory"/>.</param>
+		/// <param name="valueFactory">The value to append.</param>
+		/// <returns>A reference to <paramref name="builder"/>.</returns>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="builder"/> or <paramref name="valueFactory"/> are null.</exception>
+		public static StringBuilder AppendIf(this StringBuilder builder, bool condition, Func<string> valueFactory)
+		{
+			if (builder == null) throw new ArgumentNullException(nameof(builder));
+			if (valueFactory == null) throw new ArgumentNullException(nameof(valueFactory));
+
+			if (condition)
+				builder.Append(valueFactory());
+
+			return builder;
+		}
 	}
 }

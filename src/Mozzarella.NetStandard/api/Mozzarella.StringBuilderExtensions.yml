@@ -5,6 +5,9 @@ items:
   id: StringBuilderExtensions
   parent: Mozzarella
   children:
+  - Mozzarella.StringBuilderExtensions.Append(System.Text.StringBuilder,System.String,System.String)
+  - Mozzarella.StringBuilderExtensions.AppendIf(System.Text.StringBuilder,System.Boolean,System.Func{System.String})
+  - Mozzarella.StringBuilderExtensions.AppendIf(System.Text.StringBuilder,System.Boolean,System.String)
   - Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder,System.String,System.Collections.Generic.IEnumerable{System.String})
   - Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder,System.String,System.Collections.Generic.IList{System.String})
   - Mozzarella.StringBuilderExtensions.AppendJoin(System.Text.StringBuilder,System.String,System.String[])
@@ -372,6 +375,158 @@ items:
   modifiers.vb:
   - Public
   - Shared
+- uid: Mozzarella.StringBuilderExtensions.Append(System.Text.StringBuilder,System.String,System.String)
+  commentId: M:Mozzarella.StringBuilderExtensions.Append(System.Text.StringBuilder,System.String,System.String)
+  id: Append(System.Text.StringBuilder,System.String,System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: Append(StringBuilder, String, String)
+  nameWithType: StringBuilderExtensions.Append(StringBuilder, String, String)
+  fullName: Mozzarella.StringBuilderExtensions.Append(System.Text.StringBuilder, System.String, System.String)
+  type: Method
+  source:
+    id: Append
+    path: ''
+    startLine: 709
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nIf <code data-dev-comment-type=\"paramref\" class=\"paramref\">builder</code> is not empty, appends <code data-dev-comment-type=\"paramref\" class=\"paramref\">separator</code> then <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code>. If <code data-dev-comment-type=\"paramref\" class=\"paramref\">builder</code> is empty, appends only <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code>.\n"
+  example: []
+  syntax:
+    content: public static StringBuilder Append(this StringBuilder builder, string separator, string value)
+    parameters:
+    - id: builder
+      type: System.Text.StringBuilder
+      description: The <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref> to append to.
+    - id: separator
+      type: System.String
+      description: The separator to append if <code data-dev-comment-type="paramref" class="paramref">builder</code> is not empty.
+    - id: value
+      type: System.String
+      description: The value to append.
+    return:
+      type: System.Text.StringBuilder
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Append(builder As StringBuilder, separator As String, value As String) As StringBuilder
+  overload: Mozzarella.StringBuilderExtensions.Append*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringBuilderExtensions.AppendIf(System.Text.StringBuilder,System.Boolean,System.String)
+  commentId: M:Mozzarella.StringBuilderExtensions.AppendIf(System.Text.StringBuilder,System.Boolean,System.String)
+  id: AppendIf(System.Text.StringBuilder,System.Boolean,System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AppendIf(StringBuilder, Boolean, String)
+  nameWithType: StringBuilderExtensions.AppendIf(StringBuilder, Boolean, String)
+  fullName: Mozzarella.StringBuilderExtensions.AppendIf(System.Text.StringBuilder, System.Boolean, System.String)
+  type: Method
+  source:
+    id: AppendIf
+    path: ''
+    startLine: 729
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nAppends <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> only if <code data-dev-comment-type=\"paramref\" class=\"paramref\">condition</code> is true, otherwise does nothing.\n"
+  example: []
+  syntax:
+    content: public static StringBuilder AppendIf(this StringBuilder builder, bool condition, string value)
+    parameters:
+    - id: builder
+      type: System.Text.StringBuilder
+      description: The <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref> to append to.
+    - id: condition
+      type: System.Boolean
+      description: A boolean indicating whether or not to actually append <code data-dev-comment-type="paramref" class="paramref">value</code>.
+    - id: value
+      type: System.String
+      description: The value to append.
+    return:
+      type: System.Text.StringBuilder
+      description: A reference to <code data-dev-comment-type="paramref" class="paramref">builder</code>.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AppendIf(builder As StringBuilder, condition As Boolean, value As String) As StringBuilder
+  overload: Mozzarella.StringBuilderExtensions.AppendIf*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">builder</code> is null.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringBuilderExtensions.AppendIf(System.Text.StringBuilder,System.Boolean,System.Func{System.String})
+  commentId: M:Mozzarella.StringBuilderExtensions.AppendIf(System.Text.StringBuilder,System.Boolean,System.Func{System.String})
+  id: AppendIf(System.Text.StringBuilder,System.Boolean,System.Func{System.String})
+  isExtensionMethod: true
+  parent: Mozzarella.StringBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AppendIf(StringBuilder, Boolean, Func<String>)
+  nameWithType: StringBuilderExtensions.AppendIf(StringBuilder, Boolean, Func<String>)
+  fullName: Mozzarella.StringBuilderExtensions.AppendIf(System.Text.StringBuilder, System.Boolean, System.Func<System.String>)
+  type: Method
+  source:
+    id: AppendIf
+    path: ''
+    startLine: 747
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nAppends the result of <code data-dev-comment-type=\"paramref\" class=\"paramref\">valueFactory</code> only if <code data-dev-comment-type=\"paramref\" class=\"paramref\">condition</code> is true, otherwise does nothing.\n"
+  example: []
+  syntax:
+    content: public static StringBuilder AppendIf(this StringBuilder builder, bool condition, Func<string> valueFactory)
+    parameters:
+    - id: builder
+      type: System.Text.StringBuilder
+      description: The <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref> to append to.
+    - id: condition
+      type: System.Boolean
+      description: A boolean indicating whether or not to actually append the value of <code data-dev-comment-type="paramref" class="paramref">valueFactory</code>.
+    - id: valueFactory
+      type: System.Func{System.String}
+      description: The value to append.
+    return:
+      type: System.Text.StringBuilder
+      description: A reference to <code data-dev-comment-type="paramref" class="paramref">builder</code>.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AppendIf(builder As StringBuilder, condition As Boolean, valueFactory As Func(Of String)) As StringBuilder
+  overload: Mozzarella.StringBuilderExtensions.AppendIf*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">builder</code> or <code data-dev-comment-type="paramref" class="paramref">valueFactory</code> are null.
+  nameWithType.vb: StringBuilderExtensions.AppendIf(StringBuilder, Boolean, Func(Of String))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mozzarella.StringBuilderExtensions.AppendIf(System.Text.StringBuilder, System.Boolean, System.Func(Of System.String))
+  name.vb: AppendIf(StringBuilder, Boolean, Func(Of String))
 references:
 - uid: System.Text.StringBuilder
   commentId: T:System.Text.StringBuilder
@@ -926,3 +1081,98 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
+- uid: Mozzarella.StringBuilderExtensions.Append*
+  commentId: Overload:Mozzarella.StringBuilderExtensions.Append
+  isExternal: false
+  name: Append
+  nameWithType: StringBuilderExtensions.Append
+  fullName: Mozzarella.StringBuilderExtensions.Append
+- uid: Mozzarella.StringBuilderExtensions.AppendIf*
+  commentId: Overload:Mozzarella.StringBuilderExtensions.AppendIf
+  isExternal: false
+  name: AppendIf
+  nameWithType: StringBuilderExtensions.AppendIf
+  fullName: Mozzarella.StringBuilderExtensions.AppendIf
+- uid: System.Func{System.String}
+  commentId: T:System.Func{System.String}
+  parent: System
+  definition: System.Func`1
+  name: Func<String>
+  nameWithType: Func<String>
+  fullName: System.Func<System.String>
+  nameWithType.vb: Func(Of String)
+  fullName.vb: System.Func(Of System.String)
+  name.vb: Func(Of String)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
