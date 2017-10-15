@@ -327,7 +327,7 @@ namespace Mozzarella
 		/// <param name="trimChars">An array of <see cref="Char"/> representing the characters to be removed.</param>
 		/// <returns>A reference to <paramref name="builder"/>.</returns>
 		/// <exception cref="ArgumentNullException">Thrown if <paramref name="builder"/> or <paramref name="trimChars"/> is null.</exception>
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1720:IdentifiersShouldNotContainTypeNames", MessageId = "chars", Justification ="Argument name matches the one used by framework for equivalent string method.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1720:IdentifiersShouldNotContainTypeNames", MessageId = "chars", Justification = "Argument name matches the one used by framework for equivalent string method.")]
 		public static StringBuilder Trim(this StringBuilder builder, params char[] trimChars)
 		{
 			TrimStart(builder, trimChars);
@@ -395,6 +395,93 @@ namespace Mozzarella
 
 			return builder;
 		}
+
+		/// <summary>
+		/// Ensures/converts the entire contents of the <paramref name="builder"/> to uppercase characters.
+		/// </summary>
+		/// <param name="builder">The <see cref="System.Text.StringBuilder"/> containing the data to be converted.</param>
+		/// <returns>Returns <paramref name="builder"/>.</returns>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="builder"/> is null.</exception>
+		public static StringBuilder ToUpper(this StringBuilder builder)
+		{
+			return ToUpper(builder, System.Globalization.CultureInfo.CurrentCulture);
+		}
+
+#pragma warning disable 1574
+
+		/// <summary>
+		/// Ensures/converts the entire contents of the <paramref name="builder"/> to uppercase characters.
+		/// </summary>
+		/// <param name="builder">The <see cref="StringBuilder"/> containing the data to be converted.</param>
+		/// <param name="culture">A <see cref="System.Globalization.CultureInfo"/> used to determine the case of individual characters.</param>
+		/// <remarks>
+		/// <para>The <paramref name="culture"/> parameter is ignored when using the net standard library as net standard does not support the <see cref="Char.ToLower(char, System.Globalization.CultureInfo)"/> overload.</para>
+		/// </remarks>
+		/// <returns>Returns <paramref name="builder"/>.</returns>
+		/// <exception cref="ArgumentNullException">Thrown if <paramref name="builder"/> is null.</exception>
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA1801:ReviewUnusedParameters", MessageId = "culture")]
+		public static StringBuilder ToUpper(this StringBuilder builder, System.Globalization.CultureInfo culture)
+		{
+			if (builder == null) throw new ArgumentNullException(nameof(builder));
+			if (builder.Length == 0) return builder;
+
+			for (int cnt = 0; cnt < builder.Length; cnt++)
+			{
+				var c = builder[cnt];
+				if (Char.IsLower(c))
+#if LEGACYPORTABLE
+					builder[cnt] = Char.ToUpper(c, culture);
+#else
+				builder[cnt] = Char.ToUpper(c);
+#endif
+			}
+
+			return builder;
+		}
+
+		/// <summary>
+		/// Ensures/converts the entire contents of the <paramref name="builder"/> to lowercase characters.
+		/// </summary>
+		/// <param name="builder">The <see cref="System.Text.StringBuilder"/> containing the data to be converted.</param>
+		/// <returns>Returns <paramref name="builder"/>.</returns>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="builder"/> is null.</exception>
+		public static StringBuilder ToLower(this StringBuilder builder)
+		{
+			return ToLower(builder, System.Globalization.CultureInfo.CurrentCulture);
+		}
+
+		/// <summary>
+		/// Ensures/converts the entire contents of the <paramref name="builder"/> to lowercase characters.
+		/// </summary>
+		/// <param name="builder">The <see cref="StringBuilder"/> containing the data to be converted.</param>
+		/// <param name="culture">A <see cref="System.Globalization.CultureInfo"/> used to determine the case of individual characters.</param>
+		/// <remarks>
+		/// <para>The <paramref name="culture"/> parameter is ignored when using the net standard library as net standard does not support the <see cref="Char.ToLower(char, System.Globalization.CultureInfo)"/> overload.</para>
+		/// </remarks>
+		/// <returns>Returns <paramref name="builder"/>.</returns>
+		/// <exception cref="ArgumentNullException">Thrown if <paramref name="builder"/> is null.</exception>
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA1801:ReviewUnusedParameters", MessageId = "culture")]
+		public static StringBuilder ToLower(this StringBuilder builder, System.Globalization.CultureInfo culture)
+		{
+			if (builder == null) throw new ArgumentNullException(nameof(builder));
+			if (builder.Length == 0) return builder;
+
+			for (int cnt = 0; cnt < builder.Length; cnt++)
+			{
+				var c = builder[cnt];
+				if (Char.IsUpper(c))
+#if LEGACYPORTABLE
+					builder[cnt] = Char.ToLower(c, culture);
+#else
+					builder[cnt] = Char.ToLower(c);
+#endif
+			}
+
+			return builder;
+		}
+
+#pragma warning restore 1574
+
 
 	}
 }

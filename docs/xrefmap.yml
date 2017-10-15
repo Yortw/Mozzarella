@@ -298,6 +298,42 @@ references:
   commentId: Overload:Mozzarella.StringBuilderExtensions.IndexOf
   fullName: Mozzarella.StringBuilderExtensions.IndexOf
   nameWithType: StringBuilderExtensions.IndexOf
+- uid: Mozzarella.StringBuilderExtensions.ToLower(System.Text.StringBuilder)
+  name: ToLower(StringBuilder)
+  href: api/Mozzarella.StringBuilderExtensions.ToLower.html#Mozzarella_StringBuilderExtensions_ToLower_System_Text_StringBuilder_
+  commentId: M:Mozzarella.StringBuilderExtensions.ToLower(System.Text.StringBuilder)
+  fullName: Mozzarella.StringBuilderExtensions.ToLower(System.Text.StringBuilder)
+  nameWithType: StringBuilderExtensions.ToLower(StringBuilder)
+- uid: Mozzarella.StringBuilderExtensions.ToLower(System.Text.StringBuilder,System.Globalization.CultureInfo)
+  name: ToLower(StringBuilder, CultureInfo)
+  href: api/Mozzarella.StringBuilderExtensions.ToLower.html#Mozzarella_StringBuilderExtensions_ToLower_System_Text_StringBuilder_System_Globalization_CultureInfo_
+  commentId: M:Mozzarella.StringBuilderExtensions.ToLower(System.Text.StringBuilder,System.Globalization.CultureInfo)
+  fullName: Mozzarella.StringBuilderExtensions.ToLower(System.Text.StringBuilder, System.Globalization.CultureInfo)
+  nameWithType: StringBuilderExtensions.ToLower(StringBuilder, CultureInfo)
+- uid: Mozzarella.StringBuilderExtensions.ToLower*
+  name: ToLower
+  href: api/Mozzarella.StringBuilderExtensions.ToLower.html
+  commentId: Overload:Mozzarella.StringBuilderExtensions.ToLower
+  fullName: Mozzarella.StringBuilderExtensions.ToLower
+  nameWithType: StringBuilderExtensions.ToLower
+- uid: Mozzarella.StringBuilderExtensions.ToUpper(System.Text.StringBuilder)
+  name: ToUpper(StringBuilder)
+  href: api/Mozzarella.StringBuilderExtensions.ToUpper.html#Mozzarella_StringBuilderExtensions_ToUpper_System_Text_StringBuilder_
+  commentId: M:Mozzarella.StringBuilderExtensions.ToUpper(System.Text.StringBuilder)
+  fullName: Mozzarella.StringBuilderExtensions.ToUpper(System.Text.StringBuilder)
+  nameWithType: StringBuilderExtensions.ToUpper(StringBuilder)
+- uid: Mozzarella.StringBuilderExtensions.ToUpper(System.Text.StringBuilder,System.Globalization.CultureInfo)
+  name: ToUpper(StringBuilder, CultureInfo)
+  href: api/Mozzarella.StringBuilderExtensions.ToUpper.html#Mozzarella_StringBuilderExtensions_ToUpper_System_Text_StringBuilder_System_Globalization_CultureInfo_
+  commentId: M:Mozzarella.StringBuilderExtensions.ToUpper(System.Text.StringBuilder,System.Globalization.CultureInfo)
+  fullName: Mozzarella.StringBuilderExtensions.ToUpper(System.Text.StringBuilder, System.Globalization.CultureInfo)
+  nameWithType: StringBuilderExtensions.ToUpper(StringBuilder, CultureInfo)
+- uid: Mozzarella.StringBuilderExtensions.ToUpper*
+  name: ToUpper
+  href: api/Mozzarella.StringBuilderExtensions.ToUpper.html
+  commentId: Overload:Mozzarella.StringBuilderExtensions.ToUpper
+  fullName: Mozzarella.StringBuilderExtensions.ToUpper
+  nameWithType: StringBuilderExtensions.ToUpper
 - uid: Mozzarella.StringBuilderExtensions.Trim(System.Text.StringBuilder)
   name: Trim(StringBuilder)
   href: api/Mozzarella.StringBuilderExtensions.Trim.html#Mozzarella_StringBuilderExtensions_Trim_System_Text_StringBuilder_
