@@ -14,6 +14,8 @@ items:
   - Mozzarella.StringBuilderExtensions.Contains(System.Text.StringBuilder,System.String)
   - Mozzarella.StringBuilderExtensions.IndexOf(System.Text.StringBuilder,System.String)
   - Mozzarella.StringBuilderExtensions.IndexOf(System.Text.StringBuilder,System.String,System.Int32)
+  - Mozzarella.StringBuilderExtensions.LastIndexOf(System.Text.StringBuilder,System.String)
+  - Mozzarella.StringBuilderExtensions.LastIndexOf(System.Text.StringBuilder,System.String,System.Int32)
   - Mozzarella.StringBuilderExtensions.ToLower(System.Text.StringBuilder)
   - Mozzarella.StringBuilderExtensions.ToLower(System.Text.StringBuilder,System.Globalization.CultureInfo)
   - Mozzarella.StringBuilderExtensions.ToUpper(System.Text.StringBuilder)
@@ -334,6 +336,115 @@ items:
   modifiers.vb:
   - Public
   - Shared
+- uid: Mozzarella.StringBuilderExtensions.LastIndexOf(System.Text.StringBuilder,System.String)
+  commentId: M:Mozzarella.StringBuilderExtensions.LastIndexOf(System.Text.StringBuilder,System.String)
+  id: LastIndexOf(System.Text.StringBuilder,System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: LastIndexOf(StringBuilder, String)
+  nameWithType: StringBuilderExtensions.LastIndexOf(StringBuilder, String)
+  fullName: Mozzarella.StringBuilderExtensions.LastIndexOf(System.Text.StringBuilder, System.String)
+  type: Method
+  source:
+    id: LastIndexOf
+    path: ''
+    startLine: 700
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns the last ordinal position of the start of <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code> within <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code>.\n"
+  example: []
+  syntax:
+    content: public static int LastIndexOf(this StringBuilder builder, string searchValue)
+    parameters:
+    - id: builder
+      type: System.Text.StringBuilder
+      description: The string builder to search the contents of.
+    - id: searchValue
+      type: System.String
+      description: The string to search for.
+    return:
+      type: System.Int32
+      description: Returns -1 if <code data-dev-comment-type="paramref" class="paramref">searchValue</code> does not exist within <code data-dev-comment-type="paramref" class="paramref">builder</code>, otherwise returns the ordinal position at which <code data-dev-comment-type="paramref" class="paramref">searchValue</code> starts.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function LastIndexOf(builder As StringBuilder, searchValue As String) As Integer
+  overload: Mozzarella.StringBuilderExtensions.LastIndexOf*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">builder</code> or <code data-dev-comment-type="paramref" class="paramref">searchValue</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">searchValue</code> is an empty string.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringBuilderExtensions.LastIndexOf(System.Text.StringBuilder,System.String,System.Int32)
+  commentId: M:Mozzarella.StringBuilderExtensions.LastIndexOf(System.Text.StringBuilder,System.String,System.Int32)
+  id: LastIndexOf(System.Text.StringBuilder,System.String,System.Int32)
+  isExtensionMethod: true
+  parent: Mozzarella.StringBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: LastIndexOf(StringBuilder, String, Int32)
+  nameWithType: StringBuilderExtensions.LastIndexOf(StringBuilder, String, Int32)
+  fullName: Mozzarella.StringBuilderExtensions.LastIndexOf(System.Text.StringBuilder, System.String, System.Int32)
+  type: Method
+  source:
+    id: LastIndexOf
+    path: ''
+    startLine: 718
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns the last ordinal position of the start of <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code> within <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code>.\n"
+  remarks: "\n<p>This method uses ordinal comparisions when searching for <code data-dev-comment-type=\"paramref\" class=\"paramref\">searchValue</code>.</p>\n"
+  example: []
+  syntax:
+    content: public static int LastIndexOf(this StringBuilder builder, string searchValue, int startIndex)
+    parameters:
+    - id: builder
+      type: System.Text.StringBuilder
+      description: The string builder to search the contents of.
+    - id: searchValue
+      type: System.String
+      description: The string to search for.
+    - id: startIndex
+      type: System.Int32
+      description: The first character position at which to start the search.
+    return:
+      type: System.Int32
+      description: Returns -1 if <code data-dev-comment-type="paramref" class="paramref">searchValue</code> does not exist within <code data-dev-comment-type="paramref" class="paramref">builder</code>, otherwise returns the ordinal position at which <code data-dev-comment-type="paramref" class="paramref">searchValue</code> starts.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function LastIndexOf(builder As StringBuilder, searchValue As String, startIndex As Integer) As Integer
+  overload: Mozzarella.StringBuilderExtensions.LastIndexOf*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">startIndex</code> is less than 0 or greater than the length of the string builder.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">builder</code> or <code data-dev-comment-type="paramref" class="paramref">searchValue</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">searchValue</code> is an empty string.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
 - uid: Mozzarella.StringBuilderExtensions.Contains(System.Text.StringBuilder,System.String)
   commentId: M:Mozzarella.StringBuilderExtensions.Contains(System.Text.StringBuilder,System.String)
   id: Contains(System.Text.StringBuilder,System.String)
@@ -349,7 +460,7 @@ items:
   source:
     id: Contains
     path: ''
-    startLine: 698
+    startLine: 764
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -400,7 +511,7 @@ items:
   source:
     id: Append
     path: ''
-    startLine: 710
+    startLine: 776
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -447,7 +558,7 @@ items:
   source:
     id: AppendIf
     path: ''
-    startLine: 732
+    startLine: 798
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -498,7 +609,7 @@ items:
   source:
     id: AppendIf
     path: ''
-    startLine: 750
+    startLine: 816
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -552,7 +663,7 @@ items:
   source:
     id: Trim
     path: ''
-    startLine: 769
+    startLine: 835
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -597,7 +708,7 @@ items:
   source:
     id: TrimStart
     path: ''
-    startLine: 783
+    startLine: 849
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -642,7 +753,7 @@ items:
   source:
     id: TrimEnd
     path: ''
-    startLine: 810
+    startLine: 876
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -687,7 +798,7 @@ items:
   source:
     id: Trim
     path: ''
-    startLine: 838
+    startLine: 904
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -738,7 +849,7 @@ items:
   source:
     id: TrimStart
     path: ''
-    startLine: 854
+    startLine: 920
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -789,7 +900,7 @@ items:
   source:
     id: TrimEnd
     path: ''
-    startLine: 884
+    startLine: 950
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -840,7 +951,7 @@ items:
   source:
     id: ToUpper
     path: ''
-    startLine: 913
+    startLine: 979
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -885,7 +996,7 @@ items:
   source:
     id: ToUpper
     path: ''
-    startLine: 930
+    startLine: 996
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -934,7 +1045,7 @@ items:
   source:
     id: ToLower
     path: ''
-    startLine: 956
+    startLine: 1022
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -979,7 +1090,7 @@ items:
   source:
     id: ToLower
     path: ''
-    startLine: 971
+    startLine: 1037
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1554,6 +1665,12 @@ references:
   fullName: System.Int32
 - uid: System.ArgumentOutOfRangeException
   commentId: T:System.ArgumentOutOfRangeException
+- uid: Mozzarella.StringBuilderExtensions.LastIndexOf*
+  commentId: Overload:Mozzarella.StringBuilderExtensions.LastIndexOf
+  isExternal: false
+  name: LastIndexOf
+  nameWithType: StringBuilderExtensions.LastIndexOf
+  fullName: Mozzarella.StringBuilderExtensions.LastIndexOf
 - uid: Mozzarella.StringBuilderExtensions.Contains*
   commentId: Overload:Mozzarella.StringBuilderExtensions.Contains
   isExternal: false

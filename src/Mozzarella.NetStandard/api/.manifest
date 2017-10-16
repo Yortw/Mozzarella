@@ -29,6 +29,8 @@
   "Mozzarella.StringBuilderExtensions.Contains(System.Text.StringBuilder,System.String)": "Mozzarella.StringBuilderExtensions.yml",
   "Mozzarella.StringBuilderExtensions.IndexOf(System.Text.StringBuilder,System.String)": "Mozzarella.StringBuilderExtensions.yml",
   "Mozzarella.StringBuilderExtensions.IndexOf(System.Text.StringBuilder,System.String,System.Int32)": "Mozzarella.StringBuilderExtensions.yml",
+  "Mozzarella.StringBuilderExtensions.LastIndexOf(System.Text.StringBuilder,System.String)": "Mozzarella.StringBuilderExtensions.yml",
+  "Mozzarella.StringBuilderExtensions.LastIndexOf(System.Text.StringBuilder,System.String,System.Int32)": "Mozzarella.StringBuilderExtensions.yml",
   "Mozzarella.StringBuilderExtensions.ToLower(System.Text.StringBuilder)": "Mozzarella.StringBuilderExtensions.yml",
   "Mozzarella.StringBuilderExtensions.ToLower(System.Text.StringBuilder,System.Globalization.CultureInfo)": "Mozzarella.StringBuilderExtensions.yml",
   "Mozzarella.StringBuilderExtensions.ToUpper(System.Text.StringBuilder)": "Mozzarella.StringBuilderExtensions.yml",

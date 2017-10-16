@@ -298,6 +298,24 @@ references:
   commentId: Overload:Mozzarella.StringBuilderExtensions.IndexOf
   fullName: Mozzarella.StringBuilderExtensions.IndexOf
   nameWithType: StringBuilderExtensions.IndexOf
+- uid: Mozzarella.StringBuilderExtensions.LastIndexOf(System.Text.StringBuilder,System.String)
+  name: LastIndexOf(StringBuilder, String)
+  href: api/Mozzarella.StringBuilderExtensions.LastIndexOf.html#Mozzarella_StringBuilderExtensions_LastIndexOf_System_Text_StringBuilder_System_String_
+  commentId: M:Mozzarella.StringBuilderExtensions.LastIndexOf(System.Text.StringBuilder,System.String)
+  fullName: Mozzarella.StringBuilderExtensions.LastIndexOf(System.Text.StringBuilder, System.String)
+  nameWithType: StringBuilderExtensions.LastIndexOf(StringBuilder, String)
+- uid: Mozzarella.StringBuilderExtensions.LastIndexOf(System.Text.StringBuilder,System.String,System.Int32)
+  name: LastIndexOf(StringBuilder, String, Int32)
+  href: api/Mozzarella.StringBuilderExtensions.LastIndexOf.html#Mozzarella_StringBuilderExtensions_LastIndexOf_System_Text_StringBuilder_System_String_System_Int32_
+  commentId: M:Mozzarella.StringBuilderExtensions.LastIndexOf(System.Text.StringBuilder,System.String,System.Int32)
+  fullName: Mozzarella.StringBuilderExtensions.LastIndexOf(System.Text.StringBuilder, System.String, System.Int32)
+  nameWithType: StringBuilderExtensions.LastIndexOf(StringBuilder, String, Int32)
+- uid: Mozzarella.StringBuilderExtensions.LastIndexOf*
+  name: LastIndexOf
+  href: api/Mozzarella.StringBuilderExtensions.LastIndexOf.html
+  commentId: Overload:Mozzarella.StringBuilderExtensions.LastIndexOf
+  fullName: Mozzarella.StringBuilderExtensions.LastIndexOf
+  nameWithType: StringBuilderExtensions.LastIndexOf
 - uid: Mozzarella.StringBuilderExtensions.ToLower(System.Text.StringBuilder)
   name: ToLower(StringBuilder)
   href: api/Mozzarella.StringBuilderExtensions.ToLower.html#Mozzarella_StringBuilderExtensions_ToLower_System_Text_StringBuilder_
