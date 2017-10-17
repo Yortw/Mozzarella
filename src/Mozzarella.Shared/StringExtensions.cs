@@ -908,7 +908,7 @@ namespace Mozzarella
 
 		/// <summary>
 		/// Removes all characters that are not (latin) alphabet characters (A-Z, a-z).
-		// </summary>
+		/// </summary>
 		/// <remarks>
 		/// <para>Returns the original <paramref name="value"/> if it is null, empty string, or does not contain any non-latn alphabet characters.</para>
 		/// </remarks>
