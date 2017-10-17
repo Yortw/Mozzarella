@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mozzarella.Tests
+  commentId: N:Mozzarella.Tests
+  id: Mozzarella.Tests
+  children:
+  - Mozzarella.Tests.RemoveNonAlphas
+  langs:
+  - csharp
+  - vb
+  name: Mozzarella.Tests
+  nameWithType: Mozzarella.Tests
+  fullName: Mozzarella.Tests
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: Mozzarella.Tests.RemoveNonAlphas
+  commentId: T:Mozzarella.Tests.RemoveNonAlphas
+  isExternal: false
+  name: RemoveNonAlphas
+  nameWithType: RemoveNonAlphas
+  fullName: Mozzarella.Tests.RemoveNonAlphas

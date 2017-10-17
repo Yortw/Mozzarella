@@ -817,6 +817,18 @@ references:
   commentId: Overload:Mozzarella.StringExtensions.RemoveAllWhiteSpace
   fullName: Mozzarella.StringExtensions.RemoveAllWhiteSpace
   nameWithType: StringExtensions.RemoveAllWhiteSpace
+- uid: Mozzarella.StringExtensions.RemoveNonAlphas(System.String)
+  name: RemoveNonAlphas(String)
+  href: api/Mozzarella.StringExtensions.RemoveNonAlphas.html#Mozzarella_StringExtensions_RemoveNonAlphas_System_String_
+  commentId: M:Mozzarella.StringExtensions.RemoveNonAlphas(System.String)
+  fullName: Mozzarella.StringExtensions.RemoveNonAlphas(System.String)
+  nameWithType: StringExtensions.RemoveNonAlphas(String)
+- uid: Mozzarella.StringExtensions.RemoveNonAlphas*
+  name: RemoveNonAlphas
+  href: api/Mozzarella.StringExtensions.RemoveNonAlphas.html
+  commentId: Overload:Mozzarella.StringExtensions.RemoveNonAlphas
+  fullName: Mozzarella.StringExtensions.RemoveNonAlphas
+  nameWithType: StringExtensions.RemoveNonAlphas
 - uid: Mozzarella.StringExtensions.Replace(System.String,System.String,System.String,System.StringComparison)
   name: Replace(String, String, String, StringComparison)
   href: api/Mozzarella.StringExtensions.Replace.html#Mozzarella_StringExtensions_Replace_System_String_System_String_System_String_System_StringComparison_
@@ -889,3 +901,75 @@ references:
   commentId: Overload:Mozzarella.StringExtensions.Truncate
   fullName: Mozzarella.StringExtensions.Truncate
   nameWithType: StringExtensions.Truncate
+- uid: Mozzarella.Tests
+  name: Mozzarella.Tests
+  href: api/Mozzarella.Tests.html
+  commentId: N:Mozzarella.Tests
+  fullName: Mozzarella.Tests
+  nameWithType: Mozzarella.Tests
+- uid: Mozzarella.Tests.RemoveNonAlphas
+  name: RemoveNonAlphas
+  href: api/Mozzarella.Tests.RemoveNonAlphas.html
+  commentId: T:Mozzarella.Tests.RemoveNonAlphas
+  fullName: Mozzarella.Tests.RemoveNonAlphas
+  nameWithType: RemoveNonAlphas
+- uid: Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_RemovesNonNumericNonAlphas
+  name: RemoveNonAlphas_RemovesNonNumericNonAlphas()
+  href: api/Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_RemovesNonNumericNonAlphas.html#Mozzarella_Tests_RemoveNonAlphas_RemoveNonAlphas_RemovesNonNumericNonAlphas
+  commentId: M:Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_RemovesNonNumericNonAlphas
+  fullName: Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_RemovesNonNumericNonAlphas()
+  nameWithType: RemoveNonAlphas.RemoveNonAlphas_RemovesNonNumericNonAlphas()
+- uid: Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_RemovesNonNumericNonAlphas*
+  name: RemoveNonAlphas_RemovesNonNumericNonAlphas
+  href: api/Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_RemovesNonNumericNonAlphas.html
+  commentId: Overload:Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_RemovesNonNumericNonAlphas
+  fullName: Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_RemovesNonNumericNonAlphas
+  nameWithType: RemoveNonAlphas.RemoveNonAlphas_RemovesNonNumericNonAlphas
+- uid: Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_RemovesNumerics
+  name: RemoveNonAlphas_RemovesNumerics()
+  href: api/Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_RemovesNumerics.html#Mozzarella_Tests_RemoveNonAlphas_RemoveNonAlphas_RemovesNumerics
+  commentId: M:Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_RemovesNumerics
+  fullName: Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_RemovesNumerics()
+  nameWithType: RemoveNonAlphas.RemoveNonAlphas_RemovesNumerics()
+- uid: Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_RemovesNumerics*
+  name: RemoveNonAlphas_RemovesNumerics
+  href: api/Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_RemovesNumerics.html
+  commentId: Overload:Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_RemovesNumerics
+  fullName: Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_RemovesNumerics
+  nameWithType: RemoveNonAlphas.RemoveNonAlphas_RemovesNumerics
+- uid: Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_ReturnsEmptyForEmpty
+  name: RemoveNonAlphas_ReturnsEmptyForEmpty()
+  href: api/Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_ReturnsEmptyForEmpty.html#Mozzarella_Tests_RemoveNonAlphas_RemoveNonAlphas_ReturnsEmptyForEmpty
+  commentId: M:Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_ReturnsEmptyForEmpty
+  fullName: Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_ReturnsEmptyForEmpty()
+  nameWithType: RemoveNonAlphas.RemoveNonAlphas_ReturnsEmptyForEmpty()
+- uid: Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_ReturnsEmptyForEmpty*
+  name: RemoveNonAlphas_ReturnsEmptyForEmpty
+  href: api/Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_ReturnsEmptyForEmpty.html
+  commentId: Overload:Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_ReturnsEmptyForEmpty
+  fullName: Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_ReturnsEmptyForEmpty
+  nameWithType: RemoveNonAlphas.RemoveNonAlphas_ReturnsEmptyForEmpty
+- uid: Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_ReturnsNullForNull
+  name: RemoveNonAlphas_ReturnsNullForNull()
+  href: api/Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_ReturnsNullForNull.html#Mozzarella_Tests_RemoveNonAlphas_RemoveNonAlphas_ReturnsNullForNull
+  commentId: M:Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_ReturnsNullForNull
+  fullName: Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_ReturnsNullForNull()
+  nameWithType: RemoveNonAlphas.RemoveNonAlphas_ReturnsNullForNull()
+- uid: Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_ReturnsNullForNull*
+  name: RemoveNonAlphas_ReturnsNullForNull
+  href: api/Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_ReturnsNullForNull.html
+  commentId: Overload:Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_ReturnsNullForNull
+  fullName: Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_ReturnsNullForNull
+  nameWithType: RemoveNonAlphas.RemoveNonAlphas_ReturnsNullForNull
+- uid: Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_ReturnsOriginalStringWhenNoCharactersRemoved
+  name: RemoveNonAlphas_ReturnsOriginalStringWhenNoCharactersRemoved()
+  href: api/Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_ReturnsOriginalStringWhenNoCharactersRemoved.html#Mozzarella_Tests_RemoveNonAlphas_RemoveNonAlphas_ReturnsOriginalStringWhenNoCharactersRemoved
+  commentId: M:Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_ReturnsOriginalStringWhenNoCharactersRemoved
+  fullName: Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_ReturnsOriginalStringWhenNoCharactersRemoved()
+  nameWithType: RemoveNonAlphas.RemoveNonAlphas_ReturnsOriginalStringWhenNoCharactersRemoved()
+- uid: Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_ReturnsOriginalStringWhenNoCharactersRemoved*
+  name: RemoveNonAlphas_ReturnsOriginalStringWhenNoCharactersRemoved
+  href: api/Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_ReturnsOriginalStringWhenNoCharactersRemoved.html
+  commentId: Overload:Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_ReturnsOriginalStringWhenNoCharactersRemoved
+  fullName: Mozzarella.Tests.RemoveNonAlphas.RemoveNonAlphas_ReturnsOriginalStringWhenNoCharactersRemoved
+  nameWithType: RemoveNonAlphas.RemoveNonAlphas_ReturnsOriginalStringWhenNoCharactersRemoved

@@ -42,6 +42,7 @@ items:
   - Mozzarella.StringExtensions.OCIReplace(System.String,System.String,System.String)
   - Mozzarella.StringExtensions.OEquals(System.String,System.String)
   - Mozzarella.StringExtensions.RemoveAllWhiteSpace(System.String)
+  - Mozzarella.StringExtensions.RemoveNonAlphas(System.String)
   - Mozzarella.StringExtensions.Replace(System.String,System.String,System.String,System.StringComparison)
   - Mozzarella.StringExtensions.StripNonDigits(System.String)
   - Mozzarella.StringExtensions.StripPrefix(System.String,System.String)
@@ -2215,6 +2216,47 @@ items:
   - Shared
   fullName.vb: Mozzarella.StringExtensions.ContainsOnly(System.String, System.Collections.Generic.IEnumerable(Of System.Char))
   name.vb: ContainsOnly(String, IEnumerable(Of Char))
+- uid: Mozzarella.StringExtensions.RemoveNonAlphas(System.String)
+  commentId: M:Mozzarella.StringExtensions.RemoveNonAlphas(System.String)
+  id: RemoveNonAlphas(System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: RemoveNonAlphas(String)
+  nameWithType: StringExtensions.RemoveNonAlphas(String)
+  fullName: Mozzarella.StringExtensions.RemoveNonAlphas(System.String)
+  type: Method
+  source:
+    id: RemoveNonAlphas
+    path: ''
+    startLine: 2019
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  remarks: "\n<p>Returns the original <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> if it is null, empty string, or does not contain any non-latn alphabet characters.</p>\n"
+  example: []
+  syntax:
+    content: public static string RemoveNonAlphas(this string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to remove characters from.
+    return:
+      type: System.String
+      description: Either the original string if no changes were made, or else <code data-dev-comment-type="paramref" class="paramref">value</code> with all non-latin alphabet characters removed.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function RemoveNonAlphas(value As String) As String
+  overload: Mozzarella.StringExtensions.RemoveNonAlphas*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
 references:
 - uid: System.String
   commentId: T:System.String
@@ -2926,3 +2968,9 @@ references:
   name: System.Collections.Generic
   nameWithType: System.Collections.Generic
   fullName: System.Collections.Generic
+- uid: Mozzarella.StringExtensions.RemoveNonAlphas*
+  commentId: Overload:Mozzarella.StringExtensions.RemoveNonAlphas
+  isExternal: false
+  name: RemoveNonAlphas
+  nameWithType: StringExtensions.RemoveNonAlphas
+  fullName: Mozzarella.StringExtensions.RemoveNonAlphas

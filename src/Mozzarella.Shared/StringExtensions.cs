@@ -906,6 +906,37 @@ namespace Mozzarella
 			return true;
 		}
 
+		/// <summary>
+		/// Removes all characters that are not (latin) alphabet characters (A-Z, a-z).
+		// </summary>
+		/// <remarks>
+		/// <para>Returns the original <paramref name="value"/> if it is null, empty string, or does not contain any non-latn alphabet characters.</para>
+		/// </remarks>
+		/// <param name="value">The string to remove characters from.</param>
+		/// <returns>Either the original string if no changes were made, or else <paramref name="value"/> with all non-latin alphabet characters removed.</returns>
+		public static string RemoveNonAlphas(this string value)
+		{
+			if (String.IsNullOrEmpty(value)) return value;
+
+			StringBuilder sb = null;
+			for (int cnt = 0; cnt < value.Length; cnt++)
+			{
+				var c = value[cnt];
+				if (!IsLatinAlphabeticCharacter(c))
+				{
+					if (sb == null)
+					{
+						sb = new StringBuilder(value.Length);
+						sb.Append(value, 0, cnt);
+					}
+				}
+				else if (sb != null)
+					sb.Append(c);
+			}
+
+			return sb?.ToString() ?? value;
+		}
+
 #if SUPPORTS_AGGRESSIVEINLINING
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
 #endif
