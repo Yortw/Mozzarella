@@ -4,6 +4,7 @@ items:
   commentId: N:Mozzarella.Tests
   id: Mozzarella.Tests
   children:
+  - Mozzarella.Tests.RemoveNonAlphanumerics
   - Mozzarella.Tests.RemoveNonAlphas
   langs:
   - csharp
@@ -15,6 +16,12 @@ items:
   assemblies:
   - cs.temp.dll
 references:
+- uid: Mozzarella.Tests.RemoveNonAlphanumerics
+  commentId: T:Mozzarella.Tests.RemoveNonAlphanumerics
+  isExternal: false
+  name: RemoveNonAlphanumerics
+  nameWithType: RemoveNonAlphanumerics
+  fullName: Mozzarella.Tests.RemoveNonAlphanumerics
 - uid: Mozzarella.Tests.RemoveNonAlphas
   commentId: T:Mozzarella.Tests.RemoveNonAlphas
   isExternal: false

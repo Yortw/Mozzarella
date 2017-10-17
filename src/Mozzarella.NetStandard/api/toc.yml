@@ -17,5 +17,7 @@
 - uid: Mozzarella.Tests
   name: Mozzarella.Tests
   items:
+  - uid: Mozzarella.Tests.RemoveNonAlphanumerics
+    name: RemoveNonAlphanumerics
   - uid: Mozzarella.Tests.RemoveNonAlphas
     name: RemoveNonAlphas

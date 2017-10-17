@@ -860,7 +860,7 @@ namespace Mozzarella
 			for (int cnt = 0; cnt < value.Length; cnt++)
 			{
 				var c = value[cnt];
-				if (!IsLatinAlphabeticCharacter(c) && !IsLatinNumberic(c)) return false;
+				if (!IsLatinAlphabeticCharacter(c) && !IsLatinNumeric(c)) return false;
 			}
 
 			return true;
@@ -910,7 +910,7 @@ namespace Mozzarella
 		/// Removes all characters that are not (latin) alphabet characters (A-Z, a-z).
 		/// </summary>
 		/// <remarks>
-		/// <para>Returns the original <paramref name="value"/> if it is null, empty string, or does not contain any non-latn alphabet characters.</para>
+		/// <para>Returns the original <paramref name="value"/> if it is null, empty string, or does not contain any non-latin alphabet characters.</para>
 		/// </remarks>
 		/// <param name="value">The string to remove characters from.</param>
 		/// <returns>Either the original string if no changes were made, or else <paramref name="value"/> with all non-latin alphabet characters removed.</returns>
@@ -937,6 +937,37 @@ namespace Mozzarella
 			return sb?.ToString() ?? value;
 		}
 
+		/// <summary>
+		/// Removes all characters that are not (latin) alphabet characters (A-Z, a-z) or numerics (0-9).
+		/// </summary>
+		/// <remarks>
+		/// <para>Returns the original <paramref name="value"/> if it is null, empty string, or does not contain any non-latin alphabet or numeric characters.</para>
+		/// </remarks>
+		/// <param name="value">The string to remove characters from.</param>
+		/// <returns>Either the original string if no changes were made, or else <paramref name="value"/> with all non-latin alphabet and numeric characters removed.</returns>
+		public static string RemoveNonAlphanumerics(this string value)
+		{
+			if (String.IsNullOrEmpty(value)) return value;
+
+			StringBuilder sb = null;
+			for (int cnt = 0; cnt < value.Length; cnt++)
+			{
+				var c = value[cnt];
+				if (!IsLatinAlphabeticCharacter(c) && !IsLatinNumeric(c))
+				{
+					if (sb == null)
+					{
+						sb = new StringBuilder(value.Length);
+						sb.Append(value, 0, cnt);
+					}
+				}
+				else if (sb != null)
+					sb.Append(c);
+			}
+
+			return sb?.ToString() ?? value;
+		}
+
 #if SUPPORTS_AGGRESSIVEINLINING
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
 #endif
@@ -948,7 +979,7 @@ namespace Mozzarella
 #if SUPPORTS_AGGRESSIVEINLINING
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
 #endif
-		private static bool IsLatinNumberic(char c)
+		private static bool IsLatinNumeric(char c)
 		{
 			return (c >= 48 && c <= 57);
 		}

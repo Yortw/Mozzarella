@@ -18,7 +18,7 @@ items:
   source:
     id: ByteArrayExtensions
     path: ''
-    startLine: 394
+    startLine: 408
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -59,7 +59,7 @@ items:
   source:
     id: AsString
     path: ''
-    startLine: 404
+    startLine: 418
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -103,7 +103,7 @@ items:
   source:
     id: AsString
     path: ''
-    startLine: 416
+    startLine: 430
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -154,7 +154,7 @@ items:
   source:
     id: ToHexString
     path: ''
-    startLine: 433
+    startLine: 447
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella

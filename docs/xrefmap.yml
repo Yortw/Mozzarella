@@ -817,6 +817,18 @@ references:
   commentId: Overload:Mozzarella.StringExtensions.RemoveAllWhiteSpace
   fullName: Mozzarella.StringExtensions.RemoveAllWhiteSpace
   nameWithType: StringExtensions.RemoveAllWhiteSpace
+- uid: Mozzarella.StringExtensions.RemoveNonAlphanumerics(System.String)
+  name: RemoveNonAlphanumerics(String)
+  href: api/Mozzarella.StringExtensions.RemoveNonAlphanumerics.html#Mozzarella_StringExtensions_RemoveNonAlphanumerics_System_String_
+  commentId: M:Mozzarella.StringExtensions.RemoveNonAlphanumerics(System.String)
+  fullName: Mozzarella.StringExtensions.RemoveNonAlphanumerics(System.String)
+  nameWithType: StringExtensions.RemoveNonAlphanumerics(String)
+- uid: Mozzarella.StringExtensions.RemoveNonAlphanumerics*
+  name: RemoveNonAlphanumerics
+  href: api/Mozzarella.StringExtensions.RemoveNonAlphanumerics.html
+  commentId: Overload:Mozzarella.StringExtensions.RemoveNonAlphanumerics
+  fullName: Mozzarella.StringExtensions.RemoveNonAlphanumerics
+  nameWithType: StringExtensions.RemoveNonAlphanumerics
 - uid: Mozzarella.StringExtensions.RemoveNonAlphas(System.String)
   name: RemoveNonAlphas(String)
   href: api/Mozzarella.StringExtensions.RemoveNonAlphas.html#Mozzarella_StringExtensions_RemoveNonAlphas_System_String_
@@ -907,6 +919,72 @@ references:
   commentId: N:Mozzarella.Tests
   fullName: Mozzarella.Tests
   nameWithType: Mozzarella.Tests
+- uid: Mozzarella.Tests.RemoveNonAlphanumerics
+  name: RemoveNonAlphanumerics
+  href: api/Mozzarella.Tests.RemoveNonAlphanumerics.html
+  commentId: T:Mozzarella.Tests.RemoveNonAlphanumerics
+  fullName: Mozzarella.Tests.RemoveNonAlphanumerics
+  nameWithType: RemoveNonAlphanumerics
+- uid: Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_DoesNotRemoveNumerics
+  name: RemoveNonAlphanumerics_DoesNotRemoveNumerics()
+  href: api/Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_DoesNotRemoveNumerics.html#Mozzarella_Tests_RemoveNonAlphanumerics_RemoveNonAlphanumerics_DoesNotRemoveNumerics
+  commentId: M:Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_DoesNotRemoveNumerics
+  fullName: Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_DoesNotRemoveNumerics()
+  nameWithType: RemoveNonAlphanumerics.RemoveNonAlphanumerics_DoesNotRemoveNumerics()
+- uid: Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_DoesNotRemoveNumerics*
+  name: RemoveNonAlphanumerics_DoesNotRemoveNumerics
+  href: api/Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_DoesNotRemoveNumerics.html
+  commentId: Overload:Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_DoesNotRemoveNumerics
+  fullName: Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_DoesNotRemoveNumerics
+  nameWithType: RemoveNonAlphanumerics.RemoveNonAlphanumerics_DoesNotRemoveNumerics
+- uid: Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_RemovesNonAlphanumerics
+  name: RemoveNonAlphanumerics_RemovesNonAlphanumerics()
+  href: api/Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_RemovesNonAlphanumerics.html#Mozzarella_Tests_RemoveNonAlphanumerics_RemoveNonAlphanumerics_RemovesNonAlphanumerics
+  commentId: M:Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_RemovesNonAlphanumerics
+  fullName: Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_RemovesNonAlphanumerics()
+  nameWithType: RemoveNonAlphanumerics.RemoveNonAlphanumerics_RemovesNonAlphanumerics()
+- uid: Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_RemovesNonAlphanumerics*
+  name: RemoveNonAlphanumerics_RemovesNonAlphanumerics
+  href: api/Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_RemovesNonAlphanumerics.html
+  commentId: Overload:Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_RemovesNonAlphanumerics
+  fullName: Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_RemovesNonAlphanumerics
+  nameWithType: RemoveNonAlphanumerics.RemoveNonAlphanumerics_RemovesNonAlphanumerics
+- uid: Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_ReturnsEmptyForEmpty
+  name: RemoveNonAlphanumerics_ReturnsEmptyForEmpty()
+  href: api/Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_ReturnsEmptyForEmpty.html#Mozzarella_Tests_RemoveNonAlphanumerics_RemoveNonAlphanumerics_ReturnsEmptyForEmpty
+  commentId: M:Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_ReturnsEmptyForEmpty
+  fullName: Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_ReturnsEmptyForEmpty()
+  nameWithType: RemoveNonAlphanumerics.RemoveNonAlphanumerics_ReturnsEmptyForEmpty()
+- uid: Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_ReturnsEmptyForEmpty*
+  name: RemoveNonAlphanumerics_ReturnsEmptyForEmpty
+  href: api/Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_ReturnsEmptyForEmpty.html
+  commentId: Overload:Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_ReturnsEmptyForEmpty
+  fullName: Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_ReturnsEmptyForEmpty
+  nameWithType: RemoveNonAlphanumerics.RemoveNonAlphanumerics_ReturnsEmptyForEmpty
+- uid: Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_ReturnsNullForNull
+  name: RemoveNonAlphanumerics_ReturnsNullForNull()
+  href: api/Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_ReturnsNullForNull.html#Mozzarella_Tests_RemoveNonAlphanumerics_RemoveNonAlphanumerics_ReturnsNullForNull
+  commentId: M:Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_ReturnsNullForNull
+  fullName: Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_ReturnsNullForNull()
+  nameWithType: RemoveNonAlphanumerics.RemoveNonAlphanumerics_ReturnsNullForNull()
+- uid: Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_ReturnsNullForNull*
+  name: RemoveNonAlphanumerics_ReturnsNullForNull
+  href: api/Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_ReturnsNullForNull.html
+  commentId: Overload:Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_ReturnsNullForNull
+  fullName: Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_ReturnsNullForNull
+  nameWithType: RemoveNonAlphanumerics.RemoveNonAlphanumerics_ReturnsNullForNull
+- uid: Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_ReturnsOriginalStringWhenNoCharactersRemoved
+  name: RemoveNonAlphanumerics_ReturnsOriginalStringWhenNoCharactersRemoved()
+  href: api/Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_ReturnsOriginalStringWhenNoCharactersRemoved.html#Mozzarella_Tests_RemoveNonAlphanumerics_RemoveNonAlphanumerics_ReturnsOriginalStringWhenNoCharactersRemoved
+  commentId: M:Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_ReturnsOriginalStringWhenNoCharactersRemoved
+  fullName: Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_ReturnsOriginalStringWhenNoCharactersRemoved()
+  nameWithType: RemoveNonAlphanumerics.RemoveNonAlphanumerics_ReturnsOriginalStringWhenNoCharactersRemoved()
+- uid: Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_ReturnsOriginalStringWhenNoCharactersRemoved*
+  name: RemoveNonAlphanumerics_ReturnsOriginalStringWhenNoCharactersRemoved
+  href: api/Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_ReturnsOriginalStringWhenNoCharactersRemoved.html
+  commentId: Overload:Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_ReturnsOriginalStringWhenNoCharactersRemoved
+  fullName: Mozzarella.Tests.RemoveNonAlphanumerics.RemoveNonAlphanumerics_ReturnsOriginalStringWhenNoCharactersRemoved
+  nameWithType: RemoveNonAlphanumerics.RemoveNonAlphanumerics_ReturnsOriginalStringWhenNoCharactersRemoved
 - uid: Mozzarella.Tests.RemoveNonAlphas
   name: RemoveNonAlphas
   href: api/Mozzarella.Tests.RemoveNonAlphas.html
