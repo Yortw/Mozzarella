@@ -19,7 +19,7 @@ items:
   source:
     id: EnumerableOfStringExtensions
     path: ''
-    startLine: 439
+    startLine: 479
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -60,7 +60,7 @@ items:
   source:
     id: Coalesce
     path: ''
-    startLine: 452
+    startLine: 492
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -105,7 +105,7 @@ items:
   source:
     id: Coalesce
     path: ''
-    startLine: 463
+    startLine: 503
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -152,7 +152,7 @@ items:
   source:
     id: Coalesce
     path: ''
-    startLine: 479
+    startLine: 519
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -197,7 +197,7 @@ items:
   source:
     id: Coalesce
     path: ''
-    startLine: 490
+    startLine: 530
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella

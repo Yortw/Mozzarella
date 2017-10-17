@@ -91,8 +91,7 @@ namespace Mozzarella
 			if (parts == null) return builder;
 
 			//Avoid allocations if we were passed an array
-			var strArray = parts as string[];
-			if (strArray != null)
+			if (parts is string[] strArray)
 				return AppendJoin(builder, separator, strArray);
 
 			using (var enumerator = parts.GetEnumerator())

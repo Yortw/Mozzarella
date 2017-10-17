@@ -75,6 +75,7 @@
     <Compile Include="IsAllDigitsTests.cs" />
     <Compile Include="LikeTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemoveAllWhitespaceTests.cs" />
     <Compile Include="StringBuilderAppendTests.cs" />
     <Compile Include="StringBuilderCaseConversionTests.cs" />
     <Compile Include="StringBuilderContainsTests.cs" />

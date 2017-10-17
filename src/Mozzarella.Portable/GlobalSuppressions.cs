@@ -1,0 +1,20 @@
+﻿
+// This file is used by Code Analysis to maintain SuppressMessage 
+// attributes that are applied to this project.
+// Project-level suppressions either have no target or are given 
+// a specific target and scoped to a namespace, type, member, etc.
+
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0007:Use implicit type", Justification = "<Pending>", Scope = "member", Target = "~M:Mozzarella.StringBuilderExtensions.ToLower(System.Text.StringBuilder,System.Globalization.CultureInfo)~System.Text.StringBuilder")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0007:Use implicit type", Justification = "<Pending>", Scope = "member", Target = "~M:Mozzarella.StringBuilderExtensions.ToUpper(System.Text.StringBuilder,System.Globalization.CultureInfo)~System.Text.StringBuilder")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0007:Use implicit type", Justification = "<Pending>", Scope = "member", Target = "~M:Mozzarella.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder)~System.Text.StringBuilder")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0007:Use implicit type", Justification = "<Pending>", Scope = "member", Target = "~M:Mozzarella.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder,System.Char[])~System.Text.StringBuilder")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0007:Use implicit type", Justification = "<Pending>", Scope = "member", Target = "~M:Mozzarella.StringBuilderExtensions.TrimStart(System.Text.StringBuilder)~System.Text.StringBuilder")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0007:Use implicit type", Justification = "<Pending>", Scope = "member", Target = "~M:Mozzarella.StringBuilderExtensions.TrimStart(System.Text.StringBuilder,System.Char[])~System.Text.StringBuilder")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0007:Use implicit type", Justification = "<Pending>", Scope = "member", Target = "~M:Mozzarella.StringExtensions.Coalesce(System.String,Mozzarella.CoalesceOptions,System.String[])~System.String")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0007:Use implicit type", Justification = "<Pending>", Scope = "member", Target = "~M:Mozzarella.StringExtensions.IndexOfFirstDifference(System.String,System.String)~System.Int32")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0007:Use implicit type", Justification = "<Pending>", Scope = "member", Target = "~M:Mozzarella.StringExtensions.IsAllDigits(System.String)~System.Boolean")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0007:Use implicit type", Justification = "<Pending>", Scope = "member", Target = "~M:Mozzarella.StringExtensions.IsOnlyDigits(System.String)~System.Boolean")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0007:Use implicit type", Justification = "<Pending>", Scope = "member", Target = "~M:Mozzarella.StringExtensions.Like(System.String,System.String,System.Boolean)~System.Boolean")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0007:Use implicit type", Justification = "<Pending>", Scope = "member", Target = "~M:Mozzarella.StringExtensions.RemoveAllWhiteSpace(System.String)~System.String")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0007:Use implicit type", Justification = "<Pending>", Scope = "member", Target = "~M:Mozzarella.StringExtensions.Replace(System.String,System.String,System.String,System.StringComparison)~System.String")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0007:Use implicit type", Justification = "<Pending>", Scope = "member", Target = "~M:Mozzarella.StringExtensions.StripNonDigits(System.String)~System.String")]

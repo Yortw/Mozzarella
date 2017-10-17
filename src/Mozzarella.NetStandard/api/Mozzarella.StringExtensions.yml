@@ -37,6 +37,7 @@ items:
   - Mozzarella.StringExtensions.OCIEquals(System.String,System.String)
   - Mozzarella.StringExtensions.OCIReplace(System.String,System.String,System.String)
   - Mozzarella.StringExtensions.OEquals(System.String,System.String)
+  - Mozzarella.StringExtensions.RemoveAllWhiteSpace(System.String)
   - Mozzarella.StringExtensions.Replace(System.String,System.String,System.String,System.StringComparison)
   - Mozzarella.StringExtensions.StripNonDigits(System.String)
   - Mozzarella.StringExtensions.StripPrefix(System.String,System.String)
@@ -54,7 +55,7 @@ items:
   source:
     id: StringExtensions
     path: ''
-    startLine: 1072
+    startLine: 1111
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -95,7 +96,7 @@ items:
   source:
     id: Truncate
     path: ''
-    startLine: 1085
+    startLine: 1124
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -144,7 +145,7 @@ items:
   source:
     id: OCIEquals
     path: ''
-    startLine: 1104
+    startLine: 1143
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -189,7 +190,7 @@ items:
   source:
     id: OEquals
     path: ''
-    startLine: 1119
+    startLine: 1158
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -234,7 +235,7 @@ items:
   source:
     id: CIEquals
     path: ''
-    startLine: 1133
+    startLine: 1172
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -279,7 +280,7 @@ items:
   source:
     id: OCICompare
     path: ''
-    startLine: 1147
+    startLine: 1186
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -324,7 +325,7 @@ items:
   source:
     id: CICompare
     path: ''
-    startLine: 1162
+    startLine: 1201
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -369,7 +370,7 @@ items:
   source:
     id: CIContains
     path: ''
-    startLine: 1174
+    startLine: 1213
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -417,7 +418,7 @@ items:
   source:
     id: OCIContains
     path: ''
-    startLine: 1188
+    startLine: 1227
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -465,7 +466,7 @@ items:
   source:
     id: CIReplace
     path: ''
-    startLine: 1209
+    startLine: 1248
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -521,7 +522,7 @@ items:
   source:
     id: OCIReplace
     path: ''
-    startLine: 1227
+    startLine: 1266
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -577,7 +578,7 @@ items:
   source:
     id: Replace
     path: ''
-    startLine: 1244
+    startLine: 1283
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -636,7 +637,7 @@ items:
   source:
     id: IndexOfFirstDifference
     path: ''
-    startLine: 1293
+    startLine: 1332
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -685,7 +686,7 @@ items:
   source:
     id: IsAllDigits
     path: ''
-    startLine: 1317
+    startLine: 1356
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -731,7 +732,7 @@ items:
   source:
     id: Like
     path: ''
-    startLine: 1342
+    startLine: 1381
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -783,7 +784,7 @@ items:
   source:
     id: StripSuffix
     path: ''
-    startLine: 1371
+    startLine: 1410
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -832,7 +833,7 @@ items:
   source:
     id: StripSuffix
     path: ''
-    startLine: 1385
+    startLine: 1424
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -884,7 +885,7 @@ items:
   source:
     id: StripPrefix
     path: ''
-    startLine: 1406
+    startLine: 1445
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -933,7 +934,7 @@ items:
   source:
     id: StripPrefix
     path: ''
-    startLine: 1420
+    startLine: 1459
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -985,7 +986,7 @@ items:
   source:
     id: AddSuffix
     path: ''
-    startLine: 1441
+    startLine: 1480
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1034,7 +1035,7 @@ items:
   source:
     id: AddSuffix
     path: ''
-    startLine: 1455
+    startLine: 1494
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1086,7 +1087,7 @@ items:
   source:
     id: AddPrefix
     path: ''
-    startLine: 1476
+    startLine: 1515
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1135,7 +1136,7 @@ items:
   source:
     id: AddPrefix
     path: ''
-    startLine: 1490
+    startLine: 1529
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1187,7 +1188,7 @@ items:
   source:
     id: Coalesce
     path: ''
-    startLine: 1512
+    startLine: 1551
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1236,7 +1237,7 @@ items:
   source:
     id: Coalesce
     path: ''
-    startLine: 1527
+    startLine: 1566
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1284,7 +1285,7 @@ items:
   source:
     id: Coalesce
     path: ''
-    startLine: 1549
+    startLine: 1588
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1337,7 +1338,7 @@ items:
   source:
     id: Coalesce
     path: ''
-    startLine: 1566
+    startLine: 1605
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1393,7 +1394,7 @@ items:
   source:
     id: IsNullOrEmpty
     path: ''
-    startLine: 1598
+    startLine: 1637
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1435,7 +1436,7 @@ items:
   source:
     id: IsNullOrWhiteSpace
     path: ''
-    startLine: 1615
+    startLine: 1654
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1477,7 +1478,7 @@ items:
   source:
     id: Contains
     path: ''
-    startLine: 1630
+    startLine: 1669
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1525,7 +1526,7 @@ items:
   source:
     id: BeforeFirst
     path: ''
-    startLine: 1650
+    startLine: 1689
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1570,7 +1571,7 @@ items:
   source:
     id: BeforeFirst
     path: ''
-    startLine: 1665
+    startLine: 1704
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1618,7 +1619,7 @@ items:
   source:
     id: BeforeLast
     path: ''
-    startLine: 1689
+    startLine: 1728
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1663,7 +1664,7 @@ items:
   source:
     id: BeforeLast
     path: ''
-    startLine: 1705
+    startLine: 1744
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1711,7 +1712,7 @@ items:
   source:
     id: AfterFirst
     path: ''
-    startLine: 1729
+    startLine: 1768
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1756,7 +1757,7 @@ items:
   source:
     id: AfterFirst
     path: ''
-    startLine: 1744
+    startLine: 1783
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1804,7 +1805,7 @@ items:
   source:
     id: AfterLast
     path: ''
-    startLine: 1768
+    startLine: 1807
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1849,7 +1850,7 @@ items:
   source:
     id: AfterLast
     path: ''
-    startLine: 1783
+    startLine: 1822
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1897,7 +1898,7 @@ items:
   source:
     id: IsOnlyDigits
     path: ''
-    startLine: 1804
+    startLine: 1843
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1946,7 +1947,7 @@ items:
   source:
     id: StripNonDigits
     path: ''
-    startLine: 1827
+    startLine: 1866
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1974,6 +1975,48 @@ items:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown if <code data-dev-comment-type="paramref" class="paramref">value</code> is an empty string.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.RemoveAllWhiteSpace(System.String)
+  commentId: M:Mozzarella.StringExtensions.RemoveAllWhiteSpace(System.String)
+  id: RemoveAllWhiteSpace(System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: RemoveAllWhiteSpace(String)
+  nameWithType: StringExtensions.RemoveAllWhiteSpace(String)
+  fullName: Mozzarella.StringExtensions.RemoveAllWhiteSpace(System.String)
+  type: Method
+  source:
+    id: RemoveAllWhiteSpace
+    path: ''
+    startLine: 1901
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nRemoves all whitespace characters, regardless of where they appear in <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> and returns a new string containing the result.\n"
+  remarks: "\n<p>If no whitespace characters are found the original string is returned.</p>\n"
+  example: []
+  syntax:
+    content: public static string RemoveAllWhiteSpace(this string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to remove white space characters from.
+    return:
+      type: System.String
+      description: A string containing <code data-dev-comment-type="paramref" class="paramref">value</code> without any whitespace characters.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function RemoveAllWhiteSpace(value As String) As String
+  overload: Mozzarella.StringExtensions.RemoveAllWhiteSpace*
   modifiers.csharp:
   - public
   - static
@@ -2553,3 +2596,9 @@ references:
   name: StripNonDigits
   nameWithType: StringExtensions.StripNonDigits
   fullName: Mozzarella.StringExtensions.StripNonDigits
+- uid: Mozzarella.StringExtensions.RemoveAllWhiteSpace*
+  commentId: Overload:Mozzarella.StringExtensions.RemoveAllWhiteSpace
+  isExternal: false
+  name: RemoveAllWhiteSpace
+  nameWithType: StringExtensions.RemoveAllWhiteSpace
+  fullName: Mozzarella.StringExtensions.RemoveAllWhiteSpace

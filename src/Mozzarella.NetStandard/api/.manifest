@@ -74,6 +74,7 @@
   "Mozzarella.StringExtensions.OCIEquals(System.String,System.String)": "Mozzarella.StringExtensions.yml",
   "Mozzarella.StringExtensions.OCIReplace(System.String,System.String,System.String)": "Mozzarella.StringExtensions.yml",
   "Mozzarella.StringExtensions.OEquals(System.String,System.String)": "Mozzarella.StringExtensions.yml",
+  "Mozzarella.StringExtensions.RemoveAllWhiteSpace(System.String)": "Mozzarella.StringExtensions.yml",
   "Mozzarella.StringExtensions.Replace(System.String,System.String,System.String,System.StringComparison)": "Mozzarella.StringExtensions.yml",
   "Mozzarella.StringExtensions.StripNonDigits(System.String)": "Mozzarella.StringExtensions.yml",
   "Mozzarella.StringExtensions.StripPrefix(System.String,System.String)": "Mozzarella.StringExtensions.yml",

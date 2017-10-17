@@ -790,5 +790,36 @@ namespace Mozzarella
 			return sb?.ToString() ?? value;
 		}
 
+		/// <summary>
+		/// Removes all whitespace characters, regardless of where they appear in <paramref name="value"/> and returns a new string containing the result.
+		/// </summary>
+		/// <remarks>
+		/// <para>If no whitespace characters are found the original string is returned.</para>
+		/// </remarks>
+		/// <param name="value">The string to remove white space characters from.</param>
+		/// <returns>A string containing <paramref name="value"/> without any whitespace characters.</returns>
+		public static string RemoveAllWhiteSpace(this string value)
+		{
+			if (value == null) return value;
+			if (value.Length == 0) return value;
+
+			StringBuilder sb = null;
+			for (int cnt = 0; cnt < value.Length; cnt++)
+			{
+				var c = value[cnt];
+				if (Char.IsWhiteSpace(c))
+				{
+					if (sb == null)
+					{
+						sb = new StringBuilder(value.Length);
+						sb.Append(value.Substring(0, cnt));
+					}
+				}
+				else if (sb != null)
+					sb.Append(c);
+			}
+
+			return sb?.ToString() ?? value;
+		}
 	}
 }

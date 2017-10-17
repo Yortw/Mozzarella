@@ -757,6 +757,18 @@ references:
   commentId: Overload:Mozzarella.StringExtensions.OEquals
   fullName: Mozzarella.StringExtensions.OEquals
   nameWithType: StringExtensions.OEquals
+- uid: Mozzarella.StringExtensions.RemoveAllWhiteSpace(System.String)
+  name: RemoveAllWhiteSpace(String)
+  href: api/Mozzarella.StringExtensions.RemoveAllWhiteSpace.html#Mozzarella_StringExtensions_RemoveAllWhiteSpace_System_String_
+  commentId: M:Mozzarella.StringExtensions.RemoveAllWhiteSpace(System.String)
+  fullName: Mozzarella.StringExtensions.RemoveAllWhiteSpace(System.String)
+  nameWithType: StringExtensions.RemoveAllWhiteSpace(String)
+- uid: Mozzarella.StringExtensions.RemoveAllWhiteSpace*
+  name: RemoveAllWhiteSpace
+  href: api/Mozzarella.StringExtensions.RemoveAllWhiteSpace.html
+  commentId: Overload:Mozzarella.StringExtensions.RemoveAllWhiteSpace
+  fullName: Mozzarella.StringExtensions.RemoveAllWhiteSpace
+  nameWithType: StringExtensions.RemoveAllWhiteSpace
 - uid: Mozzarella.StringExtensions.Replace(System.String,System.String,System.String,System.StringComparison)
   name: Replace(String, String, String, StringComparison)
   href: api/Mozzarella.StringExtensions.Replace.html#Mozzarella_StringExtensions_Replace_System_String_System_String_System_String_System_StringComparison_
