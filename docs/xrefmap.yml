@@ -805,6 +805,30 @@ references:
   commentId: Overload:Mozzarella.StringExtensions.OEquals
   fullName: Mozzarella.StringExtensions.OEquals
   nameWithType: StringExtensions.OEquals
+- uid: Mozzarella.StringExtensions.RemoveAllExcept(System.String,System.Char[])
+  name: RemoveAllExcept(String, Char[])
+  href: api/Mozzarella.StringExtensions.RemoveAllExcept.html#Mozzarella_StringExtensions_RemoveAllExcept_System_String_System_Char___
+  commentId: M:Mozzarella.StringExtensions.RemoveAllExcept(System.String,System.Char[])
+  name.vb: RemoveAllExcept(String, Char())
+  fullName: Mozzarella.StringExtensions.RemoveAllExcept(System.String, System.Char[])
+  fullName.vb: Mozzarella.StringExtensions.RemoveAllExcept(System.String, System.Char())
+  nameWithType: StringExtensions.RemoveAllExcept(String, Char[])
+  nameWithType.vb: StringExtensions.RemoveAllExcept(String, Char())
+- uid: Mozzarella.StringExtensions.RemoveAllExcept(System.String,System.Collections.Generic.IEnumerable{System.Char})
+  name: RemoveAllExcept(String, IEnumerable<Char>)
+  href: api/Mozzarella.StringExtensions.RemoveAllExcept.html#Mozzarella_StringExtensions_RemoveAllExcept_System_String_System_Collections_Generic_IEnumerable_System_Char__
+  commentId: M:Mozzarella.StringExtensions.RemoveAllExcept(System.String,System.Collections.Generic.IEnumerable{System.Char})
+  name.vb: RemoveAllExcept(String, IEnumerable(Of Char))
+  fullName: Mozzarella.StringExtensions.RemoveAllExcept(System.String, System.Collections.Generic.IEnumerable<System.Char>)
+  fullName.vb: Mozzarella.StringExtensions.RemoveAllExcept(System.String, System.Collections.Generic.IEnumerable(Of System.Char))
+  nameWithType: StringExtensions.RemoveAllExcept(String, IEnumerable<Char>)
+  nameWithType.vb: StringExtensions.RemoveAllExcept(String, IEnumerable(Of Char))
+- uid: Mozzarella.StringExtensions.RemoveAllExcept*
+  name: RemoveAllExcept
+  href: api/Mozzarella.StringExtensions.RemoveAllExcept.html
+  commentId: Overload:Mozzarella.StringExtensions.RemoveAllExcept
+  fullName: Mozzarella.StringExtensions.RemoveAllExcept
+  nameWithType: StringExtensions.RemoveAllExcept
 - uid: Mozzarella.StringExtensions.RemoveAllWhiteSpace(System.String)
   name: RemoveAllWhiteSpace(String)
   href: api/Mozzarella.StringExtensions.RemoveAllWhiteSpace.html#Mozzarella_StringExtensions_RemoveAllWhiteSpace_System_String_

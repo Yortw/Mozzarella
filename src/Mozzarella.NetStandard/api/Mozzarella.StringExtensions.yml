@@ -41,6 +41,8 @@ items:
   - Mozzarella.StringExtensions.OCIEquals(System.String,System.String)
   - Mozzarella.StringExtensions.OCIReplace(System.String,System.String,System.String)
   - Mozzarella.StringExtensions.OEquals(System.String,System.String)
+  - Mozzarella.StringExtensions.RemoveAllExcept(System.String,System.Char[])
+  - Mozzarella.StringExtensions.RemoveAllExcept(System.String,System.Collections.Generic.IEnumerable{System.Char})
   - Mozzarella.StringExtensions.RemoveAllWhiteSpace(System.String)
   - Mozzarella.StringExtensions.RemoveNonAlphanumerics(System.String)
   - Mozzarella.StringExtensions.RemoveNonAlphas(System.String)
@@ -2301,6 +2303,110 @@ items:
   modifiers.vb:
   - Public
   - Shared
+- uid: Mozzarella.StringExtensions.RemoveAllExcept(System.String,System.Char[])
+  commentId: M:Mozzarella.StringExtensions.RemoveAllExcept(System.String,System.Char[])
+  id: RemoveAllExcept(System.String,System.Char[])
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: RemoveAllExcept(String, Char[])
+  nameWithType: StringExtensions.RemoveAllExcept(String, Char[])
+  fullName: Mozzarella.StringExtensions.RemoveAllExcept(System.String, System.Char[])
+  type: Method
+  source:
+    id: RemoveAllExcept
+    path: ''
+    startLine: 2097
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nRemoves all characters that are not (latin) alphabet characters (A-Z, a-z) or numerics (0-9).\n"
+  remarks: "\n<p>Returns the original <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> if it is null, empty string, or does not contain any non-latin alphabet or numeric characters.</p>\n"
+  example: []
+  syntax:
+    content: public static string RemoveAllExcept(this string value, params char[] characters)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to remove characters from.
+    - id: characters
+      type: System.Char[]
+      description: An enumerable of <xref href="System.Char" data-throw-if-not-resolved="false"></xref> instances representing allowed characters (that will *not* be removed).
+    return:
+      type: System.String
+      description: Either the original string if no changes were made, or else <code data-dev-comment-type="paramref" class="paramref">value</code> with all non-latin alphabet and numeric characters removed.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function RemoveAllExcept(value As String, ParamArray characters As Char()) As String
+  overload: Mozzarella.StringExtensions.RemoveAllExcept*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">characters</code> is null.
+  nameWithType.vb: StringExtensions.RemoveAllExcept(String, Char())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mozzarella.StringExtensions.RemoveAllExcept(System.String, System.Char())
+  name.vb: RemoveAllExcept(String, Char())
+- uid: Mozzarella.StringExtensions.RemoveAllExcept(System.String,System.Collections.Generic.IEnumerable{System.Char})
+  commentId: M:Mozzarella.StringExtensions.RemoveAllExcept(System.String,System.Collections.Generic.IEnumerable{System.Char})
+  id: RemoveAllExcept(System.String,System.Collections.Generic.IEnumerable{System.Char})
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: RemoveAllExcept(String, IEnumerable<Char>)
+  nameWithType: StringExtensions.RemoveAllExcept(String, IEnumerable<Char>)
+  fullName: Mozzarella.StringExtensions.RemoveAllExcept(System.String, System.Collections.Generic.IEnumerable<System.Char>)
+  type: Method
+  source:
+    id: RemoveAllExcept
+    path: ''
+    startLine: 2112
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nRemoves all characters that are not (latin) alphabet characters (A-Z, a-z) or numerics (0-9).\n"
+  remarks: "\n<p>Returns the original <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> if it is null, empty string, or does not contain any non-latin alphabet or numeric characters.</p>\n"
+  example: []
+  syntax:
+    content: public static string RemoveAllExcept(this string value, IEnumerable<char> characters)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to remove characters from.
+    - id: characters
+      type: System.Collections.Generic.IEnumerable{System.Char}
+      description: An enumerable of <xref href="System.Char" data-throw-if-not-resolved="false"></xref> instances representing allowed characters (that will *not* be removed).
+    return:
+      type: System.String
+      description: Either the original string if no changes were made, or else <code data-dev-comment-type="paramref" class="paramref">value</code> with all non-latin alphabet and numeric characters removed.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function RemoveAllExcept(value As String, characters As IEnumerable(Of Char)) As String
+  overload: Mozzarella.StringExtensions.RemoveAllExcept*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">characters</code> is null.
+  nameWithType.vb: StringExtensions.RemoveAllExcept(String, IEnumerable(Of Char))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mozzarella.StringExtensions.RemoveAllExcept(System.String, System.Collections.Generic.IEnumerable(Of System.Char))
+  name.vb: RemoveAllExcept(String, IEnumerable(Of Char))
 references:
 - uid: System.String
   commentId: T:System.String
@@ -3024,3 +3130,11 @@ references:
   name: RemoveNonAlphanumerics
   nameWithType: StringExtensions.RemoveNonAlphanumerics
   fullName: Mozzarella.StringExtensions.RemoveNonAlphanumerics
+- uid: System.Char
+  commentId: T:System.Char
+- uid: Mozzarella.StringExtensions.RemoveAllExcept*
+  commentId: Overload:Mozzarella.StringExtensions.RemoveAllExcept
+  isExternal: false
+  name: RemoveAllExcept
+  nameWithType: StringExtensions.RemoveAllExcept
+  fullName: Mozzarella.StringExtensions.RemoveAllExcept

@@ -142,9 +142,9 @@ namespace Mozzarella
 		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="value"/> is null.</exception>
 		/// <seealso cref="OCIReplace(string, string, string)"/>
 		/// <seealso cref="Replace(string, string, string, StringComparison)"/>
-		#if SUPPORTS_AGGRESSIVEINLINING
+#if SUPPORTS_AGGRESSIVEINLINING
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-		#endif
+#endif
 		public static string CIReplace(this string value, string searchValue, string newValue)
 		{
 			return value.Replace(searchValue, newValue, StringComparison.CurrentCultureIgnoreCase);
@@ -237,7 +237,7 @@ namespace Mozzarella
 			for (int cnt = 0; cnt < value.Length; cnt++)
 			{
 				if (cnt >= otherValue.Length) return cnt;
-				
+
 				if (value[cnt] != otherValue[cnt]) return cnt;
 			}
 
@@ -725,7 +725,7 @@ namespace Mozzarella
 			if (value.Length == 0) return null;
 
 			var index = value.LastIndexOf(searchValue, comparisonMethod);
-			if (index <= 0 || index + 1== value.Length) return null;
+			if (index <= 0 || index + 1 == value.Length) return null;
 
 			return value.Substring(index + 1);
 		}
@@ -896,7 +896,7 @@ namespace Mozzarella
 			if (value == null) throw new ArgumentNullException(nameof(value));
 			if (characters == null) throw new ArgumentNullException(nameof(characters));
 			if (value.Length == 0) return false;
-			
+
 			for (int cnt = 0; cnt < value.Length; cnt++)
 			{
 				var c = value[cnt];
@@ -968,6 +968,55 @@ namespace Mozzarella
 			return sb?.ToString() ?? value;
 		}
 
+		/// <summary>
+		/// Removes all characters that are not (latin) alphabet characters (A-Z, a-z) or numerics (0-9).
+		/// </summary>
+		/// <remarks>
+		/// <para>Returns the original <paramref name="value"/> if it is null, empty string, or does not contain any non-latin alphabet or numeric characters.</para>
+		/// </remarks>
+		/// <param name="value">The string to remove characters from.</param>
+		/// <param name="characters">An enumerable of <see cref="System.Char"/> instances representing allowed characters (that will *not* be removed).</param>
+		/// <returns>Either the original string if no changes were made, or else <paramref name="value"/> with all non-latin alphabet and numeric characters removed.</returns>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="characters"/> is null.</exception>
+		public static string RemoveAllExcept(this string value, params char[] characters)
+		{
+			return RemoveAllExcept(value, (IEnumerable<char>)characters);
+		}
+
+		/// <summary>
+		/// Removes all characters that are not (latin) alphabet characters (A-Z, a-z) or numerics (0-9).
+		/// </summary>
+		/// <remarks>
+		/// <para>Returns the original <paramref name="value"/> if it is null, empty string, or does not contain any non-latin alphabet or numeric characters.</para>
+		/// </remarks>
+		/// <param name="value">The string to remove characters from.</param>
+		/// <param name="characters">An enumerable of <see cref="System.Char"/> instances representing allowed characters (that will *not* be removed).</param>
+		/// <returns>Either the original string if no changes were made, or else <paramref name="value"/> with all non-latin alphabet and numeric characters removed.</returns>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="characters"/> is null.</exception>
+		public static string RemoveAllExcept(this string value, IEnumerable<char> characters)
+		{
+			if (characters == null) throw new ArgumentNullException(nameof(characters));
+			if (String.IsNullOrEmpty(value)) return value;
+
+			StringBuilder sb = null;
+			for (int cnt = 0; cnt < value.Length; cnt++)
+			{
+				var c = value[cnt];
+				if (!System.Linq.Enumerable.Contains(characters, c))
+				{
+					if (sb == null)
+					{
+						sb = new StringBuilder(value.Length);
+						sb.Append(value, 0, cnt);
+					}
+				}
+				else if (sb != null)
+					sb.Append(c);
+			}
+
+			return sb?.ToString() ?? value;
+		}
+
 #if SUPPORTS_AGGRESSIVEINLINING
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
 #endif
@@ -975,7 +1024,7 @@ namespace Mozzarella
 		{
 			return ((c >= 65 && c <= 90) || (c >= 97 && c <= 122));
 		}
-		
+
 #if SUPPORTS_AGGRESSIVEINLINING
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
 #endif
