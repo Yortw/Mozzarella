@@ -26,6 +26,8 @@ items:
   - Mozzarella.StringExtensions.Coalesce(System.String,System.String)
   - Mozzarella.StringExtensions.Coalesce(System.String,System.String[])
   - Mozzarella.StringExtensions.Contains(System.String,System.String,System.StringComparison)
+  - Mozzarella.StringExtensions.ContainsOnly(System.String,System.Char[])
+  - Mozzarella.StringExtensions.ContainsOnly(System.String,System.Collections.Generic.IEnumerable{System.Char})
   - Mozzarella.StringExtensions.IndexOfFirstDifference(System.String,System.String)
   - Mozzarella.StringExtensions.IsAllDigits(System.String)
   - Mozzarella.StringExtensions.IsAlphanumeric(System.String)
@@ -2109,6 +2111,110 @@ items:
   modifiers.vb:
   - Public
   - Shared
+- uid: Mozzarella.StringExtensions.ContainsOnly(System.String,System.Char[])
+  commentId: M:Mozzarella.StringExtensions.ContainsOnly(System.String,System.Char[])
+  id: ContainsOnly(System.String,System.Char[])
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ContainsOnly(String, Char[])
+  nameWithType: StringExtensions.ContainsOnly(String, Char[])
+  fullName: Mozzarella.StringExtensions.ContainsOnly(System.String, System.Char[])
+  type: Method
+  source:
+    id: ContainsOnly
+    path: ''
+    startLine: 1981
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns true if <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> contains only characters that exist in <code data-dev-comment-type=\"paramref\" class=\"paramref\">characters</code>.\n"
+  remarks: "\n<p>Returns false if <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> is empty string.</p>\n"
+  example: []
+  syntax:
+    content: public static bool ContainsOnly(this string value, params char[] characters)
+    parameters:
+    - id: value
+      type: System.String
+      description: ''
+    - id: characters
+      type: System.Char[]
+      description: ''
+    return:
+      type: System.Boolean
+      description: True if <code data-dev-comment-type="paramref" class="paramref">value</code> contains only characters that exist in <code data-dev-comment-type="paramref" class="paramref">characters</code> otherwise false.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ContainsOnly(value As String, ParamArray characters As Char()) As Boolean
+  overload: Mozzarella.StringExtensions.ContainsOnly*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">characters</code> or <code data-dev-comment-type="paramref" class="paramref">value</code> is null.
+  nameWithType.vb: StringExtensions.ContainsOnly(String, Char())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mozzarella.StringExtensions.ContainsOnly(System.String, System.Char())
+  name.vb: ContainsOnly(String, Char())
+- uid: Mozzarella.StringExtensions.ContainsOnly(System.String,System.Collections.Generic.IEnumerable{System.Char})
+  commentId: M:Mozzarella.StringExtensions.ContainsOnly(System.String,System.Collections.Generic.IEnumerable{System.Char})
+  id: ContainsOnly(System.String,System.Collections.Generic.IEnumerable{System.Char})
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ContainsOnly(String, IEnumerable<Char>)
+  nameWithType: StringExtensions.ContainsOnly(String, IEnumerable<Char>)
+  fullName: Mozzarella.StringExtensions.ContainsOnly(System.String, System.Collections.Generic.IEnumerable<System.Char>)
+  type: Method
+  source:
+    id: ContainsOnly
+    path: ''
+    startLine: 1996
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns true if <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> contains only characters that exist in <code data-dev-comment-type=\"paramref\" class=\"paramref\">characters</code>.\n"
+  remarks: "\n<p>Returns false if <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> is empty string.</p>\n"
+  example: []
+  syntax:
+    content: public static bool ContainsOnly(this string value, IEnumerable<char> characters)
+    parameters:
+    - id: value
+      type: System.String
+      description: ''
+    - id: characters
+      type: System.Collections.Generic.IEnumerable{System.Char}
+      description: ''
+    return:
+      type: System.Boolean
+      description: True if <code data-dev-comment-type="paramref" class="paramref">value</code> contains only characters that exist in <code data-dev-comment-type="paramref" class="paramref">characters</code> otherwise false.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ContainsOnly(value As String, characters As IEnumerable(Of Char)) As Boolean
+  overload: Mozzarella.StringExtensions.ContainsOnly*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">characters</code> or <code data-dev-comment-type="paramref" class="paramref">value</code> is null.
+  nameWithType.vb: StringExtensions.ContainsOnly(String, IEnumerable(Of Char))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mozzarella.StringExtensions.ContainsOnly(System.String, System.Collections.Generic.IEnumerable(Of System.Char))
+  name.vb: ContainsOnly(String, IEnumerable(Of Char))
 references:
 - uid: System.String
   commentId: T:System.String
@@ -2700,3 +2806,123 @@ references:
   name: IsAlphanumeric
   nameWithType: StringExtensions.IsAlphanumeric
   fullName: Mozzarella.StringExtensions.IsAlphanumeric
+- uid: Mozzarella.StringExtensions.ContainsOnly*
+  commentId: Overload:Mozzarella.StringExtensions.ContainsOnly
+  isExternal: false
+  name: ContainsOnly
+  nameWithType: StringExtensions.ContainsOnly
+  fullName: Mozzarella.StringExtensions.ContainsOnly
+- uid: System.Char[]
+  name: Char[]
+  nameWithType: Char[]
+  fullName: System.Char[]
+  nameWithType.vb: Char()
+  fullName.vb: System.Char()
+  name.vb: Char()
+  spec.csharp:
+  - uid: System.Char
+    name: Char
+    nameWithType: Char
+    fullName: System.Char
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Char
+    name: Char
+    nameWithType: Char
+    fullName: System.Char
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Collections.Generic.IEnumerable{System.Char}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Char}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<Char>
+  nameWithType: IEnumerable<Char>
+  fullName: System.Collections.Generic.IEnumerable<System.Char>
+  nameWithType.vb: IEnumerable(Of Char)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Char)
+  name.vb: IEnumerable(Of Char)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Char
+    name: Char
+    nameWithType: Char
+    fullName: System.Char
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Char
+    name: Char
+    nameWithType: Char
+    fullName: System.Char
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

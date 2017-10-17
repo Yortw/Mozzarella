@@ -625,6 +625,30 @@ references:
   commentId: Overload:Mozzarella.StringExtensions.Contains
   fullName: Mozzarella.StringExtensions.Contains
   nameWithType: StringExtensions.Contains
+- uid: Mozzarella.StringExtensions.ContainsOnly(System.String,System.Char[])
+  name: ContainsOnly(String, Char[])
+  href: api/Mozzarella.StringExtensions.ContainsOnly.html#Mozzarella_StringExtensions_ContainsOnly_System_String_System_Char___
+  commentId: M:Mozzarella.StringExtensions.ContainsOnly(System.String,System.Char[])
+  name.vb: ContainsOnly(String, Char())
+  fullName: Mozzarella.StringExtensions.ContainsOnly(System.String, System.Char[])
+  fullName.vb: Mozzarella.StringExtensions.ContainsOnly(System.String, System.Char())
+  nameWithType: StringExtensions.ContainsOnly(String, Char[])
+  nameWithType.vb: StringExtensions.ContainsOnly(String, Char())
+- uid: Mozzarella.StringExtensions.ContainsOnly(System.String,System.Collections.Generic.IEnumerable{System.Char})
+  name: ContainsOnly(String, IEnumerable<Char>)
+  href: api/Mozzarella.StringExtensions.ContainsOnly.html#Mozzarella_StringExtensions_ContainsOnly_System_String_System_Collections_Generic_IEnumerable_System_Char__
+  commentId: M:Mozzarella.StringExtensions.ContainsOnly(System.String,System.Collections.Generic.IEnumerable{System.Char})
+  name.vb: ContainsOnly(String, IEnumerable(Of Char))
+  fullName: Mozzarella.StringExtensions.ContainsOnly(System.String, System.Collections.Generic.IEnumerable<System.Char>)
+  fullName.vb: Mozzarella.StringExtensions.ContainsOnly(System.String, System.Collections.Generic.IEnumerable(Of System.Char))
+  nameWithType: StringExtensions.ContainsOnly(String, IEnumerable<Char>)
+  nameWithType.vb: StringExtensions.ContainsOnly(String, IEnumerable(Of Char))
+- uid: Mozzarella.StringExtensions.ContainsOnly*
+  name: ContainsOnly
+  href: api/Mozzarella.StringExtensions.ContainsOnly.html
+  commentId: Overload:Mozzarella.StringExtensions.ContainsOnly
+  fullName: Mozzarella.StringExtensions.ContainsOnly
+  nameWithType: StringExtensions.ContainsOnly
 - uid: Mozzarella.StringExtensions.IndexOfFirstDifference(System.String,System.String)
   name: IndexOfFirstDifference(String, String)
   href: api/Mozzarella.StringExtensions.IndexOfFirstDifference.html#Mozzarella_StringExtensions_IndexOfFirstDifference_System_String_System_String_

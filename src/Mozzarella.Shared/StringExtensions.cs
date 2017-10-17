@@ -866,6 +866,46 @@ namespace Mozzarella
 			return true;
 		}
 
+		/// <summary>
+		/// Returns true if <paramref name="value"/> contains only characters that exist in <paramref name="characters"/>.
+		/// </summary>
+		/// <remarks>
+		/// <para>Returns false if <paramref name="value"/> is empty string.</para>
+		/// </remarks>
+		/// <param name="value"></param>
+		/// <param name="characters"></param>
+		/// <returns>True if <paramref name="value"/> contains only characters that exist in <paramref name="characters"/> otherwise false.</returns>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="characters"/> or <paramref name="value"/> is null.</exception>
+		public static bool ContainsOnly(this string value, params char[] characters)
+		{
+			return ContainsOnly(value, (IEnumerable<char>)characters);
+		}
+
+		/// <summary>
+		/// Returns true if <paramref name="value"/> contains only characters that exist in <paramref name="characters"/>.
+		/// </summary>
+		/// <remarks>
+		/// <para>Returns false if <paramref name="value"/> is empty string.</para>
+		/// </remarks>
+		/// <param name="value"></param>
+		/// <param name="characters"></param>
+		/// <returns>True if <paramref name="value"/> contains only characters that exist in <paramref name="characters"/> otherwise false.</returns>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="characters"/> or <paramref name="value"/> is null.</exception>
+		public static bool ContainsOnly(this string value, IEnumerable<char> characters)
+		{
+			if (value == null) throw new ArgumentNullException(nameof(value));
+			if (characters == null) throw new ArgumentNullException(nameof(characters));
+			if (value.Length == 0) return false;
+			
+			for (int cnt = 0; cnt < value.Length; cnt++)
+			{
+				var c = value[cnt];
+				if (!System.Linq.Enumerable.Contains(characters, c)) return false;
+			}
+
+			return true;
+		}
+
 #if SUPPORTS_AGGRESSIVEINLINING
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
 #endif

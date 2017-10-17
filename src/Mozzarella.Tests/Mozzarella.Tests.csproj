@@ -59,6 +59,7 @@
     <Compile Include="BeforeLastTests.cs" />
     <Compile Include="ByteArrayExtensionsTests.cs" />
     <Compile Include="CoalesceTests.cs" />
+    <Compile Include="ContainsOnlyTests.cs" />
     <Compile Include="ContainsTests.cs" />
     <Compile Include="DigitCharacterTests.cs" />
     <Compile Include="GlobalSuppressions.cs" />
