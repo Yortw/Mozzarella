@@ -61,6 +61,9 @@
     <Compile Include="CoalesceTests.cs" />
     <Compile Include="ContainsTests.cs" />
     <Compile Include="DigitCharacterTests.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="IsAlphanumericTests.cs" />
+    <Compile Include="IsOnlyAlphasTests.cs" />
     <Compile Include="OCICompareTests.cs" />
     <Compile Include="CICompareTests.cs" />
     <Compile Include="OCIContainsTests.cs" />

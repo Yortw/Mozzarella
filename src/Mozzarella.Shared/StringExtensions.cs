@@ -821,5 +821,65 @@ namespace Mozzarella
 
 			return sb?.ToString() ?? value;
 		}
+
+		/// <summary>
+		/// Returns true if <paramref name="value"/> contains only (latin) alphabetic characters (A-Z, a-z).
+		/// </summary>
+		/// <remarks>
+		/// <para>Returns false if <paramref name="value"/> is null or empty string.</para>
+		/// </remarks>
+		/// <param name="value">The string to test the characters of.</param>
+		/// <returns>True if <paramref name="value"/> contains only latin alphabetic characters.</returns>
+		public static bool IsOnlyAlphas(this string value)
+		{
+			if (value == null) return false;
+			if (value.Length == 0) return false;
+
+			for (int cnt = 0; cnt < value.Length; cnt++)
+			{
+				var c = value[cnt];
+				if (!IsLatinAlphabeticCharacter(c)) return false;
+			}
+
+			return true;
+		}
+
+		/// <summary>
+		/// Returns true if <paramref name="value"/> contains only (latin) alphabetic or numeric characters (A-Z, a-z, 0-9).
+		/// </summary>
+		/// <remarks>
+		/// <para>Returns false if <paramref name="value"/> is null or empty string.</para>
+		/// </remarks>
+		/// <param name="value">The string to test the characters of.</param>
+		/// <returns>True if <paramref name="value"/> contains only latin alphabetic and/or numeric characters.</returns>
+		public static bool IsAlphanumeric(this string value)
+		{
+			if (value == null) return false;
+			if (value.Length == 0) return false;
+
+			for (int cnt = 0; cnt < value.Length; cnt++)
+			{
+				var c = value[cnt];
+				if (!IsLatinAlphabeticCharacter(c) && !IsLatinNumberic(c)) return false;
+			}
+
+			return true;
+		}
+
+#if SUPPORTS_AGGRESSIVEINLINING
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+#endif
+		private static bool IsLatinAlphabeticCharacter(char c)
+		{
+			return ((c >= 65 && c <= 90) || (c >= 97 && c <= 122));
+		}
+		
+#if SUPPORTS_AGGRESSIVEINLINING
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+#endif
+		private static bool IsLatinNumberic(char c)
+		{
+			return (c >= 48 && c <= 57);
+		}
 	}
 }

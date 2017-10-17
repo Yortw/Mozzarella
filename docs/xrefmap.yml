@@ -649,6 +649,18 @@ references:
   commentId: Overload:Mozzarella.StringExtensions.IsAllDigits
   fullName: Mozzarella.StringExtensions.IsAllDigits
   nameWithType: StringExtensions.IsAllDigits
+- uid: Mozzarella.StringExtensions.IsAlphanumeric(System.String)
+  name: IsAlphanumeric(String)
+  href: api/Mozzarella.StringExtensions.IsAlphanumeric.html#Mozzarella_StringExtensions_IsAlphanumeric_System_String_
+  commentId: M:Mozzarella.StringExtensions.IsAlphanumeric(System.String)
+  fullName: Mozzarella.StringExtensions.IsAlphanumeric(System.String)
+  nameWithType: StringExtensions.IsAlphanumeric(String)
+- uid: Mozzarella.StringExtensions.IsAlphanumeric*
+  name: IsAlphanumeric
+  href: api/Mozzarella.StringExtensions.IsAlphanumeric.html
+  commentId: Overload:Mozzarella.StringExtensions.IsAlphanumeric
+  fullName: Mozzarella.StringExtensions.IsAlphanumeric
+  nameWithType: StringExtensions.IsAlphanumeric
 - uid: Mozzarella.StringExtensions.IsNullOrEmpty(System.String)
   name: IsNullOrEmpty(String)
   href: api/Mozzarella.StringExtensions.IsNullOrEmpty.html#Mozzarella_StringExtensions_IsNullOrEmpty_System_String_
@@ -673,6 +685,18 @@ references:
   commentId: Overload:Mozzarella.StringExtensions.IsNullOrWhiteSpace
   fullName: Mozzarella.StringExtensions.IsNullOrWhiteSpace
   nameWithType: StringExtensions.IsNullOrWhiteSpace
+- uid: Mozzarella.StringExtensions.IsOnlyAlphas(System.String)
+  name: IsOnlyAlphas(String)
+  href: api/Mozzarella.StringExtensions.IsOnlyAlphas.html#Mozzarella_StringExtensions_IsOnlyAlphas_System_String_
+  commentId: M:Mozzarella.StringExtensions.IsOnlyAlphas(System.String)
+  fullName: Mozzarella.StringExtensions.IsOnlyAlphas(System.String)
+  nameWithType: StringExtensions.IsOnlyAlphas(String)
+- uid: Mozzarella.StringExtensions.IsOnlyAlphas*
+  name: IsOnlyAlphas
+  href: api/Mozzarella.StringExtensions.IsOnlyAlphas.html
+  commentId: Overload:Mozzarella.StringExtensions.IsOnlyAlphas
+  fullName: Mozzarella.StringExtensions.IsOnlyAlphas
+  nameWithType: StringExtensions.IsOnlyAlphas
 - uid: Mozzarella.StringExtensions.IsOnlyDigits(System.String)
   name: IsOnlyDigits(String)
   href: api/Mozzarella.StringExtensions.IsOnlyDigits.html#Mozzarella_StringExtensions_IsOnlyDigits_System_String_
