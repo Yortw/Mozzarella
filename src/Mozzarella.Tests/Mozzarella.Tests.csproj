@@ -78,6 +78,7 @@
     <Compile Include="IndexOfFirstDifferenceTests.cs" />
     <Compile Include="IsAllDigitsTests.cs" />
     <Compile Include="LikeTests.cs" />
+    <Compile Include="PascalCaseToWordsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RemoveAllExceptTests.cs" />
     <Compile Include="RemoveAllWhitespaceTests.cs" />

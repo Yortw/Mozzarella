@@ -197,7 +197,7 @@ namespace Mozzarella
 
 			int initialCapacity = newValue.Length <= searchValue.Length ? value.Length : (value.Length / searchValue.Length) * (newValue.Length - searchValue.Length);
 
-			int index = -1, partLength = 0;
+			int index, partLength;
 			int startIndex = 0;
 			while (startIndex < value.Length && (index = value.IndexOf(searchValue, startIndex, stringComparison)) >= 0)
 			{
@@ -1015,6 +1015,52 @@ namespace Mozzarella
 			}
 
 			return sb?.ToString() ?? value;
+		}
+
+		/// <summary>
+		/// Converts a string in pascal or camel case to a human readable string of words.
+		/// </summary>
+		/// <remarks>For example, myFunction becomes My Function, ReplicationHandler becomes Replication Handler.</remarks>
+		/// <param name="data">A string containing the data to re-format.</param>
+		/// <returns>A string containing the human readable version of this data.</returns>
+		public static string PascalCaseToWords(this string data)
+		{
+			if (data == null) throw new ArgumentNullException(nameof(data));
+
+			if (String.IsNullOrWhiteSpace(data)) return data;
+
+			var retVal = new StringBuilder(data.Length + 10);
+			Char priorChar = default;
+			for (int i = 0; i < data.Length; i++)
+			{
+				var currentChar = data[i];
+				var isCurrentCharUpper = Char.IsUpper(currentChar);
+				if (i == 0)
+				{
+					if (!isCurrentCharUpper)
+					{
+#if SUPPORTS_TOUPPERWITHCULTURE
+						retVal.Append(Char.ToUpper(currentChar, System.Globalization.CultureInfo.CurrentCulture));
+#else
+						retVal.Append(Char.ToUpper(currentChar));
+#endif
+						if (i + 1 < data.Length && Char.IsUpper(data[i + 1]))
+							retVal.Append(" ");
+
+						continue;
+					}
+				}
+				else if (isCurrentCharUpper && !Char.IsWhiteSpace(priorChar))
+				{
+					if (!Char.IsUpper(priorChar) || (i + 1 < data.Length && Char.IsLower(data[i + 1])))
+						retVal.Append(" ");
+				}
+
+				retVal.Append(currentChar);
+				priorChar = currentChar;
+			}
+
+			return retVal.ToString();
 		}
 
 #if SUPPORTS_AGGRESSIVEINLINING

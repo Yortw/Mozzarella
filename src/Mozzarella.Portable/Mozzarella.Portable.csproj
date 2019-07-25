@@ -21,7 +21,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;LEGACYPORTABLE</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS;LEGACYPORTABLE;SUPPORTS_TOUPPERWITHCULTURE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>..\MozzarellaCodeAnalysis.ruleset</CodeAnalysisRuleSet>
@@ -32,7 +32,7 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE;LEGACYPORTABLE</DefineConstants>
+    <DefineConstants>TRACE;CODE_ANALYSIS;LEGACYPORTABLE;SUPPORTS_TOUPPERWITHCULTURE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>..\MozzarellaCodeAnalysis.ruleset</CodeAnalysisRuleSet>

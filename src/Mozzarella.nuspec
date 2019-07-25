@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>       
 	<id>Mozzarella</id>
-        <version>2.0.0</version>
+        <version>2.0.1</version>
         <title>Mozzarella</title>
         <authors>Troy Willmot</authors>
         <owners>Yortw</owners>
@@ -12,9 +12,9 @@
         <iconUrl>https://raw.githubusercontent.com/Yortw/Mozzarella/master/MozzarellaIcon.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>A library for doing stuff with strings in .Net.</description>
-        <copyright>Copyright 2016</copyright>
+        <copyright>Copyright 2019</copyright>
         <language>en-AU</language>
-        <tags>portable xamarin ios android windowsphone winrt uwp mobile string mozzarella upnp netfx40 .net4</tags>
+        <tags>portable xamarin ios android windowsphone winrt uwp mobile string mozzarella upnp netfx40 .net4 netstandard</tags>
     </metadata>
     <files>
         <file src="Mozzarella.NetStandard\bin\Release\Mozzarella.NetStandard11.dll" target="lib\netstandard1.1\Mozzarella.NetStandard11.dll" />

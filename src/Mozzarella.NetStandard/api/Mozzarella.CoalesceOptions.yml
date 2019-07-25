@@ -17,7 +17,7 @@ items:
   source:
     id: CoalesceOptions
     path: ''
-    startLine: 473
+    startLine: 477
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -56,7 +56,7 @@ items:
   source:
     id: None
     path: ''
-    startLine: 479
+    startLine: 483
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -86,7 +86,7 @@ items:
   source:
     id: WhiteSpaceAsEmpty
     path: ''
-    startLine: 483
+    startLine: 487
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella

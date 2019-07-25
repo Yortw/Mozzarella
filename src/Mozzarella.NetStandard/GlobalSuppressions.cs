@@ -25,3 +25,5 @@
 [assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0007:Use implicit type", Justification = "<Pending>", Scope = "member", Target = "~M:Mozzarella.StringExtensions.RemoveNonAlphas(System.String)~System.String")]
 [assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1704:IdentifiersShouldBeSpelledCorrectly", MessageId = "Alphanumerics", Scope = "member", Target = "Mozzarella.StringExtensions.#RemoveNonAlphanumerics(System.String)")]
 
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0007:Use implicit type", Justification = "<Pending>", Scope = "member", Target = "~M:Mozzarella.StringExtensions.PascalCaseToWords(System.String)~System.String")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0007:Use implicit type", Justification = "<Pending>", Scope = "member", Target = "~M:Mozzarella.StringExtensions.RemoveAllExcept(System.String,System.Collections.Generic.IEnumerable{System.Char})~System.String")]

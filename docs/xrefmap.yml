@@ -805,6 +805,18 @@ references:
   commentId: Overload:Mozzarella.StringExtensions.OEquals
   fullName: Mozzarella.StringExtensions.OEquals
   nameWithType: StringExtensions.OEquals
+- uid: Mozzarella.StringExtensions.PascalCaseToWords(System.String)
+  name: PascalCaseToWords(String)
+  href: api/Mozzarella.StringExtensions.PascalCaseToWords.html#Mozzarella_StringExtensions_PascalCaseToWords_System_String_
+  commentId: M:Mozzarella.StringExtensions.PascalCaseToWords(System.String)
+  fullName: Mozzarella.StringExtensions.PascalCaseToWords(System.String)
+  nameWithType: StringExtensions.PascalCaseToWords(String)
+- uid: Mozzarella.StringExtensions.PascalCaseToWords*
+  name: PascalCaseToWords
+  href: api/Mozzarella.StringExtensions.PascalCaseToWords.html
+  commentId: Overload:Mozzarella.StringExtensions.PascalCaseToWords
+  fullName: Mozzarella.StringExtensions.PascalCaseToWords
+  nameWithType: StringExtensions.PascalCaseToWords
 - uid: Mozzarella.StringExtensions.RemoveAllExcept(System.String,System.Char[])
   name: RemoveAllExcept(String, Char[])
   href: api/Mozzarella.StringExtensions.RemoveAllExcept.html#Mozzarella_StringExtensions_RemoveAllExcept_System_String_System_Char___

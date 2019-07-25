@@ -13,7 +13,7 @@ using System;
 [assembly: AssemblyConfiguration("RELEASE")]
 #endif
 [assembly: AssemblyProduct("Mozzarella")]
-[assembly: AssemblyCopyright("Copyright © 2017")]
+[assembly: AssemblyCopyright("Copyright © 2019")]
 [assembly: NeutralResourcesLanguage("en")]
 
 #if !LEGACYPORTABLE
@@ -31,5 +31,5 @@ using System;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2.0.0.0")]
-[assembly: AssemblyFileVersion("2.0.0.0")]
+[assembly: AssemblyVersion("2.0.1.0")]
+[assembly: AssemblyFileVersion("2.0.1.0")]
