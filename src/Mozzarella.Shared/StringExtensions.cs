@@ -1063,6 +1063,50 @@ namespace Mozzarella
 			return retVal.ToString();
 		}
 
+		/// <summary>
+		/// Returns an integer representing the Levenshtein distance (https://en.wikipedia.org/wiki/Levenshtein_distance) between two strings. Often used to detect typos or misspellings by checking for small distances.
+		/// </summary>
+		/// <para>Nulls and empty strings are treated as equivalent. Two nulls, two empty strings or a null and a empty string will return a distance of 0. For a null and a non-null value the Levenshtein is always the length of the non-null string.</para>
+		/// <remarks>
+		/// </remarks>
+		/// <param name="first">The first string to compare.</param>
+		/// <param name="second">The second string to compare.</param>
+		/// <returns>A integer representing the Levenshtein distance between <paramref name="first"/> and <paramref name="second"/>.</returns>
+		public static int LevenshteinDistanceTo(this string first, string second)
+		{
+			if (String.IsNullOrEmpty(first)) return second?.Length ?? 0;
+			if (String.IsNullOrEmpty(second)) return first?.Length ?? 0;
+
+			var current = 1;
+			var previous = 0;
+			var r = new int[2, second.Length + 1];
+			for (var i = 0; i <= second.Length; i++)
+			{
+				r[previous, i] = i;
+			}
+
+			for (var i = 0; i < first.Length; i++)
+			{
+				r[current, 0] = i + 1;
+				for (var j = 1; j <= second.Length; j++)
+				{
+					var cost = (second[j - 1] == first[i]) ? 0 : 1;
+					r[current, j] = Math.Min
+					(
+						Math.Min
+						(
+							r[previous, j] + 1,
+							r[current, j - 1] + 1
+						),
+						r[previous, j - 1] + cost
+					);
+				}
+				previous = (previous + 1) % 2;
+				current = (current + 1) % 2;
+			}
+			return r[previous, second.Length];
+		}
+
 #if SUPPORTS_AGGRESSIVEINLINING
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
 #endif
@@ -1078,5 +1122,6 @@ namespace Mozzarella
 		{
 			return (c >= 48 && c <= 57);
 		}
+
 	}
 }

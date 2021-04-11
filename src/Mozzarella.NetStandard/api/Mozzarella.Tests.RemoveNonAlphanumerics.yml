@@ -20,7 +20,7 @@ items:
   source:
     id: RemoveNonAlphanumerics
     path: ''
-    startLine: 2223
+    startLine: 2268
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella.Tests
@@ -57,7 +57,7 @@ items:
   source:
     id: RemoveNonAlphanumerics_ReturnsNullForNull
     path: ''
-    startLine: 2227
+    startLine: 2272
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella.Tests
@@ -83,7 +83,7 @@ items:
   source:
     id: RemoveNonAlphanumerics_ReturnsEmptyForEmpty
     path: ''
-    startLine: 2234
+    startLine: 2279
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella.Tests
@@ -109,7 +109,7 @@ items:
   source:
     id: RemoveNonAlphanumerics_ReturnsOriginalStringWhenNoCharactersRemoved
     path: ''
-    startLine: 2241
+    startLine: 2286
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella.Tests
@@ -135,7 +135,7 @@ items:
   source:
     id: RemoveNonAlphanumerics_DoesNotRemoveNumerics
     path: ''
-    startLine: 2248
+    startLine: 2293
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella.Tests
@@ -161,7 +161,7 @@ items:
   source:
     id: RemoveNonAlphanumerics_RemovesNonAlphanumerics
     path: ''
-    startLine: 2255
+    startLine: 2300
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella.Tests

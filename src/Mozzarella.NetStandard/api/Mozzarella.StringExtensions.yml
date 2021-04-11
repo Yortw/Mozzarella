@@ -35,6 +35,7 @@ items:
   - Mozzarella.StringExtensions.IsNullOrWhiteSpace(System.String)
   - Mozzarella.StringExtensions.IsOnlyAlphas(System.String)
   - Mozzarella.StringExtensions.IsOnlyDigits(System.String)
+  - Mozzarella.StringExtensions.LevenshteinDistanceTo(System.String,System.String)
   - Mozzarella.StringExtensions.Like(System.String,System.String,System.Boolean)
   - Mozzarella.StringExtensions.OCICompare(System.String,System.String)
   - Mozzarella.StringExtensions.OCIContains(System.String,System.String)
@@ -2450,6 +2451,51 @@ items:
   modifiers.vb:
   - Public
   - Shared
+- uid: Mozzarella.StringExtensions.LevenshteinDistanceTo(System.String,System.String)
+  commentId: M:Mozzarella.StringExtensions.LevenshteinDistanceTo(System.String,System.String)
+  id: LevenshteinDistanceTo(System.String,System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: LevenshteinDistanceTo(String, String)
+  nameWithType: StringExtensions.LevenshteinDistanceTo(String, String)
+  fullName: Mozzarella.StringExtensions.LevenshteinDistanceTo(System.String, System.String)
+  type: Method
+  source:
+    id: LevenshteinDistanceTo
+    path: ''
+    startLine: 2195
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns an integer representing the Levenshtein distance (https://en.wikipedia.org/wiki/Levenshtein_distance) between two strings. Often used to detect typos or misspellings by checking for small distances.\n"
+  remarks: "\n"
+  example: []
+  syntax:
+    content: public static int LevenshteinDistanceTo(this string first, string second)
+    parameters:
+    - id: first
+      type: System.String
+      description: The first string to compare.
+    - id: second
+      type: System.String
+      description: The second string to compare.
+    return:
+      type: System.Int32
+      description: A integer representing the Levenshtein distance between <code data-dev-comment-type="paramref" class="paramref">first</code> and <code data-dev-comment-type="paramref" class="paramref">second</code>.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function LevenshteinDistanceTo(first As String, second As String) As Integer
+  overload: Mozzarella.StringExtensions.LevenshteinDistanceTo*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
 references:
 - uid: System.String
   commentId: T:System.String
@@ -3187,3 +3233,9 @@ references:
   name: PascalCaseToWords
   nameWithType: StringExtensions.PascalCaseToWords
   fullName: Mozzarella.StringExtensions.PascalCaseToWords
+- uid: Mozzarella.StringExtensions.LevenshteinDistanceTo*
+  commentId: Overload:Mozzarella.StringExtensions.LevenshteinDistanceTo
+  isExternal: false
+  name: LevenshteinDistanceTo
+  nameWithType: StringExtensions.LevenshteinDistanceTo
+  fullName: Mozzarella.StringExtensions.LevenshteinDistanceTo

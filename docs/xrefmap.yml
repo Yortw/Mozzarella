@@ -733,6 +733,18 @@ references:
   commentId: Overload:Mozzarella.StringExtensions.IsOnlyDigits
   fullName: Mozzarella.StringExtensions.IsOnlyDigits
   nameWithType: StringExtensions.IsOnlyDigits
+- uid: Mozzarella.StringExtensions.LevenshteinDistanceTo(System.String,System.String)
+  name: LevenshteinDistanceTo(String, String)
+  href: api/Mozzarella.StringExtensions.LevenshteinDistanceTo.html#Mozzarella_StringExtensions_LevenshteinDistanceTo_System_String_System_String_
+  commentId: M:Mozzarella.StringExtensions.LevenshteinDistanceTo(System.String,System.String)
+  fullName: Mozzarella.StringExtensions.LevenshteinDistanceTo(System.String, System.String)
+  nameWithType: StringExtensions.LevenshteinDistanceTo(String, String)
+- uid: Mozzarella.StringExtensions.LevenshteinDistanceTo*
+  name: LevenshteinDistanceTo
+  href: api/Mozzarella.StringExtensions.LevenshteinDistanceTo.html
+  commentId: Overload:Mozzarella.StringExtensions.LevenshteinDistanceTo
+  fullName: Mozzarella.StringExtensions.LevenshteinDistanceTo
+  nameWithType: StringExtensions.LevenshteinDistanceTo
 - uid: Mozzarella.StringExtensions.Like(System.String,System.String,System.Boolean)
   name: Like(String, String, Boolean)
   href: api/Mozzarella.StringExtensions.Like.html#Mozzarella_StringExtensions_Like_System_String_System_String_System_Boolean_
