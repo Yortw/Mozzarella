@@ -37,6 +37,7 @@ items:
   - Mozzarella.StringExtensions.IsOnlyDigits(System.String)
   - Mozzarella.StringExtensions.LevenshteinDistanceTo(System.String,System.String)
   - Mozzarella.StringExtensions.Like(System.String,System.String,System.Boolean)
+  - Mozzarella.StringExtensions.NullIfEmpty(System.String)
   - Mozzarella.StringExtensions.OCICompare(System.String,System.String)
   - Mozzarella.StringExtensions.OCIContains(System.String,System.String)
   - Mozzarella.StringExtensions.OCIEquals(System.String,System.String)
@@ -65,7 +66,7 @@ items:
   source:
     id: StringExtensions
     path: ''
-    startLine: 1131
+    startLine: 1138
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -106,7 +107,7 @@ items:
   source:
     id: Truncate
     path: ''
-    startLine: 1144
+    startLine: 1151
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -155,7 +156,7 @@ items:
   source:
     id: OCIEquals
     path: ''
-    startLine: 1163
+    startLine: 1170
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -200,7 +201,7 @@ items:
   source:
     id: OEquals
     path: ''
-    startLine: 1178
+    startLine: 1185
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -245,7 +246,7 @@ items:
   source:
     id: CIEquals
     path: ''
-    startLine: 1192
+    startLine: 1199
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -290,7 +291,7 @@ items:
   source:
     id: OCICompare
     path: ''
-    startLine: 1206
+    startLine: 1213
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -335,7 +336,7 @@ items:
   source:
     id: CICompare
     path: ''
-    startLine: 1221
+    startLine: 1228
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -380,7 +381,7 @@ items:
   source:
     id: CIContains
     path: ''
-    startLine: 1233
+    startLine: 1240
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -428,7 +429,7 @@ items:
   source:
     id: OCIContains
     path: ''
-    startLine: 1247
+    startLine: 1254
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -476,7 +477,7 @@ items:
   source:
     id: CIReplace
     path: ''
-    startLine: 1268
+    startLine: 1275
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -532,7 +533,7 @@ items:
   source:
     id: OCIReplace
     path: ''
-    startLine: 1286
+    startLine: 1293
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -588,7 +589,7 @@ items:
   source:
     id: Replace
     path: ''
-    startLine: 1303
+    startLine: 1310
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -647,7 +648,7 @@ items:
   source:
     id: IndexOfFirstDifference
     path: ''
-    startLine: 1352
+    startLine: 1359
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -696,7 +697,7 @@ items:
   source:
     id: IsAllDigits
     path: ''
-    startLine: 1376
+    startLine: 1383
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -742,7 +743,7 @@ items:
   source:
     id: Like
     path: ''
-    startLine: 1401
+    startLine: 1408
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -794,7 +795,7 @@ items:
   source:
     id: StripSuffix
     path: ''
-    startLine: 1430
+    startLine: 1437
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -843,7 +844,7 @@ items:
   source:
     id: StripSuffix
     path: ''
-    startLine: 1444
+    startLine: 1451
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -895,7 +896,7 @@ items:
   source:
     id: StripPrefix
     path: ''
-    startLine: 1465
+    startLine: 1472
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -944,7 +945,7 @@ items:
   source:
     id: StripPrefix
     path: ''
-    startLine: 1479
+    startLine: 1486
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -996,7 +997,7 @@ items:
   source:
     id: AddSuffix
     path: ''
-    startLine: 1500
+    startLine: 1507
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1045,7 +1046,7 @@ items:
   source:
     id: AddSuffix
     path: ''
-    startLine: 1514
+    startLine: 1521
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1097,7 +1098,7 @@ items:
   source:
     id: AddPrefix
     path: ''
-    startLine: 1535
+    startLine: 1542
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1146,7 +1147,7 @@ items:
   source:
     id: AddPrefix
     path: ''
-    startLine: 1549
+    startLine: 1556
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1198,7 +1199,7 @@ items:
   source:
     id: Coalesce
     path: ''
-    startLine: 1571
+    startLine: 1578
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1247,7 +1248,7 @@ items:
   source:
     id: Coalesce
     path: ''
-    startLine: 1586
+    startLine: 1593
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1295,7 +1296,7 @@ items:
   source:
     id: Coalesce
     path: ''
-    startLine: 1608
+    startLine: 1615
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1348,7 +1349,7 @@ items:
   source:
     id: Coalesce
     path: ''
-    startLine: 1625
+    startLine: 1632
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1404,7 +1405,7 @@ items:
   source:
     id: IsNullOrEmpty
     path: ''
-    startLine: 1657
+    startLine: 1664
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1446,7 +1447,7 @@ items:
   source:
     id: IsNullOrWhiteSpace
     path: ''
-    startLine: 1674
+    startLine: 1681
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1488,7 +1489,7 @@ items:
   source:
     id: Contains
     path: ''
-    startLine: 1689
+    startLine: 1696
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1536,7 +1537,7 @@ items:
   source:
     id: BeforeFirst
     path: ''
-    startLine: 1709
+    startLine: 1716
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1581,7 +1582,7 @@ items:
   source:
     id: BeforeFirst
     path: ''
-    startLine: 1724
+    startLine: 1731
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1629,7 +1630,7 @@ items:
   source:
     id: BeforeLast
     path: ''
-    startLine: 1748
+    startLine: 1755
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1674,7 +1675,7 @@ items:
   source:
     id: BeforeLast
     path: ''
-    startLine: 1764
+    startLine: 1771
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1722,7 +1723,7 @@ items:
   source:
     id: AfterFirst
     path: ''
-    startLine: 1788
+    startLine: 1795
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1767,7 +1768,7 @@ items:
   source:
     id: AfterFirst
     path: ''
-    startLine: 1803
+    startLine: 1810
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1815,7 +1816,7 @@ items:
   source:
     id: AfterLast
     path: ''
-    startLine: 1827
+    startLine: 1834
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1860,7 +1861,7 @@ items:
   source:
     id: AfterLast
     path: ''
-    startLine: 1842
+    startLine: 1849
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1908,7 +1909,7 @@ items:
   source:
     id: IsOnlyDigits
     path: ''
-    startLine: 1863
+    startLine: 1870
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1957,7 +1958,7 @@ items:
   source:
     id: StripNonDigits
     path: ''
-    startLine: 1886
+    startLine: 1893
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -2006,7 +2007,7 @@ items:
   source:
     id: RemoveAllWhiteSpace
     path: ''
-    startLine: 1921
+    startLine: 1928
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -2048,7 +2049,7 @@ items:
   source:
     id: IsOnlyAlphas
     path: ''
-    startLine: 1953
+    startLine: 1960
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -2090,7 +2091,7 @@ items:
   source:
     id: IsAlphanumeric
     path: ''
-    startLine: 1975
+    startLine: 1982
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -2132,7 +2133,7 @@ items:
   source:
     id: ContainsOnly
     path: ''
-    startLine: 1999
+    startLine: 2006
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -2184,7 +2185,7 @@ items:
   source:
     id: ContainsOnly
     path: ''
-    startLine: 2014
+    startLine: 2021
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -2236,7 +2237,7 @@ items:
   source:
     id: RemoveNonAlphas
     path: ''
-    startLine: 2037
+    startLine: 2044
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -2278,7 +2279,7 @@ items:
   source:
     id: RemoveNonAlphanumerics
     path: ''
-    startLine: 2068
+    startLine: 2075
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -2320,7 +2321,7 @@ items:
   source:
     id: RemoveAllExcept
     path: ''
-    startLine: 2101
+    startLine: 2108
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -2372,7 +2373,7 @@ items:
   source:
     id: RemoveAllExcept
     path: ''
-    startLine: 2116
+    startLine: 2123
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -2424,7 +2425,7 @@ items:
   source:
     id: PascalCaseToWords
     path: ''
-    startLine: 2146
+    startLine: 2153
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -2466,7 +2467,7 @@ items:
   source:
     id: LevenshteinDistanceTo
     path: ''
-    startLine: 2195
+    startLine: 2202
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -2490,6 +2491,46 @@ items:
 
       Public Shared Function LevenshteinDistanceTo(first As String, second As String) As Integer
   overload: Mozzarella.StringExtensions.LevenshteinDistanceTo*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mozzarella.StringExtensions.NullIfEmpty(System.String)
+  commentId: M:Mozzarella.StringExtensions.NullIfEmpty(System.String)
+  id: NullIfEmpty(System.String)
+  isExtensionMethod: true
+  parent: Mozzarella.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: NullIfEmpty(String)
+  nameWithType: StringExtensions.NullIfEmpty(String)
+  fullName: Mozzarella.StringExtensions.NullIfEmpty(System.String)
+  type: Method
+  source:
+    id: NullIfEmpty
+    path: ''
+    startLine: 2242
+  assemblies:
+  - cs.temp.dll
+  namespace: Mozzarella
+  summary: "\nReturns null if <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> is an empty string, otherwise returns <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code>.\n"
+  example: []
+  syntax:
+    content: public static string NullIfEmpty(this string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: The value to convert to null if it is an empty string.
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function NullIfEmpty(value As String) As String
+  overload: Mozzarella.StringExtensions.NullIfEmpty*
   modifiers.csharp:
   - public
   - static
@@ -3239,3 +3280,9 @@ references:
   name: LevenshteinDistanceTo
   nameWithType: StringExtensions.LevenshteinDistanceTo
   fullName: Mozzarella.StringExtensions.LevenshteinDistanceTo
+- uid: Mozzarella.StringExtensions.NullIfEmpty*
+  commentId: Overload:Mozzarella.StringExtensions.NullIfEmpty
+  isExternal: false
+  name: NullIfEmpty
+  nameWithType: StringExtensions.NullIfEmpty
+  fullName: Mozzarella.StringExtensions.NullIfEmpty

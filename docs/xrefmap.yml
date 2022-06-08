@@ -757,6 +757,18 @@ references:
   commentId: Overload:Mozzarella.StringExtensions.Like
   fullName: Mozzarella.StringExtensions.Like
   nameWithType: StringExtensions.Like
+- uid: Mozzarella.StringExtensions.NullIfEmpty(System.String)
+  name: NullIfEmpty(String)
+  href: api/Mozzarella.StringExtensions.NullIfEmpty.html#Mozzarella_StringExtensions_NullIfEmpty_System_String_
+  commentId: M:Mozzarella.StringExtensions.NullIfEmpty(System.String)
+  fullName: Mozzarella.StringExtensions.NullIfEmpty(System.String)
+  nameWithType: StringExtensions.NullIfEmpty(String)
+- uid: Mozzarella.StringExtensions.NullIfEmpty*
+  name: NullIfEmpty
+  href: api/Mozzarella.StringExtensions.NullIfEmpty.html
+  commentId: Overload:Mozzarella.StringExtensions.NullIfEmpty
+  fullName: Mozzarella.StringExtensions.NullIfEmpty
+  nameWithType: StringExtensions.NullIfEmpty
 - uid: Mozzarella.StringExtensions.OCICompare(System.String,System.String)
   name: OCICompare(String, String)
   href: api/Mozzarella.StringExtensions.OCICompare.html#Mozzarella_StringExtensions_OCICompare_System_String_System_String_

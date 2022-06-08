@@ -62,6 +62,7 @@
     <Compile Include="IsAlphanumericTests.cs" />
     <Compile Include="IsOnlyAlphasTests.cs" />
     <Compile Include="LevenshteinDistanceToTests.cs" />
+    <Compile Include="NullIfEmptyTests.cs" />
     <Compile Include="OCICompareTests.cs" />
     <Compile Include="CICompareTests.cs" />
     <Compile Include="OCIContainsTests.cs" />

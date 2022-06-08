@@ -1072,6 +1072,7 @@ namespace Mozzarella
 		/// <param name="first">The first string to compare.</param>
 		/// <param name="second">The second string to compare.</param>
 		/// <returns>A integer representing the Levenshtein distance between <paramref name="first"/> and <paramref name="second"/>.</returns>
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1814:PreferJaggedArraysOverMultidimensional", MessageId = "Body")]
 		public static int LevenshteinDistanceTo(this string first, string second)
 		{
 			if (String.IsNullOrEmpty(first)) return second?.Length ?? 0;
@@ -1105,6 +1106,17 @@ namespace Mozzarella
 				current = (current + 1) % 2;
 			}
 			return r[previous, second.Length];
+		}
+
+		/// <summary>
+		/// Returns null if <paramref name="value"/> is an empty string, otherwise returns <paramref name="value"/>.
+		/// </summary>
+		/// <param name="value">The value to convert to null if it is an empty string.</param>
+		public static string NullIfEmpty(this string value)
+		{
+			if (String.IsNullOrEmpty(value)) return null;
+
+			return value;
 		}
 
 #if SUPPORTS_AGGRESSIVEINLINING

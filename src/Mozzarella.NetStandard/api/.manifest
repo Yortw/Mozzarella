@@ -74,6 +74,7 @@
   "Mozzarella.StringExtensions.IsOnlyDigits(System.String)": "Mozzarella.StringExtensions.yml",
   "Mozzarella.StringExtensions.LevenshteinDistanceTo(System.String,System.String)": "Mozzarella.StringExtensions.yml",
   "Mozzarella.StringExtensions.Like(System.String,System.String,System.Boolean)": "Mozzarella.StringExtensions.yml",
+  "Mozzarella.StringExtensions.NullIfEmpty(System.String)": "Mozzarella.StringExtensions.yml",
   "Mozzarella.StringExtensions.OCICompare(System.String,System.String)": "Mozzarella.StringExtensions.yml",
   "Mozzarella.StringExtensions.OCIContains(System.String,System.String)": "Mozzarella.StringExtensions.yml",
   "Mozzarella.StringExtensions.OCIEquals(System.String,System.String)": "Mozzarella.StringExtensions.yml",
