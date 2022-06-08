@@ -252,4 +252,4 @@ paket-files/
 *.sln.iml
 
 # docfx
-log.txt
+**/log.txt
