@@ -66,7 +66,7 @@ items:
   source:
     id: StringExtensions
     path: ''
-    startLine: 1138
+    startLine: 1140
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -107,7 +107,7 @@ items:
   source:
     id: Truncate
     path: ''
-    startLine: 1151
+    startLine: 1153
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -156,7 +156,7 @@ items:
   source:
     id: OCIEquals
     path: ''
-    startLine: 1170
+    startLine: 1172
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -201,7 +201,7 @@ items:
   source:
     id: OEquals
     path: ''
-    startLine: 1185
+    startLine: 1187
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -246,7 +246,7 @@ items:
   source:
     id: CIEquals
     path: ''
-    startLine: 1199
+    startLine: 1201
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -291,7 +291,7 @@ items:
   source:
     id: OCICompare
     path: ''
-    startLine: 1213
+    startLine: 1215
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -336,7 +336,7 @@ items:
   source:
     id: CICompare
     path: ''
-    startLine: 1228
+    startLine: 1230
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -381,7 +381,7 @@ items:
   source:
     id: CIContains
     path: ''
-    startLine: 1240
+    startLine: 1242
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -429,7 +429,7 @@ items:
   source:
     id: OCIContains
     path: ''
-    startLine: 1254
+    startLine: 1256
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -477,7 +477,7 @@ items:
   source:
     id: CIReplace
     path: ''
-    startLine: 1275
+    startLine: 1277
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -533,7 +533,7 @@ items:
   source:
     id: OCIReplace
     path: ''
-    startLine: 1293
+    startLine: 1295
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -589,7 +589,7 @@ items:
   source:
     id: Replace
     path: ''
-    startLine: 1310
+    startLine: 1312
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -648,7 +648,7 @@ items:
   source:
     id: IndexOfFirstDifference
     path: ''
-    startLine: 1359
+    startLine: 1361
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -697,7 +697,7 @@ items:
   source:
     id: IsAllDigits
     path: ''
-    startLine: 1383
+    startLine: 1385
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -743,7 +743,7 @@ items:
   source:
     id: Like
     path: ''
-    startLine: 1408
+    startLine: 1410
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -795,7 +795,7 @@ items:
   source:
     id: StripSuffix
     path: ''
-    startLine: 1437
+    startLine: 1439
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -844,7 +844,7 @@ items:
   source:
     id: StripSuffix
     path: ''
-    startLine: 1451
+    startLine: 1453
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -896,7 +896,7 @@ items:
   source:
     id: StripPrefix
     path: ''
-    startLine: 1472
+    startLine: 1474
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -945,7 +945,7 @@ items:
   source:
     id: StripPrefix
     path: ''
-    startLine: 1486
+    startLine: 1488
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -997,7 +997,7 @@ items:
   source:
     id: AddSuffix
     path: ''
-    startLine: 1507
+    startLine: 1509
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1046,7 +1046,7 @@ items:
   source:
     id: AddSuffix
     path: ''
-    startLine: 1521
+    startLine: 1523
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1098,7 +1098,7 @@ items:
   source:
     id: AddPrefix
     path: ''
-    startLine: 1542
+    startLine: 1544
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1147,7 +1147,7 @@ items:
   source:
     id: AddPrefix
     path: ''
-    startLine: 1556
+    startLine: 1558
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1199,7 +1199,7 @@ items:
   source:
     id: Coalesce
     path: ''
-    startLine: 1578
+    startLine: 1580
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1248,7 +1248,7 @@ items:
   source:
     id: Coalesce
     path: ''
-    startLine: 1593
+    startLine: 1595
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1296,7 +1296,7 @@ items:
   source:
     id: Coalesce
     path: ''
-    startLine: 1615
+    startLine: 1617
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1349,7 +1349,7 @@ items:
   source:
     id: Coalesce
     path: ''
-    startLine: 1632
+    startLine: 1634
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1405,7 +1405,7 @@ items:
   source:
     id: IsNullOrEmpty
     path: ''
-    startLine: 1664
+    startLine: 1666
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1447,7 +1447,7 @@ items:
   source:
     id: IsNullOrWhiteSpace
     path: ''
-    startLine: 1681
+    startLine: 1683
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1489,7 +1489,7 @@ items:
   source:
     id: Contains
     path: ''
-    startLine: 1696
+    startLine: 1698
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1537,7 +1537,7 @@ items:
   source:
     id: BeforeFirst
     path: ''
-    startLine: 1716
+    startLine: 1718
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1582,7 +1582,7 @@ items:
   source:
     id: BeforeFirst
     path: ''
-    startLine: 1731
+    startLine: 1733
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1630,7 +1630,7 @@ items:
   source:
     id: BeforeLast
     path: ''
-    startLine: 1755
+    startLine: 1757
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1675,7 +1675,7 @@ items:
   source:
     id: BeforeLast
     path: ''
-    startLine: 1771
+    startLine: 1773
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1723,7 +1723,7 @@ items:
   source:
     id: AfterFirst
     path: ''
-    startLine: 1795
+    startLine: 1797
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1768,7 +1768,7 @@ items:
   source:
     id: AfterFirst
     path: ''
-    startLine: 1810
+    startLine: 1812
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1816,7 +1816,7 @@ items:
   source:
     id: AfterLast
     path: ''
-    startLine: 1834
+    startLine: 1836
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1861,7 +1861,7 @@ items:
   source:
     id: AfterLast
     path: ''
-    startLine: 1849
+    startLine: 1851
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1909,7 +1909,7 @@ items:
   source:
     id: IsOnlyDigits
     path: ''
-    startLine: 1870
+    startLine: 1872
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -1958,7 +1958,7 @@ items:
   source:
     id: StripNonDigits
     path: ''
-    startLine: 1893
+    startLine: 1895
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -2007,7 +2007,7 @@ items:
   source:
     id: RemoveAllWhiteSpace
     path: ''
-    startLine: 1928
+    startLine: 1930
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -2049,7 +2049,7 @@ items:
   source:
     id: IsOnlyAlphas
     path: ''
-    startLine: 1960
+    startLine: 1962
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -2091,7 +2091,7 @@ items:
   source:
     id: IsAlphanumeric
     path: ''
-    startLine: 1982
+    startLine: 1984
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -2133,7 +2133,7 @@ items:
   source:
     id: ContainsOnly
     path: ''
-    startLine: 2006
+    startLine: 2008
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -2185,7 +2185,7 @@ items:
   source:
     id: ContainsOnly
     path: ''
-    startLine: 2021
+    startLine: 2023
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -2237,7 +2237,7 @@ items:
   source:
     id: RemoveNonAlphas
     path: ''
-    startLine: 2044
+    startLine: 2046
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -2279,7 +2279,7 @@ items:
   source:
     id: RemoveNonAlphanumerics
     path: ''
-    startLine: 2075
+    startLine: 2077
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -2321,7 +2321,7 @@ items:
   source:
     id: RemoveAllExcept
     path: ''
-    startLine: 2108
+    startLine: 2110
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -2373,7 +2373,7 @@ items:
   source:
     id: RemoveAllExcept
     path: ''
-    startLine: 2123
+    startLine: 2125
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -2425,7 +2425,7 @@ items:
   source:
     id: PascalCaseToWords
     path: ''
-    startLine: 2153
+    startLine: 2155
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -2467,7 +2467,7 @@ items:
   source:
     id: LevenshteinDistanceTo
     path: ''
-    startLine: 2202
+    startLine: 2204
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella
@@ -2512,7 +2512,7 @@ items:
   source:
     id: NullIfEmpty
     path: ''
-    startLine: 2242
+    startLine: 2244
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella

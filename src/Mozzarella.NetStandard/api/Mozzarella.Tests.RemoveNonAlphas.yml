@@ -20,7 +20,7 @@ items:
   source:
     id: RemoveNonAlphas
     path: ''
-    startLine: 2337
+    startLine: 2339
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella.Tests
@@ -57,7 +57,7 @@ items:
   source:
     id: RemoveNonAlphas_ReturnsNullForNull
     path: ''
-    startLine: 2341
+    startLine: 2343
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella.Tests
@@ -83,7 +83,7 @@ items:
   source:
     id: RemoveNonAlphas_ReturnsEmptyForEmpty
     path: ''
-    startLine: 2348
+    startLine: 2350
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella.Tests
@@ -109,7 +109,7 @@ items:
   source:
     id: RemoveNonAlphas_ReturnsOriginalStringWhenNoCharactersRemoved
     path: ''
-    startLine: 2355
+    startLine: 2357
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella.Tests
@@ -135,7 +135,7 @@ items:
   source:
     id: RemoveNonAlphas_RemovesNumerics
     path: ''
-    startLine: 2362
+    startLine: 2364
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella.Tests
@@ -161,7 +161,7 @@ items:
   source:
     id: RemoveNonAlphas_RemovesNonNumericNonAlphas
     path: ''
-    startLine: 2369
+    startLine: 2371
   assemblies:
   - cs.temp.dll
   namespace: Mozzarella.Tests

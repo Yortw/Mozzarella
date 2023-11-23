@@ -146,20 +146,22 @@ namespace Mozzarella
 			if (searchValue == null) throw new ArgumentNullException(nameof(searchValue));
 			if (searchValue.Length == 0) throw new ArgumentException(ErrorMessages.ArgumentCannotBeEmptyString, nameof(searchValue));
 			if (startIndex < 0) throw new ArgumentOutOfRangeException(nameof(startIndex));
-			if (startIndex > builder.Length) throw new ArgumentOutOfRangeException(nameof(startIndex));
+
+			var builderLength = builder.Length;
+			if (startIndex > builderLength) throw new ArgumentOutOfRangeException(nameof(startIndex));
 
 			if (builder.Length == 0) return -1;
-			if (searchValue.Length > builder.Length) return -1;
+			if (searchValue.Length > builderLength - startIndex) return -1;
 
 			var retVal = -1;
 
-			var maxSearchIndex = (builder.Length - searchValue.Length) + 1;
+			var maxSearchIndex = (builderLength - searchValue.Length) + 1;
 			for (var cnt = startIndex; cnt < maxSearchIndex; cnt++)
 			{
 				var matched = true;
 				for (var i = 0; i < searchValue.Length; i++)
 				{
-					if (builder[cnt + i] != searchValue[i])
+					if (cnt + i > builderLength || builder[cnt + i] != searchValue[i])
 					{
 						matched = false;
 						break;
